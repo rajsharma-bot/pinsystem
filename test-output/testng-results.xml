@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withInValid_creds_26_02_2024_03_24_54.png'><img src='C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withInValid_creds_26_02_2024_03_24_54.png'height='100' width='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withOut_username_26_02_2024_03_24_59.png'><img src='C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withOut_username_26_02_2024_03_24_59.png'height='100' width='100'/></a>]]>
+    </line>
+    <line>
+      <![CDATA[captureScreen method called]]>
+    </line>
+    <line>
+      <![CDATA[<a href='C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withValid_creds_26_02_2024_03_25_10.png'><img src='C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withValid_creds_26_02_2024_03_25_10.png'height='100' width='100'/></a>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-02-26T15:24:40 IST" name="Default suite" finished-at="2024-02-26T15:25:11 IST" duration-ms="31221">
+    <groups>
+    </groups>
+    <test started-at="2024-02-26T15:24:40 IST" name="Default test" finished-at="2024-02-26T15:25:11 IST" duration-ms="31221">
+      <class name="com.pinsystem.TestLogin">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pinsystem.TestLogin@677dbd89]" started-at="2024-02-26T15:24:39 IST" name="beforeSuite" finished-at="2024-02-26T15:24:40 IST" duration-ms="558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pinsystem.TestLogin@677dbd89]" started-at="2024-02-26T15:24:40 IST" name="setUp" finished-at="2024-02-26T15:24:49 IST" duration-ms="9510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.TestLogin@677dbd89]" started-at="2024-02-26T15:24:49 IST" name="beforeMethod" finished-at="2024-02-26T15:24:50 IST" duration-ms="25" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pinsystem.TestLogin.verify_login_page_withInValid_creds() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verify_login_page_withInValid_creds()[pri:0, instance:com.pinsystem.TestLogin@677dbd89]" started-at="2024-02-26T15:24:50 IST" name="verify_login_page_withInValid_creds" description="PINSYS-1755 : Verifying login with invalid username and password" finished-at="2024-02-26T15:24:54 IST" duration-ms="4707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_page_withInValid_creds -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.TestLogin@677dbd89]" started-at="2024-02-26T15:24:54 IST" name="afterMethod" finished-at="2024-02-26T15:24:56 IST" duration-ms="1473" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_login_page_withInValid_creds status=SUCCESS method=TestLogin.verify_login_page_withInValid_creds()[pri:0, instance:com.pinsystem.TestLogin@677dbd89] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withInValid_creds_26_02_2024_03_24_54.png'><img src='C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withInValid_creds_26_02_2024_03_24_54.png'height='100' width='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.TestLogin@677dbd89]" started-at="2024-02-26T15:24:56 IST" name="beforeMethod" finished-at="2024-02-26T15:24:56 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pinsystem.TestLogin.verify_login_page_withOut_username() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verify_login_page_withOut_username()[pri:1, instance:com.pinsystem.TestLogin@677dbd89]" started-at="2024-02-26T15:24:56 IST" name="verify_login_page_withOut_username" description="PINSYS-1755 : Verifying login with invalid username" finished-at="2024-02-26T15:24:59 IST" duration-ms="3508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_page_withOut_username -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.TestLogin@677dbd89]" started-at="2024-02-26T15:24:59 IST" name="afterMethod" finished-at="2024-02-26T15:25:00 IST" duration-ms="480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_login_page_withOut_username status=SUCCESS method=TestLogin.verify_login_page_withOut_username()[pri:1, instance:com.pinsystem.TestLogin@677dbd89] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withOut_username_26_02_2024_03_24_59.png'><img src='C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withOut_username_26_02_2024_03_24_59.png'height='100' width='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.TestLogin@677dbd89]" started-at="2024-02-26T15:25:00 IST" name="beforeMethod" finished-at="2024-02-26T15:25:00 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pinsystem.TestLogin.verify_login_page_withValid_creds() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verify_login_page_withValid_creds()[pri:2, instance:com.pinsystem.TestLogin@677dbd89]" started-at="2024-02-26T15:25:00 IST" name="verify_login_page_withValid_creds" description="PINSYS-1755 : Verifying login with valid username and password" finished-at="2024-02-26T15:25:10 IST" duration-ms="10549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_page_withValid_creds -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.TestLogin@677dbd89]" started-at="2024-02-26T15:25:10 IST" name="afterMethod" finished-at="2024-02-26T15:25:10 IST" duration-ms="232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_login_page_withValid_creds status=SUCCESS method=TestLogin.verify_login_page_withValid_creds()[pri:2, instance:com.pinsystem.TestLogin@677dbd89] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[captureScreen method called]]>
+            </line>
+            <line>
+              <![CDATA[<a href='C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withValid_creds_26_02_2024_03_25_10.png'><img src='C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withValid_creds_26_02_2024_03_25_10.png'height='100' width='100'/></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="AfterTest()[pri:0, instance:com.pinsystem.TestLogin@677dbd89]" started-at="2024-02-26T15:25:10 IST" name="AfterTest" finished-at="2024-02-26T15:25:11 IST" duration-ms="562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.pinsystem.TestLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
