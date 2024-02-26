@@ -21,10 +21,7 @@ public class LoginObjects {
 
 	}
 
-//	public void submit(WebDriver driver) {
-//		driver.findElement(LoginPageObjects.submit).click();
-//	}
-//	
+
 	public void submit() {
 		driver.findElement(LoginPageObjects.submit).click();
 	}
