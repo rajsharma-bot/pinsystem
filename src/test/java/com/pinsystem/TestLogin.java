@@ -22,7 +22,7 @@ public class TestLogin extends TestBase {
 	@Test(description = "PINSYS-1755 : Verifying login with valid username and password", priority = 2)
 	public void verify_login_page_withValid_creds() throws InterruptedException, IOException {
 
-		String text = "PIN System";
+		String text = "PIN Systemm";
 		FileReader reader = new FileReader("src/main/resources/configfile/config.properties");
 		Properties props = new Properties();
 		props.load(reader);

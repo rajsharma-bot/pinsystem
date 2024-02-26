@@ -6,12 +6,10 @@
       <class name="com.pinsystem.TestLogin">
         <methods>
           <include name="verify_login_page_withValid_creds"/>
-          <include name="verify_login_page_withInValid_creds"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
           <include name="setUp"/>
           <include name="afterMethod"/>
-          <include name="verify_login_page_withOut_username"/>
           <include name="AfterTest"/>
         </methods>
       </class> <!-- com.pinsystem.TestLogin -->

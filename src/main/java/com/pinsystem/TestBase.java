@@ -105,8 +105,11 @@ public class TestBase {
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			test.log(Status.SKIP, result.getThrowable());
 		}
-		log.info("**************" + result.getName() + "Finished***************");
+		log.info("**************" + result.getName() + " Finished***************");
+		test.log(Status.INFO, result.getName() + "**************test Finished***************");
 		extent.flush();
+		
+		
 	}
 
 	public String captureScreen(String fileName, WebDriver driver) {
