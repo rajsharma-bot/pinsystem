@@ -34,38 +34,41 @@ import com.pinsystem.utils.ResourceHelper;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TestBase {
+public class TestBase2 {
 
 	public static ExtentReports extent;
 	public static ExtentTest test;
 	public static WebDriver driver;
 	public static File reportDirectery;
-	private static Logger log = LogManager.getLogger(TestBase.class);
+	private static Logger log = LogManager.getLogger(TestBase2.class);
 
 	@BeforeSuite
 	public void beforeSuite() throws Exception {
 		extent = ExtentManager.getInstance();
 	}
 
-	@BeforeTest
-	public void beforeTest() throws IOException {
+	@BeforeMethod
+	public void beforeMethod() throws IOException {
 		reportDirectery = new File(ResourceHelper.getResourcePath("src/main/resources/screenShots"));
 		startUp();
 		test = extent.createTest(getClass().getSimpleName());
 	}
 
-	@BeforeMethod
-	public void beforeMethod(Method method) {
-		test.log(Status.INFO, method.getName() + "**************test started***************");
-		log.info("**************" + method.getName() + "Started***************");
-	}
+//	@BeforeMethod
+//	public void beforeMethod(Method method) {
+//		test.log(Status.INFO, method.getName() + "**************test started***************");
+//		log.info("**************" + method.getName() + "Started***************");
+//	}
 
 	@AfterMethod
 	public void afterMethod(ITestResult result) {
 
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(Status.FAIL, result.getThrowable());
-			String imagePath = captureScreen(result.getName());
+			String imagePath = captureScreen(result.getName(),driver);
+			System.out.println("++++++++++++++++++");
+			System.out.println(imagePath);
+			System.out.println("=================");
 			test.addScreenCaptureFromPath(imagePath);
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			test.log(Status.PASS, result.getName() + " is pass");
@@ -73,23 +76,22 @@ public class TestBase {
 			test.log(Status.SKIP, result.getThrowable());
 		}
 		log.info("**************" + result.getName() + "Finished***************");
+		System.out.println(result.getName());
 		extent.flush();
-
-	}
-
-	
-	@AfterTest
-	public void afterTest() throws Exception {
-		if(driver!=null){
+		if (driver != null) {
 			driver.quit();
 		}
+
 	}
-	
+
+
+
 	public void startUp() throws IOException {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		log.info("Initialize Web driver: " + driver.hashCode());
 		getApplicationUrl();
+		//driver.manage().window().maximize();
 
 	}
 
@@ -98,18 +100,18 @@ public class TestBase {
 		Properties props = new Properties();
 		props.load(reader);
 		driver.get(props.getProperty("applicationUrl"));
+		
 	}
 
-	public String captureScreen(String fileName) {
-//		
+	public String captureScreen(String fileName,WebDriver driver) {
+		
 //		if(driver == null){
 //			log.info("driver is null..");
 //			return null;
 //		}
-//		if(fileName==""){
-//			fileName = "blank";
-//		}
-
+		if(fileName==""){
+			fileName = "blank";
+		}
 		Reporter.log("captureScreen method called");
 		File destFile = null;
 		Calendar calendar = Calendar.getInstance();
@@ -126,8 +128,8 @@ public class TestBase {
 		return destFile.toString();
 
 	}
-	
-	public static void logExtentReport(String s1){
+
+	public static void logExtentReport(String s1) {
 		test.log(Status.INFO, s1);
 	}
 

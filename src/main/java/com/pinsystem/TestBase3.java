@@ -34,13 +34,13 @@ import com.pinsystem.utils.ResourceHelper;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TestBase {
+public class TestBase3 {
 
 	public static ExtentReports extent;
 	public static ExtentTest test;
 	public static WebDriver driver;
 	public static File reportDirectery;
-	private static Logger log = LogManager.getLogger(TestBase.class);
+	private static Logger log = LogManager.getLogger(TestBase3.class);
 
 	@BeforeSuite
 	public void beforeSuite() throws Exception {
@@ -101,14 +101,14 @@ public class TestBase {
 	}
 
 	public String captureScreen(String fileName) {
-//		
+		
 //		if(driver == null){
 //			log.info("driver is null..");
 //			return null;
 //		}
-//		if(fileName==""){
-//			fileName = "blank";
-//		}
+		if(fileName==""){
+			fileName = "blank";
+		}
 
 		Reporter.log("captureScreen method called");
 		File destFile = null;

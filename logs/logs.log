@@ -1,74 +1,44 @@
-[INFO ] 2024-02-26 15:24:47.007 [main] TestBase - Initialize Web driver
-[INFO ] 2024-02-26 15:24:50.004 [main] TestBase - **************verify_login_page_withInValid_credsStarted***************
-[INFO ] 2024-02-26 15:24:53.593 [main] TestLogin - Username is Teshjhz@jhjd.comand Password has been passed87832
-[INFO ] 2024-02-26 15:24:55.398 [main] TestBase - **************verify_login_page_withInValid_credsFinished***************
-[INFO ] 2024-02-26 15:24:56.200 [main] TestBase - **************verify_login_page_withOut_usernameStarted***************
-[INFO ] 2024-02-26 15:25:00.117 [main] TestBase - **************verify_login_page_withOut_usernameFinished***************
-[INFO ] 2024-02-26 15:25:00.198 [main] TestBase - **************verify_login_page_withValid_credsStarted***************
-[INFO ] 2024-02-26 15:25:00.206 [main] TestLogin - Broswer has been invoked
-[INFO ] 2024-02-26 15:25:04.026 [main] TestLogin - Username and Password has been passed
-[INFO ] 2024-02-26 15:25:04.027 [main] TestLogin - agency@blueocean.net.my
-[INFO ] 2024-02-26 15:25:04.028 [main] TestLogin - asd123
-[INFO ] 2024-02-26 15:25:10.738 [main] TestLogin - Clicked on submit
-[INFO ] 2024-02-26 15:25:10.940 [main] TestBase - **************verify_login_page_withValid_credsFinished***************
-[INFO ] 2024-02-26 15:25:11.546 [main] TestBase - Driver closed in invoked
-[INFO ] 2024-02-26 15:30:48.296 [main] TestBase - Initialize Web driver
-[INFO ] 2024-02-26 15:30:51.208 [main] TestBase - **************verify_login_page_withOut_usernameStarted***************
-[INFO ] 2024-02-26 15:30:54.659 [main] TestBase - **************verify_login_page_withOut_usernameFinished***************
-[INFO ] 2024-02-26 15:30:55.163 [main] TestBase - Driver closed in invoked
-[INFO ] 2024-02-26 15:31:08.957 [main] TestBase - Initialize Web driver
-[INFO ] 2024-02-26 15:31:11.647 [main] TestBase - **************verify_login_page_withInValid_credsStarted***************
-[INFO ] 2024-02-26 15:31:14.821 [main] TestLogin - Username is Teshjhz@jhjd.comand Password has been passed87832
-[INFO ] 2024-02-26 15:31:15.638 [main] TestBase - **************verify_login_page_withInValid_credsFinished***************
-[INFO ] 2024-02-26 15:31:15.914 [main] TestBase - **************verify_login_page_withOut_usernameStarted***************
-[INFO ] 2024-02-26 15:31:19.195 [main] TestBase - **************verify_login_page_withOut_usernameFinished***************
-[INFO ] 2024-02-26 15:31:19.206 [main] TestBase - **************verify_login_page_withValid_credsStarted***************
-[INFO ] 2024-02-26 15:31:19.208 [main] TestLogin - Broswer has been invoked
-[INFO ] 2024-02-26 15:31:22.393 [main] TestLogin - Username and Password has been passed
-[INFO ] 2024-02-26 15:31:22.393 [main] TestLogin - agency@blueocean.net.my
-[INFO ] 2024-02-26 15:31:22.393 [main] TestLogin - asd123
-[INFO ] 2024-02-26 15:31:29.672 [main] TestLogin - Clicked on submit
-[INFO ] 2024-02-26 15:31:29.788 [main] TestBase - **************verify_login_page_withValid_credsFinished***************
-[INFO ] 2024-02-26 15:31:30.053 [main] TestBase - Driver closed in invoked
-[INFO ] 2024-02-26 15:32:34.335 [main] TestBase - Initialize Web driver
-[INFO ] 2024-02-26 15:32:45.247 [main] TestBase - **************verify_login_page_withInValid_credsStarted***************
-[INFO ] 2024-02-26 15:32:48.460 [main] TestLogin - Username is Teshjhz@jhjd.comand Password has been passed87832
-[INFO ] 2024-02-26 15:32:49.431 [main] TestBase - **************verify_login_page_withInValid_credsFinished***************
-[INFO ] 2024-02-26 15:32:49.868 [main] TestBase - **************verify_login_page_withOut_usernameStarted***************
-[INFO ] 2024-02-26 15:32:53.209 [main] TestBase - **************verify_login_page_withOut_usernameFinished***************
-[INFO ] 2024-02-26 15:32:53.221 [main] TestBase - **************verify_login_page_withValid_credsStarted***************
-[INFO ] 2024-02-26 15:32:53.223 [main] TestLogin - Broswer has been invoked
-[INFO ] 2024-02-26 15:32:56.421 [main] TestLogin - Username and Password has been passed
-[INFO ] 2024-02-26 15:32:56.421 [main] TestLogin - agency@blueocean.net.my
-[INFO ] 2024-02-26 15:32:56.421 [main] TestLogin - asd123
-[INFO ] 2024-02-26 15:33:03.554 [main] TestLogin - Clicked on submit
-[INFO ] 2024-02-26 15:33:03.691 [main] TestBase - **************verify_login_page_withValid_credsFinished***************
-[INFO ] 2024-02-26 15:33:04.028 [main] TestBase - Driver closed in invoked
-[INFO ] 2024-02-26 15:34:33.204 [main] TestBase - Initialize Web driver
-[INFO ] 2024-02-26 15:34:35.994 [main] TestBase - **************verify_login_page_withInValid_credsStarted***************
-[INFO ] 2024-02-26 15:34:39.216 [main] TestLogin - Username is Teshjhz@jhjd.comand Password has been passed87832
-[INFO ] 2024-02-26 15:34:40.186 [main] TestBase - **************verify_login_page_withInValid_creds Finished***************
-[INFO ] 2024-02-26 15:34:40.516 [main] TestBase - **************verify_login_page_withOut_usernameStarted***************
-[INFO ] 2024-02-26 15:34:43.864 [main] TestBase - **************verify_login_page_withOut_username Finished***************
-[INFO ] 2024-02-26 15:34:43.879 [main] TestBase - **************verify_login_page_withValid_credsStarted***************
-[INFO ] 2024-02-26 15:34:43.882 [main] TestLogin - Broswer has been invoked
-[INFO ] 2024-02-26 15:34:47.126 [main] TestLogin - Username and Password has been passed
-[INFO ] 2024-02-26 15:34:47.127 [main] TestLogin - agency@blueocean.net.my
-[INFO ] 2024-02-26 15:34:47.127 [main] TestLogin - asd123
-[INFO ] 2024-02-26 15:34:53.697 [main] TestLogin - Clicked on submit
-[INFO ] 2024-02-26 15:34:53.819 [main] TestBase - **************verify_login_page_withValid_creds Finished***************
-[INFO ] 2024-02-26 15:34:54.191 [main] TestBase - Driver closed in invoked
-[INFO ] 2024-02-26 15:35:49.140 [main] TestBase - Initialize Web driver
-[INFO ] 2024-02-26 15:35:52.128 [main] TestBase - **************verify_login_page_withInValid_credsStarted***************
-[INFO ] 2024-02-26 15:35:55.379 [main] TestLogin - Username is Teshjhz@jhjd.comand Password has been passed87832
-[INFO ] 2024-02-26 15:35:56.326 [main] TestBase - **************verify_login_page_withInValid_creds Finished***************
-[INFO ] 2024-02-26 15:35:56.698 [main] TestBase - **************verify_login_page_withOut_usernameStarted***************
-[INFO ] 2024-02-26 15:36:00.098 [main] TestBase - **************verify_login_page_withOut_username Finished***************
-[INFO ] 2024-02-26 15:36:00.112 [main] TestBase - **************verify_login_page_withValid_credsStarted***************
-[INFO ] 2024-02-26 15:36:00.114 [main] TestLogin - Broswer has been invoked
-[INFO ] 2024-02-26 15:36:03.339 [main] TestLogin - Username and Password has been passed
-[INFO ] 2024-02-26 15:36:03.339 [main] TestLogin - agency@blueocean.net.my
-[INFO ] 2024-02-26 15:36:03.340 [main] TestLogin - asd123
-[INFO ] 2024-02-26 15:36:09.832 [main] TestLogin - Clicked on submit
-[INFO ] 2024-02-26 15:36:09.963 [main] TestBase - **************verify_login_page_withValid_creds Finished***************
-[INFO ] 2024-02-26 15:36:10.322 [main] TestBase - Driver closed in invoked
+[INFO ] 2024-02-27 14:06:26.837 [main] TestBase4 - Initialize Web driver: 855277727
+[INFO ] 2024-02-27 14:06:29.920 [main] TestBase4 - **************verify_login_page_withInValid_credsStarted***************
+[INFO ] 2024-02-27 14:06:34.070 [main] LoginTestCase - Username is Teshjhz@jhjd.comand Password has been passed87832
+[INFO ] 2024-02-27 14:06:36.291 [main] TestBase4 - **************verify_login_page_withInValid_credsFinished***************
+[INFO ] 2024-02-27 14:06:37.270 [main] TestBase4 - **************verify_login_page_withOut_usernameStarted***************
+[INFO ] 2024-02-27 14:06:42.989 [main] TestBase4 - **************verify_login_page_withOut_usernameFinished***************
+[INFO ] 2024-02-27 14:06:43.157 [main] TestBase4 - **************verify_login_page_withValid_credsStarted***************
+[INFO ] 2024-02-27 14:06:43.163 [main] LoginTestCase - Broswer has been invoked
+[INFO ] 2024-02-27 14:06:46.516 [main] LoginTestCase - Username and Password has been passed
+[INFO ] 2024-02-27 14:06:46.518 [main] LoginTestCase - agency@blueocean.net.my
+[INFO ] 2024-02-27 14:06:46.519 [main] LoginTestCase - asd123
+[INFO ] 2024-02-27 14:06:51.555 [main] LoginTestCase - Clicked on submit
+[INFO ] 2024-02-27 14:06:51.824 [main] TestBase4 - **************verify_login_page_withValid_credsFinished***************
+[INFO ] 2024-02-27 14:06:56.498 [main] TestBase4 - Initialize Web driver: 1163471607
+[INFO ] 2024-02-27 14:06:59.299 [main] TestBase4 - **************listBuyingCampaignStarted***************
+[INFO ] 2024-02-27 14:06:59.310 [main] Menu - Broswer has been invoked
+[INFO ] 2024-02-27 14:07:06.500 [main] Menu - Clicked on submit
+[INFO ] 2024-02-27 14:07:09.702 [main] Menu - Frame has been switched to TOP frame
+[INFO ] 2024-02-27 14:07:10.506 [main] Menu - Frame has been switched to Left frame
+[INFO ] 2024-02-27 14:07:12.235 [main] Menu - Frame has been switched to Right frame
+[INFO ] 2024-02-27 14:07:23.352 [main] MenuObjects -  Campaign code doesn't matches
+[INFO ] 2024-02-27 14:07:23.554 [main] TestBase4 - **************listBuyingCampaignFinished***************
+[INFO ] 2024-02-27 14:43:22.897 [main] TestBase4 - Initialize Web driver: 2022417982
+[INFO ] 2024-02-27 14:43:29.301 [main] TestBase4 - **************verify_login_page_withInValid_credsStarted***************
+[INFO ] 2024-02-27 14:43:33.064 [main] LoginTestCase - Username is Teshjhz@jhjd.comand Password has been passed87832
+[INFO ] 2024-02-27 14:43:35.214 [main] TestBase4 - **************verify_login_page_withInValid_credsFinished***************
+[INFO ] 2024-02-27 14:43:36.455 [main] TestBase4 - **************verify_login_page_withOut_usernameStarted***************
+[INFO ] 2024-02-27 14:43:40.951 [main] TestBase4 - **************verify_login_page_withOut_usernameFinished***************
+[INFO ] 2024-02-27 14:43:41.076 [main] TestBase4 - **************verify_login_page_withValid_credsStarted***************
+[INFO ] 2024-02-27 14:43:41.082 [main] LoginTestCase - Broswer has been invoked
+[INFO ] 2024-02-27 14:43:42.592 [main] LoginTestCase - Username and Password has been passed
+[INFO ] 2024-02-27 14:43:42.593 [main] LoginTestCase - agency@blueocean.net.my
+[INFO ] 2024-02-27 14:43:42.594 [main] LoginTestCase - asd123
+[INFO ] 2024-02-27 14:43:47.292 [main] LoginTestCase - Clicked on submit
+[INFO ] 2024-02-27 14:43:47.835 [main] TestBase4 - **************verify_login_page_withValid_credsFinished***************
+[INFO ] 2024-02-27 14:43:53.100 [main] TestBase4 - Initialize Web driver: 190550835
+[INFO ] 2024-02-27 14:43:55.817 [main] TestBase4 - **************listBuyingCampaignStarted***************
+[INFO ] 2024-02-27 14:43:55.831 [main] Menu - Broswer has been invoked
+[INFO ] 2024-02-27 14:44:02.780 [main] Menu - Clicked on submit
+[INFO ] 2024-02-27 14:44:05.866 [main] Menu - Frame has been switched to TOP frame
+[INFO ] 2024-02-27 14:44:06.101 [main] Menu - Frame has been switched to Left frame
+[INFO ] 2024-02-27 14:44:07.714 [main] Menu - Frame has been switched to Right frame
+[INFO ] 2024-02-27 14:44:22.902 [main] MenuObjects -  Campaign code doesn't matches
+[INFO ] 2024-02-27 14:44:23.111 [main] TestBase4 - **************listBuyingCampaignFinished***************

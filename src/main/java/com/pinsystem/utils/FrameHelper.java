@@ -23,4 +23,8 @@ private WebDriver driver;
 	public void switchToFrame(WebElement element) {
 		driver.switchTo().frame(element);
 	}
+	
+	public void switchTodefault() {
+		driver.switchTo().defaultContent();
+	}
 }
