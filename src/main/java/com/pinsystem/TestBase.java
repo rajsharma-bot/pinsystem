@@ -21,6 +21,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.pinsystem.utils.ExtentManager;
+import com.pinsystem.utils.ObjectReader;
+import com.pinsystem.utils.PropertyReader;
 import com.pinsystem.utils.ScreenshotUtility;
 import com.pinsystem.utils.WaitHelper;
 
@@ -77,27 +79,21 @@ public class TestBase {
 	}
 
 	public void startUp() throws IOException {
-		FileReader reader = new FileReader("src/main/resources/configfile/config.properties");
-		Properties props = new Properties();
-		props.load(reader);
+		ObjectReader.reader = new PropertyReader();
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		WaitHelper wh= new WaitHelper(driver);
-		int timeout= Integer.parseInt(props.getProperty("implicitwait"));
-		int pageload= Integer.parseInt(props.getProperty("pageloadtime"));
+		WaitHelper wh = new WaitHelper(driver);
 		log.info("Initialize Web driver: " + driver.hashCode());
-		wh.setImplicitWait(timeout);
-		wh.pageLoadTime(pageload);
+		wh.setImplicitWait(ObjectReader.reader.getExplicitWait());
+		wh.pageLoadTime(ObjectReader.reader.getPageLoadTime());
 		getApplicationUrl();
-		//driver.manage().window().maximize();
+		// driver.manage().window().maximize();
 
 	}
 
 	public void getApplicationUrl() throws IOException {
-		FileReader reader = new FileReader("src/main/resources/configfile/config.properties");
-		Properties props = new Properties();
-		props.load(reader);
-		driver.get(props.getProperty("applicationUrl"));
+		ObjectReader.reader = new PropertyReader();
+		driver.get(ObjectReader.reader.getUrl());
 
 	}
 

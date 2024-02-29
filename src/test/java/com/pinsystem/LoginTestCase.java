@@ -12,10 +12,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.pinsystem.pageObjects.LoginObjects;
+import com.pinsystem.utils.ObjectReader;
+import com.pinsystem.utils.PropertyReader;
 
 public class LoginTestCase extends TestBase {
-
-	
 
 	private static Logger log = LogManager.getLogger(LoginTestCase.class);
 
@@ -23,39 +23,27 @@ public class LoginTestCase extends TestBase {
 	public void verify_login_page_withValid_creds() throws InterruptedException, IOException {
 
 		String text = "PIN System";
-		FileReader reader = new FileReader("src/main/resources/configfile/config.properties");
-		Properties props = new Properties();
-		props.load(reader);
+		ObjectReader.reader = new PropertyReader();
 		LoginObjects lg = new LoginObjects(driver);
 		log.info("Broswer has been invoked");
-		
-		lg.login(props.getProperty("username"), props.getProperty("password"));
-		log.info("Username and Password has been passed");
-		log.info(props.getProperty("username"));
-		log.info(props.getProperty("password"));
+
+		lg.login(ObjectReader.reader.getUserName(), ObjectReader.reader.getPassword());
 		lg.remMe();
 		lg.submit();
-		
+
 		log.info("Clicked on submit");
 		String title = lg.loginSuccess();
 		Assert.assertEquals(title, text);
-		
-		
-
 
 	}
 
 	@Test(description = "PINSYS-1755 : Verifying login with invalid username and password")
 	public void verify_login_page_withInValid_creds() throws InterruptedException, IOException {
 
-		FileReader reader = new FileReader("src/main/resources/configfile/config.properties");
-		Properties props = new Properties();
-		props.load(reader);
+		ObjectReader.reader = new PropertyReader();
 		LoginObjects lg = new LoginObjects(driver);
-		Thread.sleep(3000);
-		lg.login(props.getProperty("invalidUsername"), props.getProperty("invalidPassword"));
-		log.info("Username is " + props.getProperty("invalidUsername") + "and Password has been passed"
-				+ props.getProperty("invalidPassword"));
+
+		lg.login(ObjectReader.reader.invalidUsername(), ObjectReader.reader.invalidPassword());
 		lg.submit();
 		assertEquals(lg.errorIsDisplayed(), true);
 
@@ -64,15 +52,13 @@ public class LoginTestCase extends TestBase {
 	@Test(description = "PINSYS-1755 : Verifying login with invalid username")
 	public void verify_login_page_withOut_username() throws IOException, InterruptedException {
 
-		FileReader reader = new FileReader("src/main/resources/configfile/config.properties");
-		Properties props = new Properties();
-		props.load(reader);
+		ObjectReader.reader = new PropertyReader();
 		LoginObjects lg = new LoginObjects(driver);
 		Thread.sleep(3000);
-		lg.userName(props.getProperty("username"));
+		lg.userName(ObjectReader.reader.getUserName());
 		lg.submit();
 		Assert.assertEquals(lg.errorIsDisplayed(), true);
-		
+
 	}
 
 }
