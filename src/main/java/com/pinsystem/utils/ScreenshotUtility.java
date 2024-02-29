@@ -13,27 +13,22 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 public class ScreenshotUtility {
-	
+
 	private static Logger log = LogManager.getLogger(ScreenshotUtility.class);
 
-	//private WebDriver driver;
-
-//	public ScreenshotUtility(WebDriver driver) {
-//		this.driver = driver;
-//	}
-
 	public static void captureScreenshot(WebDriver driver, String screenshotName) {
-        File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        String screenshotDirectory = "screenshots/";
-        String screenshotPath = screenshotDirectory + screenshotName + "_" + timeStamp + ".png";
-        File destinationFile = new File(screenshotPath);
+		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+		String screenshotDirectory = ResourceHelper.getResourcePath("src/main/resources/screenShots");
+		String screenshotPath = screenshotDirectory + "/" + screenshotName + "_" + timeStamp + ".png";
+		File destinationFile = new File(screenshotPath);
 
-        try {
-            FileUtils.copyFile(screenshotFile, destinationFile);
-            System.out.println("Screenshot saved as: " + destinationFile.getAbsolutePath());
-        } catch (IOException e) {
-            System.out.println("Failed to capture screenshot: " + e.getMessage());
-        }
-}
+		try {
+			FileUtils.copyFile(screenshotFile, destinationFile);
+			System.out.println("Screenshot saved as: " + destinationFile.getAbsolutePath());
+		} catch (IOException e) {
+			System.out.println("Failed to capture screenshot: " + e.getMessage());
+		}
+		log.info("Screenshot has been captured");
+	}
 }

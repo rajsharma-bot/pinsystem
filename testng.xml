@@ -4,7 +4,7 @@
   <test thread-count="1" name="Test">
     <classes>
       <class name="com.pinsystem.LoginTestCase"/>
-      <class name="com.pinsystem.Menu"/>
+      <class name="com.pinsystem.NavigateToCampaignMenuTabs"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

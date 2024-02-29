@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import com.pinsystem.pageObjects.LoginObjects;
 
-public class LoginTestCase extends TestBase4 {
+public class LoginTestCase extends TestBase {
 
 	
 

@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pinsystem.LoginTestCase">
+      <class name="com.pinsystem.TestClass">
         <methods>
-          <include name="verify_login_page_withValid_creds"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
+          <include name="BeforeClass"/>
+          <include name="SampleRunner"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.pinsystem.LoginTestCase -->
+      </class> <!-- com.pinsystem.TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

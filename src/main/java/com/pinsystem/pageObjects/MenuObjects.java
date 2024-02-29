@@ -14,17 +14,18 @@ public class MenuObjects {
 		this.driver = driver;
 	}
 	
-	public void ClickMenu() {
-		driver.findElement(MenuPageObjects.module).click();
-	}
+	
 	
 	public void ListCampaign_page() {
 		driver.findElement(MenuPageObjects.ListCampaign).click();
 	}
 	
 	public void List_BuyingCampaign() {
+		log.info("Switched to Buying Tab");
 		driver.findElement(MenuPageObjects.BuyingCampaignList).click();
 	}
+	
+	
 
 	public void openingRecord() {
 		driver.findElement(MenuPageObjects.recordOpen).click();
