@@ -2,8 +2,8 @@ package com.pinsystem.pageObjects;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class MenuObjects {
 
@@ -14,7 +14,7 @@ public class MenuObjects {
 	public MenuObjects(WebDriver driver) {
 		this.driver = driver;
 	}
-	
+
 	/**
 	 * Element for List Campaign
 	 */
@@ -51,12 +51,11 @@ public class MenuObjects {
 	/**
 	 * Element for List Schedule
 	 */
-	
+
 	public void ListSchedule_page() {
 		log.info("List Schedule has been clicked");
 		driver.findElement(MenuPageObjects.ListSchedule).click();
 	}
-	
 
 	public void ConfirmedS_Tab() {
 		log.info("Switched to Confirmed Tab");
@@ -67,7 +66,7 @@ public class MenuObjects {
 		log.info("Switched to Pending Tab");
 		driver.findElement(MenuPageObjects.Pending_Tab).click();
 	}
-	
+
 	public void CancelledS_Tab() {
 		log.info("Switched to Cancelled Tab");
 		driver.findElement(MenuPageObjects.Cancelled_Tab).click();
@@ -78,9 +77,6 @@ public class MenuObjects {
 		driver.findElement(MenuPageObjects.Revision_Tab).click();
 	}
 
-	
-
-	
 	/**
 	 * Element for List MO
 	 */
@@ -89,40 +85,64 @@ public class MenuObjects {
 		log.info("List MO has been Clicked");
 		driver.findElement(MenuPageObjects.ListMO).click();
 	}
-	
+
 	public void ConfirmedMO_Tab() {
 		log.info("Switched to Confirm MO Tab");
-		driver.findElement(MenuPageObjects.Confirmed_Tab).click();
+		driver.findElement(MenuPageObjects.ConfirmedMO_Tab).click();
 	}
 
 	public void PendingMO_Tab() {
 		log.info("Switched to Pending MO Tab");
-		driver.findElement(MenuPageObjects.Pending_Tab).click();
+		driver.findElement(MenuPageObjects.PendingMO_Tab).click();
 	}
-	
+
 	public void CancelledMO_Tab() {
 		log.info("Switched to Cancelled MO Tab");
-		driver.findElement(MenuPageObjects.Cancelled_Tab).click();
-	}
-	
-	
-	
-	
-	
-	
-	public void openingRecord() {
-		driver.findElement(MenuPageObjects.recordOpen).click();
+		driver.findElement(MenuPageObjects.CancelledMO_Tab).click();
 	}
 
-	public boolean campaignCode(String campaignCode) {
-		String CampaignNumber = driver.findElement(MenuPageObjects.CampaignCode).getText();
+	/**
+	 * @category= Search Schedule Page
+	 * 
+	 * @return
+	 */
 
-		if (campaignCode == CampaignNumber) {
-			log.info("Both Campaign code matches");
-			return true;
-		} else
-			log.info(" Campaign code doesn't matches");
-		return false;
+	public WebElement monthDll() {
+		WebElement dropDownMonth = driver.findElement(MenuPageObjects.monthDll);
+		return dropDownMonth;
 
 	}
+
+	public WebElement yearDll() {
+		WebElement dropDownYear = driver.findElement(MenuPageObjects.yearDll);
+		return dropDownYear;
+
+	}
+
+	public void searchSchedule(String ScheduleNo) {
+		log.info("Clicked on free text");
+		driver.findElement(MenuPageObjects.searchText).click();
+		log.info("Passing shedule no");
+		driver.findElement(MenuPageObjects.searchText).sendKeys(ScheduleNo);
+		log.info("Schedule no is passed");
+	}
+
+	public void findButton() {
+		log.info("Clicked  on find button");
+		driver.findElement(MenuPageObjects.findButton).click();
+
+	}
+
+	public void clickOnRecord() {
+		driver.findElement(MenuPageObjects.SearchSchedule).click();
+		log.info("Clicked on searched record");
+	}
+
+	public boolean tabText() {
+		boolean d = driver.findElement(MenuPageObjects.SearchSchedule).isDisplayed();
+		log.info(d);
+		return d;
+	}
+
+
 }

@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import com.pinsystem.pageObjects.HomeNavigationObjects;
 import com.pinsystem.pageObjects.LoginObjects;
 import com.pinsystem.pageObjects.MenuObjects;
+import com.pinsystem.utils.DropDownHelper;
 import com.pinsystem.utils.FrameHelper;
 import com.pinsystem.utils.ObjectReader;
 import com.pinsystem.utils.PropertyReader;
@@ -18,16 +19,15 @@ public class NavigateToCampaignMenuTabs extends TestBase {
 
 	private static Logger log = LogManager.getLogger(NavigateToCampaignMenuTabs.class);
 
-	@Test(description = "Navigation To List Campaign All Tabs")
+	@Test(description = "Navigation To List Campaign All Tabs", priority =0)
 	public void NavigationToListCampaignAllTabs() throws IOException, InterruptedException {
 
 		ObjectReader.reader = new PropertyReader();
-		LoginObjects lg = new LoginObjects(driver);
 		FrameHelper fh = new FrameHelper(driver);
 		MenuObjects Mo = new MenuObjects(driver);
 		HomeNavigationObjects HN = new HomeNavigationObjects(driver);
-		lg.login(ObjectReader.reader.getUserName(), ObjectReader.reader.getPassword());
-		lg.submit();
+		LoginClass lc= new LoginClass(driver);
+		lc.loginRunner();
 		fh.switchToFrame(ObjectReader.reader.topframe());
 		HN.MEDIA();
 		Assert.assertEquals(true, HN.MEDIA(ObjectReader.reader.MEDIA()));
@@ -58,17 +58,26 @@ public class NavigateToCampaignMenuTabs extends TestBase {
 		Mo.RevisionS_Tab();
 		Mo.CancelledS_Tab();
 		Mo.PendingS_Tab();
-		
+		fh.switchTodefault();
+
+	}
+	
+	
+	@Test(dependsOnMethods = "navigateToListScheduleTab", description = "Navigation To List MO All Tabs")
+	public void navigateToListMO() {
+		ObjectReader.reader = new PropertyReader();
+		FrameHelper fh = new FrameHelper(driver);
+		MenuObjects Mo = new MenuObjects(driver);
+		fh.switchTodefault();
+		fh.switchToFrame(ObjectReader.reader.leftframe());
+		Mo.ListMO_page();
+		fh.switchTodefault();
+		fh.switchToFrame(ObjectReader.reader.rightframe());
+		Mo.CancelledMO_Tab();
+		Mo.ConfirmedMO_Tab();
+		Mo.PendingMO_Tab();
+
 	}
 
 	
-	@Test(dependsOnMethods = "navigateToListScheduleTab", description = "Navigation To List MO All Tabs")
-	public void navigateToListAA() {
-		//code
-	}
-	
-	@Test(dependsOnMethods = "navigateToListScheduleTab", description = "Navigation To List MO All Tabs", priority = 2)
-	public void searchSchedule() {
-		//code
-	}
 }

@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,7 +109,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.pinsystem.NavigateToCampaignMenuTabs" class="method navigator-link" hash-for-method="navigateToListMO">navigateToListMO</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.pinsystem.NavigateToCampaignMenuTabs" class="method navigator-link" hash-for-method="navigateToListScheduleTab">navigateToListScheduleTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.pinsystem.SearchRecords" class="method navigator-link" hash-for-method="searchSchedule">searchSchedule</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -139,6 +149,23 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pinsystem.SearchRecords</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchSchedule">
+                  </a> <!-- searchSchedule -->
+                  <span class="method-name">searchSchedule</span>
+                  <em>
+(Search Schedule)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -191,6 +218,15 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="navigateToListMO">
+                  </a> <!-- navigateToListMO -->
+                  <span class="method-name">navigateToListMO</span>
+                  <em>
+(Navigation To List MO All Tabs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="navigateToListScheduleTab">
                   </a> <!-- navigateToListScheduleTab -->
                   <span class="method-name">navigateToListScheduleTab</span>
@@ -214,6 +250,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;com.pinsystem.LoginTestCase&quot;/&gt;
       &lt;class name=&quot;com.pinsystem.NavigateToCampaignMenuTabs&quot;/&gt;
+      &lt;class name=&quot;com.pinsystem.SearchRecords&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -227,7 +264,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -253,32 +290,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'NavigationToListCampaignAllTabs')
-data.setCell(0, 2, 'com.pinsystem.NavigateToCampaignMenuTabs')
-data.setCell(0, 3, 41452);
+data.setCell(0, 1, 'searchSchedule')
+data.setCell(0, 2, 'com.pinsystem.SearchRecords')
+data.setCell(0, 3, 117032);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verify_login_page_withValid_creds')
-data.setCell(1, 2, 'com.pinsystem.LoginTestCase')
-data.setCell(1, 3, 5463);
+data.setCell(1, 1, 'NavigationToListCampaignAllTabs')
+data.setCell(1, 2, 'com.pinsystem.NavigateToCampaignMenuTabs')
+data.setCell(1, 3, 59023);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify_login_page_withOut_username')
+data.setCell(2, 1, 'verify_login_page_withValid_creds')
 data.setCell(2, 2, 'com.pinsystem.LoginTestCase')
-data.setCell(2, 3, 3776);
+data.setCell(2, 3, 6008);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verify_login_page_withInValid_creds')
+data.setCell(3, 1, 'verify_login_page_withOut_username')
 data.setCell(3, 2, 'com.pinsystem.LoginTestCase')
-data.setCell(3, 3, 3529);
+data.setCell(3, 3, 3495);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'navigateToListScheduleTab')
+data.setCell(4, 1, 'navigateToListMO')
 data.setCell(4, 2, 'com.pinsystem.NavigateToCampaignMenuTabs')
-data.setCell(4, 3, 3117);
+data.setCell(4, 3, 2367);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verify_login_page_withInValid_creds')
+data.setCell(5, 2, 'com.pinsystem.LoginTestCase')
+data.setCell(5, 3, 2312);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'navigateToListScheduleTab')
+data.setCell(6, 2, 'com.pinsystem.NavigateToCampaignMenuTabs')
+data.setCell(6, 3, 2083);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 57 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -293,9 +338,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.pinsystem.SearchRecords</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.pinsystem.NavigateToCampaignMenuTabs</span>
               <div class="ignored-methods-div">
@@ -318,82 +370,117 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">BeforeClass</span>
-                <span class="method-start">1079 ms</span>
+                <span class="method-start">604 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.pinsystem.LoginTestCase.verify_login_page_withInValid_creds() throws java.lang.Inter...)</span>
-                <span class="method-start">21149 ms</span>
+                <span class="method-start">11493 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_login_page_withInValid_creds</span>
-                <span class="method-start">21215 ms</span>
+                <span class="method-start">11507 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verify_login_page_withInValid_creds status=SUCCESS method=LoginTestCase.verify_logi...)</span>
-                <span class="method-start">24764 ms</span>
+                <span class="method-start">13828 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.pinsystem.LoginTestCase.verify_login_page_withOut_username() throws java.io.IOExcept...)</span>
-                <span class="method-start">33174 ms</span>
+                <span class="method-start">15625 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_login_page_withOut_username</span>
-                <span class="method-start">33180 ms</span>
+                <span class="method-start">15627 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verify_login_page_withOut_username status=SUCCESS method=LoginTestCase.verify_login...)</span>
-                <span class="method-start">36961 ms</span>
+                <span class="method-start">19124 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.pinsystem.LoginTestCase.verify_login_page_withValid_creds() throws java.lang.Interru...)</span>
-                <span class="method-start">37470 ms</span>
+                <span class="method-start">19460 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_login_page_withValid_creds</span>
-                <span class="method-start">37471 ms</span>
+                <span class="method-start">19462 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verify_login_page_withValid_creds status=SUCCESS method=LoginTestCase.verify_login_...)</span>
-                <span class="method-start">42941 ms</span>
+                <span class="method-start">25473 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">44355 ms</span>
+                <span class="method-start">26147 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.pinsystem.NavigateToCampaignMenuTabs</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">BeforeClass</span>
-                <span class="method-start">46859 ms</span>
+                <span class="method-start">27387 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.pinsystem.NavigateToCampaignMenuTabs.NavigationToListCampaignAllTabs() throws java.i...)</span>
-                <span class="method-start">56186 ms</span>
+                <span class="method-start">39317 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">NavigationToListCampaignAllTabs</span>
-                <span class="method-start">56189 ms</span>
+                <span class="method-start">39318 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=NavigationToListCampaignAllTabs status=SUCCESS method=NavigateToCampaignMenuTabs.Na...)</span>
-                <span class="method-start">97645 ms</span>
+                <span class="method-start">98343 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.pinsystem.NavigateToCampaignMenuTabs.navigateToListScheduleTab())</span>
-                <span class="method-start">98223 ms</span>
+                <span class="method-start">98730 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">navigateToListScheduleTab</span>
-                <span class="method-start">98226 ms</span>
+                <span class="method-start">98731 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=navigateToListScheduleTab status=SUCCESS method=NavigateToCampaignMenuTabs.navigate...)</span>
-                <span class="method-start">101345 ms</span>
+                <span class="method-start">100816 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.pinsystem.NavigateToCampaignMenuTabs.navigateToListMO())</span>
+                <span class="method-start">101111 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToListMO</span>
+                <span class="method-start">101113 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=navigateToListMO status=SUCCESS method=NavigateToCampaignMenuTabs.navigateToListMO(...)</span>
+                <span class="method-start">103481 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">101991 ms</span>
+                <span class="method-start">103780 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pinsystem.SearchRecords</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">BeforeClass</span>
+                <span class="method-start">104492 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.pinsystem.SearchRecords.searchSchedule() throws java.lang.InterruptedException)</span>
+                <span class="method-start">113276 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchSchedule</span>
+                <span class="method-start">113279 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=searchSchedule status=SUCCESS method=SearchRecords.searchSchedule()[pri:0, instance...)</span>
+                <span class="method-start">230315 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">231844 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

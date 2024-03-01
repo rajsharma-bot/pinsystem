@@ -5,6 +5,7 @@
     <classes>
       <class name="com.pinsystem.LoginTestCase"/>
       <class name="com.pinsystem.NavigateToCampaignMenuTabs"/>
+      <class name="com.pinsystem.SearchRecords"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

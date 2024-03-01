@@ -1,17 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="6" passed="5" failed="0" skipped="0">
+<testng-results ignored="2" total="9" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T18:20:34 IST" name="Suite" finished-at="2024-02-29T18:22:17 IST" duration-ms="102582">
+  <suite started-at="2024-03-01T16:15:37 IST" name="Suite" finished-at="2024-03-01T16:19:29 IST" duration-ms="232528">
     <groups>
     </groups>
-    <test started-at="2024-02-29T18:20:34 IST" name="Test" finished-at="2024-02-29T18:22:17 IST" duration-ms="102582">
-      <class name="com.pinsystem.NavigateToCampaignMenuTabs">
-        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@67af833b]" started-at="2024-02-29T18:21:20 IST" name="BeforeClass" finished-at="2024-02-29T18:21:29 IST" duration-ms="9325" status="PASS">
+    <test started-at="2024-03-01T16:15:37 IST" name="Test" finished-at="2024-03-01T16:19:29 IST" duration-ms="232528">
+      <class name="com.pinsystem.SearchRecords">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.SearchRecords@21a5fd96]" started-at="2024-03-01T16:17:21 IST" name="BeforeClass" finished-at="2024-03-01T16:17:29 IST" duration-ms="8783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@67af833b]" started-at="2024-02-29T18:21:29 IST" name="beforeMethod" finished-at="2024-02-29T18:21:29 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.SearchRecords@21a5fd96]" started-at="2024-03-01T16:17:29 IST" name="beforeMethod" finished-at="2024-03-01T16:17:29 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pinsystem.SearchRecords.searchSchedule() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="searchSchedule()[pri:0, instance:com.pinsystem.SearchRecords@21a5fd96]" started-at="2024-03-01T16:17:29 IST" name="searchSchedule" description="Search Schedule" finished-at="2024-03-01T16:19:26 IST" duration-ms="117032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSchedule -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.SearchRecords@21a5fd96]" started-at="2024-03-01T16:19:26 IST" name="afterMethod" finished-at="2024-03-01T16:19:28 IST" duration-ms="1529" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchSchedule status=SUCCESS method=SearchRecords.searchSchedule()[pri:0, instance:com.pinsystem.SearchRecords@21a5fd96] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.SearchRecords@21a5fd96]" started-at="2024-03-01T16:19:28 IST" name="afterClass" finished-at="2024-03-01T16:19:29 IST" duration-ms="1249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.pinsystem.SearchRecords -->
+      <class name="com.pinsystem.NavigateToCampaignMenuTabs">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@3a0807b7]" started-at="2024-03-01T16:16:03 IST" name="BeforeClass" finished-at="2024-03-01T16:16:15 IST" duration-ms="11929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@3a0807b7]" started-at="2024-03-01T16:16:15 IST" name="beforeMethod" finished-at="2024-03-01T16:16:15 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,22 +58,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="NavigationToListCampaignAllTabs()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@67af833b]" started-at="2024-02-29T18:21:29 IST" name="NavigationToListCampaignAllTabs" description="Navigation To List Campaign All Tabs" finished-at="2024-02-29T18:22:11 IST" duration-ms="41452" status="PASS">
+        <test-method signature="NavigationToListCampaignAllTabs()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@3a0807b7]" started-at="2024-03-01T16:16:15 IST" name="NavigationToListCampaignAllTabs" description="Navigation To List Campaign All Tabs" finished-at="2024-03-01T16:17:14 IST" duration-ms="59023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigationToListCampaignAllTabs -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@67af833b]" started-at="2024-02-29T18:22:11 IST" name="afterMethod" finished-at="2024-02-29T18:22:12 IST" duration-ms="575" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@3a0807b7]" started-at="2024-03-01T16:17:14 IST" name="afterMethod" finished-at="2024-03-01T16:17:15 IST" duration-ms="384" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=NavigationToListCampaignAllTabs status=SUCCESS method=NavigateToCampaignMenuTabs.NavigationToListCampaignAllTabs()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@67af833b] output={null}]]]>
+                <![CDATA[[TestResult name=NavigationToListCampaignAllTabs status=SUCCESS method=NavigateToCampaignMenuTabs.NavigationToListCampaignAllTabs()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@3a0807b7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@67af833b]" started-at="2024-02-29T18:22:12 IST" name="beforeMethod" finished-at="2024-02-29T18:22:12 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@3a0807b7]" started-at="2024-03-01T16:17:15 IST" name="beforeMethod" finished-at="2024-03-01T16:17:15 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,36 +84,62 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="navigateToListScheduleTab()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@67af833b]" started-at="2024-02-29T18:22:12 IST" name="navigateToListScheduleTab" description="Navigation To List Schedule All Tabs" finished-at="2024-02-29T18:22:15 IST" depends-on-methods="com.pinsystem.NavigateToCampaignMenuTabs.NavigationToListCampaignAllTabs" duration-ms="3117" status="PASS">
+        <test-method signature="navigateToListScheduleTab()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@3a0807b7]" started-at="2024-03-01T16:17:15 IST" name="navigateToListScheduleTab" description="Navigation To List Schedule All Tabs" finished-at="2024-03-01T16:17:17 IST" depends-on-methods="com.pinsystem.NavigateToCampaignMenuTabs.NavigationToListCampaignAllTabs" duration-ms="2083" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToListScheduleTab -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@67af833b]" started-at="2024-02-29T18:22:15 IST" name="afterMethod" finished-at="2024-02-29T18:22:15 IST" duration-ms="645" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@3a0807b7]" started-at="2024-03-01T16:17:17 IST" name="afterMethod" finished-at="2024-03-01T16:17:17 IST" duration-ms="294" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=navigateToListScheduleTab status=SUCCESS method=NavigateToCampaignMenuTabs.navigateToListScheduleTab()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@67af833b] output={null}]]]>
+                <![CDATA[[TestResult name=navigateToListScheduleTab status=SUCCESS method=NavigateToCampaignMenuTabs.navigateToListScheduleTab()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@3a0807b7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@67af833b]" started-at="2024-02-29T18:22:15 IST" name="afterClass" finished-at="2024-02-29T18:22:17 IST" duration-ms="1613" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@3a0807b7]" started-at="2024-03-01T16:17:17 IST" name="beforeMethod" finished-at="2024-03-01T16:17:17 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pinsystem.NavigateToCampaignMenuTabs.navigateToListMO()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="navigateToListMO()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@3a0807b7]" started-at="2024-03-01T16:17:17 IST" name="navigateToListMO" description="Navigation To List MO All Tabs" finished-at="2024-03-01T16:17:20 IST" depends-on-methods="com.pinsystem.NavigateToCampaignMenuTabs.navigateToListScheduleTab" duration-ms="2367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToListMO -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@3a0807b7]" started-at="2024-03-01T16:17:20 IST" name="afterMethod" finished-at="2024-03-01T16:17:20 IST" duration-ms="298" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateToListMO status=SUCCESS method=NavigateToCampaignMenuTabs.navigateToListMO()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@3a0807b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@3a0807b7]" started-at="2024-03-01T16:17:20 IST" name="afterClass" finished-at="2024-03-01T16:17:21 IST" duration-ms="711" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.pinsystem.NavigateToCampaignMenuTabs -->
       <class name="com.pinsystem.LoginTestCase">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1]" started-at="2024-02-29T18:20:33 IST" name="beforeSuite" finished-at="2024-02-29T18:20:34 IST" duration-ms="1019" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471]" started-at="2024-03-01T16:15:36 IST" name="beforeSuite" finished-at="2024-03-01T16:15:37 IST" duration-ms="563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1]" started-at="2024-02-29T18:20:34 IST" name="BeforeClass" finished-at="2024-02-29T18:20:54 IST" duration-ms="19887" status="PASS">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471]" started-at="2024-03-01T16:15:37 IST" name="BeforeClass" finished-at="2024-03-01T16:15:48 IST" duration-ms="10858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1]" started-at="2024-02-29T18:20:54 IST" name="beforeMethod" finished-at="2024-02-29T18:20:54 IST" duration-ms="47" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471]" started-at="2024-03-01T16:15:48 IST" name="beforeMethod" finished-at="2024-03-01T16:15:48 IST" duration-ms="13" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,22 +150,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verify_login_page_withInValid_creds()[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1]" started-at="2024-02-29T18:20:55 IST" name="verify_login_page_withInValid_creds" description="PINSYS-1755 : Verifying login with invalid username and password" finished-at="2024-02-29T18:20:58 IST" duration-ms="3529" status="PASS">
+        <test-method signature="verify_login_page_withInValid_creds()[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471]" started-at="2024-03-01T16:15:48 IST" name="verify_login_page_withInValid_creds" description="PINSYS-1755 : Verifying login with invalid username and password" finished-at="2024-03-01T16:15:50 IST" duration-ms="2312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login_page_withInValid_creds -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1]" started-at="2024-02-29T18:20:58 IST" name="afterMethod" finished-at="2024-02-29T18:21:06 IST" duration-ms="8407" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471]" started-at="2024-03-01T16:15:50 IST" name="afterMethod" finished-at="2024-03-01T16:15:52 IST" duration-ms="1795" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_login_page_withInValid_creds status=SUCCESS method=LoginTestCase.verify_login_page_withInValid_creds()[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1] output={null}]]]>
+                <![CDATA[[TestResult name=verify_login_page_withInValid_creds status=SUCCESS method=LoginTestCase.verify_login_page_withInValid_creds()[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1]" started-at="2024-02-29T18:21:06 IST" name="beforeMethod" finished-at="2024-02-29T18:21:06 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471]" started-at="2024-03-01T16:15:52 IST" name="beforeMethod" finished-at="2024-03-01T16:15:52 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,22 +176,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verify_login_page_withOut_username()[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1]" started-at="2024-02-29T18:21:06 IST" name="verify_login_page_withOut_username" description="PINSYS-1755 : Verifying login with invalid username" finished-at="2024-02-29T18:21:10 IST" duration-ms="3776" status="PASS">
+        <test-method signature="verify_login_page_withOut_username()[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471]" started-at="2024-03-01T16:15:52 IST" name="verify_login_page_withOut_username" description="PINSYS-1755 : Verifying login with invalid username" finished-at="2024-03-01T16:15:55 IST" duration-ms="3495" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login_page_withOut_username -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1]" started-at="2024-02-29T18:21:10 IST" name="afterMethod" finished-at="2024-02-29T18:21:11 IST" duration-ms="508" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471]" started-at="2024-03-01T16:15:55 IST" name="afterMethod" finished-at="2024-03-01T16:15:56 IST" duration-ms="335" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_login_page_withOut_username status=SUCCESS method=LoginTestCase.verify_login_page_withOut_username()[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1] output={null}]]]>
+                <![CDATA[[TestResult name=verify_login_page_withOut_username status=SUCCESS method=LoginTestCase.verify_login_page_withOut_username()[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1]" started-at="2024-02-29T18:21:11 IST" name="beforeMethod" finished-at="2024-02-29T18:21:11 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471]" started-at="2024-03-01T16:15:56 IST" name="beforeMethod" finished-at="2024-03-01T16:15:56 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -140,22 +202,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verify_login_page_withValid_creds()[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1]" started-at="2024-02-29T18:21:11 IST" name="verify_login_page_withValid_creds" description="PINSYS-1755 : Verifying login with valid username and password" finished-at="2024-02-29T18:21:16 IST" duration-ms="5463" status="PASS">
+        <test-method signature="verify_login_page_withValid_creds()[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471]" started-at="2024-03-01T16:15:56 IST" name="verify_login_page_withValid_creds" description="PINSYS-1755 : Verifying login with valid username and password" finished-at="2024-03-01T16:16:02 IST" duration-ms="6008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login_page_withValid_creds -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1]" started-at="2024-02-29T18:21:16 IST" name="afterMethod" finished-at="2024-02-29T18:21:18 IST" duration-ms="1412" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471]" started-at="2024-03-01T16:16:02 IST" name="afterMethod" finished-at="2024-03-01T16:16:02 IST" duration-ms="672" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_login_page_withValid_creds status=SUCCESS method=LoginTestCase.verify_login_page_withValid_creds()[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1] output={null}]]]>
+                <![CDATA[[TestResult name=verify_login_page_withValid_creds status=SUCCESS method=LoginTestCase.verify_login_page_withValid_creds()[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.LoginTestCase@fff25f1]" started-at="2024-02-29T18:21:18 IST" name="afterClass" finished-at="2024-02-29T18:21:20 IST" duration-ms="2499" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.LoginTestCase@2ca47471]" started-at="2024-03-01T16:16:02 IST" name="afterClass" finished-at="2024-03-01T16:16:03 IST" duration-ms="1236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
