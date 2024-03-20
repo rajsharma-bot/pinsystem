@@ -25,9 +25,13 @@ public class ExtentManager {
 		htmlReporter.config().setEncoding("utf-8");
 		htmlReporter.config().setReportName("PIN Automation Report");
 		htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
+		
 
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
+		
+		extent.setSystemInfo("QA", System.getProperty("user.name"));
+		extent.setSystemInfo("Enviroment", "DevBr");
 		return extent;
 
 	}

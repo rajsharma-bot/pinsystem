@@ -79,5 +79,11 @@ public class NavigateToCampaignMenuTabs extends TestBase {
 
 	}
 
+	@Test(dependsOnMethods = "navigateToListMO", description = "Navigation To List MO All Tabs")
+	public void navigateToListAA() {
+		
+		
+		
+	}
 	
 }

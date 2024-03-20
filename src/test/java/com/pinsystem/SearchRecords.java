@@ -36,12 +36,6 @@ public class SearchRecords extends TestBase {
 		Mo.searchSchedule("TEST123EIRW/I/2400062");
 		Mo.findButton();
 		Mo.ConfirmedS_Tab();
-		Mo.clickOnRecord();
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.topframe());
-		HN.Logout();
-		
-		
+		Mo.clickOnRecord();			
 	}
-
 }

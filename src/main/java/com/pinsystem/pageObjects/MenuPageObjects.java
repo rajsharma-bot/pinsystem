@@ -9,7 +9,7 @@ public class MenuPageObjects {
 
 	public static By ListCampaign = By.id("mnu2_2");
 	public static By ListSchedule = By.id("mnu2_3");
-	public static By ListMO = By.xpath("//td[@id='mnu2_4']"); //// td[@id='mnu2_4']
+	public static By ListMO = By.xpath("//td[@id='mnu2_4']"); 
 
 	/**
 	 * Element for ListCampaig Tabs
@@ -46,13 +46,13 @@ public class MenuPageObjects {
 	public static By yearDll = By.xpath("//select[@id='ddlYear']");
 	public static By searchBY = By.xpath("//select[@id='ddlItem']");
 	public static By searchText = By.xpath("//input[@id='txtClientName']");
-	// public static By findClick = By.xpath("//input[@id='btnFind']");
 	public static By findButton = By.id("btnFind");
 	public static By SearchSchedule = By.linkText("TEST123EIRW/I/2400062");
-	// public static By SearchSchedule= By.id("TEST123EIRW/I/2400062");
-	// public static By SearchSchedule =
-	// By.xpath("//a[@id='gvOrder_ctl02_hypOrderNo']");
-	
 	public static By text_2=By.xpath("//span[@id='lblRecord']");
 
+	/**
+	 * @category= ListAA
+	 */
+	
+	
 }

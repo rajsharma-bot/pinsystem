@@ -1,10 +1,8 @@
 package com.pinsystem;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Method;
-import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -61,7 +59,7 @@ public class TestBase {
 	}
 
 	@AfterMethod
-	public void afterMethod(ITestResult result) {
+	public void afterMethod(ITestResult result) throws IOException {
 
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(Status.FAIL, result.getThrowable());

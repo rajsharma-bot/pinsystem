@@ -100,3 +100,456 @@
 [INFO ] 2024-03-01 16:19:26.897 [main] HomeNavigationObjects - Clicked on Logout
 [INFO ] 2024-03-01 16:19:28.270 [main] ScreenshotUtility - Screenshot has been captured
 [INFO ] 2024-03-01 16:19:28.272 [main] TestBase - **************searchScheduleFinished***************
+[INFO ] 2024-03-01 16:29:00.200 [main] TestBase - Initialize Web driver: 1888420238
+[INFO ] 2024-03-01 16:29:00.220 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 16:29:00.239 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 16:29:00.249 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 16:29:10.426 [main] TestBase - **************verify_login_page_withInValid_credsStarted***************
+[INFO ] 2024-03-01 16:29:11.200 [main] LoginObjects - Passing Only username : Teshjhz@jhjd.com
+[INFO ] 2024-03-01 16:29:11.721 [main] LoginObjects - Passing Only Password : 87832
+[INFO ] 2024-03-01 16:29:11.723 [main] LoginObjects - Both username = Teshjhz@jhjd.com Password= 87832 Is Passed
+[INFO ] 2024-03-01 16:29:13.872 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 16:29:15.299 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 16:29:15.300 [main] TestBase - **************verify_login_page_withInValid_credsFinished***************
+[INFO ] 2024-03-01 16:29:16.461 [main] TestBase - **************verify_login_page_withOut_usernameStarted***************
+[INFO ] 2024-03-01 16:29:19.649 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 16:29:19.737 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 16:29:20.075 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 16:29:20.076 [main] TestBase - **************verify_login_page_withOut_usernameFinished***************
+[INFO ] 2024-03-01 16:29:20.100 [main] TestBase - **************verify_login_page_withValid_credsStarted***************
+[INFO ] 2024-03-01 16:29:20.104 [main] LoginTestCase - Broswer has been invoked
+[INFO ] 2024-03-01 16:29:20.307 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 16:29:20.505 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 16:29:20.506 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 16:29:25.074 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 16:29:25.074 [main] LoginTestCase - Clicked on submit
+[INFO ] 2024-03-01 16:29:25.436 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 16:29:25.437 [main] TestBase - **************verify_login_page_withValid_credsFinished***************
+[INFO ] 2024-03-01 16:29:30.724 [main] TestBase - Initialize Web driver: 2036497703
+[INFO ] 2024-03-01 16:29:30.726 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 16:29:30.744 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 16:29:30.761 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 16:29:33.892 [main] TestBase - **************NavigationToListCampaignAllTabsStarted***************
+[INFO ] 2024-03-01 16:29:34.349 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 16:29:34.882 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 16:29:34.884 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 16:29:39.235 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 16:30:29.343 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-03-01 16:30:29.580 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-03-01 16:30:29.635 [main] HomeNavigationObjects - Element are matching
+[INFO ] 2024-03-01 16:30:29.644 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 16:30:29.722 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 16:30:29.943 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 16:30:31.440 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 16:30:31.441 [main] MenuObjects - Switched to Buying Tab
+[INFO ] 2024-03-01 16:30:31.682 [main] MenuObjects - Switched to Planning Tab
+[INFO ] 2024-03-01 16:30:31.932 [main] MenuObjects - Switched to Ready To Bill Tab
+[INFO ] 2024-03-01 16:30:32.189 [main] MenuObjects - Switched to Cancel Tab
+[INFO ] 2024-03-01 16:30:32.449 [main] MenuObjects - Switched to Close Tab
+[INFO ] 2024-03-01 16:30:32.696 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 16:30:33.140 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 16:30:33.141 [main] TestBase - **************NavigationToListCampaignAllTabsFinished***************
+[INFO ] 2024-03-01 16:30:33.231 [main] TestBase - **************navigateToListScheduleTabStarted***************
+[INFO ] 2024-03-01 16:30:33.397 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 16:30:33.398 [main] MenuObjects - List Schedule has been clicked
+[INFO ] 2024-03-01 16:30:33.811 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 16:30:34.798 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 16:30:34.799 [main] MenuObjects - Switched to Confirmed Tab
+[INFO ] 2024-03-01 16:30:35.166 [main] MenuObjects - Switched to Revision Tab
+[INFO ] 2024-03-01 16:30:35.598 [main] MenuObjects - Switched to Cancelled Tab
+[INFO ] 2024-03-01 16:30:35.939 [main] MenuObjects - Switched to Pending Tab
+[INFO ] 2024-03-01 16:30:36.254 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 16:30:36.577 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 16:30:36.577 [main] TestBase - **************navigateToListScheduleTabFinished***************
+[INFO ] 2024-03-01 16:30:36.617 [main] TestBase - **************navigateToListMOStarted***************
+[INFO ] 2024-03-01 16:30:36.635 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 16:30:36.735 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 16:30:36.737 [main] MenuObjects - List MO has been Clicked
+[INFO ] 2024-03-01 16:30:37.033 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 16:30:37.810 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 16:30:37.811 [main] MenuObjects - Switched to Cancelled MO Tab
+[INFO ] 2024-03-01 16:30:38.081 [main] MenuObjects - Switched to Confirm MO Tab
+[INFO ] 2024-03-01 16:30:38.319 [main] MenuObjects - Switched to Pending MO Tab
+[INFO ] 2024-03-01 16:30:38.780 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 16:30:38.780 [main] TestBase - **************navigateToListMOFinished***************
+[INFO ] 2024-03-01 16:30:43.656 [main] TestBase - Initialize Web driver: 2005492533
+[INFO ] 2024-03-01 16:30:43.657 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 16:30:43.670 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 16:30:43.680 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 16:30:47.614 [main] TestBase - **************searchScheduleStarted***************
+[INFO ] 2024-03-01 16:30:47.625 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-03-01 16:30:48.157 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 16:30:48.663 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 16:30:48.664 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 16:30:55.839 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 16:31:45.970 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-03-01 16:31:46.173 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-03-01 16:31:46.182 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 16:31:46.247 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 16:31:46.248 [main] MenuObjects - List Schedule has been clicked
+[INFO ] 2024-03-01 16:31:46.436 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 16:31:47.813 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 16:31:47.869 [main] DropDownHelper - selectUsingVisibleText and visibleText is: ALL
+[INFO ] 2024-03-01 16:31:48.060 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 2024
+[INFO ] 2024-03-01 16:31:48.137 [main] MenuObjects - Clicked on free text
+[INFO ] 2024-03-01 16:31:48.354 [main] MenuObjects - Passing shedule no
+[INFO ] 2024-03-01 16:31:48.517 [main] MenuObjects - Schedule no is passed
+[INFO ] 2024-03-01 16:31:48.517 [main] MenuObjects - Clicked  on find button
+[INFO ] 2024-03-01 16:31:48.771 [main] MenuObjects - Switched to Confirmed Tab
+[INFO ] 2024-03-01 16:31:58.912 [main] MenuObjects - Clicked on searched record
+[INFO ] 2024-03-01 16:31:58.924 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 16:32:49.030 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-03-01 16:32:50.471 [main] HomeNavigationObjects - Clicked on Logout
+[INFO ] 2024-03-01 16:32:51.142 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 16:32:51.142 [main] TestBase - **************searchScheduleFinished***************
+[INFO ] 2024-03-01 16:43:24.420 [main] TestBase - Initialize Web driver: 853955254
+[INFO ] 2024-03-01 16:43:24.460 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 16:43:24.544 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 16:43:24.570 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 16:43:30.771 [main] TestBase - **************searchScheduleStarted***************
+[INFO ] 2024-03-01 16:43:30.878 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-03-01 16:43:32.571 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 16:43:33.688 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 16:43:33.694 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 16:43:38.285 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 16:44:30.557 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-03-01 16:44:32.724 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-03-01 16:44:32.783 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 16:44:33.351 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 16:44:33.353 [main] MenuObjects - List Schedule has been clicked
+[INFO ] 2024-03-01 16:44:35.246 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 16:44:37.755 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 16:44:38.167 [main] DropDownHelper - selectUsingVisibleText and visibleText is: ALL
+[INFO ] 2024-03-01 16:44:39.030 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 2024
+[INFO ] 2024-03-01 16:44:39.260 [main] MenuObjects - Clicked on free text
+[INFO ] 2024-03-01 16:44:40.006 [main] MenuObjects - Passing shedule no
+[INFO ] 2024-03-01 16:44:40.343 [main] MenuObjects - Schedule no is passed
+[INFO ] 2024-03-01 16:44:40.345 [main] MenuObjects - Clicked  on find button
+[INFO ] 2024-03-01 16:44:40.839 [main] MenuObjects - Switched to Confirmed Tab
+[INFO ] 2024-03-01 16:44:50.964 [main] MenuObjects - Clicked on searched record
+[INFO ] 2024-03-01 16:44:50.971 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 16:45:41.084 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-03-01 16:45:42.456 [main] HomeNavigationObjects - Clicked on Logout
+[INFO ] 2024-03-01 16:45:43.298 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 16:45:43.299 [main] TestBase - **************searchScheduleFinished***************
+[INFO ] 2024-03-01 17:02:20.904 [main] TestBase - Initialize Web driver: 2070003473
+[INFO ] 2024-03-01 17:02:20.926 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 17:02:20.958 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 17:02:20.970 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 17:02:24.663 [main] TestBase - **************verify_login_page_withValid_credsStarted***************
+[INFO ] 2024-03-01 17:02:24.686 [main] LoginTestCase - Broswer has been invoked
+[INFO ] 2024-03-01 17:02:25.345 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 17:02:25.924 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 17:02:25.926 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 17:02:31.655 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:02:31.656 [main] LoginTestCase - Clicked on submit
+[INFO ] 2024-03-01 17:03:55.184 [main] TestBase - Initialize Web driver: 864766419
+[INFO ] 2024-03-01 17:03:55.205 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 17:03:55.227 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 17:03:55.241 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 17:04:02.417 [main] TestBase - **************verify_login_page_withValid_credsStarted***************
+[INFO ] 2024-03-01 17:04:02.439 [main] LoginTestCase - Broswer has been invoked
+[INFO ] 2024-03-01 17:04:02.963 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 17:04:03.264 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 17:04:03.264 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 17:04:07.912 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:04:07.913 [main] LoginTestCase - Clicked on submit
+[INFO ] 2024-03-01 17:04:08.425 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:04:08.426 [main] TestBase - **************verify_login_page_withValid_credsFinished***************
+[INFO ] 2024-03-01 17:29:38.700 [main] TestBase - Initialize Web driver: 860798122
+[INFO ] 2024-03-01 17:29:38.721 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 17:29:38.745 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 17:29:38.756 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 17:29:42.070 [main] TestBase - **************verify_login_page_withInValid_credsStarted***************
+[INFO ] 2024-03-01 17:29:42.644 [main] LoginObjects - Passing Only username : Teshjhz@jhjd.com
+[INFO ] 2024-03-01 17:29:42.979 [main] LoginObjects - Passing Only Password : 87832
+[INFO ] 2024-03-01 17:29:42.980 [main] LoginObjects - Both username = Teshjhz@jhjd.com Password= 87832 Is Passed
+[INFO ] 2024-03-01 17:29:44.216 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:29:45.518 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:29:45.519 [main] TestBase - **************verify_login_page_withInValid_credsFinished***************
+[INFO ] 2024-03-01 17:29:46.706 [main] TestBase - **************verify_login_page_withOut_usernameStarted***************
+[INFO ] 2024-03-01 17:29:50.000 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 17:29:50.134 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:29:50.752 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:29:50.753 [main] TestBase - **************verify_login_page_withOut_usernameFinished***************
+[INFO ] 2024-03-01 17:29:50.790 [main] TestBase - **************verify_login_page_withValid_credsStarted***************
+[INFO ] 2024-03-01 17:29:50.796 [main] LoginTestCase - Broswer has been invoked
+[INFO ] 2024-03-01 17:29:51.060 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 17:29:51.385 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 17:29:51.387 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 17:29:55.024 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:29:55.025 [main] LoginTestCase - Clicked on submit
+[INFO ] 2024-03-01 17:29:55.694 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:29:55.695 [main] TestBase - **************verify_login_page_withValid_credsFinished***************
+[INFO ] 2024-03-01 17:30:00.494 [main] TestBase - Initialize Web driver: 1676938400
+[INFO ] 2024-03-01 17:30:00.495 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 17:30:00.527 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 17:30:00.560 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 17:30:03.878 [main] TestBase - **************NavigationToListCampaignAllTabsStarted***************
+[INFO ] 2024-03-01 17:30:04.619 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 17:30:04.983 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 17:30:04.984 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 17:30:08.570 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:30:58.716 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-03-01 17:30:59.021 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-03-01 17:30:59.093 [main] HomeNavigationObjects - Element are matching
+[INFO ] 2024-03-01 17:30:59.102 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:30:59.194 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 17:30:59.443 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:31:00.970 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 17:31:00.971 [main] MenuObjects - Switched to Buying Tab
+[INFO ] 2024-03-01 17:31:01.226 [main] MenuObjects - Switched to Planning Tab
+[INFO ] 2024-03-01 17:31:01.445 [main] MenuObjects - Switched to Ready To Bill Tab
+[INFO ] 2024-03-01 17:31:01.662 [main] MenuObjects - Switched to Cancel Tab
+[INFO ] 2024-03-01 17:31:01.874 [main] MenuObjects - Switched to Close Tab
+[INFO ] 2024-03-01 17:31:02.080 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:31:02.402 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:31:02.403 [main] TestBase - **************NavigationToListCampaignAllTabsFinished***************
+[INFO ] 2024-03-01 17:31:02.475 [main] TestBase - **************navigateToListScheduleTabStarted***************
+[INFO ] 2024-03-01 17:31:02.548 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 17:31:02.548 [main] MenuObjects - List Schedule has been clicked
+[INFO ] 2024-03-01 17:31:02.743 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:31:03.574 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 17:31:03.574 [main] MenuObjects - Switched to Confirmed Tab
+[INFO ] 2024-03-01 17:31:03.783 [main] MenuObjects - Switched to Revision Tab
+[INFO ] 2024-03-01 17:31:04.034 [main] MenuObjects - Switched to Cancelled Tab
+[INFO ] 2024-03-01 17:31:04.264 [main] MenuObjects - Switched to Pending Tab
+[INFO ] 2024-03-01 17:31:04.516 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:31:04.907 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:31:04.907 [main] TestBase - **************navigateToListScheduleTabFinished***************
+[INFO ] 2024-03-01 17:31:04.943 [main] TestBase - **************navigateToListMOStarted***************
+[INFO ] 2024-03-01 17:31:04.957 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:31:05.043 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 17:31:05.044 [main] MenuObjects - List MO has been Clicked
+[INFO ] 2024-03-01 17:31:05.290 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:31:05.753 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 17:31:05.754 [main] MenuObjects - Switched to Cancelled MO Tab
+[INFO ] 2024-03-01 17:31:05.969 [main] MenuObjects - Switched to Confirm MO Tab
+[INFO ] 2024-03-01 17:31:06.160 [main] MenuObjects - Switched to Pending MO Tab
+[INFO ] 2024-03-01 17:31:06.643 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:31:06.643 [main] TestBase - **************navigateToListMOFinished***************
+[INFO ] 2024-03-01 17:31:11.443 [main] TestBase - Initialize Web driver: 1549377783
+[INFO ] 2024-03-01 17:31:11.444 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 17:31:11.461 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 17:31:11.477 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 17:31:14.592 [main] TestBase - **************searchScheduleStarted***************
+[INFO ] 2024-03-01 17:31:14.602 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-03-01 17:31:15.164 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 17:31:15.506 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 17:31:15.507 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 17:31:19.081 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:32:09.211 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-03-01 17:32:09.369 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-03-01 17:32:09.374 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:32:09.420 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 17:32:09.421 [main] MenuObjects - List Schedule has been clicked
+[INFO ] 2024-03-01 17:32:09.563 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:32:10.258 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 17:32:10.322 [main] DropDownHelper - selectUsingVisibleText and visibleText is: ALL
+[INFO ] 2024-03-01 17:32:10.534 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 2024
+[INFO ] 2024-03-01 17:32:10.614 [main] MenuObjects - Clicked on free text
+[INFO ] 2024-03-01 17:32:10.850 [main] MenuObjects - Passing shedule no
+[INFO ] 2024-03-01 17:32:11.000 [main] MenuObjects - Schedule no is passed
+[INFO ] 2024-03-01 17:32:11.001 [main] MenuObjects - Clicked  on find button
+[INFO ] 2024-03-01 17:32:11.256 [main] MenuObjects - Switched to Confirmed Tab
+[INFO ] 2024-03-01 17:32:23.061 [main] MenuObjects - Clicked on searched record
+[INFO ] 2024-03-01 17:32:23.351 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:32:23.351 [main] TestBase - **************searchScheduleFinished***************
+[INFO ] 2024-03-01 17:33:04.093 [main] TestBase - Initialize Web driver: 860798122
+[INFO ] 2024-03-01 17:33:04.112 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 17:33:04.133 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 17:33:04.145 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 17:33:06.923 [main] TestBase - **************verify_login_page_withInValid_credsStarted***************
+[INFO ] 2024-03-01 17:33:07.665 [main] LoginObjects - Passing Only username : Teshjhz@jhjd.com
+[INFO ] 2024-03-01 17:33:08.072 [main] LoginObjects - Passing Only Password : 87832
+[INFO ] 2024-03-01 17:33:08.073 [main] LoginObjects - Both username = Teshjhz@jhjd.com Password= 87832 Is Passed
+[INFO ] 2024-03-01 17:33:09.014 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:33:11.182 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:33:11.183 [main] TestBase - **************verify_login_page_withInValid_credsFinished***************
+[INFO ] 2024-03-01 17:33:12.364 [main] TestBase - **************verify_login_page_withOut_usernameStarted***************
+[INFO ] 2024-03-01 17:33:15.578 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 17:33:15.735 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:33:16.241 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:33:16.242 [main] TestBase - **************verify_login_page_withOut_usernameFinished***************
+[INFO ] 2024-03-01 17:33:16.294 [main] TestBase - **************verify_login_page_withValid_credsStarted***************
+[INFO ] 2024-03-01 17:33:16.300 [main] LoginTestCase - Broswer has been invoked
+[INFO ] 2024-03-01 17:33:16.996 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 17:33:17.672 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 17:33:17.673 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 17:33:21.641 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:33:21.642 [main] LoginTestCase - Clicked on submit
+[INFO ] 2024-03-01 17:33:22.148 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:33:22.149 [main] TestBase - **************verify_login_page_withValid_credsFinished***************
+[INFO ] 2024-03-01 17:33:27.529 [main] TestBase - Initialize Web driver: 190550835
+[INFO ] 2024-03-01 17:33:27.530 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 17:33:27.552 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 17:33:27.566 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 17:33:30.215 [main] TestBase - **************NavigationToListCampaignAllTabsStarted***************
+[INFO ] 2024-03-01 17:33:30.863 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 17:33:31.345 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 17:33:31.347 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 17:33:34.868 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:34:24.961 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-03-01 17:34:25.136 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-03-01 17:34:25.186 [main] HomeNavigationObjects - Element are matching
+[INFO ] 2024-03-01 17:34:25.191 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:34:25.240 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 17:34:25.390 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:34:26.499 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 17:34:26.499 [main] MenuObjects - Switched to Buying Tab
+[INFO ] 2024-03-01 17:34:26.682 [main] MenuObjects - Switched to Planning Tab
+[INFO ] 2024-03-01 17:34:26.872 [main] MenuObjects - Switched to Ready To Bill Tab
+[INFO ] 2024-03-01 17:34:27.074 [main] MenuObjects - Switched to Cancel Tab
+[INFO ] 2024-03-01 17:34:27.333 [main] MenuObjects - Switched to Close Tab
+[INFO ] 2024-03-01 17:34:27.599 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:34:28.010 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:34:28.010 [main] TestBase - **************NavigationToListCampaignAllTabsFinished***************
+[INFO ] 2024-03-01 17:34:28.090 [main] TestBase - **************navigateToListScheduleTabStarted***************
+[INFO ] 2024-03-01 17:34:28.175 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 17:34:28.176 [main] MenuObjects - List Schedule has been clicked
+[INFO ] 2024-03-01 17:34:28.431 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:34:29.087 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 17:34:29.088 [main] MenuObjects - Switched to Confirmed Tab
+[INFO ] 2024-03-01 17:34:29.342 [main] MenuObjects - Switched to Revision Tab
+[INFO ] 2024-03-01 17:34:29.636 [main] MenuObjects - Switched to Cancelled Tab
+[INFO ] 2024-03-01 17:34:29.945 [main] MenuObjects - Switched to Pending Tab
+[INFO ] 2024-03-01 17:34:30.236 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:34:30.540 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:34:30.540 [main] TestBase - **************navigateToListScheduleTabFinished***************
+[INFO ] 2024-03-01 17:34:30.569 [main] TestBase - **************navigateToListMOStarted***************
+[INFO ] 2024-03-01 17:34:30.581 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:34:30.644 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 17:34:30.644 [main] MenuObjects - List MO has been Clicked
+[INFO ] 2024-03-01 17:34:30.864 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:34:31.309 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 17:34:31.309 [main] MenuObjects - Switched to Cancelled MO Tab
+[INFO ] 2024-03-01 17:34:31.582 [main] MenuObjects - Switched to Confirm MO Tab
+[INFO ] 2024-03-01 17:34:31.793 [main] MenuObjects - Switched to Pending MO Tab
+[INFO ] 2024-03-01 17:34:32.336 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:34:32.337 [main] TestBase - **************navigateToListMOFinished***************
+[INFO ] 2024-03-01 17:34:37.968 [main] TestBase - Initialize Web driver: 1964864549
+[INFO ] 2024-03-01 17:34:37.968 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 17:34:37.980 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 17:34:37.994 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 17:34:40.992 [main] TestBase - **************searchScheduleStarted***************
+[INFO ] 2024-03-01 17:34:41.016 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-03-01 17:34:42.039 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 17:34:42.622 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 17:34:42.623 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 17:34:46.525 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:35:36.626 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-03-01 17:35:36.789 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-03-01 17:35:36.795 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:35:36.845 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 17:35:36.845 [main] MenuObjects - List Schedule has been clicked
+[INFO ] 2024-03-01 17:35:37.002 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:35:37.701 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 17:35:37.754 [main] DropDownHelper - selectUsingVisibleText and visibleText is: ALL
+[INFO ] 2024-03-01 17:35:37.965 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 2024
+[INFO ] 2024-03-01 17:35:38.068 [main] MenuObjects - Clicked on free text
+[INFO ] 2024-03-01 17:35:38.346 [main] MenuObjects - Passing shedule no
+[INFO ] 2024-03-01 17:35:38.638 [main] MenuObjects - Schedule no is passed
+[INFO ] 2024-03-01 17:35:38.639 [main] MenuObjects - Clicked  on find button
+[INFO ] 2024-03-01 17:35:38.935 [main] MenuObjects - Switched to Confirmed Tab
+[INFO ] 2024-03-01 17:35:45.192 [main] MenuObjects - Clicked on searched record
+[INFO ] 2024-03-01 17:35:45.560 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:35:45.561 [main] TestBase - **************searchScheduleFinished***************
+[INFO ] 2024-03-01 17:53:52.790 [main] TestBase - Initialize Web driver: 1298707825
+[INFO ] 2024-03-01 17:53:52.808 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 17:53:52.824 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 17:53:52.834 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 17:53:56.212 [main] TestBase - **************verify_login_page_withInValid_credsStarted***************
+[INFO ] 2024-03-01 17:53:56.882 [main] LoginObjects - Passing Only username : Teshjhz@jhjd.com
+[INFO ] 2024-03-01 17:53:57.324 [main] LoginObjects - Passing Only Password : 87832
+[INFO ] 2024-03-01 17:53:57.326 [main] LoginObjects - Both username = Teshjhz@jhjd.com Password= 87832 Is Passed
+[INFO ] 2024-03-01 17:53:57.990 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:54:00.105 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:54:00.106 [main] TestBase - **************verify_login_page_withInValid_credsFinished***************
+[INFO ] 2024-03-01 17:54:01.166 [main] TestBase - **************verify_login_page_withOut_usernameStarted***************
+[INFO ] 2024-03-01 17:54:04.384 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 17:54:04.496 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:54:04.878 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:54:04.878 [main] TestBase - **************verify_login_page_withOut_usernameFinished***************
+[INFO ] 2024-03-01 17:54:04.907 [main] TestBase - **************verify_login_page_withValid_credsStarted***************
+[INFO ] 2024-03-01 17:54:04.911 [main] LoginTestCase - Broswer has been invoked
+[INFO ] 2024-03-01 17:54:05.136 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 17:54:05.353 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 17:54:05.353 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 17:54:09.333 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:54:09.334 [main] LoginTestCase - Clicked on submit
+[INFO ] 2024-03-01 17:54:10.029 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:54:10.030 [main] TestBase - **************verify_login_page_withValid_credsFinished***************
+[INFO ] 2024-03-01 17:54:15.811 [main] TestBase - Initialize Web driver: 1520840423
+[INFO ] 2024-03-01 17:54:15.813 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 17:54:15.833 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 17:54:15.847 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 17:54:18.646 [main] TestBase - **************NavigationToListCampaignAllTabsStarted***************
+[INFO ] 2024-03-01 17:54:19.308 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 17:54:19.781 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 17:54:19.782 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 17:54:23.537 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:55:13.630 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-03-01 17:55:13.787 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-03-01 17:55:13.826 [main] HomeNavigationObjects - Element are matching
+[INFO ] 2024-03-01 17:55:13.831 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:55:13.883 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 17:55:14.042 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:55:15.356 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 17:55:15.356 [main] MenuObjects - Switched to Buying Tab
+[INFO ] 2024-03-01 17:55:15.533 [main] MenuObjects - Switched to Planning Tab
+[INFO ] 2024-03-01 17:55:15.723 [main] MenuObjects - Switched to Ready To Bill Tab
+[INFO ] 2024-03-01 17:55:15.959 [main] MenuObjects - Switched to Cancel Tab
+[INFO ] 2024-03-01 17:55:16.284 [main] MenuObjects - Switched to Close Tab
+[INFO ] 2024-03-01 17:55:16.566 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:55:17.090 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:55:17.090 [main] TestBase - **************NavigationToListCampaignAllTabsFinished***************
+[INFO ] 2024-03-01 17:55:17.195 [main] TestBase - **************navigateToListScheduleTabStarted***************
+[INFO ] 2024-03-01 17:55:17.284 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 17:55:17.285 [main] MenuObjects - List Schedule has been clicked
+[INFO ] 2024-03-01 17:55:17.507 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:55:18.239 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 17:55:18.239 [main] MenuObjects - Switched to Confirmed Tab
+[INFO ] 2024-03-01 17:55:18.470 [main] MenuObjects - Switched to Revision Tab
+[INFO ] 2024-03-01 17:55:18.747 [main] MenuObjects - Switched to Cancelled Tab
+[INFO ] 2024-03-01 17:55:19.011 [main] MenuObjects - Switched to Pending Tab
+[INFO ] 2024-03-01 17:55:19.399 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:55:19.772 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:55:19.773 [main] TestBase - **************navigateToListScheduleTabFinished***************
+[INFO ] 2024-03-01 17:55:19.798 [main] TestBase - **************navigateToListMOStarted***************
+[INFO ] 2024-03-01 17:55:19.810 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:55:19.886 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 17:55:19.887 [main] MenuObjects - List MO has been Clicked
+[INFO ] 2024-03-01 17:55:20.182 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:55:20.677 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 17:55:20.678 [main] MenuObjects - Switched to Cancelled MO Tab
+[INFO ] 2024-03-01 17:55:20.908 [main] MenuObjects - Switched to Confirm MO Tab
+[INFO ] 2024-03-01 17:55:21.123 [main] MenuObjects - Switched to Pending MO Tab
+[INFO ] 2024-03-01 17:55:21.801 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:55:21.802 [main] TestBase - **************navigateToListMOFinished***************
+[INFO ] 2024-03-01 17:55:26.670 [main] TestBase - Initialize Web driver: 541957855
+[INFO ] 2024-03-01 17:55:26.671 [main] WaitHelper - Implicit Wait has been set to: 50
+[INFO ] 2024-03-01 17:55:26.688 [main] WaitHelper - waiting for page to load for : 50
+[INFO ] 2024-03-01 17:55:26.706 [main] WaitHelper - page is loaded
+[INFO ] 2024-03-01 17:55:29.572 [main] TestBase - **************searchScheduleStarted***************
+[INFO ] 2024-03-01 17:55:29.583 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-03-01 17:55:30.159 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-03-01 17:55:30.845 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-03-01 17:55:30.846 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-03-01 17:55:34.319 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-03-01 17:56:24.477 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-03-01 17:56:24.792 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-03-01 17:56:24.805 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:56:24.894 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-03-01 17:56:24.895 [main] MenuObjects - List Schedule has been clicked
+[INFO ] 2024-03-01 17:56:25.364 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-03-01 17:56:26.162 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-03-01 17:56:26.323 [main] DropDownHelper - selectUsingVisibleText and visibleText is: ALL
+[INFO ] 2024-03-01 17:56:27.047 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 2024
+[INFO ] 2024-03-01 17:56:27.292 [main] MenuObjects - Clicked on free text
+[INFO ] 2024-03-01 17:56:27.689 [main] MenuObjects - Passing shedule no
+[INFO ] 2024-03-01 17:56:27.934 [main] MenuObjects - Schedule no is passed
+[INFO ] 2024-03-01 17:56:27.935 [main] MenuObjects - Clicked  on find button
+[INFO ] 2024-03-01 17:56:28.245 [main] MenuObjects - Switched to Confirmed Tab
+[INFO ] 2024-03-01 17:56:34.779 [main] MenuObjects - Clicked on searched record
+[INFO ] 2024-03-01 17:56:35.277 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-03-01 17:56:35.277 [main] TestBase - **************searchScheduleFinished***************
