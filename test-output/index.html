@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.pinsystem.LoginTestCase" class="method navigator-link" hash-for-method="verify_login_page_withInValid_creds">verify_login_page_withInValid_creds</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.pinsystem.LoginTestCase" class="method navigator-link" hash-for-method="verify_login_page_withValid_creds">verify_login_page_withValid_creds</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,37 +123,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.pinsystem.NavigateToCampaignMenuTabs" class="method navigator-link" hash-for-method="NavigationToListCampaignAllTabs">NavigationToListCampaignAllTabs</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.pinsystem.NavigateToCampaignMenuTabs" class="method navigator-link" hash-for-method="navigateToListMO">navigateToListMO</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.pinsystem.NavigateToCampaignMenuTabs" class="method navigator-link" hash-for-method="navigateToListScheduleTab">navigateToListScheduleTab</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.pinsystem.SearchRecords" class="method navigator-link" hash-for-method="searchSchedule">searchSchedule</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.pinsystem.LoginTestCase" class="method navigator-link" hash-for-method="verify_login_page_withInValid_creds">verify_login_page_withInValid_creds</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.pinsystem.LoginTestCase" class="method navigator-link" hash-for-method="verify_login_page_withOut_username">verify_login_page_withOut_username</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.pinsystem.LoginTestCase" class="method navigator-link" hash-for-method="verify_login_page_withValid_creds">verify_login_page_withValid_creds</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -149,26 +138,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.pinsystem.SearchRecords</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchSchedule">
-                  </a> <!-- searchSchedule -->
-                  <span class="method-name">searchSchedule</span>
-                  <em>
-(Search pending Schedule)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.pinsystem.LoginTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -177,17 +149,34 @@
                   <a name="verify_login_page_withInValid_creds">
                   </a> <!-- verify_login_page_withInValid_creds -->
                   <span class="method-name">verify_login_page_withInValid_creds</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtPwd11&quot;}
+  (Session info: chrome=123.0.6312.106)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a0593b37a6563707ac2329577667783, findElement {value=txtPwd11, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64688}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64688/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a0593b37a6563707ac2329577667783
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.pinsystem.pageObjects.LoginObjects.password(LoginObjects.java:24)
+	at com.pinsystem.pageObjects.LoginObjects.login(LoginObjects.java:45)
+	at com.pinsystem.LoginTestCase.verify_login_page_withInValid_creds(LoginTestCase.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (PINSYS-1755 : Verifying login with invalid username and password)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_login_page_withOut_username">
-                  </a> <!-- verify_login_page_withOut_username -->
-                  <span class="method-name">verify_login_page_withOut_username</span>
-                  <em>
-(PINSYS-1755 : Verifying login with invalid username)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -195,43 +184,51 @@
                   <a name="verify_login_page_withValid_creds">
                   </a> <!-- verify_login_page_withValid_creds -->
                   <span class="method-name">verify_login_page_withValid_creds</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtPwd11&quot;}
+  (Session info: chrome=123.0.6312.106)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a0593b37a6563707ac2329577667783, findElement {value=txtPwd11, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64688}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64688/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a0593b37a6563707ac2329577667783
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.pinsystem.pageObjects.LoginObjects.password(LoginObjects.java:24)
+	at com.pinsystem.pageObjects.LoginObjects.login(LoginObjects.java:45)
+	at com.pinsystem.LoginTestCase.verify_login_page_withValid_creds(LoginTestCase.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (PINSYS-1755 : Verifying login with valid username and password)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.pinsystem.NavigateToCampaignMenuTabs</span>
+              <span class="class-name">com.pinsystem.LoginTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="NavigationToListCampaignAllTabs">
-                  </a> <!-- NavigationToListCampaignAllTabs -->
-                  <span class="method-name">NavigationToListCampaignAllTabs</span>
+                  <a name="verify_login_page_withOut_username">
+                  </a> <!-- verify_login_page_withOut_username -->
+                  <span class="method-name">verify_login_page_withOut_username</span>
                   <em>
-(Navigation To List Campaign All Tabs)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="navigateToListMO">
-                  </a> <!-- navigateToListMO -->
-                  <span class="method-name">navigateToListMO</span>
-                  <em>
-(Navigation To List MO All Tabs)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="navigateToListScheduleTab">
-                  </a> <!-- navigateToListScheduleTab -->
-                  <span class="method-name">navigateToListScheduleTab</span>
-                  <em>
-(Navigation To List Schedule All Tabs)                  </em>
+(PINSYS-1755 : Verifying login with invalid username)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -249,17 +246,6 @@
   &lt;test thread-count=&quot;1&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.pinsystem.LoginTestCase&quot;/&gt;
-      &lt;class name=&quot;com.pinsystem.NavigateToCampaignMenuTabs&quot;/&gt;
-      &lt;class name=&quot;com.pinsystem.SearchRecords&quot;/&gt;
-      &lt;class name=&quot;com.pinsystem.LoginTestCase&quot;/&gt;
-      &lt;class name=&quot;com.pinsystem.NavigateToCampaignMenuTabs&quot;/&gt;
-      &lt;class name=&quot;com.pinsystem.SearchRecords&quot;/&gt;
-      &lt;class name=&quot;com.pinsystem.LoginTestCase&quot;/&gt;
-      &lt;class name=&quot;com.pinsystem.NavigateToCampaignMenuTabs&quot;/&gt;
-      &lt;class name=&quot;com.pinsystem.SearchRecords&quot;/&gt;
-      &lt;class name=&quot;com.pinsystem.LoginTestCase&quot;/&gt;
-      &lt;class name=&quot;com.pinsystem.NavigateToCampaignMenuTabs&quot;/&gt;
-      &lt;class name=&quot;com.pinsystem.SearchRecords&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -273,7 +259,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (12 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -299,40 +285,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'searchSchedule')
-data.setCell(0, 2, 'com.pinsystem.SearchRecords')
-data.setCell(0, 3, 65207);
+data.setCell(0, 1, 'verify_login_page_withInValid_creds')
+data.setCell(0, 2, 'com.pinsystem.LoginTestCase')
+data.setCell(0, 3, 103021);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'NavigationToListCampaignAllTabs')
-data.setCell(1, 2, 'com.pinsystem.NavigateToCampaignMenuTabs')
-data.setCell(1, 3, 57920);
+data.setCell(1, 1, 'verify_login_page_withValid_creds')
+data.setCell(1, 2, 'com.pinsystem.LoginTestCase')
+data.setCell(1, 3, 100298);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify_login_page_withValid_creds')
+data.setCell(2, 1, 'verify_login_page_withOut_username')
 data.setCell(2, 2, 'com.pinsystem.LoginTestCase')
-data.setCell(2, 3, 4462);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verify_login_page_withOut_username')
-data.setCell(3, 2, 'com.pinsystem.LoginTestCase')
-data.setCell(3, 3, 3441);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verify_login_page_withInValid_creds')
-data.setCell(4, 2, 'com.pinsystem.LoginTestCase')
-data.setCell(4, 3, 2647);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'navigateToListScheduleTab')
-data.setCell(5, 2, 'com.pinsystem.NavigateToCampaignMenuTabs')
-data.setCell(5, 3, 2203);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'navigateToListMO')
-data.setCell(6, 2, 'com.pinsystem.NavigateToCampaignMenuTabs')
-data.setCell(6, 3, 1541);
+data.setCell(2, 3, 3729);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -347,23 +317,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.pinsystem.SearchRecords</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.pinsystem.NavigateToCampaignMenuTabs</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">beforeSuite</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -379,117 +335,51 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">BeforeClass</span>
-                <span class="method-start">805 ms</span>
+                <span class="method-start">1529 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.pinsystem.LoginTestCase.verify_login_page_withInValid_creds() throws java.lang.Inter...)</span>
-                <span class="method-start">11137 ms</span>
+                <span class="method-start">17219 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verify_login_page_withInValid_creds</span>
-                <span class="method-start">11158 ms</span>
+                <span class="method-start">17271 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verify_login_page_withInValid_creds status=SUCCESS method=LoginTestCase.verify_logi...)</span>
-                <span class="method-start">13815 ms</span>
+                <span class="method-name">afterMethod([TestResult name=verify_login_page_withInValid_creds status=FAILURE method=LoginTestCase.verify_logi...)</span>
+                <span class="method-start">120302 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.pinsystem.LoginTestCase.verify_login_page_withOut_username() throws java.io.IOExcept...)</span>
-                <span class="method-start">16100 ms</span>
+                <span class="method-start">121613 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_login_page_withOut_username</span>
-                <span class="method-start">16111 ms</span>
+                <span class="method-start">121614 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verify_login_page_withOut_username status=SUCCESS method=LoginTestCase.verify_login...)</span>
-                <span class="method-start">19554 ms</span>
+                <span class="method-start">125345 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(public void com.pinsystem.LoginTestCase.verify_login_page_withValid_creds() throws java.lang.Interru...)</span>
-                <span class="method-start">19851 ms</span>
+                <span class="method-start">126030 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verify_login_page_withValid_creds</span>
-                <span class="method-start">19852 ms</span>
+                <span class="method-start">126032 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=verify_login_page_withValid_creds status=SUCCESS method=LoginTestCase.verify_login_...)</span>
-                <span class="method-start">24319 ms</span>
+                <span class="method-name">afterMethod([TestResult name=verify_login_page_withValid_creds status=FAILURE method=LoginTestCase.verify_login_...)</span>
+                <span class="method-start">226333 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">25163 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.pinsystem.NavigateToCampaignMenuTabs</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">BeforeClass</span>
-                <span class="method-start">26618 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void com.pinsystem.NavigateToCampaignMenuTabs.NavigationToListCampaignAllTabs() throws java.i...)</span>
-                <span class="method-start">33590 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">NavigationToListCampaignAllTabs</span>
-                <span class="method-start">33591 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=NavigationToListCampaignAllTabs status=SUCCESS method=NavigateToCampaignMenuTabs.Na...)</span>
-                <span class="method-start">91513 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void com.pinsystem.NavigateToCampaignMenuTabs.navigateToListScheduleTab())</span>
-                <span class="method-start">92139 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">navigateToListScheduleTab</span>
-                <span class="method-start">92141 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=navigateToListScheduleTab status=SUCCESS method=NavigateToCampaignMenuTabs.navigate...)</span>
-                <span class="method-start">94347 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void com.pinsystem.NavigateToCampaignMenuTabs.navigateToListMO())</span>
-                <span class="method-start">94741 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">navigateToListMO</span>
-                <span class="method-start">94743 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=navigateToListMO status=SUCCESS method=NavigateToCampaignMenuTabs.navigateToListMO(...)</span>
-                <span class="method-start">96286 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">96777 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.pinsystem.SearchRecords</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">BeforeClass</span>
-                <span class="method-start">97864 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void com.pinsystem.SearchRecords.searchSchedule() throws java.lang.InterruptedException)</span>
-                <span class="method-start">104515 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">searchSchedule</span>
-                <span class="method-start">104517 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=searchSchedule status=SUCCESS method=SearchRecords.searchSchedule()[pri:0, instance...)</span>
-                <span class="method-start">169726 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">170358 ms</span>
+                <span class="method-start">227397 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

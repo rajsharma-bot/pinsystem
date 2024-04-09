@@ -26,13 +26,13 @@ import com.pinsystem.utils.WaitHelper;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class TestBase {
+public class TestBaseImp {
 
 	public static ExtentReports extent;
 	public static ExtentTest test;
 	public static WebDriver driver;
 	public static File reportDirectery;
-	private static Logger log = LogManager.getLogger(TestBase.class);
+	private static Logger log = LogManager.getLogger(TestBaseImp.class);
 
 	@BeforeSuite
 	public void beforeSuite() throws Exception {
@@ -64,11 +64,9 @@ public class TestBase {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(Status.FAIL, result.getThrowable());
 			ScreenshotUtility.captureScreenshot(driver, result.getName() + "_failure");
-			test.addScreenCaptureFromPath(ScreenshotUtility.captureScreenshot(driver, result.getName()));
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			test.log(Status.PASS, result.getName() + " is pass");
 			ScreenshotUtility.captureScreenshot(driver, result.getName() + "_success");
-			
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			test.log(Status.SKIP, result.getThrowable());
 		}

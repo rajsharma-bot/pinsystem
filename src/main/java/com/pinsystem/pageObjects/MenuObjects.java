@@ -1,5 +1,7 @@
 package com.pinsystem.pageObjects;
 
+import java.time.Duration;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -144,5 +146,123 @@ public class MenuObjects {
 		return d;
 	}
 
+	// --------------------------Test Code-------------------------------
 
+	public String labelText() {
+		String labelText = driver.findElement(MenuPageObjects.lableText).getText();
+		return labelText;
+	}
+
+	/**
+	 * New Campaign
+	 * 
+	 */
+
+	public void newCampaign() {
+		log.info("New Campaign has been clicked");
+		driver.findElement(MenuPageObjects.NewCampaign).click();
+	}
+
+	public WebElement clientDDL() throws InterruptedException {
+		WebElement DDL_Client = driver.findElement(MenuPageObjects.ClientDDL);
+		Thread.sleep(1000);
+		return DDL_Client;
+
+	}
+
+	public WebElement soldToParty() throws InterruptedException {
+		Thread.sleep(1000);
+		WebElement DDL_STP = driver.findElement(MenuPageObjects.SoldToParty);
+		return DDL_STP;
+
+	}
+
+	public void StartDate() {
+		driver.findElement(MenuPageObjects.StartDate).clear();
+		driver.switchTo().alert().accept();
+	}
+
+	public void StartDate(String startdate) throws InterruptedException {
+		Thread.sleep(1000);
+		
+		driver.findElement(MenuPageObjects.StartDate).sendKeys(startdate);
+		
+		
+	}
+
+	public void EndDate() {
+		driver.findElement(MenuPageObjects.EndDate).clear();
+		driver.switchTo().alert().accept();
+
+	}
+
+	public void EndDate(String EndDate) throws InterruptedException {
+		Thread.sleep(1000);
+		
+		driver.findElement(MenuPageObjects.EndDate).sendKeys(EndDate);
+		
+	}
+
+	public WebElement Product() throws InterruptedException {
+		Thread.sleep(1000);
+		WebElement DDL_Product = driver.findElement(MenuPageObjects.ProductDDL);
+		return DDL_Product;
+
+	}
+
+	public WebElement Contract() throws InterruptedException {
+		Thread.sleep(1000);
+		WebElement ddl_Contract = driver.findElement(MenuPageObjects.ContractDDL);
+		return ddl_Contract;
+
+	}
+
+	public void CampaignName(String campaignName) {
+		driver.findElement(MenuPageObjects.Campaign_name).sendKeys(campaignName);
+	}
+
+	public void Save() {
+		driver.findElement(MenuPageObjects.SaveOnlyAndViewCampaign).click();
+		if(driver.switchTo().alert()!=null) {
+			driver.switchTo().alert().accept();
+		}else {
+			System.out.println("No alert");
+		}
+	}
+
+	
+	public WebElement mediaType() throws InterruptedException {
+		Thread.sleep(2000);
+		WebElement ddl_mediaType = driver.findElement(MenuPageObjects.MediaType);
+		return ddl_mediaType;
+	}
+	
+	public void searchTitle(String media_title) throws InterruptedException {
+		driver.findElement(MenuPageObjects.Search_MediaTitle).clear();
+		driver.findElement(MenuPageObjects.Search_MediaTitle).sendKeys(media_title);
+		Thread.sleep(3000);
+	}
+	
+	public boolean checkBox() throws InterruptedException {
+		Thread.sleep(3000);
+		driver.findElement(MenuPageObjects.checkBox).click();
+		if(driver.findElement(MenuPageObjects.checkBox).isDisplayed()) {
+			System.out.println("true");
+			return true;
+		}
+		return false;
+	}
+	
+	public void campaignCode() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
+		Boolean value= driver.findElement(MenuPageObjects.CampaignCode).isDisplayed();
+		if(value==true) {
+			log.info("Campaign has been created");
+			log.info(driver.findElement(MenuPageObjects.CampaignCode).getText());
+		}else {
+			log.error("Campaign is not created");
+		}
+		
+	}
+	
 }

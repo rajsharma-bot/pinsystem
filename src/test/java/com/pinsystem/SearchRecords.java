@@ -10,19 +10,21 @@ import com.pinsystem.utils.DropDownHelper;
 import com.pinsystem.utils.FrameHelper;
 import com.pinsystem.utils.ObjectReader;
 import com.pinsystem.utils.PropertyReader;
+import com.pinsystem.utils.SwitchTabs;
 
 public class SearchRecords extends TestBase {
-	
+
 	private static Logger log = LogManager.getLogger(SearchRecords.class);
-	
+
 	@Test(description = "Search Schedule")
 	public void searchSchedule() throws InterruptedException {
 		ObjectReader.reader = new PropertyReader();
 		FrameHelper fh = new FrameHelper(driver);
 		MenuObjects Mo = new MenuObjects(driver);
+		SwitchTabs st= new SwitchTabs(driver);
 		HomeNavigationObjects HN = new HomeNavigationObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
-		LoginClass lc= new LoginClass(driver);
+		LoginClass lc = new LoginClass(driver);
 		lc.loginRunner();
 		fh.switchToFrame(ObjectReader.reader.topframe());
 		HN.MEDIA();
@@ -33,9 +35,8 @@ public class SearchRecords extends TestBase {
 		fh.switchToFrame(ObjectReader.reader.rightframe());
 		dh.selectUsingVisibleText(Mo.monthDll(), "ALL");
 		dh.selectUsingVisibleText(Mo.yearDll(), "2024");
-		Mo.searchSchedule("TEST123EIRW/I/2400062");
+		Mo.searchSchedule("TEST123EIRW/TV/2400090");
 		Mo.findButton();
-		Mo.ConfirmedS_Tab();
-		Mo.clickOnRecord();			
+		st.schedule_search();
 	}
 }

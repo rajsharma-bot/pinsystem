@@ -6,11 +6,9 @@ import org.testng.annotations.Test;
 
 import com.pinsystem.pageObjects.HomeNavigationObjects;
 import com.pinsystem.pageObjects.LoginObjects;
-import com.pinsystem.pageObjects.MenuObjects;
 import com.pinsystem.utils.FrameHelper;
 import com.pinsystem.utils.ObjectReader;
 import com.pinsystem.utils.PropertyReader;
-import com.pinsystem.utils.Reader;
 
 public class TestClass extends TestBase {
 	

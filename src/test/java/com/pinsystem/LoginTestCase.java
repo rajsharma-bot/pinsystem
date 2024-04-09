@@ -2,9 +2,7 @@ package com.pinsystem;
 
 import static org.testng.Assert.assertEquals;
 
-import java.io.FileReader;
 import java.io.IOException;
-import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -26,11 +24,9 @@ public class LoginTestCase extends TestBase {
 		ObjectReader.reader = new PropertyReader();
 		LoginObjects lg = new LoginObjects(driver);
 		log.info("Broswer has been invoked");
-
 		lg.login(ObjectReader.reader.getUserName(), ObjectReader.reader.getPassword());
 		lg.remMe();
 		lg.submit();
-
 		log.info("Clicked on submit");
 		String title = lg.loginSuccess();
 		Assert.assertEquals(title, text);
@@ -42,7 +38,6 @@ public class LoginTestCase extends TestBase {
 
 		ObjectReader.reader = new PropertyReader();
 		LoginObjects lg = new LoginObjects(driver);
-
 		lg.login(ObjectReader.reader.invalidUsername(), ObjectReader.reader.invalidPassword());
 		lg.submit();
 		assertEquals(lg.errorIsDisplayed(), true);
