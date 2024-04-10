@@ -5,9 +5,9 @@
 		<classes>
 			
 			<class name="com.pinsystem.LoginTestCase"/>
-			<!--<class name="com.pinsystem.NavigateToCampaignMenuTabs"/>
+			<class name="com.pinsystem.NavigateToCampaignMenuTabs"/>
 			<class name="com.pinsystem.SearchRecords"/>
-			<class name="com.pinsystem.New_Campaign"/>-->
+			<class name="com.pinsystem.New_Campaign"/>
 			
 		</classes>
 	</test> <!--

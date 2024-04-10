@@ -9,6 +9,7 @@
           <include name="BeforeClass"/>
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
+          <include name="verify_login_page_withInValid_creds"/>
           <include name="afterClass"/>
           <include name="afterMethod"/>
         </methods>

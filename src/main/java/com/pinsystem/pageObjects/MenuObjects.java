@@ -184,10 +184,9 @@ public class MenuObjects {
 
 	public void StartDate(String startdate) throws InterruptedException {
 		Thread.sleep(1000);
-		
+
 		driver.findElement(MenuPageObjects.StartDate).sendKeys(startdate);
-		
-		
+
 	}
 
 	public void EndDate() {
@@ -198,9 +197,9 @@ public class MenuObjects {
 
 	public void EndDate(String EndDate) throws InterruptedException {
 		Thread.sleep(1000);
-		
+
 		driver.findElement(MenuPageObjects.EndDate).sendKeys(EndDate);
-		
+
 	}
 
 	public WebElement Product() throws InterruptedException {
@@ -223,46 +222,100 @@ public class MenuObjects {
 
 	public void Save() {
 		driver.findElement(MenuPageObjects.SaveOnlyAndViewCampaign).click();
-		if(driver.switchTo().alert()!=null) {
+		if (driver.switchTo().alert() != null) {
 			driver.switchTo().alert().accept();
-		}else {
-			System.out.println("No alert");
+		} else {
+			log.info("No alert");
 		}
 	}
 
-	
 	public WebElement mediaType() throws InterruptedException {
 		Thread.sleep(2000);
 		WebElement ddl_mediaType = driver.findElement(MenuPageObjects.MediaType);
 		return ddl_mediaType;
 	}
-	
+
 	public void searchTitle(String media_title) throws InterruptedException {
 		driver.findElement(MenuPageObjects.Search_MediaTitle).clear();
 		driver.findElement(MenuPageObjects.Search_MediaTitle).sendKeys(media_title);
 		Thread.sleep(3000);
 	}
-	
+
 	public boolean checkBox() throws InterruptedException {
 		Thread.sleep(3000);
 		driver.findElement(MenuPageObjects.checkBox).click();
-		if(driver.findElement(MenuPageObjects.checkBox).isDisplayed()) {
-			System.out.println("true");
+		if (driver.findElement(MenuPageObjects.checkBox).isDisplayed()) {
+			log.info("true");
 			return true;
 		}
 		return false;
 	}
-	
+
 	public void campaignCode() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));
-		Boolean value= driver.findElement(MenuPageObjects.CampaignCode).isDisplayed();
-		if(value==true) {
+		Boolean value = driver.findElement(MenuPageObjects.CampaignCode).isDisplayed();
+		if (value == true) {
 			log.info("Campaign has been created");
 			log.info(driver.findElement(MenuPageObjects.CampaignCode).getText());
-		}else {
+		} else {
 			log.error("Campaign is not created");
 		}
-		
+
 	}
-	
+
+	/**
+	 * @Case :: New schedule
+	 */
+
+	public void new_schedule() {
+		driver.findElement((MenuPageObjects.New_schedule)).click();
+	}
+
+	public WebElement Vendor1() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(MenuPageObjects.VendorDDL).click();
+		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL);
+		return DDL_vendor;
+	}
+
+	public WebElement Vendor2() throws InterruptedException {
+
+		Thread.sleep(1000);
+		driver.findElement(MenuPageObjects.VendorDDL2).click();
+		WebElement DDL_vendor2 = driver.findElement(MenuPageObjects.VendorDDL2);
+		return DDL_vendor2;
+	}
+
+	public void Schedule_Grid() {
+		
+		driver.findElement(MenuPageObjects.Schedule_Grid).click();
+		if (driver.switchTo().alert() != null) {
+			driver.switchTo().alert().accept();
+		} else {
+			log.info("No alert");
+		}
+	}
+
+	public void fee(String fee1) {
+
+		if (driver.findElement(MenuPageObjects.fee1).isDisplayed() == true) {
+			driver.findElement(MenuPageObjects.fee1).clear();
+			driver.findElement(MenuPageObjects.fee1).sendKeys(fee1);
+		} else {
+			log.info("field is not visible due to contract has been selected ");
+		}
+	}
+
+	public void fee2(String fee2) {
+
+		if (driver.findElement(MenuPageObjects.fee2).isDisplayed() == true) {
+			driver.findElement(MenuPageObjects.fee2).clear();
+			driver.findElement(MenuPageObjects.fee2).sendKeys(fee2);
+		} else {
+			log.info("field is not visible due to contract has been selected ");
+			driver.findElement(MenuPageObjects.fee2).isDisplayed();
+		}
+
+	}
+
 }

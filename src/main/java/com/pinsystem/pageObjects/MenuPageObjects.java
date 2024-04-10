@@ -30,6 +30,7 @@ public class MenuPageObjects {
 	public static By CampaignCode=By.xpath("//span[@id='CM1_lblCampaignCode']");
 	public static By New_schedule= By.xpath("//input[@id='CM1_btnAddSchedule']");
 	public static By VendorDDL= By.xpath("//select[@id='rptTV_ctl01_ddlVendor']");
+	public static By VendorDDL2= By.xpath("//select[@id='rptTV_ctl02_ddlVendor']");
 	public static By Schedule_Grid= By.xpath("//input[@id='btnSubmit3']");
 	
 	public static By checkBox= By.xpath("//input[@id='chkLstMediaCat_0']");
@@ -48,6 +49,9 @@ public class MenuPageObjects {
 	public static By VendorRate= By.xpath("//input[@id='txtBuyingRate']");
 	public static By Newspaper_H= By.xpath("//input[@id='txtN_H']");
 	public static By Newspaper_N= By.xpath("//input[@id='txtN_W']");
+	public static By fee1= By.xpath("//input[@id='rptTV_ctl01_txtFee']");
+	public static By fee2= By.xpath("//input[@id='rptTV_ctl02_txtFee']");
+	
 
 	
 	

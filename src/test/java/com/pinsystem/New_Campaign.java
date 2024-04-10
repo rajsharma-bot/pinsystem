@@ -53,8 +53,27 @@ public class New_Campaign extends TestBase {
 		Mo.checkBox();
 		Mo.Save();
 		Mo.campaignCode();
+	}
+	
+	@Test(dependsOnMethods = "new_Campaign", description = "PINSYS-1813:: New Schedule(New layout)")
+	public void new_Schedule() throws InterruptedException {
+		FrameHelper fh = new FrameHelper(driver);
+		MenuObjects Mo = new MenuObjects(driver);
+		SwitchTabs st = new SwitchTabs(driver);
+		DropDownHelper dh = new DropDownHelper(driver);
+		fh.switchTodefault();
+		fh.switchToFrame(ObjectReader.reader.rightframe());
+		Mo.new_schedule();
+		fh.switchTodefault();
+		fh.switchToFrame(ObjectReader.reader.rightframe());
+		dh.selectUsingValue(Mo.Vendor1(), "124|MYR|1.0000000|1|1|15|15|0");
+		Mo.fee("5");
+		dh.selectUsingValue(Mo.Vendor2(), "4640|MYR|1.0000000|1|1|0|0|0");
+		Mo.fee2("3.5");
+		Mo.Schedule_Grid();
 		
-
+		
+		
 	}
 
 }
