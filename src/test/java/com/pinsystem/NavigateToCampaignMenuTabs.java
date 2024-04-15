@@ -25,6 +25,7 @@ public class NavigateToCampaignMenuTabs extends TestBase {
 		MenuObjects Mo = new MenuObjects(driver);
 		HomeNavigationObjects HN = new HomeNavigationObjects(driver);
 		LoginClass lc= new LoginClass(driver);
+		log.info("Login runner has been invoked");
 		lc.loginRunner();
 		fh.switchToFrame(ObjectReader.reader.topframe());
 		HN.MEDIA();

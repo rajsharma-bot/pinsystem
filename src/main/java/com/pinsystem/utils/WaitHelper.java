@@ -1,19 +1,27 @@
 package com.pinsystem.utils;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WaitHelper {
 	
 	private WebDriver driver;
+	private final int implicitWait = 5000;
 	private static Logger log = LogManager.getLogger(WaitHelper.class);
 	
 	public WaitHelper(WebDriver driver) {
 		this.driver=driver;
 	}
+	
+		
 	
 	public void setImplicitWait(long timeout) {
 		log.info("Implicit Wait has been set to: " + timeout);
@@ -27,4 +35,35 @@ public class WaitHelper {
 		log.info("page is loaded");
 	}
 
+
+	
+	
+	public boolean waitForInvisibilityofElementLocatedBy(WebElement element, int implicitTimeoutInMilli) throws InterruptedException {
+		long start =System.currentTimeMillis();
+		long timePassedinSS;
+		try {
+			
+			this.setImplicitWait(implicitTimeoutInMilli);
+			WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5));
+			
+			boolean isElementNotPresent = w.until(ExpectedConditions.invisibilityOfElementLocated(By.id(element.getAttribute("id"))));
+			timePassedinSS = (System.currentTimeMillis() - start) / 1000;
+			if(timePassedinSS > 0){
+				log.info(timePassedinSS + "(s) passed waiting for invisibility of element => " + element.getAttribute("id") , true);
+			}
+			return isElementNotPresent;
+			
+		} catch (Exception e) {
+			if(e.getMessage().contains("can't access dead object")){
+				return true;
+			}else{
+				log.info((System.currentTimeMillis() - start) / 1000 + "(s) passed waiting for invisibility of element, then came in exception", true);
+			}
+		}finally{
+			Thread.sleep(implicitTimeoutInMilli);
+		}
+		return false;
+	}
+	
+	
 }

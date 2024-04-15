@@ -1,11 +1,15 @@
 package com.pinsystem.pageObjects;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import com.pinsystem.utils.WaitHelper;
 
 public class MenuObjects {
 
@@ -17,10 +21,7 @@ public class MenuObjects {
 		this.driver = driver;
 	}
 
-	/**
-	 * Element for List Campaign
-	 */
-
+	// Element for List Campaign
 	public void ListCampaign_page() {
 		driver.findElement(MenuPageObjects.ListCampaign).click();
 	}
@@ -50,10 +51,7 @@ public class MenuObjects {
 		driver.findElement(MenuPageObjects.CANCEL_TAB).click();
 	}
 
-	/**
-	 * Element for List Schedule
-	 */
-
+	// Element for List Schedule
 	public void ListSchedule_page() {
 		log.info("List Schedule has been clicked");
 		driver.findElement(MenuPageObjects.ListSchedule).click();
@@ -79,10 +77,7 @@ public class MenuObjects {
 		driver.findElement(MenuPageObjects.Revision_Tab).click();
 	}
 
-	/**
-	 * Element for List MO
-	 */
-
+	// Element for List MO
 	public void ListMO_page() {
 		log.info("List MO has been Clicked");
 		driver.findElement(MenuPageObjects.ListMO).click();
@@ -103,12 +98,7 @@ public class MenuObjects {
 		driver.findElement(MenuPageObjects.CancelledMO_Tab).click();
 	}
 
-	/**
-	 * @category= Search Schedule Page
-	 * 
-	 * @return
-	 */
-
+	// Search Schedule Page
 	public WebElement monthDll() {
 		WebElement dropDownMonth = driver.findElement(MenuPageObjects.monthDll);
 		return dropDownMonth;
@@ -153,11 +143,7 @@ public class MenuObjects {
 		return labelText;
 	}
 
-	/**
-	 * New Campaign
-	 * 
-	 */
-
+	// New Campaign
 	public void newCampaign() {
 		log.info("New Campaign has been clicked");
 		driver.findElement(MenuPageObjects.NewCampaign).click();
@@ -271,6 +257,7 @@ public class MenuObjects {
 		driver.findElement((MenuPageObjects.New_schedule)).click();
 	}
 
+	// Vendor Selection
 	public WebElement Vendor1() throws InterruptedException {
 		Thread.sleep(1000);
 		driver.findElement(MenuPageObjects.VendorDDL).click();
@@ -286,14 +273,57 @@ public class MenuObjects {
 		return DDL_vendor2;
 	}
 
-	public void Schedule_Grid() {
-		
+	public WebElement Vendor3() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(MenuPageObjects.VendorDDL3).click();
+		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL3);
+		return DDL_vendor;
+	}
+
+	public WebElement Vendor4() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(MenuPageObjects.VendorDDL4).click();
+		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL4);
+		return DDL_vendor;
+	}
+
+	public WebElement Vendor5() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(MenuPageObjects.VendorDDL5).click();
+		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL5);
+		return DDL_vendor;
+	}
+
+	public WebElement Vendor6() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(MenuPageObjects.VendorDDL6).click();
+		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL6);
+		return DDL_vendor;
+	}
+
+	public WebElement Vendor7() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(MenuPageObjects.VendorDDL7).click();
+		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL7);
+		return DDL_vendor;
+	}
+
+	public void Schedule_Grid() throws InterruptedException {
+
+		Thread.sleep(1000);
 		driver.findElement(MenuPageObjects.Schedule_Grid).click();
 		if (driver.switchTo().alert() != null) {
 			driver.switchTo().alert().accept();
+		} else if (driver.findElement(MenuPageObjects.schedule_grid_error).isDisplayed()) {
+			driver.findElement(MenuPageObjects.Schedule_Grid).click();
+			if (driver.switchTo().alert() != null) {
+				driver.switchTo().alert().accept();
+			}
+
 		} else {
 			log.info("No alert");
 		}
+
 	}
 
 	public void fee(String fee1) {
@@ -316,6 +346,114 @@ public class MenuObjects {
 			driver.findElement(MenuPageObjects.fee2).isDisplayed();
 		}
 
+	}
+
+	public void close_popUp() {
+		try {
+			if (driver.findElement(MenuPageObjects.layout_popup).isDisplayed()) {
+				driver.findElement(MenuPageObjects.layout_popup).click();
+				WebElement layout_pop = driver.findElement(MenuPageObjects.layout_popup);
+				WaitHelper a = new WaitHelper(driver);
+				a.waitForInvisibilityofElementLocatedBy(layout_pop, 300);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			log.error("Failed to close layout pop up", e);
+		}
+	}
+
+	public void Entering_Spots() {
+		WebElement parentElement = driver.findElement(MenuPageObjects.divCalendar);
+		List<WebElement> childElements = parentElement.findElements(MenuPageObjects.txt_Spot);
+
+		// Iterate through each text box element and send keys
+		for (WebElement txt_spots : childElements) {
+
+			txt_spots.click();
+			txt_spots.sendKeys("1");
+			txt_spots.sendKeys(Keys.TAB);
+		}
+
+	}
+
+	public WebElement Adtype_ddl() {
+
+		WebElement newsPaper_AD = driver.findElement(MenuPageObjects.AdType_N);
+		WebElement Cinema_AD = driver.findElement(MenuPageObjects.Adtype_Others);
+		WebElement Digital_AD = driver.findElement(MenuPageObjects.Adtype_D);
+		WebElement Magazine_AD = driver.findElement(MenuPageObjects.Adtype_M);
+		WebElement Radio_AD = driver.findElement(MenuPageObjects.AdType_R);
+		WebElement TV_AD = driver.findElement(MenuPageObjects.AdType_TV);
+
+		WebElement result = null;
+
+		if (Cinema_AD.isDisplayed()) {
+			Cinema_AD.click();
+			result = Cinema_AD;
+			return result;
+		} else if (newsPaper_AD.isDisplayed()) {
+			newsPaper_AD.click();
+			result = newsPaper_AD;
+			return result;
+		} else if (Digital_AD.isDisplayed()) {
+			Digital_AD.click();
+			result = Digital_AD;
+		} else if (Magazine_AD.isDisplayed()) {
+			Magazine_AD.click();
+			result = Magazine_AD;
+			return result;
+		} else if (Radio_AD.isDisplayed()) {
+			Radio_AD.click();
+			result = Radio_AD;
+			return result;
+		} else if (TV_AD.isDisplayed()) {
+			TV_AD.click();
+			result = TV_AD;
+			return result;
+		} else {
+			log.info("Select correct ad type locator");
+		}
+		return result;
+	}
+
+	public void setClient_rate(String txt_client) {
+		driver.findElement(MenuPageObjects.ClientRate).sendKeys(txt_client);
+	}
+
+	public void setVendor_rate(String txt_vendor) {
+		driver.findElement(MenuPageObjects.VendorRate).sendKeys(txt_vendor);
+	}
+
+	public void set_Description(String txt) {
+		WebElement remark_others = driver.findElement(MenuPageObjects.txt_Others_Description);
+		WebElement remark_magazine = driver.findElement(MenuPageObjects.txt_Magazine_Description);
+		WebElement remark_newspaper = driver.findElement(MenuPageObjects.txt_News_Description);
+		WebElement remark_radio = driver.findElement(MenuPageObjects.txt_Radio_Description);
+		WebElement remark_TV = driver.findElement(MenuPageObjects.txt_TV_Description);
+		WebElement remark_digital = driver.findElement(MenuPageObjects.txt_Digital_Description);
+		if (remark_others.isDisplayed()) {
+			remark_others.sendKeys(txt);
+		} else if (remark_magazine.isDisplayed()) {
+			remark_magazine.sendKeys(txt);
+
+		} else if (remark_newspaper.isDisplayed()) {
+			remark_newspaper.sendKeys(txt);
+		} else if (remark_radio.isDisplayed()) {
+			remark_radio.sendKeys(txt);
+		} else if (remark_TV.isDisplayed()) {
+			remark_TV.sendKeys(txt);
+		} else if (remark_digital.isDisplayed()) {
+			remark_digital.sendKeys(txt);
+		} else {
+			log.info("Locator issue");
+		}
+
+	}
+
+	public WebElement vendorCurrency() throws InterruptedException {
+		Thread.sleep(2000);
+		WebElement ddl_vendor_curr = driver.findElement(MenuPageObjects.vendor_currency);
+		return ddl_vendor_curr;
 	}
 
 }

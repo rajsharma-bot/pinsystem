@@ -2,6 +2,7 @@ package com.pinsystem.utils;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -32,6 +33,13 @@ private static Logger log = LogManager.getLogger(FrameHelper.class);
 		//log.info("Frame has been switched to " + element );
 		driver.switchTo().frame(element);
 		log.info("Frame has been switched to " + element );
+	}
+	
+	public void mediaOrderFrame(String framename) {
+		//driver.findElement(By.id("popEditMediaSchedule_CIF-1"));
+		
+		driver.switchTo().frame(framename);
+		log.info("Frame has been switched to media order frame "+ framename);
 	}
 	
 	public void switchTodefault() {

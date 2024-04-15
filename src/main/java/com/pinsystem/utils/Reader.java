@@ -7,6 +7,7 @@ import java.util.Properties;
 
 public class Reader {
 
+	@SuppressWarnings("unused")
 	private static FileInputStream file;
 	public static Properties props;
 

@@ -6,11 +6,11 @@ import org.testng.annotations.Test;
 
 import com.pinsystem.pageObjects.HomeNavigationObjects;
 import com.pinsystem.pageObjects.MenuObjects;
+import com.pinsystem.pageObjects.MixMediaSchedule;
 import com.pinsystem.utils.DropDownHelper;
 import com.pinsystem.utils.FrameHelper;
 import com.pinsystem.utils.ObjectReader;
 import com.pinsystem.utils.PropertyReader;
-import com.pinsystem.utils.SwitchTabs;
 import com.pinsystem.utils.WaitHelper;
 
 public class New_Campaign extends TestBase {
@@ -22,12 +22,13 @@ public class New_Campaign extends TestBase {
 		ObjectReader.reader = new PropertyReader();
 		FrameHelper fh = new FrameHelper(driver);
 		MenuObjects Mo = new MenuObjects(driver);
-		SwitchTabs st = new SwitchTabs(driver);
 		WaitHelper wh = new WaitHelper(driver);
 		HomeNavigationObjects HN = new HomeNavigationObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
+		MixMediaSchedule mx= new MixMediaSchedule(driver);
 		wh.setImplicitWait(ObjectReader.reader.getExplicitWait());
 		LoginClass lc = new LoginClass(driver);
+		log.info("Login runner has been invoked");
 		lc.loginRunner();
 		fh.switchToFrame(ObjectReader.reader.topframe());
 		HN.MEDIA();
@@ -45,12 +46,13 @@ public class New_Campaign extends TestBase {
 		dh.selectUsingValue(Mo.Product(), "11491");
 		dh.selectUsingValue(Mo.Contract(), "1047");
 		Mo.CampaignName("PINSYS-1808-New Campaign");
-		dh.selectUsingVisibleText(Mo.mediaType(), "Cinema");
-		Mo.searchTitle("Cathay Cineplex");
-		Mo.checkBox();
-		dh.selectUsingVisibleText(Mo.mediaType(), "Digital");
-		Mo.searchTitle("Linkedin");
-		Mo.checkBox();
+//		dh.selectUsingVisibleText(Mo.mediaType(), "Cinema");
+//		Mo.searchTitle("Cathay Cineplex");
+//		Mo.checkBox();
+//		dh.selectUsingVisibleText(Mo.mediaType(), "Digital");
+//		Mo.searchTitle("Linkedin");
+//		Mo.checkBox();
+		mx.selectMultipleMediaTypes();
 		Mo.Save();
 		Mo.campaignCode();
 	}
@@ -59,21 +61,22 @@ public class New_Campaign extends TestBase {
 	public void new_Schedule() throws InterruptedException {
 		FrameHelper fh = new FrameHelper(driver);
 		MenuObjects Mo = new MenuObjects(driver);
-		SwitchTabs st = new SwitchTabs(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
+		MixMediaSchedule mx= new MixMediaSchedule(driver);
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.rightframe());
 		Mo.new_schedule();
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.rightframe());
-		dh.selectUsingValue(Mo.Vendor1(), "124|MYR|1.0000000|1|1|15|15|0");
-		Mo.fee("5");
-		dh.selectUsingValue(Mo.Vendor2(), "4640|MYR|1.0000000|1|1|0|0|0");
-		Mo.fee2("3.5");
+		mx.selectVendorCurreny();
+		mx.selecMultipleVendors();
 		Mo.Schedule_Grid();
+		Thread.sleep(3000);
+		driver.switchTo().frame("popEditMediaSchedule_CIF-1");
+		Mo.Entering_Spots();
+		dh.selectUsingValue(Mo.Adtype_ddl(), "Spot Buy");
 		
-		
-		
+	
 	}
 
 }

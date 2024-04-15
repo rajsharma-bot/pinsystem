@@ -25,9 +25,11 @@ public class SearchRecords extends TestBase {
 		HomeNavigationObjects HN = new HomeNavigationObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
 		LoginClass lc = new LoginClass(driver);
+		log.info("Runner has been invoked");
 		lc.loginRunner();
 		fh.switchToFrame(ObjectReader.reader.topframe());
 		HN.MEDIA();
+		log.info("Media has been cliked");
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.leftframe());
 		Mo.ListSchedule_page();

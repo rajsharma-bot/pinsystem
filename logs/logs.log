@@ -1,252 +1,526 @@
-[INFO ] 2024-04-10 11:52:18.371 [main] TestBase - Initialize Web driver: 555864569
-[INFO ] 2024-04-10 11:52:18.397 [main] WaitHelper - Implicit Wait has been set to: 150
-[INFO ] 2024-04-10 11:52:18.435 [main] WaitHelper - waiting for page to load for : 150
-[INFO ] 2024-04-10 11:52:18.450 [main] WaitHelper - page is loaded
-[INFO ] 2024-04-10 11:52:24.773 [main] TestBase - **************new_CampaignStarted***************
-[INFO ] 2024-04-10 11:52:24.813 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-04-10 11:52:24.814 [main] WaitHelper - Implicit Wait has been set to: 150
-[INFO ] 2024-04-10 11:52:25.343 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
-[INFO ] 2024-04-10 11:52:25.858 [main] LoginObjects - Passing Only Password : asd123
-[INFO ] 2024-04-10 11:52:25.860 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
-[INFO ] 2024-04-10 11:52:30.571 [main] LoginObjects - Clicked on submit
-[INFO ] 2024-04-10 11:55:00.675 [main] FrameHelper - Frame has been switched to topframe
-[INFO ] 2024-04-10 11:55:00.834 [main] HomeNavigationObjects - Clicked on Media 
-[INFO ] 2024-04-10 11:55:00.842 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 11:55:00.894 [main] FrameHelper - Frame has been switched to left
-[INFO ] 2024-04-10 11:55:00.894 [main] MenuObjects - New Campaign has been clicked
-[INFO ] 2024-04-10 11:55:01.054 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 11:55:03.255 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 11:55:04.315 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
-[INFO ] 2024-04-10 11:55:05.527 [main] DropDownHelper - selectUsingValue and value is: 50222
-[INFO ] 2024-04-10 11:55:09.264 [main] DropDownHelper - selectUsingValue and value is: 11491
-[INFO ] 2024-04-10 11:55:10.434 [main] DropDownHelper - selectUsingValue and value is: 1047
-[INFO ] 2024-04-10 11:55:12.696 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Cinema
-[INFO ] 2024-04-10 11:55:21.230 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Digital
-[INFO ] 2024-04-10 11:55:35.448 [main] MenuObjects - Campaign has been created
-[INFO ] 2024-04-10 11:55:35.471 [main] MenuObjects - B004/JSR/2400070
-[INFO ] 2024-04-10 11:55:35.669 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 11:55:35.669 [main] TestBase - **************new_CampaignFinished***************
-[INFO ] 2024-04-10 11:55:36.016 [main] TestBase - **************new_ScheduleStarted***************
-[INFO ] 2024-04-10 11:55:36.018 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-04-10 11:55:36.024 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 11:55:36.071 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 11:55:37.289 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 11:55:37.322 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 11:55:38.353 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Asia Times  Sdn Bhd (KL)
-[INFO ] 2024-04-10 11:57:19.170 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 11:57:19.757 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 11:57:19.763 [main] TestBase - **************new_ScheduleFinished***************
-[INFO ] 2024-04-10 12:01:21.231 [main] TestBase - Initialize Web driver: 555864569
-[INFO ] 2024-04-10 12:01:21.285 [main] WaitHelper - Implicit Wait has been set to: 150
-[INFO ] 2024-04-10 12:01:21.324 [main] WaitHelper - waiting for page to load for : 150
-[INFO ] 2024-04-10 12:01:21.350 [main] WaitHelper - page is loaded
-[INFO ] 2024-04-10 12:01:26.914 [main] TestBase - **************new_CampaignStarted***************
-[INFO ] 2024-04-10 12:01:27.005 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-04-10 12:01:27.007 [main] WaitHelper - Implicit Wait has been set to: 150
-[INFO ] 2024-04-10 12:01:31.650 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
-[INFO ] 2024-04-10 12:01:34.281 [main] LoginObjects - Passing Only Password : asd123
-[INFO ] 2024-04-10 12:01:34.282 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
-[INFO ] 2024-04-10 12:01:40.512 [main] LoginObjects - Clicked on submit
-[INFO ] 2024-04-10 12:04:10.916 [main] FrameHelper - Frame has been switched to topframe
-[INFO ] 2024-04-10 12:04:12.181 [main] HomeNavigationObjects - Clicked on Media 
-[INFO ] 2024-04-10 12:04:12.233 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:04:12.577 [main] FrameHelper - Frame has been switched to left
-[INFO ] 2024-04-10 12:04:12.578 [main] MenuObjects - New Campaign has been clicked
-[INFO ] 2024-04-10 12:04:13.727 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:04:16.392 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:04:17.660 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
-[INFO ] 2024-04-10 12:04:19.544 [main] DropDownHelper - selectUsingValue and value is: 50222
-[INFO ] 2024-04-10 12:04:25.954 [main] DropDownHelper - selectUsingValue and value is: 11491
-[INFO ] 2024-04-10 12:04:27.897 [main] DropDownHelper - selectUsingValue and value is: 1047
-[INFO ] 2024-04-10 12:04:31.844 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Cinema
-[INFO ] 2024-04-10 12:04:43.034 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Digital
-[INFO ] 2024-04-10 12:05:02.019 [main] MenuObjects - Campaign has been created
-[INFO ] 2024-04-10 12:05:02.151 [main] MenuObjects - B004/JSR/2400071
-[INFO ] 2024-04-10 12:05:03.070 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 12:05:03.071 [main] TestBase - **************new_CampaignFinished***************
-[INFO ] 2024-04-10 12:05:04.440 [main] TestBase - **************new_ScheduleStarted***************
-[INFO ] 2024-04-10 12:05:04.445 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-04-10 12:05:04.481 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:05:04.619 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:05:06.385 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:05:06.495 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:05:08.067 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Asia Times  Sdn Bhd (KL)
-[INFO ] 2024-04-10 12:09:45.588 [main] TestBase - Initialize Web driver: 1240730624
-[INFO ] 2024-04-10 12:09:45.615 [main] WaitHelper - Implicit Wait has been set to: 30
-[INFO ] 2024-04-10 12:09:45.645 [main] WaitHelper - waiting for page to load for : 100
-[INFO ] 2024-04-10 12:09:45.660 [main] WaitHelper - page is loaded
-[INFO ] 2024-04-10 12:09:49.874 [main] TestBase - **************new_CampaignStarted***************
-[INFO ] 2024-04-10 12:09:50.116 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-04-10 12:09:50.192 [main] WaitHelper - Implicit Wait has been set to: 30
-[INFO ] 2024-04-10 12:09:52.962 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
-[INFO ] 2024-04-10 12:09:54.160 [main] LoginObjects - Passing Only Password : asd123
-[INFO ] 2024-04-10 12:09:54.162 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
-[INFO ] 2024-04-10 12:09:59.240 [main] LoginObjects - Clicked on submit
-[INFO ] 2024-04-10 12:10:32.989 [main] FrameHelper - Frame has been switched to topframe
-[INFO ] 2024-04-10 12:10:38.357 [main] HomeNavigationObjects - Clicked on Media 
-[INFO ] 2024-04-10 12:10:38.416 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:10:39.419 [main] FrameHelper - Frame has been switched to left
-[INFO ] 2024-04-10 12:10:39.420 [main] MenuObjects - New Campaign has been clicked
-[INFO ] 2024-04-10 12:10:42.439 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:10:44.979 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:10:46.466 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
-[INFO ] 2024-04-10 12:10:48.500 [main] DropDownHelper - selectUsingValue and value is: 50222
-[INFO ] 2024-04-10 12:11:00.141 [main] DropDownHelper - selectUsingValue and value is: 11491
-[INFO ] 2024-04-10 12:11:01.664 [main] DropDownHelper - selectUsingValue and value is: 1047
-[INFO ] 2024-04-10 12:11:04.808 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Cinema
-[INFO ] 2024-04-10 12:11:14.492 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Digital
-[INFO ] 2024-04-10 12:11:31.259 [main] MenuObjects - Campaign has been created
-[INFO ] 2024-04-10 12:11:31.698 [main] MenuObjects - B004/JSR/2400072
-[INFO ] 2024-04-10 12:11:32.477 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 12:11:32.478 [main] TestBase - **************new_CampaignFinished***************
-[INFO ] 2024-04-10 12:11:34.047 [main] TestBase - **************new_ScheduleStarted***************
-[INFO ] 2024-04-10 12:11:34.051 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-04-10 12:11:34.076 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:11:34.379 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:11:36.232 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:11:36.395 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:11:41.386 [main] DropDownHelper - selectUsingValue and value is: 124|MYR|1.0000000|1|1|15|15|0
-[INFO ] 2024-04-10 12:11:43.363 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 12:11:44.118 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 12:11:44.153 [main] TestBase - **************new_ScheduleFinished***************
-[INFO ] 2024-04-10 12:13:55.433 [main] TestBase - Initialize Web driver: 836903727
-[INFO ] 2024-04-10 12:13:55.453 [main] WaitHelper - Implicit Wait has been set to: 30
-[INFO ] 2024-04-10 12:13:55.475 [main] WaitHelper - waiting for page to load for : 100
-[INFO ] 2024-04-10 12:13:55.487 [main] WaitHelper - page is loaded
-[INFO ] 2024-04-10 12:13:58.495 [main] TestBase - **************new_CampaignStarted***************
-[INFO ] 2024-04-10 12:13:58.570 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-04-10 12:13:58.571 [main] WaitHelper - Implicit Wait has been set to: 30
-[INFO ] 2024-04-10 12:14:00.765 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
-[INFO ] 2024-04-10 12:14:01.321 [main] LoginObjects - Passing Only Password : asd123
-[INFO ] 2024-04-10 12:14:01.323 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
-[INFO ] 2024-04-10 12:14:05.959 [main] LoginObjects - Clicked on submit
-[INFO ] 2024-04-10 12:14:36.111 [main] FrameHelper - Frame has been switched to topframe
-[INFO ] 2024-04-10 12:14:36.495 [main] HomeNavigationObjects - Clicked on Media 
-[INFO ] 2024-04-10 12:14:36.516 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:14:36.659 [main] FrameHelper - Frame has been switched to left
-[INFO ] 2024-04-10 12:14:36.661 [main] MenuObjects - New Campaign has been clicked
-[INFO ] 2024-04-10 12:14:37.127 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:14:38.317 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:15:00.156 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
-[INFO ] 2024-04-10 12:15:01.636 [main] DropDownHelper - selectUsingValue and value is: 50222
-[INFO ] 2024-04-10 12:15:03.314 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 12:15:04.178 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 12:15:04.190 [main] TestBase - **************new_CampaignFinished***************
-[INFO ] 2024-04-10 12:16:04.416 [main] TestBase - Initialize Web driver: 836903727
-[INFO ] 2024-04-10 12:16:04.436 [main] WaitHelper - Implicit Wait has been set to: 30
-[INFO ] 2024-04-10 12:16:04.460 [main] WaitHelper - waiting for page to load for : 100
-[INFO ] 2024-04-10 12:16:04.472 [main] WaitHelper - page is loaded
-[INFO ] 2024-04-10 12:16:07.957 [main] TestBase - **************new_CampaignStarted***************
-[INFO ] 2024-04-10 12:16:08.070 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-04-10 12:16:08.072 [main] WaitHelper - Implicit Wait has been set to: 30
-[INFO ] 2024-04-10 12:16:09.932 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
-[INFO ] 2024-04-10 12:16:10.668 [main] LoginObjects - Passing Only Password : asd123
-[INFO ] 2024-04-10 12:16:10.670 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
-[INFO ] 2024-04-10 12:16:14.727 [main] LoginObjects - Clicked on submit
-[INFO ] 2024-04-10 12:16:44.880 [main] FrameHelper - Frame has been switched to topframe
-[INFO ] 2024-04-10 12:16:45.136 [main] HomeNavigationObjects - Clicked on Media 
-[INFO ] 2024-04-10 12:16:45.150 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:16:45.240 [main] FrameHelper - Frame has been switched to left
-[INFO ] 2024-04-10 12:16:45.240 [main] MenuObjects - New Campaign has been clicked
-[INFO ] 2024-04-10 12:16:45.525 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:16:46.616 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:16:47.715 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
-[INFO ] 2024-04-10 12:16:48.973 [main] DropDownHelper - selectUsingValue and value is: 50222
-[INFO ] 2024-04-10 12:16:53.004 [main] DropDownHelper - selectUsingValue and value is: 11491
-[INFO ] 2024-04-10 12:16:54.278 [main] DropDownHelper - selectUsingValue and value is: 1047
-[INFO ] 2024-04-10 12:16:56.746 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Cinema
-[INFO ] 2024-04-10 12:17:05.604 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Digital
-[INFO ] 2024-04-10 12:17:21.050 [main] MenuObjects - Campaign has been created
-[INFO ] 2024-04-10 12:17:21.115 [main] MenuObjects - B004/JSR/2400073
-[INFO ] 2024-04-10 12:17:21.635 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 12:17:21.636 [main] TestBase - **************new_CampaignFinished***************
-[INFO ] 2024-04-10 12:17:23.023 [main] TestBase - **************new_ScheduleStarted***************
-[INFO ] 2024-04-10 12:17:23.028 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-04-10 12:17:23.040 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:17:23.146 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:17:24.704 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:17:24.781 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:17:37.554 [main] DropDownHelper - selectUsingValue and value is: 124|MYR|1.0000000|1|1|15|15|0
-[INFO ] 2024-04-10 12:19:31.664 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 12:19:32.614 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 12:19:32.640 [main] TestBase - **************new_ScheduleFinished***************
-[INFO ] 2024-04-10 12:22:26.515 [main] TestBase - Initialize Web driver: 836903727
-[INFO ] 2024-04-10 12:22:26.595 [main] WaitHelper - Implicit Wait has been set to: 30
-[INFO ] 2024-04-10 12:22:26.654 [main] WaitHelper - waiting for page to load for : 100
-[INFO ] 2024-04-10 12:22:26.673 [main] WaitHelper - page is loaded
-[INFO ] 2024-04-10 12:22:31.937 [main] TestBase - **************new_CampaignStarted***************
-[INFO ] 2024-04-10 12:22:32.007 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-04-10 12:22:32.008 [main] WaitHelper - Implicit Wait has been set to: 30
-[INFO ] 2024-04-10 12:22:33.092 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
-[INFO ] 2024-04-10 12:22:33.859 [main] LoginObjects - Passing Only Password : asd123
-[INFO ] 2024-04-10 12:22:33.861 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
-[INFO ] 2024-04-10 12:22:37.771 [main] LoginObjects - Clicked on submit
-[INFO ] 2024-04-10 12:23:07.924 [main] FrameHelper - Frame has been switched to topframe
-[INFO ] 2024-04-10 12:23:08.193 [main] HomeNavigationObjects - Clicked on Media 
-[INFO ] 2024-04-10 12:23:08.207 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:23:08.296 [main] FrameHelper - Frame has been switched to left
-[INFO ] 2024-04-10 12:23:08.297 [main] MenuObjects - New Campaign has been clicked
-[INFO ] 2024-04-10 12:23:08.561 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:23:09.678 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:23:10.800 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
-[INFO ] 2024-04-10 12:23:12.255 [main] DropDownHelper - selectUsingValue and value is: 50222
-[INFO ] 2024-04-10 12:23:17.100 [main] DropDownHelper - selectUsingValue and value is: 11491
-[INFO ] 2024-04-10 12:23:18.535 [main] DropDownHelper - selectUsingValue and value is: 1047
-[INFO ] 2024-04-10 12:23:21.626 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Cinema
-[INFO ] 2024-04-10 12:23:31.282 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Digital
-[INFO ] 2024-04-10 12:23:51.986 [main] MenuObjects - Campaign has been created
-[INFO ] 2024-04-10 12:23:52.063 [main] MenuObjects - B004/JSR/2400074
-[INFO ] 2024-04-10 12:23:52.747 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 12:23:52.747 [main] TestBase - **************new_CampaignFinished***************
-[INFO ] 2024-04-10 12:23:54.195 [main] TestBase - **************new_ScheduleStarted***************
-[INFO ] 2024-04-10 12:23:54.202 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-04-10 12:23:54.240 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:23:54.607 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:23:56.454 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:23:56.653 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:24:39.041 [main] DropDownHelper - selectUsingValue and value is: 124|MYR|1.0000000|1|1|15|15|0
-[ERROR] 2024-04-10 12:24:44.236 [main] MenuObjects - field is not visible due to contract has been selected 
-[INFO ] 2024-04-10 12:24:51.046 [main] DropDownHelper - selectUsingValue and value is: 4640|MYR|1.0000000|1|1|0|0|0
-[ERROR] 2024-04-10 12:24:53.777 [main] MenuObjects - field is not visible due to contract has been selected 
-[INFO ] 2024-04-10 12:29:33.013 [main] TestBase - Initialize Web driver: 1389810291
-[INFO ] 2024-04-10 12:29:33.033 [main] WaitHelper - Implicit Wait has been set to: 30
-[INFO ] 2024-04-10 12:29:33.057 [main] WaitHelper - waiting for page to load for : 100
-[INFO ] 2024-04-10 12:29:33.072 [main] WaitHelper - page is loaded
-[INFO ] 2024-04-10 12:29:37.450 [main] TestBase - **************new_CampaignStarted***************
-[INFO ] 2024-04-10 12:29:37.624 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-04-10 12:29:37.628 [main] WaitHelper - Implicit Wait has been set to: 30
-[INFO ] 2024-04-10 12:29:39.324 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
-[INFO ] 2024-04-10 12:29:40.355 [main] LoginObjects - Passing Only Password : asd123
-[INFO ] 2024-04-10 12:29:40.357 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
-[INFO ] 2024-04-10 12:29:44.568 [main] LoginObjects - Clicked on submit
-[INFO ] 2024-04-10 12:30:14.758 [main] FrameHelper - Frame has been switched to topframe
-[INFO ] 2024-04-10 12:30:15.143 [main] HomeNavigationObjects - Clicked on Media 
-[INFO ] 2024-04-10 12:30:15.161 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:30:15.289 [main] FrameHelper - Frame has been switched to left
-[INFO ] 2024-04-10 12:30:15.290 [main] MenuObjects - New Campaign has been clicked
-[INFO ] 2024-04-10 12:30:15.789 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:30:17.426 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:30:18.588 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
-[INFO ] 2024-04-10 12:30:20.036 [main] DropDownHelper - selectUsingValue and value is: 50222
-[INFO ] 2024-04-10 12:30:24.197 [main] DropDownHelper - selectUsingValue and value is: 11491
-[INFO ] 2024-04-10 12:30:25.481 [main] DropDownHelper - selectUsingValue and value is: 1047
-[INFO ] 2024-04-10 12:30:28.073 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Cinema
-[INFO ] 2024-04-10 12:30:35.913 [main] MenuObjects - true
-[INFO ] 2024-04-10 12:30:37.989 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Digital
-[INFO ] 2024-04-10 12:30:45.429 [main] MenuObjects - true
-[INFO ] 2024-04-10 12:31:04.494 [main] MenuObjects - Campaign has been created
-[INFO ] 2024-04-10 12:31:04.685 [main] MenuObjects - B004/JSR/2400075
-[INFO ] 2024-04-10 12:31:05.589 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 12:31:05.590 [main] TestBase - **************new_CampaignFinished***************
-[INFO ] 2024-04-10 12:31:07.228 [main] TestBase - **************new_ScheduleStarted***************
-[INFO ] 2024-04-10 12:31:07.233 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-04-10 12:31:07.274 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:31:07.792 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:31:10.320 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-04-10 12:31:10.472 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-04-10 12:31:12.083 [main] DropDownHelper - selectUsingValue and value is: 124|MYR|1.0000000|1|1|15|15|0
-[INFO ] 2024-04-10 12:31:12.630 [main] MenuObjects - field is not visible due to contract has been selected 
-[INFO ] 2024-04-10 12:31:14.321 [main] DropDownHelper - selectUsingValue and value is: 4640|MYR|1.0000000|1|1|0|0|0
-[INFO ] 2024-04-10 12:31:14.891 [main] MenuObjects - field is not visible due to contract has been selected 
-[INFO ] 2024-04-10 12:31:34.036 [main] ScreenshotUtility - Screenshot has been captured
-[INFO ] 2024-04-10 12:31:34.037 [main] TestBase - **************new_ScheduleFinished***************
+[INFO ] 2024-04-10 13:03:56.593 [main] TestBase - Initialize Web driver: 1919497442
+[INFO ] 2024-04-10 13:03:56.625 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-10 13:03:56.676 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-04-10 13:03:56.706 [main] WaitHelper - page is loaded
+[INFO ] 2024-04-10 13:04:03.680 [main] TestBase - **************verify_login_page_withInValid_credsStarted***************
+[INFO ] 2024-04-10 13:04:04.809 [main] LoginObjects - Passing Only username : Teshjhz@jhjd.com
+[INFO ] 2024-04-10 13:04:05.264 [main] LoginObjects - Passing Only Password : 87832
+[INFO ] 2024-04-10 13:04:05.265 [main] LoginObjects - Both username = Teshjhz@jhjd.com Password= 87832 Is Passed
+[INFO ] 2024-04-10 13:04:06.703 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-10 13:04:07.758 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-10 13:04:07.758 [main] TestBase - **************verify_login_page_withInValid_credsFinished***************
+[INFO ] 2024-04-10 13:04:08.806 [main] TestBase - **************verify_login_page_withOut_usernameStarted***************
+[INFO ] 2024-04-10 13:04:12.085 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-10 13:04:12.213 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-10 13:04:12.813 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-10 13:04:12.814 [main] TestBase - **************verify_login_page_withOut_usernameFinished***************
+[INFO ] 2024-04-10 13:04:12.860 [main] TestBase - **************verify_login_page_withValid_credsStarted***************
+[INFO ] 2024-04-10 13:04:12.866 [main] LoginTestCase - Broswer has been invoked
+[INFO ] 2024-04-10 13:04:13.323 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-10 13:04:13.639 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-10 13:04:13.640 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-10 13:04:17.629 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-10 13:04:17.630 [main] LoginTestCase - Clicked on submit
+[INFO ] 2024-04-10 13:04:18.168 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-10 13:04:18.168 [main] TestBase - **************verify_login_page_withValid_credsFinished***************
+[INFO ] 2024-04-10 13:04:23.736 [main] TestBase - Initialize Web driver: 1655072591
+[INFO ] 2024-04-10 13:04:23.737 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-10 13:04:23.757 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-04-10 13:04:23.769 [main] WaitHelper - page is loaded
+[INFO ] 2024-04-10 13:04:26.584 [main] TestBase - **************NavigationToListCampaignAllTabsStarted***************
+[INFO ] 2024-04-10 13:04:26.605 [main] NavigateToCampaignMenuTabs - Login runner has been invoked
+[INFO ] 2024-04-10 13:04:27.367 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-10 13:04:27.807 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-10 13:04:27.808 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-10 13:04:30.835 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-10 13:05:00.908 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-04-10 13:05:01.097 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-04-10 13:05:01.147 [main] HomeNavigationObjects - Element are matching
+[INFO ] 2024-04-10 13:05:01.152 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-10 13:05:01.210 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-04-10 13:05:01.388 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-10 13:05:03.030 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-10 13:05:03.031 [main] MenuObjects - Switched to Buying Tab
+[INFO ] 2024-04-10 13:05:03.203 [main] MenuObjects - Switched to Planning Tab
+[INFO ] 2024-04-10 13:05:03.363 [main] MenuObjects - Switched to Ready To Bill Tab
+[INFO ] 2024-04-10 13:05:03.526 [main] MenuObjects - Switched to Cancel Tab
+[INFO ] 2024-04-10 13:05:03.698 [main] MenuObjects - Switched to Close Tab
+[INFO ] 2024-04-10 13:05:03.885 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-10 13:05:04.290 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-10 13:05:04.290 [main] TestBase - **************NavigationToListCampaignAllTabsFinished***************
+[INFO ] 2024-04-10 13:05:04.356 [main] TestBase - **************navigateToListScheduleTabStarted***************
+[INFO ] 2024-04-10 13:05:04.426 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-04-10 13:05:04.427 [main] MenuObjects - List Schedule has been clicked
+[INFO ] 2024-04-10 13:05:04.623 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-10 13:05:07.245 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-10 13:05:07.245 [main] MenuObjects - Switched to Confirmed Tab
+[INFO ] 2024-04-10 13:05:07.412 [main] MenuObjects - Switched to Revision Tab
+[INFO ] 2024-04-10 13:05:07.578 [main] MenuObjects - Switched to Cancelled Tab
+[INFO ] 2024-04-10 13:05:07.745 [main] MenuObjects - Switched to Pending Tab
+[INFO ] 2024-04-10 13:05:07.915 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-10 13:05:08.213 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-10 13:05:08.214 [main] TestBase - **************navigateToListScheduleTabFinished***************
+[INFO ] 2024-04-10 13:05:08.235 [main] TestBase - **************navigateToListMOStarted***************
+[INFO ] 2024-04-10 13:05:08.243 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-10 13:05:08.297 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-04-10 13:05:08.297 [main] MenuObjects - List MO has been Clicked
+[INFO ] 2024-04-10 13:05:08.481 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-10 13:05:11.571 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-10 13:05:11.572 [main] MenuObjects - Switched to Cancelled MO Tab
+[INFO ] 2024-04-10 13:05:11.694 [main] MenuObjects - Switched to Confirm MO Tab
+[INFO ] 2024-04-10 13:05:11.804 [main] MenuObjects - Switched to Pending MO Tab
+[INFO ] 2024-04-10 13:05:12.200 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-10 13:05:12.200 [main] TestBase - **************navigateToListMOFinished***************
+[INFO ] 2024-04-10 13:05:12.246 [main] TestBase - **************navigateToListAAStarted***************
+[INFO ] 2024-04-10 13:05:12.533 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-10 13:05:12.533 [main] TestBase - **************navigateToListAAFinished***************
+[INFO ] 2024-04-10 13:05:17.178 [main] TestBase - Initialize Web driver: 1963774829
+[INFO ] 2024-04-10 13:05:17.179 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-10 13:05:17.197 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-04-10 13:05:17.208 [main] WaitHelper - page is loaded
+[INFO ] 2024-04-10 13:05:20.057 [main] TestBase - **************searchScheduleStarted***************
+[INFO ] 2024-04-10 13:05:20.070 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-10 13:05:20.071 [main] SearchRecords - Runner has been invoked
+[INFO ] 2024-04-10 13:05:21.153 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-10 13:05:21.558 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-10 13:05:21.559 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-10 13:05:25.138 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-10 13:05:55.270 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-04-10 13:05:55.500 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-04-10 13:05:55.501 [main] SearchRecords - Media has been cliked
+[INFO ] 2024-04-10 13:05:55.509 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-10 13:05:55.582 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-04-10 13:05:55.583 [main] MenuObjects - List Schedule has been clicked
+[INFO ] 2024-04-10 13:05:55.818 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-10 13:05:56.551 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-10 13:05:56.620 [main] DropDownHelper - selectUsingVisibleText and visibleText is: ALL
+[INFO ] 2024-04-10 13:05:56.864 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 2024
+[INFO ] 2024-04-10 13:05:56.975 [main] MenuObjects - Clicked on free text
+[INFO ] 2024-04-10 13:05:57.248 [main] MenuObjects - Passing shedule no
+[INFO ] 2024-04-10 13:05:57.437 [main] MenuObjects - Schedule no is passed
+[INFO ] 2024-04-10 13:05:57.438 [main] MenuObjects - Clicked  on find button
+[INFO ] 2024-04-10 13:05:57.677 [main] MenuObjects - Switched to Pending Tab
+[INFO ] 2024-04-10 13:05:59.959 [main] MenuObjects - Switched to Confirmed Tab
+[INFO ] 2024-04-10 13:06:02.133 [main] MenuObjects - Switched to Revision Tab
+[INFO ] 2024-04-10 13:06:04.344 [main] MenuObjects - Switched to Cancelled Tab
+[INFO ] 2024-04-10 13:06:20.418 [main] MenuObjects - Clicked on searched record
+[INFO ] 2024-04-10 13:06:20.764 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-10 13:06:20.764 [main] TestBase - **************searchScheduleFinished***************
+[INFO ] 2024-04-10 13:06:27.119 [main] TestBase - Initialize Web driver: 119883832
+[INFO ] 2024-04-10 13:06:27.120 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-10 13:06:27.149 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-04-10 13:06:27.163 [main] WaitHelper - page is loaded
+[INFO ] 2024-04-10 13:06:31.031 [main] TestBase - **************new_CampaignStarted***************
+[INFO ] 2024-04-10 13:06:31.037 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-10 13:06:31.038 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-10 13:06:31.050 [main] New_Campaign - Login runner has been invoked
+[INFO ] 2024-04-10 13:06:31.736 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-10 13:06:32.105 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-10 13:06:32.105 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-10 13:06:35.624 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-10 13:07:05.731 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-04-10 13:07:05.905 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-04-10 13:07:05.911 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-10 13:07:05.967 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-04-10 13:07:05.967 [main] MenuObjects - New Campaign has been clicked
+[INFO ] 2024-04-10 13:07:06.147 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-10 13:07:07.349 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-10 13:07:08.432 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
+[INFO ] 2024-04-10 13:07:09.689 [main] DropDownHelper - selectUsingValue and value is: 50222
+[INFO ] 2024-04-10 13:07:13.379 [main] DropDownHelper - selectUsingValue and value is: 11491
+[INFO ] 2024-04-10 13:07:14.519 [main] DropDownHelper - selectUsingValue and value is: 1047
+[INFO ] 2024-04-10 13:07:16.786 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Cinema
+[INFO ] 2024-04-10 13:07:23.647 [main] MenuObjects - true
+[INFO ] 2024-04-10 13:07:25.908 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Digital
+[INFO ] 2024-04-10 13:07:33.401 [main] MenuObjects - true
+[INFO ] 2024-04-10 13:07:41.937 [main] MenuObjects - Campaign has been created
+[INFO ] 2024-04-10 13:07:41.990 [main] MenuObjects - B004/JSR/2400076
+[INFO ] 2024-04-10 13:07:42.336 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-10 13:07:42.337 [main] TestBase - **************new_CampaignFinished***************
+[INFO ] 2024-04-10 13:07:42.402 [main] TestBase - **************new_ScheduleStarted***************
+[INFO ] 2024-04-10 13:07:42.405 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-10 13:07:42.413 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-10 13:07:42.494 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-10 13:07:44.320 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-10 13:07:44.442 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-10 13:07:45.675 [main] DropDownHelper - selectUsingValue and value is: 124|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-10 13:07:45.854 [main] MenuObjects - field is not visible due to contract has been selected 
+[INFO ] 2024-04-10 13:07:47.070 [main] DropDownHelper - selectUsingValue and value is: 4640|MYR|1.0000000|1|1|0|0|0
+[INFO ] 2024-04-10 13:07:47.236 [main] MenuObjects - field is not visible due to contract has been selected 
+[INFO ] 2024-04-10 13:07:47.929 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-10 13:07:47.929 [main] TestBase - **************new_ScheduleFinished***************
+[INFO ] 2024-04-15 13:07:04.926 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 13:07:05.729 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 13:07:05.730 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 13:07:09.625 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 13:15:03.814 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 13:15:04.373 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 13:15:04.374 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 13:15:10.314 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 13:27:15.985 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 13:27:16.400 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 13:27:16.401 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 13:27:20.265 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 14:30:04.484 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 14:30:04.957 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 14:30:04.959 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 14:30:25.982 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 14:38:26.549 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 14:38:27.036 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 14:38:27.039 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 14:38:31.540 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 14:39:50.682 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 14:39:51.267 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 14:39:51.268 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 14:39:55.046 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 14:42:53.889 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 14:42:54.517 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 14:42:54.518 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 14:42:59.066 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 14:44:47.368 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 14:44:48.205 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 14:44:48.209 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 14:44:52.540 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 14:53:48.402 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 14:53:49.056 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 14:53:49.057 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 14:53:53.916 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 15:11:46.123 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 15:11:46.557 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 15:11:46.558 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 15:11:50.422 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 15:13:00.181 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 15:13:00.567 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 15:13:00.568 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 15:13:04.331 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 15:14:38.223 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 15:14:38.672 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 15:14:38.674 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 15:14:42.005 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 15:15:40.681 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 15:15:41.102 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 15:15:41.103 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 15:15:44.770 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 15:20:39.853 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 15:20:40.420 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 15:20:40.422 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 15:20:44.471 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 15:23:14.750 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 15:23:15.245 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 15:23:15.246 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 15:23:19.133 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 15:31:45.461 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 15:31:46.036 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 15:31:46.038 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 15:31:50.659 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 15:39:44.596 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 15:39:45.071 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 15:39:45.073 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 15:39:49.199 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 15:45:06.607 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 15:45:07.039 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 15:45:07.040 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 15:45:11.034 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 15:50:41.516 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 15:50:42.043 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 15:50:42.045 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 15:50:50.721 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 15:52:23.402 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 15:52:23.814 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 15:52:23.816 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 15:52:27.693 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 15:54:29.688 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 15:54:30.117 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 15:54:30.118 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 15:54:34.003 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 16:02:25.133 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 16:02:25.472 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 16:02:25.473 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 16:02:29.243 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 16:13:41.785 [main] TestBase - Initialize Web driver: 1773117761
+[INFO ] 2024-04-15 16:13:41.812 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-15 16:13:41.843 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-04-15 16:13:41.858 [main] WaitHelper - page is loaded
+[INFO ] 2024-04-15 16:13:45.166 [main] TestBase - **************new_CampaignStarted***************
+[INFO ] 2024-04-15 16:13:45.203 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 16:13:45.204 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-15 16:13:45.216 [main] New_Campaign - Login runner has been invoked
+[INFO ] 2024-04-15 16:13:45.875 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 16:13:46.390 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 16:13:46.390 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 16:13:50.531 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 16:14:20.658 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-04-15 16:14:20.939 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-04-15 16:14:20.980 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 16:14:21.106 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-04-15 16:14:21.107 [main] MenuObjects - New Campaign has been clicked
+[INFO ] 2024-04-15 16:14:21.839 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 16:14:23.562 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 16:14:25.040 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
+[INFO ] 2024-04-15 16:14:26.710 [main] DropDownHelper - selectUsingValue and value is: 50222
+[INFO ] 2024-04-15 16:14:32.285 [main] DropDownHelper - selectUsingValue and value is: 11491
+[INFO ] 2024-04-15 16:14:33.617 [main] DropDownHelper - selectUsingValue and value is: 1047
+[INFO ] 2024-04-15 16:14:36.407 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Cinema
+[INFO ] 2024-04-15 16:14:43.940 [main] MenuObjects - true
+[INFO ] 2024-04-15 16:14:55.018 [main] MenuObjects - Campaign has been created
+[INFO ] 2024-04-15 16:14:55.061 [main] MenuObjects - B004/JSR/2400082
+[INFO ] 2024-04-15 16:14:55.358 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-15 16:14:55.358 [main] TestBase - **************new_CampaignFinished***************
+[INFO ] 2024-04-15 16:14:56.111 [main] TestBase - **************new_ScheduleStarted***************
+[INFO ] 2024-04-15 16:14:56.121 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 16:14:56.135 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 16:14:56.236 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 16:14:58.328 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 16:14:58.544 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 16:15:00.039 [main] DropDownHelper - selectUsingValue and value is: 124|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-15 16:15:00.457 [main] MenuObjects - field is not visible due to contract has been selected 
+[INFO ] 2024-04-15 16:16:41.909 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-15 16:16:42.391 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-15 16:16:42.397 [main] TestBase - **************new_ScheduleFinished***************
+[INFO ] 2024-04-15 17:10:28.300 [main] TestBase - Initialize Web driver: 1878045132
+[INFO ] 2024-04-15 17:10:28.349 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-15 17:10:28.406 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-04-15 17:10:28.422 [main] WaitHelper - page is loaded
+[INFO ] 2024-04-15 17:10:34.998 [main] TestBase - **************new_CampaignStarted***************
+[INFO ] 2024-04-15 17:10:35.060 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 17:10:35.078 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-15 17:10:35.094 [main] New_Campaign - Login runner has been invoked
+[INFO ] 2024-04-15 17:10:37.114 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 17:10:39.157 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 17:10:39.158 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 17:10:44.190 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 17:11:14.268 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-04-15 17:11:14.430 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-04-15 17:11:14.439 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 17:11:14.493 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-04-15 17:11:14.493 [main] MenuObjects - New Campaign has been clicked
+[INFO ] 2024-04-15 17:11:14.659 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 17:11:15.876 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 17:11:16.951 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
+[INFO ] 2024-04-15 17:11:18.177 [main] DropDownHelper - selectUsingValue and value is: 50222
+[INFO ] 2024-04-15 17:11:22.025 [main] DropDownHelper - selectUsingValue and value is: 11491
+[INFO ] 2024-04-15 17:11:23.247 [main] DropDownHelper - selectUsingValue and value is: 1047
+[INFO ] 2024-04-15 17:11:25.841 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Cinema
+[INFO ] 2024-04-15 17:11:32.616 [main] MenuObjects - true
+[INFO ] 2024-04-15 17:12:09.991 [main] MenuObjects - Campaign has been created
+[INFO ] 2024-04-15 17:12:10.096 [main] MenuObjects - B004/JSR/2400083
+[INFO ] 2024-04-15 17:12:10.870 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-15 17:12:10.871 [main] TestBase - **************new_CampaignFinished***************
+[INFO ] 2024-04-15 17:12:13.269 [main] TestBase - **************new_ScheduleStarted***************
+[INFO ] 2024-04-15 17:12:13.276 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 17:12:13.313 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 17:12:13.915 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 17:12:16.314 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 17:12:16.424 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 17:12:18.145 [main] DropDownHelper - selectUsingValue and value is: 124|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-15 17:12:18.468 [main] MenuObjects - field is not visible due to contract has been selected 
+[INFO ] 2024-04-15 17:15:42.015 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-15 17:15:42.016 [main] TestBase - **************new_ScheduleFinished***************
+[INFO ] 2024-04-15 18:13:09.052 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 18:13:10.371 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 18:13:10.372 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 18:13:15.963 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 18:16:02.021 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 18:16:02.465 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 18:16:02.466 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 18:16:06.113 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 18:18:04.980 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 18:18:05.338 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 18:18:05.339 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 18:18:14.927 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 18:20:04.334 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 18:20:05.078 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 18:20:05.079 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 18:20:10.034 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 18:23:22.753 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 18:23:23.212 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 18:23:23.213 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 18:23:27.609 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 18:56:21.072 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 18:56:21.390 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 18:56:21.392 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 18:56:23.273 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 19:03:22.852 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 19:03:23.201 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 19:03:23.202 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 19:03:25.189 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 19:24:14.101 [main] TestBase - Initialize Web driver: 1619543326
+[INFO ] 2024-04-15 19:24:14.119 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-15 19:24:14.142 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-04-15 19:24:14.153 [main] WaitHelper - page is loaded
+[INFO ] 2024-04-15 19:24:20.331 [main] TestBase - **************new_CampaignStarted***************
+[INFO ] 2024-04-15 19:24:20.364 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:24:20.368 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-15 19:24:20.380 [main] New_Campaign - Login runner has been invoked
+[INFO ] 2024-04-15 19:24:20.854 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 19:24:21.287 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 19:24:21.288 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 19:24:25.354 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 19:24:55.469 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-04-15 19:24:55.627 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-04-15 19:24:55.639 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 19:24:55.689 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-04-15 19:24:55.689 [main] MenuObjects - New Campaign has been clicked
+[INFO ] 2024-04-15 19:24:55.834 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 19:24:57.056 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 19:24:58.113 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
+[INFO ] 2024-04-15 19:24:59.301 [main] DropDownHelper - selectUsingValue and value is: 50222
+[INFO ] 2024-04-15 19:25:02.903 [main] DropDownHelper - selectUsingValue and value is: 11491
+[INFO ] 2024-04-15 19:25:04.028 [main] DropDownHelper - selectUsingValue and value is: 1047
+[INFO ] 2024-04-15 19:25:04.232 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:25:06.270 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Cinema
+[INFO ] 2024-04-15 19:25:12.763 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:25:14.798 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Magazine
+[INFO ] 2024-04-15 19:25:21.203 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:25:23.242 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Newspaper
+[INFO ] 2024-04-15 19:25:29.679 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:25:31.712 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Others
+[INFO ] 2024-04-15 19:25:38.148 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:25:40.189 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Outdoor
+[INFO ] 2024-04-15 19:25:46.593 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:25:48.630 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Radio
+[INFO ] 2024-04-15 19:25:55.042 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:25:57.073 [main] DropDownHelper - selectUsingVisibleText and visibleText is: TV
+[INFO ] 2024-04-15 19:26:03.442 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:26:21.853 [main] MenuObjects - Campaign has been created
+[INFO ] 2024-04-15 19:26:21.905 [main] MenuObjects - B004/JSR/2400086
+[INFO ] 2024-04-15 19:26:22.237 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-15 19:26:22.238 [main] TestBase - **************new_CampaignFinished***************
+[INFO ] 2024-04-15 19:26:22.918 [main] TestBase - **************new_ScheduleStarted***************
+[INFO ] 2024-04-15 19:26:22.921 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:26:22.931 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 19:26:23.025 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 19:26:24.991 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 19:26:25.036 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 19:26:25.036 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:26:27.263 [main] DropDownHelper - selectUsingVisibleText and visibleText is: MYR
+[INFO ] 2024-04-15 19:26:27.358 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:26:28.564 [main] DropDownHelper - selectUsingValue and value is: 124|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-15 19:26:29.871 [main] DropDownHelper - selectUsingValue and value is: 254|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-15 19:26:31.165 [main] DropDownHelper - selectUsingValue and value is: 1435|MYR|1.0000000|1|1|0|0|0
+[INFO ] 2024-04-15 19:26:32.440 [main] DropDownHelper - selectUsingValue and value is: 108|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-15 19:26:33.743 [main] DropDownHelper - selectUsingValue and value is: 2476|IDR|1.3000000|1|1|0|0|0
+[INFO ] 2024-04-15 19:26:35.035 [main] DropDownHelper - selectUsingValue and value is: 14|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-15 19:26:36.307 [main] DropDownHelper - selectUsingValue and value is: 226|MYR|1.0000000|1|1|0|0|0
+[INFO ] 2024-04-15 19:29:59.983 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-15 19:30:00.267 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-15 19:30:00.270 [main] TestBase - **************new_ScheduleFinished***************
+[INFO ] 2024-04-15 19:34:07.211 [main] TestBase - Initialize Web driver: 386478079
+[INFO ] 2024-04-15 19:34:07.241 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-15 19:34:07.271 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-04-15 19:34:07.287 [main] WaitHelper - page is loaded
+[INFO ] 2024-04-15 19:34:13.046 [main] TestBase - **************new_CampaignStarted***************
+[INFO ] 2024-04-15 19:34:13.092 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:34:13.097 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-15 19:34:13.111 [main] New_Campaign - Login runner has been invoked
+[INFO ] 2024-04-15 19:34:13.560 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 19:34:13.841 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 19:34:13.842 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 19:34:17.304 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 19:34:47.417 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-04-15 19:34:47.644 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-04-15 19:34:47.656 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 19:34:47.727 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-04-15 19:34:47.727 [main] MenuObjects - New Campaign has been clicked
+[INFO ] 2024-04-15 19:34:47.969 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 19:34:49.654 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 19:34:50.753 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
+[INFO ] 2024-04-15 19:34:51.991 [main] DropDownHelper - selectUsingValue and value is: 50222
+[INFO ] 2024-04-15 19:34:55.552 [main] DropDownHelper - selectUsingValue and value is: 11491
+[INFO ] 2024-04-15 19:34:56.690 [main] DropDownHelper - selectUsingValue and value is: 1047
+[INFO ] 2024-04-15 19:34:56.900 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:34:58.946 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Cinema
+[INFO ] 2024-04-15 19:35:05.463 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:35:07.509 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Magazine
+[INFO ] 2024-04-15 19:35:13.960 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:35:16.002 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Newspaper
+[INFO ] 2024-04-15 19:35:22.471 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:35:24.509 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Others
+[INFO ] 2024-04-15 19:35:30.990 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:35:33.023 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Outdoor
+[INFO ] 2024-04-15 19:35:39.448 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:35:41.482 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Radio
+[INFO ] 2024-04-15 19:35:47.896 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:35:49.942 [main] DropDownHelper - selectUsingVisibleText and visibleText is: TV
+[INFO ] 2024-04-15 19:35:56.332 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:36:15.391 [main] MenuObjects - Campaign has been created
+[INFO ] 2024-04-15 19:36:15.431 [main] MenuObjects - B004/JSR/2400087
+[INFO ] 2024-04-15 19:36:15.728 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-15 19:36:15.728 [main] TestBase - **************new_CampaignFinished***************
+[INFO ] 2024-04-15 19:36:16.517 [main] TestBase - **************new_ScheduleStarted***************
+[INFO ] 2024-04-15 19:36:16.527 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:36:16.547 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 19:36:16.731 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 19:36:18.292 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 19:36:18.353 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 19:36:18.354 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:36:20.682 [main] DropDownHelper - selectUsingVisibleText and visibleText is: MYR
+[INFO ] 2024-04-15 19:36:20.817 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:36:22.169 [main] DropDownHelper - selectUsingValue and value is: 124|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-15 19:36:23.577 [main] DropDownHelper - selectUsingValue and value is: 254|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-15 19:36:24.974 [main] DropDownHelper - selectUsingValue and value is: 1435|MYR|1.0000000|1|1|0|0|0
+[INFO ] 2024-04-15 19:36:26.274 [main] DropDownHelper - selectUsingValue and value is: 108|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-15 19:36:27.538 [main] DropDownHelper - selectUsingValue and value is: 2476|IDR|1.3000000|1|1|0|0|0
+[INFO ] 2024-04-15 19:36:28.817 [main] DropDownHelper - selectUsingValue and value is: 14|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-15 19:36:30.116 [main] DropDownHelper - selectUsingValue and value is: 226|MYR|1.0000000|1|1|0|0|0
+[INFO ] 2024-04-15 19:40:11.550 [main] TestBase - Initialize Web driver: 555864569
+[INFO ] 2024-04-15 19:40:11.567 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-15 19:40:11.592 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-04-15 19:40:11.604 [main] WaitHelper - page is loaded
+[INFO ] 2024-04-15 19:40:14.832 [main] TestBase - **************new_CampaignStarted***************
+[INFO ] 2024-04-15 19:40:14.862 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:40:14.865 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-04-15 19:40:14.875 [main] New_Campaign - Login runner has been invoked
+[INFO ] 2024-04-15 19:40:15.300 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-04-15 19:40:15.764 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-04-15 19:40:15.765 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-04-15 19:40:20.047 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-04-15 19:40:50.147 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-04-15 19:40:50.284 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-04-15 19:40:50.289 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 19:40:50.338 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-04-15 19:40:50.339 [main] MenuObjects - New Campaign has been clicked
+[INFO ] 2024-04-15 19:40:50.493 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 19:40:51.520 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 19:40:52.582 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
+[INFO ] 2024-04-15 19:40:53.775 [main] DropDownHelper - selectUsingValue and value is: 50222
+[INFO ] 2024-04-15 19:40:57.330 [main] DropDownHelper - selectUsingValue and value is: 11491
+[INFO ] 2024-04-15 19:40:58.455 [main] DropDownHelper - selectUsingValue and value is: 1047
+[INFO ] 2024-04-15 19:40:58.649 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:41:00.694 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Cinema
+[INFO ] 2024-04-15 19:41:07.206 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:41:09.258 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Magazine
+[INFO ] 2024-04-15 19:41:15.982 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:41:18.024 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Newspaper
+[INFO ] 2024-04-15 19:41:24.564 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:41:26.602 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Others
+[INFO ] 2024-04-15 19:41:33.025 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:41:35.063 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Outdoor
+[INFO ] 2024-04-15 19:41:41.501 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:41:43.534 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Radio
+[INFO ] 2024-04-15 19:41:49.922 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:41:51.975 [main] DropDownHelper - selectUsingVisibleText and visibleText is: TV
+[INFO ] 2024-04-15 19:41:58.528 [main] MenuObjects - true
+[INFO ] 2024-04-15 19:42:09.224 [main] MenuObjects - Campaign has been created
+[INFO ] 2024-04-15 19:42:09.272 [main] MenuObjects - B004/JSR/2400088
+[INFO ] 2024-04-15 19:42:09.648 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-15 19:42:09.649 [main] TestBase - **************new_CampaignFinished***************
+[INFO ] 2024-04-15 19:42:10.437 [main] TestBase - **************new_ScheduleStarted***************
+[INFO ] 2024-04-15 19:42:10.441 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:42:10.458 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 19:42:10.553 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 19:42:12.200 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-04-15 19:42:12.274 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-04-15 19:42:12.275 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:42:14.599 [main] DropDownHelper - selectUsingVisibleText and visibleText is: MYR
+[INFO ] 2024-04-15 19:42:14.743 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-04-15 19:42:15.998 [main] DropDownHelper - selectUsingValue and value is: 124|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-15 19:42:17.332 [main] DropDownHelper - selectUsingValue and value is: 254|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-15 19:42:18.603 [main] DropDownHelper - selectUsingValue and value is: 1435|MYR|1.0000000|1|1|0|0|0
+[INFO ] 2024-04-15 19:42:19.857 [main] DropDownHelper - selectUsingValue and value is: 108|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-15 19:42:21.109 [main] DropDownHelper - selectUsingValue and value is: 2476|IDR|1.3000000|1|1|0|0|0
+[INFO ] 2024-04-15 19:42:22.383 [main] DropDownHelper - selectUsingValue and value is: 14|MYR|1.0000000|1|1|15|15|0
+[INFO ] 2024-04-15 19:42:23.667 [main] DropDownHelper - selectUsingValue and value is: 226|MYR|1.0000000|1|1|0|0|0
+[INFO ] 2024-04-15 19:46:54.324 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-15 19:46:54.509 [main] ScreenshotUtility - Screenshot has been captured
+[INFO ] 2024-04-15 19:46:54.511 [main] TestBase - **************new_ScheduleFinished***************

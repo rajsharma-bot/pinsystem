@@ -95,6 +95,14 @@ public class PropertyReader implements ConfigReader {
 		}
 			return OR.getProperty("rightframe");
 	}
+	
+	public String mediaOrder() {
+		if(System.getProperty("mediaSchedule")!=null) {
+			return System.getProperty("mediaSchedule");
+		}
+			return OR.getProperty("mediaSchedule");
+	}
+	
 
 
 	public String HOME() {
@@ -160,7 +168,6 @@ public class PropertyReader implements ConfigReader {
 			return OR.getProperty("CORPORATE_INFO");
 	}
 
-	@Override
 	public String TRAFFIC() {
 		if(System.getProperty("TRAFFIC")!=null) {
 			return System.getProperty("TRAFFIC");
