@@ -35,9 +35,8 @@ private static Logger log = LogManager.getLogger(FrameHelper.class);
 		log.info("Frame has been switched to " + element );
 	}
 	
-	public void mediaOrderFrame(String framename) {
-		//driver.findElement(By.id("popEditMediaSchedule_CIF-1"));
-		
+	public void EditMediaFrame(String framename) {
+//		driver.findElement(By.id("popEditMediaSchedule_CIF-1"));
 		driver.switchTo().frame(framename);
 		log.info("Frame has been switched to media order frame "+ framename);
 	}

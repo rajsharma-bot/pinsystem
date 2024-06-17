@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.pinsystem.pageObjects.LoginObjects;
+import com.pinsystem.pageObjects.MixMediaSchedule;
 import com.pinsystem.utils.FrameHelper;
 import com.pinsystem.utils.ObjectReader;
 import com.pinsystem.utils.PropertyReader;
@@ -25,9 +26,9 @@ public class CheckingSpotQTY {
 		// String Url =
 		// "https://devbr.pinsystem.com/MediaSchedule.aspx?Id=S6CBAm3ssPAl7Ul1d1===Y61:::rObVCk4L7z21OKjrIIoE=&bid=eDO0izlStC8=&history=3===CNlgJ8OM4=";
 
-		String Url = "https://devbr.pinsystem.com/MediaSchedule.aspx?Id=D2LcuHAmMRxK7SJ29drCFqUxaG5m33Qclmnssm2LLaA=&bid=eDO0izlStC8=&history=3===CNlgJ8OM4=&Mode=op";
-
+String Url="https://devbr.pinsystem.com/MediaSchedule.aspx?Id=S6CBAm3ssPAl7Ul1d1===Y68l===zpm3j:::6RC7oN1WVHcS4=&bid=eDO0izlStC8=&history=3===CNlgJ8OM4=";
 		FrameHelper fh = new FrameHelper(driver);
+		MixMediaSchedule mx= new MixMediaSchedule(driver);
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		// driver.manage().window().maximize();
@@ -37,7 +38,7 @@ public class CheckingSpotQTY {
 		lg.login(ObjectReader.reader.getUserName(), ObjectReader.reader.getPassword());
 		lg.submit();
 		Thread.sleep(3000);
-		driver.switchTo().frame("popEditMediaSchedule_CIF-1");
+//		driver.switchTo().frame("popEditMediaSchedule_CIF-1");
 
 //		WebElement parentElement = driver.findElement(By.id("divCalendar"));		
 //		List<WebElement> childElements = parentElement.findElements(By.xpath(".//input[@type='text']"));
@@ -50,6 +51,7 @@ public class CheckingSpotQTY {
 //            textBox.sendKeys(Keys.TAB);
 //        }
 
+		mx.cinema_placement();
 		
 
 		driver.quit();

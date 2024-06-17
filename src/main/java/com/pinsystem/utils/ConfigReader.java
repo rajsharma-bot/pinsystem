@@ -13,7 +13,7 @@ public interface ConfigReader {
 	public String topframe();
 	public String leftframe();
 	public String rightframe();
-	public String mediaOrder();
+	public String EditMediaFrame();
 	public String HOME();
 	public String MEDIA();
 	public String IT_DEPT();

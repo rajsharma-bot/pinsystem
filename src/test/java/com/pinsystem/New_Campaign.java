@@ -45,13 +45,7 @@ public class New_Campaign extends TestBase {
 		Mo.EndDate("30/04/2024");
 		dh.selectUsingValue(Mo.Product(), "11491");
 		dh.selectUsingValue(Mo.Contract(), "1047");
-		Mo.CampaignName("PINSYS-1808-New Campaign");
-//		dh.selectUsingVisibleText(Mo.mediaType(), "Cinema");
-//		Mo.searchTitle("Cathay Cineplex");
-//		Mo.checkBox();
-//		dh.selectUsingVisibleText(Mo.mediaType(), "Digital");
-//		Mo.searchTitle("Linkedin");
-//		Mo.checkBox();
+		Mo.CampaignName("PINSYS-1808-New Campaign-Auto");
 		mx.selectMultipleMediaTypes();
 		Mo.Save();
 		Mo.campaignCode();
@@ -72,9 +66,10 @@ public class New_Campaign extends TestBase {
 		mx.selecMultipleVendors();
 		Mo.Schedule_Grid();
 		Thread.sleep(3000);
-		driver.switchTo().frame("popEditMediaSchedule_CIF-1");
-		Mo.Entering_Spots();
-		dh.selectUsingValue(Mo.Adtype_ddl(), "Spot Buy");
+//		driver.switchTo().frame("popEditMediaSchedule_CIF-1");
+//		Mo.Entering_Spots();
+//		dh.selectUsingValue(Mo.Adtype_ddl(), "Spot Buy");
+		mx.cinema_placement();
 		
 	
 	}

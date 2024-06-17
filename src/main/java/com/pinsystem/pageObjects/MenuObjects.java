@@ -5,9 +5,14 @@ import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pinsystem.utils.WaitHelper;
 
@@ -376,46 +381,6 @@ public class MenuObjects {
 
 	}
 
-	public WebElement Adtype_ddl() {
-
-		WebElement newsPaper_AD = driver.findElement(MenuPageObjects.AdType_N);
-		WebElement Cinema_AD = driver.findElement(MenuPageObjects.Adtype_Others);
-		WebElement Digital_AD = driver.findElement(MenuPageObjects.Adtype_D);
-		WebElement Magazine_AD = driver.findElement(MenuPageObjects.Adtype_M);
-		WebElement Radio_AD = driver.findElement(MenuPageObjects.AdType_R);
-		WebElement TV_AD = driver.findElement(MenuPageObjects.AdType_TV);
-
-		WebElement result = null;
-
-		if (Cinema_AD.isDisplayed()) {
-			Cinema_AD.click();
-			result = Cinema_AD;
-			return result;
-		} else if (newsPaper_AD.isDisplayed()) {
-			newsPaper_AD.click();
-			result = newsPaper_AD;
-			return result;
-		} else if (Digital_AD.isDisplayed()) {
-			Digital_AD.click();
-			result = Digital_AD;
-		} else if (Magazine_AD.isDisplayed()) {
-			Magazine_AD.click();
-			result = Magazine_AD;
-			return result;
-		} else if (Radio_AD.isDisplayed()) {
-			Radio_AD.click();
-			result = Radio_AD;
-			return result;
-		} else if (TV_AD.isDisplayed()) {
-			TV_AD.click();
-			result = TV_AD;
-			return result;
-		} else {
-			log.info("Select correct ad type locator");
-		}
-		return result;
-	}
-
 	public void setClient_rate(String txt_client) {
 		driver.findElement(MenuPageObjects.ClientRate).sendKeys(txt_client);
 	}
@@ -425,27 +390,27 @@ public class MenuObjects {
 	}
 
 	public void set_Description(String txt) {
-		WebElement remark_others = driver.findElement(MenuPageObjects.txt_Others_Description);
-		WebElement remark_magazine = driver.findElement(MenuPageObjects.txt_Magazine_Description);
-		WebElement remark_newspaper = driver.findElement(MenuPageObjects.txt_News_Description);
-		WebElement remark_radio = driver.findElement(MenuPageObjects.txt_Radio_Description);
-		WebElement remark_TV = driver.findElement(MenuPageObjects.txt_TV_Description);
-		WebElement remark_digital = driver.findElement(MenuPageObjects.txt_Digital_Description);
-		if (remark_others.isDisplayed()) {
-			remark_others.sendKeys(txt);
-		} else if (remark_magazine.isDisplayed()) {
-			remark_magazine.sendKeys(txt);
 
-		} else if (remark_newspaper.isDisplayed()) {
-			remark_newspaper.sendKeys(txt);
-		} else if (remark_radio.isDisplayed()) {
-			remark_radio.sendKeys(txt);
-		} else if (remark_TV.isDisplayed()) {
-			remark_TV.sendKeys(txt);
-		} else if (remark_digital.isDisplayed()) {
-			remark_digital.sendKeys(txt);
+		if (driver.findElement(MenuPageObjects.txt_Others_Description).isDisplayed()) {
+			driver.findElement(MenuPageObjects.txt_Others_Description).sendKeys(txt);
+
+		} else if (driver.findElement(MenuPageObjects.txt_Magazine_Description).isDisplayed()) {
+			driver.findElement(MenuPageObjects.txt_Magazine_Description).sendKeys(txt);
+
+		} else if (driver.findElement(MenuPageObjects.txt_News_Description).isDisplayed()) {
+			driver.findElement(MenuPageObjects.txt_News_Description).sendKeys(txt);
+
+		} else if (driver.findElement(MenuPageObjects.txt_Radio_Description).isDisplayed()) {
+			driver.findElement(MenuPageObjects.txt_Radio_Description).sendKeys(txt);
+
+		} else if (driver.findElement(MenuPageObjects.txt_TV_Description).isDisplayed()) {
+			driver.findElement(MenuPageObjects.txt_TV_Description).sendKeys(txt);
+
+		} else if (driver.findElement(MenuPageObjects.txt_Digital_Description).isDisplayed()) {
+			driver.findElement(MenuPageObjects.txt_Digital_Description).sendKeys(txt);
+
 		} else {
-			log.info("Locator issue");
+			log.info("Locator is not correct");
 		}
 
 	}
@@ -456,4 +421,155 @@ public class MenuObjects {
 		return ddl_vendor_curr;
 	}
 
+//	public WebElement Adtype_ddl() throws InterruptedException {
+//		// WebElement result = null;
+//		Thread.sleep(1000);
+//
+//		if (driver.findElement(MenuPageObjects.Adtype_Others).isDisplayed()) {
+//			driver.findElement(MenuPageObjects.Adtype_Others).click();
+//			log.info("Other (cinema,Other & outdoor) adtype has been selected");
+//			return driver.findElement(MenuPageObjects.Adtype_Others);
+//
+//		} else if (driver.findElement(MenuPageObjects.AdType_N).isDisplayed()) {
+//			driver.findElement(MenuPageObjects.AdType_N).click();
+//			log.info("Newspaper adtype has been selected");
+//			return driver.findElement(MenuPageObjects.AdType_N);
+//
+//		} else if (driver.findElement(MenuPageObjects.Adtype_D).isDisplayed()) {
+//			driver.findElement(MenuPageObjects.Adtype_D).click();
+//			log.info("Digital adtype has been selected");
+//			return driver.findElement(MenuPageObjects.Adtype_D);
+//
+//		} else if (driver.findElement(MenuPageObjects.Adtype_M).isDisplayed()) {
+//			driver.findElement(MenuPageObjects.Adtype_M).click();
+//			log.info("Magazine adtype has been selected");
+//			return driver.findElement(MenuPageObjects.Adtype_M);
+//
+//		} else if (driver.findElement(MenuPageObjects.AdType_R).isDisplayed()) {
+//			driver.findElement(MenuPageObjects.AdType_R).click();
+//			log.info("Radio adtype has been selected");
+//			return driver.findElement(MenuPageObjects.AdType_R);
+//
+//		} else if (driver.findElement(MenuPageObjects.AdType_TV).isDisplayed()) {
+//			driver.findElement(MenuPageObjects.AdType_TV).click();
+//			log.info("TV adtype has been selected");
+//			return driver.findElement(MenuPageObjects.AdType_TV);
+//
+//		} else {
+//			log.info("Select correct ad type locator");
+//			
+//		}
+//		return null;
+//	}
+
+	public WebElement Adtype_Others() {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // Wait for up to 20 seconds
+
+	    try {
+	        WebElement adTypeElement = wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.Adtype_Others));
+	        if (adTypeElement.isDisplayed()) {
+	            adTypeElement.click();
+	            log.info("Other (cinema, Other & outdoor) ad type has been selected");
+	            return adTypeElement;
+	        }
+
+	        log.info("No ad type element is displayed");
+	    } catch (Exception e) {
+	        log.error("Exception occurred while selecting ad type: " + e.getMessage());
+	    }
+	    return null;
+	}
+
+
+
+public WebElement Adtype_newspaper() {
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // Wait for up to 20 seconds
+
+    try {
+        WebElement adTypeElement = wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.AdType_N));
+        if (adTypeElement.isDisplayed()) {
+            adTypeElement.click();
+            log.info("Newspaper ad type has been selected");
+            return adTypeElement;
+        }
+
+        log.info("No ad type element is displayed");
+    } catch (Exception e) {
+        log.error("Exception occurred while selecting ad type: " + e.getMessage());
+    }
+    return null;
 }
+
+
+
+public WebElement Adtype_magazine() {
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // Wait for up to 20 seconds
+
+    try {
+        WebElement adTypeElement = wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.Adtype_M));
+        if (adTypeElement.isDisplayed()) {
+            adTypeElement.click();
+            log.info("Newspaper ad type has been selected");
+            return adTypeElement;
+        }
+
+        log.info("No ad type element is displayed");
+    } catch (Exception e) {
+        log.error("Exception occurred while selecting ad type: " + e.getMessage());
+    }
+    return null;
+}
+
+public WebElement Adtype_radio() {
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // Wait for up to 20 seconds
+
+    try {
+        WebElement adTypeElement = wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.AdType_R));
+        if (adTypeElement.isDisplayed()) {
+            adTypeElement.click();
+            log.info("Newspaper ad type has been selected");
+            return adTypeElement;
+        }
+
+        log.info("No ad type element is displayed");
+    } catch (Exception e) {
+        log.error("Exception occurred while selecting ad type: " + e.getMessage());
+    }
+    return null;
+}
+
+public WebElement Adtype_TV() {
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // Wait for up to 20 seconds
+
+    try {
+        WebElement adTypeElement = wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.AdType_TV));
+        if (adTypeElement.isDisplayed()) {
+            adTypeElement.click();
+            log.info("Newspaper ad type has been selected");
+            return adTypeElement;
+        }
+
+        log.info("No ad type element is displayed");
+    } catch (Exception e) {
+        log.error("Exception occurred while selecting ad type: " + e.getMessage());
+    }
+    return null;
+}
+
+public WebElement Adtype_Digital() {
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // Wait for up to 20 seconds
+
+    try {
+        WebElement adTypeElement = wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.Adtype_D));
+        if (adTypeElement.isDisplayed()) {
+            adTypeElement.click();
+            log.info("Newspaper ad type has been selected");
+            return adTypeElement;
+        }
+
+        log.info("No ad type element is displayed");
+    } catch (Exception e) {
+        log.error("Exception occurred while selecting ad type: " + e.getMessage());
+    }
+    return null;
+}}

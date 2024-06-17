@@ -26,7 +26,7 @@ public class MixMediaSchedule {
 		FrameHelper fh = new FrameHelper(driver);
 		MenuObjects Mo = new MenuObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
-
+		
 		dh.selectUsingVisibleText(Mo.mediaType(), "Cinema");
 		Mo.searchTitle("Cathay Cineplex");
 		Mo.checkBox();
@@ -70,19 +70,34 @@ public class MixMediaSchedule {
 
 	public void selecMultipleVendors() throws InterruptedException {
 		ObjectReader.reader = new PropertyReader();
-		//FrameHelper fh = new FrameHelper(driver);
 		MenuObjects Mo = new MenuObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
 		dh.selectUsingValue(Mo.Vendor1(), "124|MYR|1.0000000|1|1|15|15|0");
 		// Mo.fee("5");
 		dh.selectUsingValue(Mo.Vendor2(), "254|MYR|1.0000000|1|1|15|15|0");
-		// Mo.fee2("3.5");
 		dh.selectUsingValue(Mo.Vendor3(), "1435|MYR|1.0000000|1|1|0|0|0");
 		dh.selectUsingValue(Mo.Vendor4(), "108|MYR|1.0000000|1|1|15|15|0");
 		dh.selectUsingValue(Mo.Vendor5(), "2476|IDR|1.3000000|1|1|0|0|0");
 		dh.selectUsingValue(Mo.Vendor6(), "14|MYR|1.0000000|1|1|15|15|0");
 		dh.selectUsingValue(Mo.Vendor7(), "226|MYR|1.0000000|1|1|0|0|0");
-
 	}
 
+	
+	public void cinema_placement() throws InterruptedException {
+		ObjectReader.reader = new PropertyReader();
+		MenuObjects Mo = new MenuObjects(driver);
+		DropDownHelper dh = new DropDownHelper(driver);
+		FrameHelper fh = new FrameHelper(driver);
+		dh.selectUsingValue(Mo.Adtype_ddl(), "26275");
+		Mo.set_Description("Cinema Placement");
+		Mo.setClient_rate("1000");
+		Mo.setVendor_rate("800");
+		//fh.switchTodefault();
+		fh.switchToFrame(ObjectReader.reader.EditMediaFrame());
+		Mo.Entering_Spots();
+	}
+	
+	
+	
+	
 }
