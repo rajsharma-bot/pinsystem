@@ -36,6 +36,29 @@ public class WaitHelper {
 	}
 
 
+	public WebElement waitForElementVisibility(WebElement element, int implicitTimeoutInMilli) {
+        long start = System.currentTimeMillis();
+        long timePassedInSeconds;
+        try {
+            // Set implicit wait
+            driver.manage().timeouts().implicitlyWait(Duration.ofMillis(implicitTimeoutInMilli));
+
+            // Set explicit wait
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(120)); // Adjust the timeout as needed
+
+            // Wait until the element is visible
+            WebElement visibleElement = wait.until(ExpectedConditions.visibilityOf(element));
+            
+            timePassedInSeconds = (System.currentTimeMillis() - start) / 1000;
+            if (timePassedInSeconds > 0) {
+                log.info(timePassedInSeconds + " second(s) passed waiting for visibility of element => " + element.toString());
+            }
+            return visibleElement;
+        } catch (Exception e) {
+            log.info("Exception occurred: " + e.getMessage());
+            return null;
+        }
+    }
 	
 	
 	public boolean waitForInvisibilityofElementLocatedBy(WebElement element, int implicitTimeoutInMilli) throws InterruptedException {

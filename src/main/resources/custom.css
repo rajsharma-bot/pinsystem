@@ -1,0 +1,6 @@
+/* custom.css */
+#header {
+    background: url('src/main/resources/logo.png') no-repeat center;
+    height: 80px; /* Adjust height as necessary */
+    background-size: contain;
+}

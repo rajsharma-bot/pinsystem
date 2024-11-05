@@ -1,11 +1,6 @@
 package com.pinsystem;
 
-import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.pinsystem.pageObjects.LoginObjects;
@@ -15,7 +10,6 @@ import com.pinsystem.utils.ObjectReader;
 import com.pinsystem.utils.PropertyReader;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 
 public class CheckingSpotQTY {
 	public static WebDriver driver;

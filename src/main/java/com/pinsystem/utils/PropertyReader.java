@@ -88,6 +88,27 @@ public class PropertyReader implements ConfigReader {
 		}
 		return OR.getProperty("rightframe");
 	}
+	
+	public String Add_line() {
+		if (System.getProperty("Add_line") != null) {
+			return System.getProperty("Add_line");
+		}
+		return OR.getProperty("Add_line");
+	}
+	
+	public String pop_up_frame() {
+		if (System.getProperty("pop_up_frame") != null) {
+			return System.getProperty("pop_up_frame");
+		}
+		return OR.getProperty("pop_up_frame");
+	}
+	
+	public String Edit_layout_frame() {
+		if (System.getProperty("pop_up_frame") != null) {
+			return System.getProperty("pop_up_frame");
+		}
+		return OR.getProperty("pop_up_frame");
+	}
 
 	public String HOME() {
 		if (System.getProperty("HOME") != null) {
@@ -96,7 +117,7 @@ public class PropertyReader implements ConfigReader {
 		return OR.getProperty("HOME");
 	}
 
-	@Override
+
 	public String MEDIA() {
 		if (System.getProperty("MEDIA") != null) {
 			return System.getProperty("MEDIA");
@@ -153,13 +174,17 @@ public class PropertyReader implements ConfigReader {
 		return OR.getProperty("TRAFFIC");
 	}
 
-	@Override
-	public String EditMediaFrame() {
-		if (System.getProperty("EditMediaFrame") != null) {
-			return System.getProperty("EditMediaFrame");
-		}
-		// TODO Auto-generated method stub
-		return OR.getProperty("EditMediaFrame");
-	}
+	
+
+	
+
+//	@Override
+//	public String EditMediaFrame() {
+//		if (System.getProperty("EditMediaFrame") != null) {
+//			return System.getProperty("EditMediaFrame");
+//		}
+//		// TODO Auto-generated method stub
+//		return OR.getProperty("EditMediaFrame");
+//	}
 
 }

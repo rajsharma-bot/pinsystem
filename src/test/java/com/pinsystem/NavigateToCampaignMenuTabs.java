@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import com.pinsystem.pageObjects.HomeNavigationObjects;
 import com.pinsystem.pageObjects.MenuObjects;
+import com.pinsystem.utils.DropDownHelper;
 import com.pinsystem.utils.FrameHelper;
 import com.pinsystem.utils.ObjectReader;
 import com.pinsystem.utils.PropertyReader;
@@ -80,7 +81,18 @@ public class NavigateToCampaignMenuTabs extends TestBase {
 
 	@Test(dependsOnMethods = "navigateToListMO", description = "Navigation To List MO All Tabs")
 	public void navigateToListAA() {
-		
+		ObjectReader.reader = new PropertyReader();
+		FrameHelper fh = new FrameHelper(driver);
+		MenuObjects Mo = new MenuObjects(driver);
+		DropDownHelper dh = new DropDownHelper(driver);
+		fh.switchTodefault();
+		fh.switchToFrame(ObjectReader.reader.leftframe());
+		Mo.listAA();
+		fh.switchTodefault();
+		fh.switchToFrame(ObjectReader.reader.rightframe());
+		dh.selectUsingVisibleText(Mo.AA_ALL(), "ALL");
+		Mo.Find_ALL();
+		Mo.AA_Label();
 		
 		
 	}

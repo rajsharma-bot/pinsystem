@@ -25,7 +25,7 @@ public class New_Campaign extends TestBase {
 		WaitHelper wh = new WaitHelper(driver);
 		HomeNavigationObjects HN = new HomeNavigationObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
-		MixMediaSchedule mx= new MixMediaSchedule(driver);
+		MixMediaSchedule mx = new MixMediaSchedule(driver);
 		wh.setImplicitWait(ObjectReader.reader.getExplicitWait());
 		LoginClass lc = new LoginClass(driver);
 		log.info("Login runner has been invoked");
@@ -42,36 +42,43 @@ public class New_Campaign extends TestBase {
 		Mo.StartDate();
 		Mo.StartDate("01/01/2024");
 		Mo.EndDate();
-		Mo.EndDate("30/04/2024");
+		Mo.EndDate("31/01/2024");
 		dh.selectUsingValue(Mo.Product(), "11491");
 		dh.selectUsingValue(Mo.Contract(), "1047");
-		Mo.CampaignName("PINSYS-1808-New Campaign-Auto");
+		// Mo.CampaignName("PINSYS-1808-New Campaign-Auto");
+		Mo.CampaignName("For Testing");
 		mx.selectMultipleMediaTypes();
 		Mo.Save();
 		Mo.campaignCode();
 	}
-	
+
 	@Test(dependsOnMethods = "new_Campaign", description = "PINSYS-1813:: New Schedule(New layout)")
 	public void new_Schedule() throws InterruptedException {
 		FrameHelper fh = new FrameHelper(driver);
 		MenuObjects Mo = new MenuObjects(driver);
-		DropDownHelper dh = new DropDownHelper(driver);
-		MixMediaSchedule mx= new MixMediaSchedule(driver);
+		//DropDownHelper dh = new DropDownHelper(driver);
+		MixMediaSchedule mx = new MixMediaSchedule(driver);
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.rightframe());
 		Mo.new_schedule();
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.rightframe());
 		mx.selectVendorCurreny();
+		Thread.sleep(1000);
 		mx.selecMultipleVendors();
+		Thread.sleep(1000);
 		Mo.Schedule_Grid();
-		Thread.sleep(3000);
-//		driver.switchTo().frame("popEditMediaSchedule_CIF-1");
-//		Mo.Entering_Spots();
-//		dh.selectUsingValue(Mo.Adtype_ddl(), "Spot Buy");
-		mx.cinema_placement();
-		
-	
+		Thread.sleep(1000);
+		Mo.editMedia_popUp();
+		fh.switchToFrame(ObjectReader.reader.pop_up_frame());
+		Mo.select_media_layout();
+		fh.switchTodefault();
+		Thread.sleep(1000);
+		fh.switchToFrame(ObjectReader.reader.rightframe());
+		mx.cinema_placement(); // Cinema_line added correctly
+		//mx.Magazine();
+		//mx.Newspaper();
+
 	}
 
 }

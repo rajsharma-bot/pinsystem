@@ -13,7 +13,7 @@ public interface ConfigReader {
 	public String topframe();
 	public String leftframe();
 	public String rightframe();
-	public String EditMediaFrame();
+	public String Edit_layout_frame();
 	public String HOME();
 	public String MEDIA();
 	public String IT_DEPT();
@@ -23,6 +23,8 @@ public interface ConfigReader {
 	public String HR_ADMIN();
 	public String CORPORATE_INFO();
 	public String TRAFFIC();
+	public String Add_line();
+	public String pop_up_frame();
 	
 	
 

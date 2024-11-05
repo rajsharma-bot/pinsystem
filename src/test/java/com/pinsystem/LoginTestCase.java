@@ -44,7 +44,7 @@ public class LoginTestCase extends TestBase {
 
 	}
 
-	@Test(description = "PINSYS-1755 : Verifying login with invalid username")
+	 @Test(description = "PINSYS-1755 : Verifying login with invalid username")
 	public void verify_login_page_withOut_username() throws IOException, InterruptedException {
 
 		ObjectReader.reader = new PropertyReader();

@@ -7,4 +7,13 @@ public class ResourceHelper {
 		return basePath + "/" + path;
 	}
 
+	
+	public static String getCampaignCode() {
+        return getResourcePath("src/main/resources/Data/output.txt");
+    }
+	
+	public static String getInvoiceCode() {
+        return getResourcePath("src/main/resources/Data/Invoice.txt");
+    }
+	
 }

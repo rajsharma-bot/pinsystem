@@ -18,6 +18,7 @@ import org.testng.annotations.BeforeSuite;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.pinsystem.utils.EmailUtility;
 import com.pinsystem.utils.ExtentManager;
 import com.pinsystem.utils.ObjectReader;
 import com.pinsystem.utils.PropertyReader;
@@ -51,31 +52,39 @@ public class TestBase {
 		log.info("**************" + method.getName() + "Started***************");
 	}
 
-	@AfterClass
+//	@AfterClass
 	public void afterClass() {
 		if (driver != null) {
 			driver.quit();
 		}
+		ExtentManager.getInstance().flush(); // No need to assign to a variable
+
+	    // Get the path of the report
+//	    String reportPath = ExtentManager.getReportPath();
+//
+//	    // Send the report via email
+//	    String recipientEmail = "rasharma@mediaocean.com"; // Replace with the recipient's email
+//	    String subject = "Test Execution Report";
+//	    String body = "Please find the attached report for the recent test execution.";
+//	    EmailUtility.sendEmail(recipientEmail, subject, body, reportPath);
 	}
 
 	@AfterMethod
 	public void afterMethod(ITestResult result) throws IOException {
-
-		if (result.getStatus() == ITestResult.FAILURE) {
-			test.log(Status.FAIL, result.getThrowable());
-			ScreenshotUtility.captureScreenshot(driver, result.getName() + "_failure");
-			test.addScreenCaptureFromPath(ScreenshotUtility.captureScreenshot(driver, result.getName()));
-		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			test.log(Status.PASS, result.getName() + " is pass");
-			ScreenshotUtility.captureScreenshot(driver, result.getName() + "_success");
-			
-		} else if (result.getStatus() == ITestResult.SKIP) {
-			test.log(Status.SKIP, result.getThrowable());
-		}
-		log.info("**************" + result.getName() + "Finished***************");
-		test.log(Status.INFO, result.getName() + "**************test Ended***************");
-		System.out.println(result.getName());
-		extent.flush();
+	    if (result.getStatus() == ITestResult.FAILURE) {
+	        test.log(Status.FAIL, "Test failed: " + result.getThrowable());
+	        String screenshotPath = ScreenshotUtility.captureScreenshot(driver, result.getName() + "_failure");
+	        test.addScreenCaptureFromPath(screenshotPath);
+	    } else if (result.getStatus() == ITestResult.SUCCESS) {
+	        test.log(Status.PASS, result.getName() + " passed successfully.");
+	        String screenshotPath = ScreenshotUtility.captureScreenshot(driver, result.getName() + "_success");
+	        test.addScreenCaptureFromPath(screenshotPath);
+	    } else if (result.getStatus() == ITestResult.SKIP) {
+	        test.log(Status.SKIP, "Test skipped: " + result.getThrowable());
+	    }
+	    
+	    log.info("************** " + result.getName() + " Finished ***************");
+	    test.log(Status.INFO, result.getName() + " test ended.");
 	}
 
 	public void startUp() throws IOException {

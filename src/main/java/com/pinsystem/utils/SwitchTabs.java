@@ -12,11 +12,12 @@ public class SwitchTabs {
 		this.driver = driver;
 	}
 
+
 	public void schedule_search() throws InterruptedException {
 		MenuObjects Mo = new MenuObjects(driver);
 
 		Mo.PendingS_Tab();
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 		if (Mo.labelText().contains("1")) {
 			Mo.clickOnRecord();
 		} else
