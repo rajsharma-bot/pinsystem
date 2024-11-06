@@ -52,7 +52,7 @@ public class TestBase {
 		log.info("**************" + method.getName() + "Started***************");
 	}
 
-//	@AfterClass
+	@AfterClass
 	public void afterClass() {
 		if (driver != null) {
 			driver.quit();

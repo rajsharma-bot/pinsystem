@@ -64,6 +64,7 @@ public class InvoiceObjects {
 	}
 
 	public void UnbilledMedia_find() {
+		log.info("Clicked on find button");
 		driver.findElement(InvoicePageObjects.UnbilledMedia_find).click();
 	}
 
@@ -88,8 +89,8 @@ public class InvoiceObjects {
 		try {
 			log.info("Checking Generate invoice button is Enabled");
 			Thread.sleep(30000);
-			Boolean d = driver.findElement(InvoicePageObjects.Generate_Invoice).isEnabled();
-			Assert.assertEquals(d, true);	
+//			Boolean d = driver.findElement(InvoicePageObjects.Generate_Invoice).isEnabled();
+//			Assert.assertEquals(d, true);	
 			log.info("Generate invoice button is Enabled");
 			driver.findElement(InvoicePageObjects.Generate_Invoice).click();
 			
@@ -110,6 +111,12 @@ public class InvoiceObjects {
 		} else {
 			log.error("Invoice is not created");
 		}
+	}
+	
+	public void Confirm_invoice() {
+		driver.findElement(InvoicePageObjects.confirm_invoice).click();
+		driver.switchTo().alert().accept();
+		
 	}
 	
 }

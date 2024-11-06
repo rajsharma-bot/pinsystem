@@ -16,4 +16,8 @@ public class ResourceHelper {
         return getResourcePath("src/main/resources/Data/Invoice.txt");
     }
 	
+	public static String getCreditNoteCode() {
+        return getResourcePath("src/main/resources/Data/CN_No.txt");
+    }
+	
 }

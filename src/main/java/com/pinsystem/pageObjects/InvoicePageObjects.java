@@ -15,6 +15,7 @@ public class InvoicePageObjects {
 	public static By selectAll_checkBox = By.xpath("//span[@id='gvUnBilledMediaPI_gr0_2_checkBox_S_D']");
 	public static By Generate_Invoice = By.xpath("//input[@id='btnSubmit']");
 	public static By getInvoiceNumber = By.xpath("//span[@id='lblInvNo']");
+	public static By confirm_invoice= By.xpath("//input[@id='btnApprove']");
 	
 	
 	

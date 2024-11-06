@@ -1,75 +1,248 @@
-[DEBUG] 2024-11-05 13:15:43.788 [main] TestNG - suiteXmlPath: "C:\Users\rasharma\AppData\Local\Temp\testng-eclipse-1785580404\testng-customsuite.xml"
-[INFO ] 2024-11-05 13:15:44.582 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 21 ms.
-[INFO ] 2024-11-05 13:15:44.607 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 19 ms.
-[INFO ] 2024-11-05 13:15:44.610 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.611 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.614 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.615 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.618 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.618 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.622 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.624 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.627 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.628 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.630 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.631 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.634 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.635 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.642 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.643 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.647 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.649 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-[INFO ] 2024-11-05 13:15:44.660 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
-[INFO ] 2024-11-05 13:15:44.661 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
-[INFO ] 2024-11-05 13:15:44.662 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.663 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.666 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.667 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.671 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.672 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.672 [main] Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.673 [main] Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
-[INFO ] 2024-11-05 13:15:44.694 [main] Utils - [TestNG] Running:
-  C:\Users\rasharma\AppData\Local\Temp\testng-eclipse-1785580404\testng-customsuite.xml
+[DEBUG] 2024-11-06 14:17:28.968 [main] TestNG - suiteXmlPath: "C:\Users\rasharma\Automation\pinsystem\testng.xml"
+[INFO ] 2024-11-06 14:17:29.996 [main] Utils - [TestNG] Running:
+  C:\Users\rasharma\Automation\pinsystem\testng.xml
 
-[INFO ] 2024-11-05 13:15:45.280 [main] Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 9 ms.
-[DEBUG] 2024-11-05 13:15:45.350 [main] WebDriverManager - Using WebDriverManager 5.9.2
-[DEBUG] 2024-11-05 13:15:46.320 [main] ResolutionCache - Resolution chrome=130 in cache (valid until 14:07:10 05/11/2024 IST)
-[DEBUG] 2024-11-05 13:15:46.324 [main] ResolutionCache - Resolution chrome130=130.0.6723.91 in cache (valid until 10:58:44 06/11/2024 IST)
-[INFO ] 2024-11-05 13:15:46.327 [main] WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
-[DEBUG] 2024-11-05 13:15:46.449 [main] WebDriverManager - Driver chromedriver 130.0.6723.91 found in cache
-[INFO ] 2024-11-05 13:15:46.452 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
-[INFO ] 2024-11-05 13:15:51.698 [main] TestBase - Initialize Web driver: 1625097607
-[INFO ] 2024-11-05 13:15:51.699 [main] WaitHelper - Implicit Wait has been set to: 30
-[INFO ] 2024-11-05 13:15:51.723 [main] WaitHelper - waiting for page to load for : 100
-[INFO ] 2024-11-05 13:15:51.739 [main] WaitHelper - page is loaded
-[INFO ] 2024-11-05 13:15:54.578 [main] TestBase - **************digital_invoiceStarted***************
-[INFO ] 2024-11-05 13:15:54.614 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-11-05 13:15:54.624 [main] WaitHelper - Implicit Wait has been set to: 30
-[INFO ] 2024-11-05 13:15:54.633 [main] Create_invoice - Login runner has been invoked
-[INFO ] 2024-11-05 13:15:55.497 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
-[INFO ] 2024-11-05 13:15:55.965 [main] LoginObjects - Passing Only Password : asd123
-[INFO ] 2024-11-05 13:15:55.966 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
-[INFO ] 2024-11-05 13:15:59.276 [main] LoginObjects - Clicked on submit
-[INFO ] 2024-11-05 13:16:29.357 [main] FrameHelper - Frame has been switched to topframe
-[INFO ] 2024-11-05 13:16:29.526 [main] HomeNavigationObjects - Clicked on Finance
-[INFO ] 2024-11-05 13:16:29.532 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-11-05 13:16:29.593 [main] FrameHelper - Frame has been switched to left
-[INFO ] 2024-11-05 13:16:29.760 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-11-05 13:16:41.116 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-11-05 13:16:41.244 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Campaign Code
-[INFO ] 2024-11-05 13:16:41.369 [main] Create_invoice - Data read from file:
-B004/JSR/2400287
-[INFO ] 2024-11-05 13:16:53.784 [main] InvoiceObjects - false
-[INFO ] 2024-11-05 13:17:23.928 [main] InvoiceObjects - Checking Generate invoice button is Enabled
-[INFO ] 2024-11-05 13:17:53.970 [main] InvoiceObjects - Generate invoice button is Enabled
-[INFO ] 2024-11-05 13:17:56.684 [main] InvoiceObjects - Invoice has been created
-[INFO ] 2024-11-05 13:17:56.721 [main] InvoiceObjects - M24112255
-[INFO ] 2024-11-05 13:17:57.002 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\digital_invoice_success_20241105_131756.png
-[INFO ] 2024-11-05 13:17:57.005 [main] TestBase - ************** digital_invoice Finished ***************
-[INFO ] 2024-11-05 13:17:57.288 [main] Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@377874b4: 243 ms
-[INFO ] 2024-11-05 13:17:57.290 [main] Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@14422d9d: 1 ms
-[INFO ] 2024-11-05 13:17:57.314 [main] Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@66c9b52f: 24 ms
-[INFO ] 2024-11-05 13:17:57.329 [main] Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@4a50d04a: 14 ms
-[INFO ] 2024-11-05 13:17:57.353 [main] Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@472d0f4: 20 ms
-[INFO ] 2024-11-05 13:17:57.354 [main] Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@4bc59b27: 0 ms
+[DEBUG] 2024-11-06 14:17:30.724 [main] WebDriverManager - Using WebDriverManager 5.9.2
+[DEBUG] 2024-11-06 14:17:31.672 [main] ResolutionCache - Removing resolution chrome=130 from cache (expired on Wed Nov 06 12:35:34 IST 2024)
+[DEBUG] 2024-11-06 14:17:31.744 [main] InternalHttpClient - ex-0000000001 preparing request execution
+[DEBUG] 2024-11-06 14:17:31.781 [main] ProtocolExec - ex-0000000001 target auth state: UNCHALLENGED
+[DEBUG] 2024-11-06 14:17:31.784 [main] ProtocolExec - ex-0000000001 proxy auth state: UNCHALLENGED
+[DEBUG] 2024-11-06 14:17:31.785 [main] ConnectExec - ex-0000000001 acquiring connection with route {s}->https://raw.githubusercontent.com:443
+[DEBUG] 2024-11-06 14:17:31.787 [main] InternalHttpClient - ex-0000000001 acquiring endpoint (3 MINUTES)
+[DEBUG] 2024-11-06 14:17:31.792 [main] PoolingHttpClientConnectionManager - ex-0000000001 endpoint lease request (3 MINUTES) [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 0 of 5; total allocated: 0 of 25]
+[DEBUG] 2024-11-06 14:17:31.808 [main] PoolingHttpClientConnectionManager - ex-0000000001 endpoint leased [route: {s}->https://raw.githubusercontent.com:443][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+[DEBUG] 2024-11-06 14:17:31.845 [main] PoolingHttpClientConnectionManager - ex-0000000001 acquired ep-0000000001
+[DEBUG] 2024-11-06 14:17:31.846 [main] InternalHttpClient - ex-0000000001 acquired endpoint ep-0000000001
+[DEBUG] 2024-11-06 14:17:31.847 [main] ConnectExec - ex-0000000001 opening connection {s}->https://raw.githubusercontent.com:443
+[DEBUG] 2024-11-06 14:17:31.852 [main] InternalHttpClient - ep-0000000001 connecting endpoint (null)
+[DEBUG] 2024-11-06 14:17:31.862 [main] PoolingHttpClientConnectionManager - ep-0000000001 connecting endpoint to https://raw.githubusercontent.com:443 (30 SECONDS)
+[DEBUG] 2024-11-06 14:17:31.863 [main] DefaultHttpClientConnectionOperator - raw.githubusercontent.com resolving remote address
+[DEBUG] 2024-11-06 14:17:31.921 [main] DefaultHttpClientConnectionOperator - raw.githubusercontent.com resolved to [raw.githubusercontent.com/185.199.111.133, raw.githubusercontent.com/185.199.110.133, raw.githubusercontent.com/185.199.109.133, raw.githubusercontent.com/185.199.108.133]
+[DEBUG] 2024-11-06 14:17:31.931 [main] DefaultHttpClientConnectionOperator - raw.githubusercontent.com:443 connecting null->raw.githubusercontent.com/185.199.111.133:443 (30 SECONDS)
+[DEBUG] 2024-11-06 14:17:31.932 [main] SSLConnectionSocketFactory - Connecting socket to raw.githubusercontent.com/185.199.111.133:443 with timeout 30 SECONDS
+[DEBUG] 2024-11-06 14:17:32.160 [main] SSLConnectionSocketFactory - Enabled protocols: [TLSv1.3, TLSv1.2]
+[DEBUG] 2024-11-06 14:17:32.161 [main] SSLConnectionSocketFactory - Enabled cipher suites: [TLS_AES_256_GCM_SHA384, TLS_AES_128_GCM_SHA256, TLS_CHACHA20_POLY1305_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+[DEBUG] 2024-11-06 14:17:32.162 [main] SSLConnectionSocketFactory - Starting handshake (null)
+[DEBUG] 2024-11-06 14:17:32.790 [main] SSLConnectionSocketFactory - Secure session established
+[DEBUG] 2024-11-06 14:17:32.791 [main] SSLConnectionSocketFactory -  negotiated protocol: TLSv1.3
+[DEBUG] 2024-11-06 14:17:32.793 [main] SSLConnectionSocketFactory -  negotiated cipher suite: TLS_AES_128_GCM_SHA256
+[DEBUG] 2024-11-06 14:17:32.802 [main] SSLConnectionSocketFactory -  peer principal: CN=*.github.io, O="GitHub, Inc.", L=San Francisco, ST=California, C=US
+[DEBUG] 2024-11-06 14:17:32.803 [main] SSLConnectionSocketFactory -  peer alternative names: [*.github.io, github.io, githubusercontent.com, www.github.com, *.github.com, *.githubusercontent.com, github.com]
+[DEBUG] 2024-11-06 14:17:32.804 [main] SSLConnectionSocketFactory -  issuer principal: CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1, O=DigiCert Inc, C=US
+[DEBUG] 2024-11-06 14:17:32.807 [main] DefaultManagedHttpClientConnection - http-outgoing-0 set socket timeout to 3 MINUTES
+[DEBUG] 2024-11-06 14:17:32.809 [main] DefaultHttpClientConnectionOperator - raw.githubusercontent.com:443 connected null->raw.githubusercontent.com/185.199.111.133:443 as http-outgoing-0
+[DEBUG] 2024-11-06 14:17:32.810 [main] PoolingHttpClientConnectionManager - ep-0000000001 connected http-outgoing-0
+[DEBUG] 2024-11-06 14:17:32.811 [main] InternalHttpClient - ep-0000000001 endpoint connected
+[DEBUG] 2024-11-06 14:17:32.814 [main] MainClientExec - ex-0000000001 executing GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+[DEBUG] 2024-11-06 14:17:32.815 [main] RequestAddCookies - ex-0000000001 Cookie spec selected: strict
+[DEBUG] 2024-11-06 14:17:32.849 [main] InternalHttpClient - ep-0000000001 start execution ex-0000000001
+[DEBUG] 2024-11-06 14:17:32.851 [main] PoolingHttpClientConnectionManager - ep-0000000001 executing exchange ex-0000000001 over http-outgoing-0
+[DEBUG] 2024-11-06 14:17:32.853 [main] headers - http-outgoing-0 >> GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1
+[DEBUG] 2024-11-06 14:17:32.854 [main] headers - http-outgoing-0 >> user-agent: Apache-HttpClient/5.0
+[DEBUG] 2024-11-06 14:17:32.855 [main] headers - http-outgoing-0 >> accept-encoding: gzip, deflate, br
+[DEBUG] 2024-11-06 14:17:32.856 [main] headers - http-outgoing-0 >> cache-control: max-age=0
+[DEBUG] 2024-11-06 14:17:32.857 [main] headers - http-outgoing-0 >> connection: keep-alive
+[DEBUG] 2024-11-06 14:17:32.858 [main] headers - http-outgoing-0 >> Host: raw.githubusercontent.com
+[DEBUG] 2024-11-06 14:17:32.860 [main] wire - http-outgoing-0 >> "GET /bonigarcia/webdrivermanager/master/src/main/resources/commands.properties HTTP/1.1[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.861 [main] wire - http-outgoing-0 >> "user-agent: Apache-HttpClient/5.0[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.862 [main] wire - http-outgoing-0 >> "accept-encoding: gzip, deflate, br[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.863 [main] wire - http-outgoing-0 >> "cache-control: max-age=0[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.863 [main] wire - http-outgoing-0 >> "connection: keep-alive[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.864 [main] wire - http-outgoing-0 >> "Host: raw.githubusercontent.com[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.864 [main] wire - http-outgoing-0 >> "[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.906 [main] wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.907 [main] wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.908 [main] wire - http-outgoing-0 << "Content-Length: 745[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.909 [main] wire - http-outgoing-0 << "Cache-Control: max-age=300[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.909 [main] wire - http-outgoing-0 << "Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.910 [main] wire - http-outgoing-0 << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.911 [main] wire - http-outgoing-0 << "ETag: W/"dd41edff335272162022217759820159dac501cff56850e2510f504462cd9b5f"[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.911 [main] wire - http-outgoing-0 << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.912 [main] wire - http-outgoing-0 << "X-Content-Type-Options: nosniff[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.913 [main] wire - http-outgoing-0 << "X-Frame-Options: deny[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.913 [main] wire - http-outgoing-0 << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.914 [main] wire - http-outgoing-0 << "X-GitHub-Request-Id: 43E9:18724C:266A74:337FBE:67269839[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.915 [main] wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.916 [main] wire - http-outgoing-0 << "Accept-Ranges: bytes[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.917 [main] wire - http-outgoing-0 << "Date: Wed, 06 Nov 2024 08:47:32 GMT[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.918 [main] wire - http-outgoing-0 << "Via: 1.1 varnish[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.919 [main] wire - http-outgoing-0 << "X-Served-By: cache-hyd1100025-HYD[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.919 [main] wire - http-outgoing-0 << "X-Cache: HIT[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.920 [main] wire - http-outgoing-0 << "X-Cache-Hits: 1[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.921 [main] wire - http-outgoing-0 << "X-Timer: S1730882853.895233,VS0,VE1[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.921 [main] wire - http-outgoing-0 << "Vary: Authorization,Accept-Encoding,Origin[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.922 [main] wire - http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.923 [main] wire - http-outgoing-0 << "Cross-Origin-Resource-Policy: cross-origin[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.923 [main] wire - http-outgoing-0 << "X-Fastly-Request-ID: d86e465cc0bb2f46fd7f1a96f93158fd63d3e012[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.924 [main] wire - http-outgoing-0 << "Expires: Wed, 06 Nov 2024 08:52:32 GMT[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.926 [main] wire - http-outgoing-0 << "Source-Age: 28[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.927 [main] wire - http-outgoing-0 << "[\r][\n]"
+[DEBUG] 2024-11-06 14:17:32.935 [main] headers - http-outgoing-0 << HTTP/1.1 200 OK
+[DEBUG] 2024-11-06 14:17:32.937 [main] headers - http-outgoing-0 << Connection: keep-alive
+[DEBUG] 2024-11-06 14:17:32.937 [main] headers - http-outgoing-0 << Content-Length: 745
+[DEBUG] 2024-11-06 14:17:32.938 [main] headers - http-outgoing-0 << Cache-Control: max-age=300
+[DEBUG] 2024-11-06 14:17:32.939 [main] headers - http-outgoing-0 << Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+[DEBUG] 2024-11-06 14:17:32.940 [main] headers - http-outgoing-0 << Content-Type: text/plain; charset=utf-8
+[DEBUG] 2024-11-06 14:17:32.940 [main] headers - http-outgoing-0 << ETag: W/"dd41edff335272162022217759820159dac501cff56850e2510f504462cd9b5f"
+[DEBUG] 2024-11-06 14:17:32.942 [main] headers - http-outgoing-0 << Strict-Transport-Security: max-age=31536000
+[DEBUG] 2024-11-06 14:17:32.943 [main] headers - http-outgoing-0 << X-Content-Type-Options: nosniff
+[DEBUG] 2024-11-06 14:17:32.944 [main] headers - http-outgoing-0 << X-Frame-Options: deny
+[DEBUG] 2024-11-06 14:17:32.945 [main] headers - http-outgoing-0 << X-XSS-Protection: 1; mode=block
+[DEBUG] 2024-11-06 14:17:32.945 [main] headers - http-outgoing-0 << X-GitHub-Request-Id: 43E9:18724C:266A74:337FBE:67269839
+[DEBUG] 2024-11-06 14:17:32.946 [main] headers - http-outgoing-0 << Content-Encoding: gzip
+[DEBUG] 2024-11-06 14:17:32.947 [main] headers - http-outgoing-0 << Accept-Ranges: bytes
+[DEBUG] 2024-11-06 14:17:32.947 [main] headers - http-outgoing-0 << Date: Wed, 06 Nov 2024 08:47:32 GMT
+[DEBUG] 2024-11-06 14:17:32.948 [main] headers - http-outgoing-0 << Via: 1.1 varnish
+[DEBUG] 2024-11-06 14:17:32.948 [main] headers - http-outgoing-0 << X-Served-By: cache-hyd1100025-HYD
+[DEBUG] 2024-11-06 14:17:32.949 [main] headers - http-outgoing-0 << X-Cache: HIT
+[DEBUG] 2024-11-06 14:17:32.950 [main] headers - http-outgoing-0 << X-Cache-Hits: 1
+[DEBUG] 2024-11-06 14:17:32.950 [main] headers - http-outgoing-0 << X-Timer: S1730882853.895233,VS0,VE1
+[DEBUG] 2024-11-06 14:17:32.951 [main] headers - http-outgoing-0 << Vary: Authorization,Accept-Encoding,Origin
+[DEBUG] 2024-11-06 14:17:32.952 [main] headers - http-outgoing-0 << Access-Control-Allow-Origin: *
+[DEBUG] 2024-11-06 14:17:32.953 [main] headers - http-outgoing-0 << Cross-Origin-Resource-Policy: cross-origin
+[DEBUG] 2024-11-06 14:17:32.954 [main] headers - http-outgoing-0 << X-Fastly-Request-ID: d86e465cc0bb2f46fd7f1a96f93158fd63d3e012
+[DEBUG] 2024-11-06 14:17:32.954 [main] headers - http-outgoing-0 << Expires: Wed, 06 Nov 2024 08:52:32 GMT
+[DEBUG] 2024-11-06 14:17:32.955 [main] headers - http-outgoing-0 << Source-Age: 28
+[DEBUG] 2024-11-06 14:17:32.979 [main] MainClientExec - ex-0000000001 connection can be kept alive for 3 MINUTES
+[DEBUG] 2024-11-06 14:17:33.034 [main] wire - http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xffffffb5]W]o[0xffffffda]0[0x14]}[0xffffffe7]W\QUj% [0x1b][0xffffffad][0xffffffa6]i[0x12][0xf]4c[0xffffffdd]4*[0x18][0xffffffb4][0xffffffdd]&[0xfffffff9][0xffffffc5]$N[0xffffffb0][0xffffff94][0xffffffd8][0xffffffc8]NJ[0xffffffb7]_?[0xffffffdb][0xfffffff9]X[0xffffff92]:[0xffffffa3]k[0xffffffe8][0x1b][0xffffffb6][0xffffffef]=[0xffffffe7][0xffffffd8][0xfffffff7][0xffffffe4][0xffffffda][0xffffff9c][0xffffff80][0xffffffcb][0xffffffe3][0x18]3_[0xffffff82][0xffffff8f][0x13][0xffffffbc][0xffffffc1][0xffffff92][0xfffffff4]N[0xffffffe0]vK%[0x4]4"[0xffffffe0]q[0xffffff96]`[0xffffffca]$$[=[0xffffffc8]C[0x13][0xe][0x1b][0x2][0xffffffe4][0xffffff91]xiB|[0xffffffa0][0xffffffcc],[0xffffffcb]-[0xffffff89]"=[0xffffffe0][0xffffffc2]'B[0x7][0xfffffff9]$!^b[0x16][0x1f][0xffffff88][0xffffff90][0xffffff94][0xffffffab][0xffffffb5][0x0][0xffffff88][0xfffffffa][0x1d][\n]"
+[DEBUG] 2024-11-06 14:17:33.043 [main] wire - http-outgoing-0 << "B[0x18]l[0x4][0xffffffdf]K[0xffffffb5][0xffffffa0]([0xffffffcf][0xffffffdc][0xffffffad][0xffffffe0]1[0x19][0xffffffc0]'*H[0xffffffc0][0x1f][0x7][0xffffffb0][0xffffffd8][0x11][0xffffff81][0x7]0[0xfffffff3]C5kVi[0x1a][0xffffff9f]k|[0xffffff9f][0x6][0x1][0x11][0xffffff84]%[0xffffffc0]uLBY[0x8][0xfffffff2][0xffffff97]LH,[0xffffffe1][0xffffffec];e[0xffffffbe]B[0x1d][0xffffffc0][0xffffff9c][0xffffffb2]T[0xffffffc1][0xffffffdc]`[0xf][0x16][0xffffffeb][0xfffffff3][0xffffff9e][0xffffffe2][0xffffffc8](z[0xfffffff9]6F[0xffffff9e][0x19][0xffffff8e][0xfffffff6]Y[0xffffffc2][0xffffffe8][0xffffffcd][0xffffffdb][0xffffff89][0x17][0xfffffffb]#[0xffffffb5]+p\[0xffffffd8][0xffffffc7][0xffffffd4]3Gb[0xffffff8e]a[0xffffffbf]U|[0xffffffc0]pL&[0xfffffffd][0xffffffd3][0xffffffe5]jq[0xffffffbd][0xffffff9a][0xffffffde]|[0xfffffffa]2[0xffffff9f][0xffffffad]?[0xffffffa0][0x9]B[0xffffffa7][0x8]]s[0x1e]F[0x4][0xffffffa1][0xffffff8c][0x2][0xffffffa1][0xffffffe9]n[0x17]QOI[0xffffffe3][0xc][0xffffffa1][0xffffff9c]H![0xfffffff7]!$[0x9][0xffffffdc][0xffffffe7]g[0xffffffe1]<[0xffffffe0](m[0xffffffd7]3~[0xffffff81][0xffffff9e][0xffffffb3][0x1f][0xffffffef][0xffffffdf][0xffffff9d][0xffffffbf][0xffffffa6][0xffffffa8][0xffffff8b]g[0xffffff8a][0xffffff9a]/[0xffffffdc][0xffffffe9]|[0xffffffba]\~[0xffffff9c][0xffffffde]N_S[0xffffffcf][0xffffffe5]d5[0xffffffbb][0xffffff86]ow[0xffffffb3][0xffffffd5]O[0xfffffff8][0xfffffffc][0xffffffd5][0xffffffbd]Ck[0x1e]${,H[0xffffffc1][0xffffff96][0xffffff93]][0xffffffcd][0xffffffaf][0x8][0xfffffff6][0xc]^[0xffffffe1][0xffffffc5]^[0x13]4[0xffffffd2][0xffffff8e][0xffffffd1]>pR)[0xffffff9c][\r]eNh0[0xffffff86][0xffffffd9]:[0xc][0xffffff87]E[0xffffffa6]=q<i[0xffffff8b]o&[0xffffffc4][0xffffffd8]3<[0xffffff95][0x13][0xffffff90]N&8w[0xffffffe9][0x8][0xffffffef]v[0xffffff8e][0xffffffab][0xffffffbe]>es[0xffffffe9]([0x13]/[0xffffffd6][0xfffffff5][0xffffff80]*[0xffffffba][0xfffffff2]v[0xfffffffe][0xffffffd9][0xffffff94]DA6>[0xffffff8e][0xffffffbb]o[0xfffffff8]o[0x1a]E[0xffffffb8] A[0xffffffa8]@?T[0xffffffad]'*:{[0xfffffffa]xR.*[0xffffffce][0xffffffe9][0xffffffd7][0xffffffad][0xffffff93][0xffffff93]4[0xffffffc9][0xfffffffa][0xffffffda]<n*t[0xffffffeb][0xffffffb9]oV[0xffffffb6][0xffffffc0]/M[0xffffff94]O[0xffffffc0][0xfffffff0][0xffffffe1]i[0xffffff90][0xffffffb5][0xfffffffe]9[0xffffff8b][0xffffffad][0xfffffff2]U,Ul[0xffffffdd][0x13]KL[0xffffffa2][0x6][0xffffffdd][0xffffffca]\?`[0xffffffea][0x9].[0xffffffd5]I [0xffffffa4]i[0x1a]_i,[\r][0xffffffdd][0xffffffa1][0xffffffc3][0xffffffae]kzI[0xffffffd1]_Q[0xffffffce]Ek[0xffffffcb][0xfffffff8]Kf[0xffffffb8][0xfffffffe][0xffffffd9]3[0xc][0xffffffe6][0xffffffd3][0xffffff8e][0x11][0x17][0x10]C[0x1d]`i[0x19][0xffffffd5][0xffffffbc][0xfffffff1][0xffffffa4]5[0xffffffbc][0x1e]o[0xfffffff5]K[0xffffffa9][0xffffffd6][0xfffffff8][0xffffffc1]f[0xffffff9b]z[0x4][0xffffffd4][0x1a][0xffffff86][0xffffffb9]^K[0x16]s[0xffffff91][0xfffffffe][0xffffffbf][0xffffff8b]l]~)x(p,[0x11]2[0x14][0x8]E8e[0xffffff9e][0xffffffca]:X[0xffffffa6][0xffffff86][0xffffff88].[0xffffffb6]9[0xffffff9a][0xffffff88].[0xfffffff7]]G[0xffffffea][0xffffffcb][0xe][0xfffffffb][0x7f].u[0xffffff83][0xffffffbb][0xfffffff4][0xffffffb3][0x19][0xffffffda][0xffffffec][0xffffff98][0xffffffc5]Y[0xfffffffd]h8m6\4[0xffffffc1][0xffffff8a][0xffffffb7][0xffffff98]z[0xffffffd0][0xffffffd5]oF5q[0x1c][0x13][0x16][0xfffffff0][0x1d][0x1e][0x19]5-[0xffffff9d][0xffffffef][0xffffffad]c[0xb]z[0xffffffae]/m[0xffffffe6]8[0xffffffb6][0xffffff96][0xfffffff6]7X[0xffffffc9]t[0xfffffff8][0xfffffff9][0xffffffa5][0x11]K[0xfffffffb][0x15]3[0xffffffc3][0xfffffffc][0x1f]B[0xffffffdb][0xffffffd3][0xffffffab][0xffffff92]4.[0xffffff93]Z[0xffffffdf]]:[0xffffffda][0xffffffea][0xffffffdc]B[0xffffffa6][0xffffffcd][0xffffffbc][0xffffffae][0x5][0xfffffff5][0x4][0xffffffd6]8[0xffffffc0][0xffffff82][0xffffff96][0xfffffff0][0xffffffd2][0xc][0xffffffed][0xffffffe0]Y[0xffffffa8][\r]:[[0xffffffa9][0x0][0xffffffff][0x1][0xfffffff8][0x15][0xffffffb4][0xffffffee][0xffffff8e][\r][0x0][0x0]"
+[DEBUG] 2024-11-06 14:17:33.068 [main] InternalHttpClient - ep-0000000001 releasing valid endpoint
+[DEBUG] 2024-11-06 14:17:33.076 [main] PoolingHttpClientConnectionManager - ep-0000000001 releasing endpoint
+[DEBUG] 2024-11-06 14:17:33.083 [main] PoolingHttpClientConnectionManager - ep-0000000001 connection http-outgoing-0 can be kept alive for 3 MINUTES
+[DEBUG] 2024-11-06 14:17:33.087 [main] PoolingHttpClientConnectionManager - ep-0000000001 connection released [route: {s}->https://raw.githubusercontent.com:443][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+[DEBUG] 2024-11-06 14:17:33.089 [main] VersionDetector - Detecting chrome version using online commands.properties
+[DEBUG] 2024-11-06 14:17:33.113 [main] Shell - Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES:\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+[DEBUG] 2024-11-06 14:17:34.570 [main] Shell - Result: 
+[DEBUG] 2024-11-06 14:17:34.573 [main] Shell - Running command on the shell: [cmd.exe, /C, wmic, datafile, where, name="%PROGRAMFILES(X86):\=\\%\\Google\\Chrome\\Application\\chrome.exe", get, Version, /value]
+[DEBUG] 2024-11-06 14:17:35.486 [main] Shell - Result: Version=130.0.6723.92
+[DEBUG] 2024-11-06 14:17:35.494 [main] ResolutionCache - Resolution chrome130=130.0.6723.93 in cache (valid until 11:35:34 07/11/2024 IST)
+[INFO ] 2024-11-06 14:17:35.495 [main] WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[DEBUG] 2024-11-06 14:17:35.503 [main] ResolutionCache - Storing resolution chrome=130 in cache (valid until 15:17:35 06/11/2024 IST)
+[DEBUG] 2024-11-06 14:17:35.686 [main] WebDriverManager - Driver chromedriver 130.0.6723.93 found in cache
+[INFO ] 2024-11-06 14:17:35.695 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[INFO ] 2024-11-06 14:17:41.789 [main] TestBase - Initialize Web driver: 546936087
+[INFO ] 2024-11-06 14:17:41.791 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-11-06 14:17:41.826 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-11-06 14:17:41.844 [main] WaitHelper - page is loaded
+[INFO ] 2024-11-06 14:17:46.764 [main] TestBase - **************digital_campaignStarted***************
+[INFO ] 2024-11-06 14:17:46.827 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-11-06 14:17:46.833 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-11-06 14:17:46.851 [main] Digital_Campaign_schedule - Login runner has been invoked
+[INFO ] 2024-11-06 14:17:47.873 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-11-06 14:17:48.388 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-11-06 14:17:48.389 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-11-06 14:17:52.232 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-11-06 14:18:22.355 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-11-06 14:18:22.573 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-11-06 14:18:22.583 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-11-06 14:18:22.651 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-11-06 14:18:22.651 [main] MenuObjects - New Campaign has been clicked
+[INFO ] 2024-11-06 14:18:22.876 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-11-06 14:18:24.146 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-11-06 14:18:25.217 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
+[INFO ] 2024-11-06 14:18:26.403 [main] DropDownHelper - selectUsingValue and value is: 50222
+[INFO ] 2024-11-06 14:18:29.897 [main] DropDownHelper - selectUsingValue and value is: 11491
+[INFO ] 2024-11-06 14:18:31.037 [main] DropDownHelper - selectUsingValue and value is: 1047
+[INFO ] 2024-11-06 14:18:31.263 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-11-06 14:18:33.309 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Digital
+[INFO ] 2024-11-06 14:18:39.929 [main] MenuObjects - true
+[INFO ] 2024-11-06 14:18:54.573 [main] MenuObjects - Campaign has been created
+[INFO ] 2024-11-06 14:18:54.618 [main] MenuObjects - B004/JSR/2400290
+[INFO ] 2024-11-06 14:18:54.929 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\digital_campaign_success_20241106_141854.png
+[INFO ] 2024-11-06 14:18:54.933 [main] TestBase - ************** digital_campaign Finished ***************
+[INFO ] 2024-11-06 14:18:54.940 [main] TestBase - **************new_ScheduleStarted***************
+[INFO ] 2024-11-06 14:18:54.942 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-11-06 14:18:54.952 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-11-06 14:18:55.009 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-11-06 14:18:56.477 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-11-06 14:18:56.524 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-11-06 14:18:56.524 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-11-06 14:18:58.763 [main] DropDownHelper - selectUsingVisibleText and visibleText is: MYR
+[INFO ] 2024-11-06 14:18:58.838 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-11-06 14:19:00.037 [main] MenuObjects - vendor has been passed
+[INFO ] 2024-11-06 14:19:00.057 [main] DropDownHelper - selectUsingValue and value is: 4640|MYR|1.0000000|1|1|0|0|0
+[INFO ] 2024-11-06 14:19:00.152 [main] MenuObjects - vendor 1 has been passed
+[INFO ] 2024-11-06 14:19:43.107 [main] MenuObjects - true
+[INFO ] 2024-11-06 14:19:43.108 [main] MenuObjects - Pop-up is closed
+[INFO ] 2024-11-06 14:19:43.109 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-11-06 14:19:45.133 [main] MenuObjects - Adding Media line
+[INFO ] 2024-11-06 14:19:45.334 [main] MenuObjects - Clicked on media line
+[INFO ] 2024-11-06 14:19:46.969 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-11-06 14:19:47.013 [main] MenuObjects - Selecting Media title
+[INFO ] 2024-11-06 14:19:47.036 [main] DropDownHelper - selectUsingValue and value is: 3721|I
+[INFO ] 2024-11-06 14:19:47.147 [main] MenuObjects - Selecting vendor
+[INFO ] 2024-11-06 14:19:47.170 [main] DropDownHelper - selectUsingIndex and index is: 0
+[INFO ] 2024-11-06 14:19:49.163 [main] MenuObjects - Digital ad type has been selected
+[INFO ] 2024-11-06 14:19:49.194 [main] DropDownHelper - selectUsingValue and value is: 9151
+[INFO ] 2024-11-06 14:19:49.660 [main] MenuObjects - Remark has been passed for Digital placement line
+[INFO ] 2024-11-06 14:19:53.236 [main] MenuObjects - rate has been passed
+[INFO ] 2024-11-06 14:19:53.657 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-11-06 14:19:53.747 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-11-06 14:20:23.885 [main] ScheduleObjects - Schedule confirm button has been clicked
+[INFO ] 2024-11-06 14:20:54.083 [main] ScheduleObjects - true
+[INFO ] 2024-11-06 14:20:54.084 [main] ScheduleObjects - Pop-up is closed
+[INFO ] 2024-11-06 14:20:54.234 [main] ScheduleObjects - Create Mo by vendor button has been clicked
+[INFO ] 2024-11-06 14:21:24.451 [main] ScheduleObjects - true
+[INFO ] 2024-11-06 14:21:24.451 [main] ScheduleObjects - Pop-up is closed
+[INFO ] 2024-11-06 14:21:24.481 [main] ScheduleObjects - MO number can be seen
+[INFO ] 2024-11-06 14:21:24.509 [main] ScheduleObjects - Clicked on Select All checkbox 
+[INFO ] 2024-11-06 14:21:24.793 [main] ScheduleObjects - false
+[INFO ] 2024-11-06 14:22:24.993 [main] ScheduleObjects - MO has been confirmed
+[INFO ] 2024-11-06 14:22:25.037 [main] ScheduleObjects - Edit Pop has been ignored
+[INFO ] 2024-11-06 14:22:55.467 [main] ScheduleObjects - true
+[INFO ] 2024-11-06 14:22:55.467 [main] ScheduleObjects - Pop-up is closed
+[INFO ] 2024-11-06 14:22:55.578 [main] ScheduleObjects - MO Status is : Confirm
+[INFO ] 2024-11-06 14:22:55.997 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\new_Schedule_success_20241106_142255.png
+[INFO ] 2024-11-06 14:22:55.998 [main] TestBase - ************** new_Schedule Finished ***************
+[DEBUG] 2024-11-06 14:22:59.080 [main] WebDriverManager - Using WebDriverManager 5.9.2
+[DEBUG] 2024-11-06 14:22:59.160 [main] ResolutionCache - Resolution chrome=130 in cache (valid until 15:17:35 06/11/2024 IST)
+[DEBUG] 2024-11-06 14:22:59.167 [main] ResolutionCache - Resolution chrome130=130.0.6723.93 in cache (valid until 11:35:34 07/11/2024 IST)
+[INFO ] 2024-11-06 14:22:59.168 [main] WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[DEBUG] 2024-11-06 14:22:59.342 [main] WebDriverManager - Driver chromedriver 130.0.6723.93 found in cache
+[INFO ] 2024-11-06 14:22:59.350 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[INFO ] 2024-11-06 14:23:06.600 [main] TestBase - Initialize Web driver: 651176183
+[INFO ] 2024-11-06 14:23:06.601 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-11-06 14:23:06.659 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-11-06 14:23:06.681 [main] WaitHelper - page is loaded
+[INFO ] 2024-11-06 14:23:10.056 [main] TestBase - **************digital_invoiceStarted***************
+[INFO ] 2024-11-06 14:23:10.067 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-11-06 14:23:10.079 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-11-06 14:23:10.091 [main] Create_invoiceAndCreditNote - Login runner has been invoked
+[INFO ] 2024-11-06 14:23:14.677 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-11-06 14:23:15.500 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-11-06 14:23:15.501 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-11-06 14:23:18.983 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-11-06 14:23:49.108 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-11-06 14:23:49.315 [main] HomeNavigationObjects - Clicked on Finance
+[INFO ] 2024-11-06 14:23:49.322 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-11-06 14:23:49.385 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-11-06 14:23:49.564 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-11-06 14:23:59.058 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-11-06 14:23:59.186 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Campaign Code
+[INFO ] 2024-11-06 14:23:59.299 [main] Create_invoiceAndCreditNote - Data read from file:
+B004/JSR/2400290
+[INFO ] 2024-11-06 14:23:59.429 [main] InvoiceObjects - Clicked on find button
+[INFO ] 2024-11-06 14:24:11.380 [main] InvoiceObjects - false
+[INFO ] 2024-11-06 14:24:41.605 [main] InvoiceObjects - Checking Generate invoice button is Enabled
+[INFO ] 2024-11-06 14:25:11.616 [main] InvoiceObjects - Generate invoice button is Enabled
+[INFO ] 2024-11-06 14:25:14.127 [main] InvoiceObjects - Invoice has been created
+[INFO ] 2024-11-06 14:25:14.165 [main] InvoiceObjects - M24112262
+[INFO ] 2024-11-06 14:25:15.298 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\digital_invoice_success_20241106_142514.png
+[INFO ] 2024-11-06 14:25:15.299 [main] TestBase - ************** digital_invoice Finished ***************
+[INFO ] 2024-11-06 14:25:15.302 [main] TestBase - **************CreditNoteStarted***************
+[INFO ] 2024-11-06 14:25:15.306 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-11-06 14:25:15.308 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-11-06 14:25:15.316 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-11-06 14:25:15.376 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-11-06 14:25:15.377 [main] CreditNoteObjects - Clicked on Invoice List Page
+[INFO ] 2024-11-06 14:25:15.564 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-11-06 14:25:21.167 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-11-06 14:25:21.167 [main] CreditNoteObjects - Clicked on Invoice List Page
+[INFO ] 2024-11-06 14:25:21.207 [main] DropDownHelper - selectUsingVisibleText and visibleText is: List All
+[INFO ] 2024-11-06 14:25:21.325 [main] CreditNoteObjects - Clicked on Invoice List Page
+[INFO ] 2024-11-06 14:25:21.339 [main] Create_invoiceAndCreditNote - [[ChromeDriver: chrome on windows (ead2fdbf86cdc8537334efd0b0cf24c1)] -> xpath: //select[@id='ddlMonth']]
+[INFO ] 2024-11-06 14:25:21.341 [main] Create_invoiceAndCreditNote - Data read from file:
+M24112262
+[INFO ] 2024-11-06 14:25:21.341 [main] CreditNoteObjects - Passing Invoice number
+[INFO ] 2024-11-06 14:25:51.894 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\CreditNote_failure_20241106_142551.png
+[INFO ] 2024-11-06 14:25:51.894 [main] TestBase - ************** CreditNote Finished ***************

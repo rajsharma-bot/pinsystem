@@ -1,0 +1,821 @@
+[15:09:38] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rasharma\Automation\pinsystem\testng.xml
+
+[15:09:39] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[15:09:40] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[15:09:45] [main] INFO  com.pinsystem.TestBase - Initialize Web driver: 1334675172
+[15:09:45] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:09:45] [main] INFO  com.pinsystem.utils.WaitHelper - waiting for page to load for : 100
+[15:09:45] [main] INFO  com.pinsystem.utils.WaitHelper - page is loaded
+[15:09:47] [main] INFO  com.pinsystem.TestBase - **************digital_invoiceStarted***************
+[15:09:47] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[15:09:47] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:09:47] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Login runner has been invoked
+[15:09:48] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only username : agency@blueocean.net.my
+[15:09:48] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only Password : asd123
+[15:09:48] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[15:09:51] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Clicked on submit
+[15:10:22] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to topframe
+[15:10:22] [main] INFO  com.pinsystem.pageObjects.HomeNavigationObjects - Clicked on Finance
+[15:10:22] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:10:22] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to left
+[15:10:22] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:10:30] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[15:10:30] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingVisibleText and visibleText is: Campaign Code
+[15:10:30] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Data read from file:
+B004/JSR/2400292
+[15:10:30] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Clicked on find button
+[15:10:42] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - false
+[15:11:13] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Checking Generate invoice button is Enabled
+[15:11:43] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Generate invoice button is Enabled
+[15:11:45] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Invoice has been created
+[15:11:45] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - M24112265
+[15:11:46] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\digital_invoice_success_20241106_151145.png
+[15:11:46] [main] INFO  com.pinsystem.TestBase - ************** digital_invoice Finished ***************
+[15:11:46] [main] INFO  com.pinsystem.TestBase - **************CreditNoteStarted***************
+[15:11:46] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[15:11:46] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:11:46] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:11:46] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to left
+[15:11:46] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:11:46] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:11:52] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[15:11:52] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:11:52] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingVisibleText and visibleText is: List All
+[15:11:52] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:11:52] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - [[ChromeDriver: chrome on windows (a217dd44df822cf5292a1a07256ea50c)] -> xpath: //select[@id='ddlMonth']]
+[15:11:52] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Data read from file:
+M24112265
+[15:11:52] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Passing Invoice number
+[15:12:03] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Invoice has been created
+[15:12:03] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - M24112265
+[15:12:33] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\CreditNote_failure_20241106_151233.png
+[15:12:33] [main] INFO  com.pinsystem.TestBase - ************** CreditNote Finished ***************
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 40 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 36 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:14:36] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rasharma\AppData\Local\Temp\testng-eclipse-207893979\testng-customsuite.xml
+
+[15:14:36] [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 8 ms.
+[15:14:37] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[15:14:38] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[15:14:44] [main] INFO  com.pinsystem.TestBase - Initialize Web driver: 1917513667
+[15:14:44] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:14:44] [main] INFO  com.pinsystem.utils.WaitHelper - waiting for page to load for : 100
+[15:14:44] [main] INFO  com.pinsystem.utils.WaitHelper - page is loaded
+[15:14:50] [main] INFO  com.pinsystem.TestBase - **************CreditNoteStarted***************
+[15:14:51] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[15:14:51] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:14:51] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Login runner has been invoked
+[15:15:03] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only username : agency@blueocean.net.my
+[15:15:04] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only Password : asd123
+[15:15:04] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[15:15:07] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Clicked on submit
+[15:15:44] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to topframe
+[15:15:49] [main] INFO  com.pinsystem.pageObjects.HomeNavigationObjects - Clicked on Finance
+[15:15:52] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:15:55] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to left
+[15:15:56] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:16:08] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:16:10] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[15:16:14] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:16:14] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingVisibleText and visibleText is: List All
+[15:16:26] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:16:26] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - [[ChromeDriver: chrome on windows (d64465ff67c872e0f84932b2e08e4a4f)] -> xpath: //select[@id='ddlMonth']]
+[15:16:37] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Data read from file:
+M24112265
+[15:16:42] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Passing Invoice number
+[15:17:51] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[15:17:51] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:17:51] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Login runner has been invoked
+[15:18:24] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\CreditNote_failure_20241106_151824.png
+[15:18:24] [main] INFO  com.pinsystem.TestBase - ************** CreditNote Finished ***************
+[15:18:26] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@191c6e13: 251 ms
+[15:18:26] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@14b528b6: 52 ms
+[15:18:26] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@632383b9: 36 ms
+[15:18:26] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@3a0aaaf0: 22 ms
+[15:18:26] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@3a3b10f4: 30 ms
+[15:18:26] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@49580ca8: 0 ms
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 42 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 34 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:18:42] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rasharma\AppData\Local\Temp\testng-eclipse-441576647\testng-customsuite.xml
+
+[15:18:43] [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 11 ms.
+[15:18:48] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[15:18:49] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[15:18:56] [main] INFO  com.pinsystem.TestBase - Initialize Web driver: 361668462
+[15:18:56] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:18:56] [main] INFO  com.pinsystem.utils.WaitHelper - waiting for page to load for : 100
+[15:18:56] [main] INFO  com.pinsystem.utils.WaitHelper - page is loaded
+[15:19:00] [main] INFO  com.pinsystem.TestBase - **************CreditNoteStarted***************
+[15:19:00] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[15:19:00] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:19:00] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Login runner has been invoked
+[15:19:12] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only username : agency@blueocean.net.my
+[15:19:13] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only Password : asd123
+[15:19:13] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[15:19:17] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Clicked on submit
+[15:19:57] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to topframe
+[15:20:04] [main] INFO  com.pinsystem.pageObjects.HomeNavigationObjects - Clicked on Finance
+[15:20:07] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:20:10] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to left
+[15:20:12] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:20:16] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:20:18] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[15:20:20] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:20:20] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingVisibleText and visibleText is: List All
+[15:20:22] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:20:22] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - [[ChromeDriver: chrome on windows (5ade2101d50b873b3300d3b83c051d63)] -> xpath: //select[@id='ddlMonth']]
+[15:20:33] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Data read from file:
+M24112265
+[15:20:35] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Passing Invoice number
+[15:21:34] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\CreditNote_failure_20241106_152134.png
+[15:21:34] [main] INFO  com.pinsystem.TestBase - ************** CreditNote Finished ***************
+[15:21:36] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@48499739: 308 ms
+[15:21:36] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@54f6b629: 64 ms
+[15:21:36] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@226d5af0: 36 ms
+[15:21:36] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@78116659: 25 ms
+[15:21:36] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@125f16b2: 29 ms
+[15:21:36] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@5384ce66: 0 ms
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 25 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 26 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:24:58] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rasharma\AppData\Local\Temp\testng-eclipse-803577745\testng-customsuite.xml
+
+[15:24:59] [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 10 ms.
+[15:25:00] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[15:25:00] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[15:25:06] [main] INFO  com.pinsystem.TestBase - Initialize Web driver: 2096842550
+[15:25:06] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:25:06] [main] INFO  com.pinsystem.utils.WaitHelper - waiting for page to load for : 100
+[15:25:07] [main] INFO  com.pinsystem.utils.WaitHelper - page is loaded
+[15:25:09] [main] INFO  com.pinsystem.TestBase - **************CreditNoteStarted***************
+[15:25:09] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[15:25:09] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:25:09] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Login runner has been invoked
+[15:25:29] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only username : agency@blueocean.net.my
+[15:25:29] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only Password : asd123
+[15:25:29] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[15:25:32] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Clicked on submit
+[15:26:03] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to topframe
+[15:26:03] [main] INFO  com.pinsystem.pageObjects.HomeNavigationObjects - Clicked on Finance
+[15:26:03] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:26:03] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to left
+[15:26:03] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:26:03] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:26:06] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[15:26:06] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:26:06] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingVisibleText and visibleText is: List All
+[15:26:06] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:26:06] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - [[ChromeDriver: chrome on windows (60413e32bf18d810e0083046537f2e25)] -> xpath: //select[@id='ddlMonth']]
+[15:26:06] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Data read from file:
+M24112265
+[15:26:06] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Passing Invoice number
+[15:27:02] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Invoice has been created
+[15:27:02] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - CN/24110088
+[15:27:33] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:27:40] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Getting all option from Import DDL
+[15:28:10] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\CreditNote_failure_20241106_152810.png
+[15:28:10] [main] INFO  com.pinsystem.TestBase - ************** CreditNote Finished ***************
+[15:28:12] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@5b1e88f: 407 ms
+[15:28:12] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@797fcf9: 101 ms
+[15:28:12] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@706f6d26: 84 ms
+[15:28:12] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@7ddcb0dc: 52 ms
+[15:28:12] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@355ce6a6: 89 ms
+[15:28:12] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@20440c6c: 0 ms
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 22 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 27 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 31 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:43:24] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rasharma\AppData\Local\Temp\testng-eclipse--339519983\testng-customsuite.xml
+
+[15:43:25] [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 13 ms.
+[15:43:26] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[15:43:26] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[15:43:32] [main] INFO  com.pinsystem.TestBase - Initialize Web driver: 277149580
+[15:43:32] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:43:32] [main] INFO  com.pinsystem.utils.WaitHelper - waiting for page to load for : 100
+[15:43:32] [main] INFO  com.pinsystem.utils.WaitHelper - page is loaded
+[15:43:37] [main] INFO  com.pinsystem.TestBase - **************digital_invoiceStarted***************
+[15:43:37] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[15:43:37] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:43:37] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Login runner has been invoked
+[15:43:38] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only username : agency@blueocean.net.my
+[15:43:38] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only Password : asd123
+[15:43:38] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[15:43:39] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Clicked on submit
+[15:44:09] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to topframe
+[15:44:09] [main] INFO  com.pinsystem.pageObjects.HomeNavigationObjects - Clicked on Finance
+[15:44:09] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:44:09] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to left
+[15:44:10] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:44:24] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[15:44:25] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingVisibleText and visibleText is: Campaign Code
+[15:44:25] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Data read from file:
+B004/JSR/2400292
+[15:44:25] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Clicked on find button
+[15:44:37] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - false
+[15:45:07] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Checking Generate invoice button is Enabled
+[15:45:38] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Generate invoice button is Enabled
+[15:45:40] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Invoice has been created
+[15:45:40] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - M24112266
+[15:45:41] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\digital_invoice_success_20241106_154540.png
+[15:45:41] [main] INFO  com.pinsystem.TestBase - ************** digital_invoice Finished ***************
+[15:45:41] [main] INFO  com.pinsystem.TestBase - **************CreditNoteStarted***************
+[15:45:41] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[15:45:41] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:45:41] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Login runner has been invoked
+[15:46:12] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\CreditNote_failure_20241106_154611.png
+[15:46:12] [main] INFO  com.pinsystem.TestBase - ************** CreditNote Finished ***************
+[15:46:13] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@68631b1d: 239 ms
+[15:46:13] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@5a4d4f9c: 54 ms
+[15:46:13] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@1a2ac487: 39 ms
+[15:46:13] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@52abed9d: 21 ms
+[15:46:13] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@7aded903: 26 ms
+[15:46:13] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@2db86a7c: 0 ms
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 20 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 25 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[15:47:44] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rasharma\AppData\Local\Temp\testng-eclipse--145238758\testng-customsuite.xml
+
+[15:47:44] [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 9 ms.
+[15:47:45] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[15:47:45] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[15:47:51] [main] INFO  com.pinsystem.TestBase - Initialize Web driver: 1405163418
+[15:47:51] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:47:51] [main] INFO  com.pinsystem.utils.WaitHelper - waiting for page to load for : 100
+[15:47:51] [main] INFO  com.pinsystem.utils.WaitHelper - page is loaded
+[15:47:55] [main] INFO  com.pinsystem.TestBase - **************CreditNoteStarted***************
+[15:47:55] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[15:47:55] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[15:47:55] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Login runner has been invoked
+[15:47:56] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only username : agency@blueocean.net.my
+[15:47:56] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only Password : asd123
+[15:47:56] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[15:47:57] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Clicked on submit
+[15:48:27] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to topframe
+[15:48:27] [main] INFO  com.pinsystem.pageObjects.HomeNavigationObjects - Clicked on Finance
+[15:48:27] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:48:27] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to left
+[15:48:27] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:48:27] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:48:33] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[15:48:33] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:48:33] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingVisibleText and visibleText is: List All
+[15:48:34] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[15:48:34] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - [[ChromeDriver: chrome on windows (638b1e27afadc40569b2c59e68e42358)] -> xpath: //select[@id='ddlMonth']]
+[15:48:34] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Data read from file:
+M24112266
+[15:48:34] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Passing Invoice number
+[15:48:56] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Invoice has been created
+[15:48:56] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - CN/24110089
+[15:49:17] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[15:49:17] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Getting all option from Import DDL
+[15:49:47] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\CreditNote_failure_20241106_154947.png
+[15:49:47] [main] INFO  com.pinsystem.TestBase - ************** CreditNote Finished ***************
+[15:49:49] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@118041c7: 211 ms
+[15:49:49] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@6e9a0bea: 53 ms
+[15:49:49] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@39266403: 34 ms
+[15:49:49] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@8e99809: 19 ms
+[15:49:49] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@3a11c0eb: 23 ms
+[15:49:49] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@3313d477: 1 ms
+[17:43:26] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[17:43:26] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[17:46:04] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[17:46:04] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[17:47:10] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[17:47:11] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[17:48:13] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[17:48:13] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[18:05:34] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[18:05:35] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[18:07:40] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[18:07:41] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[18:15:50] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[18:15:50] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[18:17:38] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[18:17:38] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[18:18:31] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[18:18:31] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[18:19:57] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[18:19:57] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[18:20:40] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[18:20:40] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 26 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 25 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 29 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:35:22] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rasharma\AppData\Local\Temp\testng-eclipse-1323777092\testng-customsuite.xml
+
+[18:35:23] [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 11 ms.
+[18:35:24] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[18:35:24] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[18:35:30] [main] INFO  com.pinsystem.TestBase - Initialize Web driver: 379056819
+[18:35:30] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[18:35:30] [main] INFO  com.pinsystem.utils.WaitHelper - waiting for page to load for : 100
+[18:35:30] [main] INFO  com.pinsystem.utils.WaitHelper - page is loaded
+[18:35:34] [main] INFO  com.pinsystem.TestBase - **************digital_invoiceStarted***************
+[18:35:34] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[18:35:34] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[18:35:34] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Login runner has been invoked
+[18:35:34] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only username : agency@blueocean.net.my
+[18:35:35] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only Password : asd123
+[18:35:35] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[18:35:39] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Clicked on submit
+[18:36:09] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to topframe
+[18:36:09] [main] INFO  com.pinsystem.pageObjects.HomeNavigationObjects - Clicked on Finance
+[18:36:09] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[18:36:09] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to left
+[18:36:09] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[18:36:26] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[18:36:26] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingVisibleText and visibleText is: Campaign Code
+[18:36:26] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Data read from file:
+B004/JSR/2400292
+[18:36:26] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Clicked on find button
+[18:36:38] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - false
+[18:37:08] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Checking Generate invoice button is Enabled
+[18:37:38] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Generate invoice button is Enabled
+[18:37:40] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Invoice has been created
+[18:37:40] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - M24112267
+[18:37:42] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\digital_invoice_success_20241106_183740.png
+[18:37:42] [main] INFO  com.pinsystem.TestBase - ************** digital_invoice Finished ***************
+[18:37:42] [main] INFO  com.pinsystem.TestBase - **************CreditNoteStarted***************
+[18:37:42] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[18:37:42] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[18:37:42] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Login runner has been invoked
+[18:38:12] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\CreditNote_failure_20241106_183812.png
+[18:38:12] [main] INFO  com.pinsystem.TestBase - ************** CreditNote Finished ***************
+[18:38:13] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@118041c7: 150 ms
+[18:38:13] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@20440c6c: 36 ms
+[18:38:13] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@4be490da: 24 ms
+[18:38:13] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@24a0c58b: 18 ms
+[18:38:13] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@4a62062a: 19 ms
+[18:38:13] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@7ec08115: 0 ms
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 19 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 22 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 21 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:41:09] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rasharma\AppData\Local\Temp\testng-eclipse--1752784027\testng-customsuite.xml
+
+[18:41:10] [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 12 ms.
+[18:41:11] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[18:41:11] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[18:41:16] [main] INFO  com.pinsystem.TestBase - Initialize Web driver: 313334570
+[18:41:16] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[18:41:16] [main] INFO  com.pinsystem.utils.WaitHelper - waiting for page to load for : 100
+[18:41:16] [main] INFO  com.pinsystem.utils.WaitHelper - page is loaded
+[18:41:19] [main] INFO  com.pinsystem.TestBase - **************digital_invoiceStarted***************
+[18:41:19] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[18:41:19] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[18:41:19] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Login runner has been invoked
+[18:41:19] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only username : agency@blueocean.net.my
+[18:41:20] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only Password : asd123
+[18:41:20] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[18:41:21] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Clicked on submit
+[18:41:54] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to topframe
+[18:41:54] [main] INFO  com.pinsystem.pageObjects.HomeNavigationObjects - Clicked on Finance
+[18:41:54] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[18:41:54] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to left
+[18:41:54] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[18:42:00] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[18:42:00] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingVisibleText and visibleText is: Campaign Code
+[18:42:00] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Data read from file:
+B004/JSR/2400292
+[18:42:01] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Clicked on find button
+[18:42:12] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - false
+[18:42:42] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Checking Generate invoice button is Enabled
+[18:43:12] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Generate invoice button is Enabled
+[18:43:14] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Invoice has been created
+[18:43:15] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - M24112268
+[18:43:16] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\digital_invoice_success_20241106_184315.png
+[18:43:16] [main] INFO  com.pinsystem.TestBase - ************** digital_invoice Finished ***************
+[18:43:16] [main] INFO  com.pinsystem.TestBase - **************CreditNoteStarted***************
+[18:43:16] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[18:43:16] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[18:43:16] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[18:43:46] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to topframe
+[18:43:46] [main] INFO  com.pinsystem.pageObjects.HomeNavigationObjects - Clicked on Finance
+[18:43:46] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[18:43:46] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to left
+[18:43:46] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[18:43:46] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[18:43:55] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[18:43:55] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[18:43:55] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingVisibleText and visibleText is: List All
+[18:43:55] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[18:43:55] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - [[ChromeDriver: chrome on windows (7a1bcfc655d7e7f3e955970cdc8c5164)] -> xpath: //select[@id='ddlMonth']]
+[18:43:55] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Data read from file:
+M24112268
+[18:43:55] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Passing Invoice number
+[18:44:17] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Invoice has been created
+[18:44:17] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - CN/24110090
+[18:44:38] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[18:44:38] [main] INFO  com.pinsystem.utils.WindowHandler - Parent Window: 21EA663B95E903EE92989A6C5E4FCBB2
+[18:44:38] [main] INFO  com.pinsystem.utils.WindowHandler - Child Window: 40476A62AAF2261577C6CCB04ABE127B
+[18:44:38] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Getting all option from Import DDL
+[18:44:38] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingValue and value is: Success
+[18:44:39] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@2eada095: 151 ms
+[18:44:39] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@4dfdfe7d: 31 ms
+[18:44:39] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@3380ca3d: 21 ms
+[18:44:39] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@49edcb30: 16 ms
+[18:44:39] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@51a16adf: 28 ms
+[18:44:39] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@385d819: 0 ms
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 19 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 27 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 18 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:49:03] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rasharma\AppData\Local\Temp\testng-eclipse-874542497\testng-customsuite.xml
+
+[18:49:04] [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 10 ms.
+[18:49:08] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[18:49:08] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[18:49:13] [main] INFO  com.pinsystem.TestBase - Initialize Web driver: 1121370413
+[18:49:13] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[18:49:13] [main] INFO  com.pinsystem.utils.WaitHelper - waiting for page to load for : 100
+[18:49:13] [main] INFO  com.pinsystem.utils.WaitHelper - page is loaded
+[18:49:16] [main] INFO  com.pinsystem.TestBase - **************digital_invoiceStarted***************
+[18:49:16] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[18:49:16] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[18:49:16] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Login runner has been invoked
+[18:49:17] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only username : agency@blueocean.net.my
+[18:49:18] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only Password : asd123
+[18:49:18] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[18:49:18] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Clicked on submit
+[18:49:51] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to topframe
+[18:49:51] [main] INFO  com.pinsystem.pageObjects.HomeNavigationObjects - Clicked on Finance
+[18:49:51] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[18:49:51] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to left
+[18:49:51] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[18:50:08] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[18:50:08] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingVisibleText and visibleText is: Campaign Code
+[18:50:08] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Data read from file:
+B004/JSR/2400292
+[18:50:08] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Clicked on find button
+[18:50:21] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - false
+[18:50:51] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Checking Generate invoice button is Enabled
+[18:51:21] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Generate invoice button is Enabled
+[18:51:23] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Invoice has been created
+[18:51:23] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - M24112269
+[18:51:24] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\digital_invoice_success_20241106_185123.png
+[18:51:24] [main] INFO  com.pinsystem.TestBase - ************** digital_invoice Finished ***************
+[18:51:24] [main] INFO  com.pinsystem.TestBase - **************CreditNoteStarted***************
+[18:51:24] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[18:51:24] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[18:51:24] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[18:51:54] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to topframe
+[18:51:55] [main] INFO  com.pinsystem.pageObjects.HomeNavigationObjects - Clicked on Finance
+[18:51:55] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[18:51:55] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to left
+[18:51:55] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[18:51:55] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[18:52:00] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[18:52:00] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[18:52:00] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingVisibleText and visibleText is: List All
+[18:52:00] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[18:52:00] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - [[ChromeDriver: chrome on windows (6537ad04ff496a776e0abcfddbc2d6fb)] -> xpath: //select[@id='ddlMonth']]
+[18:52:00] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Data read from file:
+M24112269
+[18:52:00] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Passing Invoice number
+[18:52:22] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Invoice has been created
+[18:52:22] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - CN/24110091
+[18:52:43] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[18:52:43] [main] INFO  com.pinsystem.utils.WindowHandler - Parent Window: 419E79B9601AFA8AA10CD5C40E07E58B
+[18:52:43] [main] INFO  com.pinsystem.utils.WindowHandler - Child Window: 0AC71864F8214922A2693258A2B5DF0E
+[18:52:43] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Getting all option from Import DDL
+[18:52:43] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingValue and value is: Success
+[18:52:43] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on import save button
+[18:52:44] [main] INFO  com.pinsystem.utils.WindowHandler - Switched back to Parent Window: 419E79B9601AFA8AA10CD5C40E07E58B
+[18:53:14] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\CreditNote_failure_20241106_185314.png
+[18:53:14] [main] INFO  com.pinsystem.TestBase - ************** CreditNote Finished ***************
+[18:53:15] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@539316bb: 165 ms
+[18:53:15] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@641ed324: 36 ms
+[18:53:15] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@482a58c7: 23 ms
+[18:53:15] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@49653791: 16 ms
+[18:53:15] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@25214797: 24 ms
+[18:53:15] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@4e5c8ef3: 0 ms
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 14 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 17 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 14 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+[18:59:38] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\rasharma\AppData\Local\Temp\testng-eclipse-190979975\testng-customsuite.xml
+
+[18:59:39] [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 13 ms.
+[18:59:40] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.93 (resolved driver for Chrome 130)
+[18:59:40] [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\130.0.6723.93\chromedriver.exe
+[18:59:45] [main] INFO  com.pinsystem.TestBase - Initialize Web driver: 2004687135
+[18:59:45] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[18:59:45] [main] INFO  com.pinsystem.utils.WaitHelper - waiting for page to load for : 100
+[18:59:45] [main] INFO  com.pinsystem.utils.WaitHelper - page is loaded
+[18:59:47] [main] INFO  com.pinsystem.TestBase - **************digital_invoiceStarted***************
+[18:59:47] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[18:59:47] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[18:59:47] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Login runner has been invoked
+[18:59:48] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only username : agency@blueocean.net.my
+[18:59:48] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Passing Only Password : asd123
+[18:59:48] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[18:59:52] [main] INFO  com.pinsystem.pageObjects.LoginObjects - Clicked on submit
+[19:00:22] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to topframe
+[19:00:22] [main] INFO  com.pinsystem.pageObjects.HomeNavigationObjects - Clicked on Finance
+[19:00:22] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[19:00:22] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to left
+[19:00:23] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[19:00:32] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[19:00:32] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingVisibleText and visibleText is: Campaign Code
+[19:00:32] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Data read from file:
+B004/JSR/2400292
+[19:00:33] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Clicked on find button
+[19:00:45] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - false
+[19:01:15] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Checking Generate invoice button is Enabled
+[19:01:45] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Generate invoice button is Enabled
+[19:01:47] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - Invoice has been created
+[19:01:47] [main] INFO  com.pinsystem.pageObjects.InvoiceObjects - M24112270
+[19:01:48] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\digital_invoice_success_20241106_190147.png
+[19:01:48] [main] INFO  com.pinsystem.TestBase - ************** digital_invoice Finished ***************
+[19:01:48] [main] INFO  com.pinsystem.TestBase - **************CreditNoteStarted***************
+[19:01:48] [main] INFO  com.pinsystem.utils.DropDownHelper - DropDownHelper object created..
+[19:01:48] [main] INFO  com.pinsystem.utils.WaitHelper - Implicit Wait has been set to: 30
+[19:01:48] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[19:02:18] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to topframe
+[19:02:18] [main] INFO  com.pinsystem.pageObjects.HomeNavigationObjects - Clicked on Finance
+[19:02:18] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[19:02:19] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to left
+[19:02:19] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[19:02:19] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[19:02:22] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[19:02:22] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[19:02:23] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingVisibleText and visibleText is: List All
+[19:02:23] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Invoice List Page
+[19:02:23] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - [[ChromeDriver: chrome on windows (89a24fda2c3383f0eed63a0b8ba71b28)] -> xpath: //select[@id='ddlMonth']]
+[19:02:23] [main] INFO  com.pinsystem.Create_invoiceAndCreditNote - Data read from file:
+M24112270
+[19:02:23] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Passing Invoice number
+[19:02:45] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Invoice has been created
+[19:02:45] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - CN/24110092
+[19:03:06] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[19:03:06] [main] INFO  com.pinsystem.utils.WindowHandler - Parent Window: 806E249610BFB86A449773E232F31DA5
+[19:03:06] [main] INFO  com.pinsystem.utils.WindowHandler - Child Window: F13463702493BAABA741C7F0385BAE5B
+[19:03:06] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Getting all option from Import DDL
+[19:03:06] [main] INFO  com.pinsystem.utils.DropDownHelper - selectUsingValue and value is: Success
+[19:03:06] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on import save button
+[19:03:06] [main] INFO  com.pinsystem.utils.WindowHandler - Switched back to Parent Window: 806E249610BFB86A449773E232F31DA5
+[19:03:06] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched default or parent frame
+[19:03:07] [main] INFO  com.pinsystem.utils.FrameHelper - Frame has been switched to right
+[19:03:07] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - I'm Inside to get text
+[19:03:07] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Status of Import Status is Import Success
+[19:03:17] [main] INFO  com.pinsystem.pageObjects.CreditNoteObjects - Clicked on Release All Spots
+[19:03:17] [main] INFO  com.pinsystem.utils.ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\CreditNote_success_20241106_190317.png
+[19:03:17] [main] INFO  com.pinsystem.TestBase - ************** CreditNote Finished ***************
+[19:03:20] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@7a36c83a: 305 ms
+[19:03:20] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@154b8cb6: 1 ms
+[19:03:20] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@6dd79214: 42 ms
+[19:03:20] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@2f4d32bf: 35 ms
+[19:03:20] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@34009349: 31 ms
+[19:03:20] [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@3f68a7f8: 0 ms
