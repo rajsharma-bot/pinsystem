@@ -27,16 +27,8 @@ public class Create_invoiceAndCreditNote extends TestBase {
 
 	@Test(description = "Creating Invoice")
 	public void digital_invoice() throws InterruptedException {
-//		String filePath = "C:\\Users\\rasharma\\Automation\\pinsystem\\src\\main\\resources\\Data\\output.txt";
 		String filePath = ResourceHelper.getCampaignCode();
 		ObjectReader.reader = new PropertyReader();
-		FrameHelper fh = new FrameHelper(driver);
-		MenuObjects Mo = new MenuObjects(driver);
-		WaitHelper wh = new WaitHelper(driver);
-		HomeNavigationObjects HN = new HomeNavigationObjects(driver);
-		DropDownHelper dh = new DropDownHelper(driver);
-		MixMediaSchedule mx = new MixMediaSchedule(driver);
-		InvoiceObjects IO = new InvoiceObjects(driver);
 		FileUtil fileUtil = new FileUtil(filePath);
 		wh.setImplicitWait(ObjectReader.reader.getExplicitWait());
 		LoginClass lc = new LoginClass(driver);
@@ -72,20 +64,12 @@ public class Create_invoiceAndCreditNote extends TestBase {
 
 	}
 
-	@SuppressWarnings({ "static-access", "static-access", "static-access" })
+	
 	@Test(dependsOnMethods="digital_invoice" , description = "Creating Credit Note")
 	public void CreditNote() throws InterruptedException {
 		String filePath = ResourceHelper.getInvoiceCode();
 		ObjectReader.reader = new PropertyReader();
-		FrameHelper fh = new FrameHelper(driver);
-		MenuObjects Mo = new MenuObjects(driver);
-		WaitHelper wh = new WaitHelper(driver);
-		HomeNavigationObjects HN = new HomeNavigationObjects(driver);
-		DropDownHelper dh = new DropDownHelper(driver);
-		MixMediaSchedule mx = new MixMediaSchedule(driver);
-		CreditNoteObjects CO = new CreditNoteObjects(driver);
 		FileUtil fileUtil = new FileUtil(filePath);
-	    WindowHandler pop = new WindowHandler(driver); // window
 		wh.setImplicitWait(ObjectReader.reader.getExplicitWait());
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.topframe());
@@ -115,10 +99,10 @@ public class Create_invoiceAndCreditNote extends TestBase {
 		CO.getInvoice_Number();
 		CO.ImportStatus();
 		fh.switchTodefault();
-		pop.switchToChildWindow(driver);		
+		WindowHandler.switchToChildWindow(driver);		
 		dh.selectUsingValue(CO.ImportDDL(), "Success");
 		CO.ImportSave_btn();
-		pop.switchToParentWindow(driver);
+		WindowHandler.switchToParentWindow(driver);
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.rightframe());
 		Assert.assertEquals(CO.GetImportStatus(), "Import Success");

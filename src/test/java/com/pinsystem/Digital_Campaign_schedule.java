@@ -20,13 +20,7 @@ public class Digital_Campaign_schedule extends TestBase {
 	
 	@Test(description = "Digital Campaign")
 	public void digital_campaign() throws InterruptedException {
-		ObjectReader.reader = new PropertyReader();
-		FrameHelper fh = new FrameHelper(driver);
-		MenuObjects Mo = new MenuObjects(driver);
-		WaitHelper wh = new WaitHelper(driver);
-		HomeNavigationObjects HN = new HomeNavigationObjects(driver);
-		DropDownHelper dh = new DropDownHelper(driver);
-		MixMediaSchedule mx = new MixMediaSchedule(driver);
+		
 		wh.setImplicitWait(ObjectReader.reader.getExplicitWait());
 		LoginClass lc = new LoginClass(driver);
 		log.info("Login runner has been invoked");
@@ -55,12 +49,6 @@ public class Digital_Campaign_schedule extends TestBase {
 	
 	@Test(dependsOnMethods = "digital_campaign", description = "Digital Schedule")
 	public void new_Schedule() throws InterruptedException {
-		FrameHelper fh = new FrameHelper(driver);
-		MenuObjects Mo = new MenuObjects(driver);
-		WaitHelper w=  new WaitHelper(driver);
-		DropDownHelper dh = new DropDownHelper(driver);
-		MixMediaSchedule mx = new MixMediaSchedule(driver);
-		ScheduleObjects so= new ScheduleObjects(driver);
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.rightframe());
 		Mo.new_schedule();
@@ -76,7 +64,7 @@ public class Digital_Campaign_schedule extends TestBase {
 		fh.switchToFrame(ObjectReader.reader.rightframe());
 		so.confirm_schedule();
 		so.Create_MO_By_Vendor();
-		w.waitForElementVisibility(so.MO_number(), 30);
+		wh.waitForElementVisibility(so.MO_number(), 30);
 		so.Select_checkBox();
 		Thread.sleep(30000);
 		so.Confirm_mo();
