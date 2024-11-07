@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,48 +20,89 @@ public class MenuObjects {
 	private static Logger log = LogManager.getLogger(MenuObjects.class);
 
 	WebDriver driver;
+	WebDriverWait wait;
 
 	public MenuObjects(WebDriver driver) {
 		this.driver = driver;
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(30)); //// global WebDriverWait
+	}
+///////////////////////////////////////////////////////////Just for Testing
+	// Generic method to click elements
+	public void clickElement(By locator, String elementName) {
+		WebElement element = waitForElementToBeClickable(locator);
+		if (element != null) {
+			element.click();
+			log.info(elementName + " clicked successfully.");
+		}
 	}
 
-	// Element for List Campaign
+	private WebElement waitForElementToBeClickable(By locator) {
+		try {
+			return wait.until(ExpectedConditions.elementToBeClickable(locator));
+		} catch (Exception e) {
+			log.error("Element not clickable: " + locator);
+			return null;
+		}
+	}
+
+	// Generic method to send text to an element
+	public void sendText(By locator, String text, String elementName) {
+		WebElement element = waitForElementToBeVisible(locator);
+		if (element != null) {
+			element.clear();
+			element.sendKeys(text);
+			log.info("Text '" + text + "' entered in " + elementName);
+		}
+	}
+
+	// Wait for visibility of an element
+	private WebElement waitForElementToBeVisible(By locator) {
+		try {
+			return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		} catch (Exception e) {
+			log.error("Element not visible: " + locator);
+			return null;
+		}
+	}
+//////////////////////////////////////////////////////////////////////////////////////////
 	public void ListCampaign_page() {
-		driver.findElement(MenuPageObjects.ListCampaign).click();
+		clickElement(MenuPageObjects.ListCampaign, "List Campaign");
 	}
 
-	public void PlanningTab() {
+	public void CampaignPlanningTab() {
 		log.info("Switched to Planning Tab");
-		driver.findElement(MenuPageObjects.PLANNING_TAB).click();
+		clickElement(MenuPageObjects.PLANNING_TAB, "Campaign Planning tab");
 	}
 
-	public void BuyingTab() {
+	public void CampaignBuyingTab() {
 		log.info("Switched to Buying Tab");
-		driver.findElement(MenuPageObjects.BUYING_TAB).click();
+		clickElement(MenuPageObjects.BUYING_TAB, "Campaign Buying tab");
 	}
 
-	public void ReadyToBillTab() {
+	public void CampaignReadyToBillTab() {
 		log.info("Switched to Ready To Bill Tab");
-		driver.findElement(MenuPageObjects.READYTOBILL_TAB).click();
+		clickElement(MenuPageObjects.READYTOBILL_TAB, "Campaign Ready To bill tab");
 	}
 
-	public void CloseTab() {
+	public void CampaignCloseTab() {
 		log.info("Switched to Close Tab");
-		driver.findElement(MenuPageObjects.CLOSE_TAB).click();
+		clickElement(MenuPageObjects.CLOSE_TAB, "Campaign close tab");
+	}
+	
+	public void CampaignCancelTab() {
+		log.info("Switched to Cancel Tab");
+		clickElement(MenuPageObjects.CANCEL_TAB, "Campaign Cancel tab");
+	}
+	
+	public void Campaign_no(String campaignName) {
+		sendText(MenuPageObjects.SEARCH_CAM, campaignName, "Campaign Name");
+		log.info(campaignName + "Has been passed");
 	}
 
-	public void Campaign_no(String text) {
-		driver.findElement(MenuPageObjects.SEARCH_CAM).sendKeys(text);
-		log.info(text + "Has been passed");
-	}
+	
 
 	public void Campaign_searchbutton() {
 		driver.findElement(MenuPageObjects.Find_buttonC).click();
-	}
-
-	public void CancelTab() {
-		log.info("Switched to Cancel Tab");
-		driver.findElement(MenuPageObjects.CANCEL_TAB).click();
 	}
 
 	public void click_record() {
@@ -70,48 +112,51 @@ public class MenuObjects {
 	// Element for List Schedule
 	public void ListSchedule_page() {
 		log.info("List Schedule has been clicked");
-		driver.findElement(MenuPageObjects.ListSchedule).click();
+		clickElement(MenuPageObjects.ListSchedule, "List Schedule");
 	}
 
-	public void ConfirmedS_Tab() {
+	public void Schedule_ConfirmedTab() {
 		log.info("Switched to Confirmed Tab");
-		driver.findElement(MenuPageObjects.Confirmed_Tab).click();
+		clickElement(MenuPageObjects.Confirmed_Tab, "Schedule Confirmed tab");
 	}
 
-	public void PendingS_Tab() {
+	public void Schedule_PendingTab() {
 		log.info("Switched to Pending Tab");
-		driver.findElement(MenuPageObjects.Pending_Tab).click();
+		clickElement(MenuPageObjects.Pending_Tab, "Schedule Pending tab");
 	}
 
-	public void CancelledS_Tab() {
+	public void Schedule_CancelledTab() {
 		log.info("Switched to Cancelled Tab");
-		driver.findElement(MenuPageObjects.Cancelled_Tab).click();
+		clickElement(MenuPageObjects.Cancelled_Tab, "Schedule Cancelled tab");
 	}
 
-	public void RevisionS_Tab() {
+	public void Schedule_RevisionTab() {
 		log.info("Switched to Revision Tab");
-		driver.findElement(MenuPageObjects.Revision_Tab).click();
+		clickElement(MenuPageObjects.Revision_Tab, "Schedule Revision tab");
 	}
 
 	// Element for List MO
 	public void ListMO_page() {
 		log.info("List MO has been Clicked");
-		driver.findElement(MenuPageObjects.ListMO).click();
+		clickElement(MenuPageObjects.ListMO, "List MO");
+
 	}
 
-	public void ConfirmedMO_Tab() {
+	public void Confirmed_MOTab() {
 		log.info("Switched to Confirm MO Tab");
-		driver.findElement(MenuPageObjects.ConfirmedMO_Tab).click();
+		clickElement(MenuPageObjects.ConfirmedMO_Tab, "Confirm MediaOrder tab");
 	}
 
-	public void PendingMO_Tab() {
+	public void Pending_MOTab() {
 		log.info("Switched to Pending MO Tab");
-		driver.findElement(MenuPageObjects.PendingMO_Tab).click();
+		clickElement(MenuPageObjects.PendingMO_Tab, "Pending MediaOrder tab");
+
 	}
 
-	public void CancelledMO_Tab() {
+	public void Cancelled_MOTab() {
 		log.info("Switched to Cancelled MO Tab");
-		driver.findElement(MenuPageObjects.CancelledMO_Tab).click();
+		clickElement(MenuPageObjects.CancelledMO_Tab, "Cancelled MediaOrder tab");
+
 	}
 
 	// Search Schedule Page
@@ -171,15 +216,16 @@ public class MenuObjects {
 		return DDL_Client;
 
 	}
-	
+
 	public WebElement AA_ALL() {
-		WebElement DDL_AA =driver.findElement(MenuPageObjects.AA_ALL);
+		WebElement DDL_AA = driver.findElement(MenuPageObjects.AA_ALL);
 		log.info("Click on List All dropdown");
 		return DDL_AA;
 	}
-	
+
 	public void Find_ALL() {
-		driver.findElement(MenuPageObjects.Find_AA).click();
+		//driver.findElement(MenuPageObjects.Find_AA).click();
+		clickElement(MenuPageObjects.Find_AA, "Find AA button");
 	}
 
 	public WebElement soldToParty() throws InterruptedException {
@@ -194,27 +240,31 @@ public class MenuObjects {
 		return DDL_SEARCH;
 	}
 
-	public void StartDate() {
-		driver.findElement(MenuPageObjects.StartDate).clear();
-		driver.switchTo().alert().accept();
-	}
+//	public void StartDate() {
+//		driver.findElement(MenuPageObjects.StartDate).clear();
+//		driver.switchTo().alert().accept();
+//	}
 
 	public void StartDate(String startdate) throws InterruptedException {
+		
+		driver.findElement(MenuPageObjects.StartDate).clear();
+		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
 
 		driver.findElement(MenuPageObjects.StartDate).sendKeys(startdate);
 
 	}
 
-	public void EndDate() {
-		driver.findElement(MenuPageObjects.EndDate).clear();
-		driver.switchTo().alert().accept();
-
-	}
+//	public void EndDate() {
+//		driver.findElement(MenuPageObjects.EndDate).clear();
+//		driver.switchTo().alert().accept();
+//
+//	}
 
 	public void EndDate(String EndDate) throws InterruptedException {
+		driver.findElement(MenuPageObjects.EndDate).clear();
+		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
-
 		driver.findElement(MenuPageObjects.EndDate).sendKeys(EndDate);
 
 	}
@@ -275,8 +325,10 @@ public class MenuObjects {
 		if (value == true) {
 			log.info("Campaign has been created");
 			log.info(driver.findElement(MenuPageObjects.CampaignCode).getText());
-			//FileSaver.saveTextToFile(driver.findElement(MenuPageObjects.CampaignCode).getText(), "output.txt");
-			FileSaver.saveTextToFile(driver.findElement(MenuPageObjects.CampaignCode).getText(), "C:\\Users\\rasharma\\Automation\\pinsystem\\src\\main\\resources\\Data\\output.txt");			
+			// FileSaver.saveTextToFile(driver.findElement(MenuPageObjects.CampaignCode).getText(),
+			// "output.txt");
+			FileSaver.saveTextToFile(driver.findElement(MenuPageObjects.CampaignCode).getText(),
+					"C:\\Users\\rasharma\\Automation\\pinsystem\\src\\main\\resources\\Data\\output.txt");
 		} else {
 			log.error("Campaign is not created");
 		}
@@ -527,7 +579,9 @@ public class MenuObjects {
 	// ----------------List AA
 
 	public void listAA() {
-		driver.findElement(MenuPageObjects.ListAA).click();
+		log.info("Switched to list AA");
+		//driver.findElement(MenuPageObjects.ListAA).click();
+		clickElement(MenuPageObjects.ListAA, "List AA page");
 	}
 
 	public void AA_Label() {
@@ -681,5 +735,16 @@ public class MenuObjects {
 			log.error("Exception occurred while selecting ad type: " + e.getMessage());
 		}
 		return null;
+	}
+
+	private void handleAlert() {
+		try {
+			if (driver.switchTo().alert() != null) {
+				driver.switchTo().alert().accept();
+				log.info("Alert accepted.");
+			}
+		} catch (Exception e) {
+			log.info("No alert to accept.");
+		}
 	}
 }

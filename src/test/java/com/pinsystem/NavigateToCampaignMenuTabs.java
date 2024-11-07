@@ -7,92 +7,71 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.pinsystem.pageObjects.HomeNavigationObjects;
-import com.pinsystem.pageObjects.MenuObjects;
-import com.pinsystem.utils.DropDownHelper;
-import com.pinsystem.utils.FrameHelper;
 import com.pinsystem.utils.ObjectReader;
 import com.pinsystem.utils.PropertyReader;
 
 public class NavigateToCampaignMenuTabs extends TestBase {
 
-	private static Logger log = LogManager.getLogger(NavigateToCampaignMenuTabs.class);
+	//private static Logger log = LogManager.getLogger(NavigateToCampaignMenuTabs.class);
 
 	@Test(description = "Navigation To List Campaign All Tabs", priority =0)
 	public void NavigationToListCampaignAllTabs() throws IOException, InterruptedException {
-
-		ObjectReader.reader = new PropertyReader();
-		FrameHelper fh = new FrameHelper(driver);
-		MenuObjects Mo = new MenuObjects(driver);
-		HomeNavigationObjects HN = new HomeNavigationObjects(driver);
 		LoginClass lc= new LoginClass(driver);
-		log.info("Login runner has been invoked");
 		lc.loginRunner();
-		fh.switchToFrame(ObjectReader.reader.topframe());
-		HN.MEDIA();
-		Assert.assertEquals(true, HN.MEDIA(ObjectReader.reader.MEDIA()));
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.leftframe());
-		Mo.ListCampaign_page();
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.rightframe());
-		Mo.BuyingTab();
-		Mo.PlanningTab();
-		Mo.ReadyToBillTab();
-		Mo.CancelTab();
-		Mo.CloseTab();
-		fh.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.topframe());
+		HomeNavigationObjects.MEDIA();
+		Assert.assertEquals(true, HomeNavigationObjects.MEDIA(ObjectReader.reader.MEDIA()));
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());
+		MenuObjects.ListCampaign_page();
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+		MenuObjects.CampaignBuyingTab();
+		MenuObjects.CampaignPlanningTab();
+		MenuObjects.CampaignReadyToBillTab();
+		MenuObjects.CampaignCancelTab();
+		MenuObjects.CampaignCloseTab();
+		FrameHelper.switchTodefault();
 
 	}
 
 	@Test(dependsOnMethods = "NavigationToListCampaignAllTabs", description = "Navigation To List Schedule All Tabs")
 	public void navigateToListScheduleTab() {
-		ObjectReader.reader = new PropertyReader();
-		FrameHelper fh = new FrameHelper(driver);
-		MenuObjects Mo = new MenuObjects(driver);
-		fh.switchToFrame(ObjectReader.reader.leftframe());
-		Mo.ListSchedule_page();
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.rightframe());
-		Mo.ConfirmedS_Tab();
-		Mo.RevisionS_Tab();
-		Mo.CancelledS_Tab();
-		Mo.PendingS_Tab();
-		fh.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());
+		MenuObjects.ListSchedule_page();
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+		MenuObjects.Schedule_ConfirmedTab();;
+		MenuObjects.Schedule_RevisionTab();
+		MenuObjects.Schedule_CancelledTab();
+		MenuObjects.Schedule_PendingTab();
+		FrameHelper.switchTodefault();
 
 	}
 	
 	
-	@Test(dependsOnMethods = "navigateToListScheduleTab", description = "Navigation To List MO All Tabs")
-	public void navigateToListMO() {
-		ObjectReader.reader = new PropertyReader();
-		FrameHelper fh = new FrameHelper(driver);
-		MenuObjects Mo = new MenuObjects(driver);
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.leftframe());
-		Mo.ListMO_page();
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.rightframe());
-		Mo.CancelledMO_Tab();
-		Mo.ConfirmedMO_Tab();
-		Mo.PendingMO_Tab();
-
+	@Test(dependsOnMethods = "navigateToListScheduleTab", description = "Navigation To List MenuObjects All Tabs")
+	public void navigateTo_ListMO() {
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());
+		MenuObjects.ListMO_page();
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+		MenuObjects.Cancelled_MOTab();
+		MenuObjects.Confirmed_MOTab();
+		MenuObjects.Pending_MOTab();
 	}
 
-	@Test(dependsOnMethods = "navigateToListMO", description = "Navigation To List MO All Tabs")
-	public void navigateToListAA() {
-		ObjectReader.reader = new PropertyReader();
-		FrameHelper fh = new FrameHelper(driver);
-		MenuObjects Mo = new MenuObjects(driver);
-		DropDownHelper dh = new DropDownHelper(driver);
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.leftframe());
-		Mo.listAA();
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.rightframe());
-		dh.selectUsingVisibleText(Mo.AA_ALL(), "ALL");
-		Mo.Find_ALL();
-		Mo.AA_Label();
+	@Test(dependsOnMethods = "navigateTo_ListMO", description = "Navigation To List MenuObjects All Tabs")
+	public void navigateTo_ListAA() {
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());
+		MenuObjects.listAA();
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+		DropDownHelper.selectUsingVisibleText(MenuObjects.AA_ALL(), "ALL");
+		MenuObjects.Find_ALL();
+		MenuObjects.AA_Label();
 		
 		
 	}

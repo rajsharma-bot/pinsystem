@@ -16,22 +16,22 @@ public class SwitchTabs {
 	public void schedule_search() throws InterruptedException {
 		MenuObjects Mo = new MenuObjects(driver);
 
-		Mo.PendingS_Tab();
+		Mo.Schedule_PendingTab();
 		Thread.sleep(10000);
 		if (Mo.labelText().contains("1")) {
 			Mo.clickOnRecord();
 		} else
-			Mo.ConfirmedS_Tab();
+			Mo.Schedule_ConfirmedTab();
 		Thread.sleep(2000);
 		if (Mo.labelText().contains("1")) {
 			Mo.clickOnRecord();
 		} else
-			Mo.RevisionS_Tab();
+			Mo.Schedule_RevisionTab();
 		Thread.sleep(2000);
 		if (Mo.labelText().contains("1")) {
 			Mo.clickOnRecord();
 		} else
-			Mo.CancelledS_Tab();
+			Mo.Schedule_CancelledTab();
 		Thread.sleep(2000);
 		if (Mo.labelText().contains("1")) {
 			Mo.clickOnRecord();

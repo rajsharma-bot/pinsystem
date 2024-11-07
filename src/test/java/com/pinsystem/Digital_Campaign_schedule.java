@@ -21,54 +21,52 @@ public class Digital_Campaign_schedule extends TestBase {
 	@Test(description = "Digital Campaign")
 	public void digital_campaign() throws InterruptedException {
 		
-		wh.setImplicitWait(ObjectReader.reader.getExplicitWait());
+		WaitHelper.setImplicitWait(ObjectReader.reader.getExplicitWait());
 		LoginClass lc = new LoginClass(driver);
 		log.info("Login runner has been invoked");
 		lc.loginRunner();
-		fh.switchToFrame(ObjectReader.reader.topframe());
-		HN.MEDIA();
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.leftframe());
-		Mo.newCampaign();
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.rightframe());
-		dh.selectUsingVisibleText(Mo.clientDDL(), "1001 MEDIA SDN BHD | DUO1 MYR");
-		dh.selectUsingValue(Mo.soldToParty(), "50222");
-		Mo.StartDate();
-		Mo.StartDate("01/01/2024");
-		Mo.EndDate();
-		Mo.EndDate("31/03/2024");
-		dh.selectUsingValue(Mo.Product(), "11491");
-		dh.selectUsingValue(Mo.Contract(), "1047");
-		Mo.CampaignName("Sample digital record");
-		mx.digital_media();
-		Mo.Save();
-		Mo.campaignCode();
+		FrameHelper.switchToFrame(ObjectReader.reader.topframe());
+		HomeNavigationObjects.MEDIA();
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());
+		MenuObjects.newCampaign();
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+		DropDownHelper.selectUsingVisibleText(MenuObjects.clientDDL(), "1001 MEDIA SDN BHD | DUO1 MYR");
+		DropDownHelper.selectUsingValue(MenuObjects.soldToParty(), "50222");
+		MenuObjects.StartDate("01/01/2024");
+		MenuObjects.EndDate("31/03/2024");
+		DropDownHelper.selectUsingValue(MenuObjects.Product(), "11491");
+		DropDownHelper.selectUsingValue(MenuObjects.Contract(), "1047");
+		MenuObjects.CampaignName("Sample digital record");
+		MixMediaSchedule.digital_media();
+		MenuObjects.Save();
+		MenuObjects.campaignCode();
 	}
 	
 	
-	@Test(dependsOnMethods = "digital_campaign", description = "Digital Schedule")
+	@Test(dependsOnMethods  = "digital_campaign", description = "Digital Schedule")
 	public void new_Schedule() throws InterruptedException {
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.rightframe());
-		Mo.new_schedule();
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.rightframe());
-		mx.selectVendorCurreny();
-		mx.digital_vendor();
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+		MenuObjects.new_schedule();
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+		MixMediaSchedule.selectVendorCurreny();
+		MixMediaSchedule.digital_vendor();
 		Thread.sleep(30000);
-		Mo.Schedule_Grid();
-		Mo.editMedia_popUp();
-		mx.digital_placement();
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.rightframe());
-		so.confirm_schedule();
-		so.Create_MO_By_Vendor();
-		wh.waitForElementVisibility(so.MO_number(), 30);
-		so.Select_checkBox();
+		MenuObjects.Schedule_Grid();
+		MenuObjects.editMedia_popUp();
+		MixMediaSchedule.digital_placement();
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+		ScheduleObjects.confirm_schedule();
+		ScheduleObjects.Create_MO_By_Vendor();
+		WaitHelper.waitForElementVisibility(ScheduleObjects.MO_number(), 30);
+		ScheduleObjects.Select_checkBox();
 		Thread.sleep(30000);
-		so.Confirm_mo();
-		so.MO_status();
+		ScheduleObjects.Confirm_mo();
+		ScheduleObjects.MO_status();
 		
 }
 }

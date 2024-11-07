@@ -28,9 +28,6 @@ public class InvoiceObjects {
 	}
 
 	public void StartDate(String startdate) {
-//		driver.findElement(InvoicePageObjects.StartDate).clear();
-//		driver.findElement(InvoicePageObjects.StartDate).sendKeys(startdate);
-		
 		 WebElement dateInput = driver.findElement(InvoicePageObjects.StartDate);
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
 		 js.executeScript("arguments[0].value='" + startdate + "';", dateInput);
@@ -38,8 +35,6 @@ public class InvoiceObjects {
 	}
 
 	public void EndDate(String endDate) {
-//		driver.findElement(InvoicePageObjects.EndDate).clear();
-//		driver.findElement(InvoicePageObjects.EndDate).sendKeys(endDate);
 		
 		 WebElement dateInput = driver.findElement(InvoicePageObjects.EndDate);
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -51,6 +46,12 @@ public class InvoiceObjects {
 	public void createInvoice() throws InterruptedException {
 		Thread.sleep(30000);
 		driver.findElement(InvoicePageObjects.Create_Invoice).click();
+//		if (driver.switchTo().alert() != null) {
+//			driver.switchTo().alert().accept();
+//			selectAll_CheckBox();	
+//		}else {
+//			System.out.println("Issue with selecting checkbox");
+//		}
 	}
 
 	public WebElement Search_DDL() {
@@ -63,19 +64,23 @@ public class InvoiceObjects {
 		driver.findElement(InvoicePageObjects.Search_txt).sendKeys(code);
 	}
 
-	public void UnbilledMedia_find() {
+	public void UnbilledMedia_find() throws InterruptedException {
 		log.info("Clicked on find button");
 		driver.findElement(InvoicePageObjects.UnbilledMedia_find).click();
+		Thread.sleep(10000);
 	}
 
 	public boolean checkBox_visible() {
-		boolean visible= driver.findElement(InvoicePageObjects.checkBox_visible).isDisplayed();
+		log.info("checkBox_visible");
+		boolean visible= driver.findElement(InvoicePageObjects.checkBox_visible).isSelected();
 		return visible;
 	}
 	
 	public void selectAll_CheckBox() {
-		driver.findElement(InvoicePageObjects.selectAll_checkBox).click();
+		
 		try {
+			driver.findElement(InvoicePageObjects.selectAll_checkBox).click();
+			log.info("selectAll_CheckBox");
 			Thread.sleep(10000);
 			Boolean d =driver.findElement(InvoicePageObjects.selectAll_checkBox).isSelected();
 			log.info(d);
@@ -89,8 +94,6 @@ public class InvoiceObjects {
 		try {
 			log.info("Checking Generate invoice button is Enabled");
 			Thread.sleep(30000);
-//			Boolean d = driver.findElement(InvoicePageObjects.Generate_Invoice).isEnabled();
-//			Assert.assertEquals(d, true);	
 			log.info("Generate invoice button is Enabled");
 			driver.findElement(InvoicePageObjects.Generate_Invoice).click();
 			
@@ -117,6 +120,17 @@ public class InvoiceObjects {
 		driver.findElement(InvoicePageObjects.confirm_invoice).click();
 		driver.switchTo().alert().accept();
 		
+	}
+	
+	private void handleAlert() {
+		try {
+			if (driver.switchTo().alert() != null) {
+				driver.switchTo().alert().accept();
+				log.info("Alert accepted.");
+			}
+		} catch (Exception e) {
+			log.info("No alert to accept.");
+		}
 	}
 	
 }

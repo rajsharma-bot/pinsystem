@@ -1,21 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-06T19:38:20 IST" name="Default suite" finished-at="2024-11-06T19:41:51 IST" duration-ms="210510">
+  <suite started-at="2024-11-07T15:30:16 IST" name="Suite" finished-at="2024-11-07T15:40:59 IST" duration-ms="642880">
     <groups>
     </groups>
-    <test started-at="2024-11-06T19:38:20 IST" name="Default test" finished-at="2024-11-06T19:41:51 IST" duration-ms="210510">
-      <class name="com.pinsystem.Create_invoiceAndCreditNote">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@1ad777f]" started-at="2024-11-06T19:38:20 IST" name="beforeSuite" finished-at="2024-11-06T19:38:20 IST" duration-ms="485" status="PASS">
+    <test started-at="2024-11-07T15:30:16 IST" name="Test" finished-at="2024-11-07T15:40:59 IST" duration-ms="642880">
+      <class name="com.pinsystem.Digital_Campaign_schedule">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pinsystem.Digital_Campaign_schedule@214894fc]" started-at="2024-11-07T15:30:15 IST" name="beforeSuite" finished-at="2024-11-07T15:30:16 IST" duration-ms="601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@1ad777f]" started-at="2024-11-06T19:38:20 IST" name="BeforeClass" finished-at="2024-11-06T19:38:29 IST" duration-ms="9109" status="PASS">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.Digital_Campaign_schedule@214894fc]" started-at="2024-11-07T15:30:16 IST" name="BeforeClass" finished-at="2024-11-07T15:30:32 IST" duration-ms="15961" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@1ad777f]" started-at="2024-11-06T19:38:29 IST" name="beforeMethod" finished-at="2024-11-06T19:38:30 IST" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Digital_Campaign_schedule@214894fc]" started-at="2024-11-07T15:30:32 IST" name="beforeMethod" finished-at="2024-11-07T15:30:32 IST" duration-ms="15" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pinsystem.Digital_Campaign_schedule.digital_campaign() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="digital_campaign()[pri:0, instance:com.pinsystem.Digital_Campaign_schedule@214894fc]" started-at="2024-11-07T15:30:32 IST" name="digital_campaign" description="Digital Campaign" finished-at="2024-11-07T15:32:43 IST" duration-ms="131015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- digital_campaign -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Digital_Campaign_schedule@214894fc]" started-at="2024-11-07T15:32:43 IST" name="afterMethod" finished-at="2024-11-07T15:32:43 IST" duration-ms="319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=digital_campaign status=SUCCESS method=Digital_Campaign_schedule.digital_campaign()[pri:0, instance:com.pinsystem.Digital_Campaign_schedule@214894fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Digital_Campaign_schedule@214894fc]" started-at="2024-11-07T15:32:43 IST" name="beforeMethod" finished-at="2024-11-07T15:32:43 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pinsystem.Digital_Campaign_schedule.new_Schedule() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="new_Schedule()[pri:0, instance:com.pinsystem.Digital_Campaign_schedule@214894fc]" started-at="2024-11-07T15:32:43 IST" name="new_Schedule" description="Digital Schedule" finished-at="2024-11-07T15:37:04 IST" depends-on-methods="com.pinsystem.Digital_Campaign_schedule.digital_campaign" duration-ms="260335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- new_Schedule -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Digital_Campaign_schedule@214894fc]" started-at="2024-11-07T15:37:04 IST" name="afterMethod" finished-at="2024-11-07T15:37:04 IST" duration-ms="224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=new_Schedule status=SUCCESS method=Digital_Campaign_schedule.new_Schedule()[pri:0, instance:com.pinsystem.Digital_Campaign_schedule@214894fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.Digital_Campaign_schedule@214894fc]" started-at="2024-11-07T15:37:04 IST" name="afterClass" finished-at="2024-11-07T15:37:08 IST" duration-ms="3876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.pinsystem.Digital_Campaign_schedule -->
+      <class name="com.pinsystem.Create_invoiceAndCreditNote">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@6548bb7d]" started-at="2024-11-07T15:37:08 IST" name="BeforeClass" finished-at="2024-11-07T15:37:15 IST" duration-ms="7243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@6548bb7d]" started-at="2024-11-07T15:37:15 IST" name="beforeMethod" finished-at="2024-11-07T15:37:15 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,22 +88,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="digital_invoice()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@1ad777f]" started-at="2024-11-06T19:38:30 IST" name="digital_invoice" description="Creating Invoice" finished-at="2024-11-06T19:40:21 IST" duration-ms="111606" status="PASS">
+        <test-method signature="digital_invoice()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@6548bb7d]" started-at="2024-11-07T15:37:15 IST" name="digital_invoice" description="Creating Invoice" finished-at="2024-11-07T15:39:17 IST" duration-ms="122270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- digital_invoice -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@1ad777f]" started-at="2024-11-06T19:40:21 IST" name="afterMethod" finished-at="2024-11-06T19:40:21 IST" duration-ms="305" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@6548bb7d]" started-at="2024-11-07T15:39:17 IST" name="afterMethod" finished-at="2024-11-07T15:39:18 IST" duration-ms="833" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=digital_invoice status=SUCCESS method=Create_invoiceAndCreditNote.digital_invoice()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@1ad777f] output={null}]]]>
+                <![CDATA[[TestResult name=digital_invoice status=SUCCESS method=Create_invoiceAndCreditNote.digital_invoice()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@6548bb7d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@1ad777f]" started-at="2024-11-06T19:40:21 IST" name="beforeMethod" finished-at="2024-11-06T19:40:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@6548bb7d]" started-at="2024-11-07T15:39:18 IST" name="beforeMethod" finished-at="2024-11-07T15:39:18 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,26 +114,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="CreditNote()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@1ad777f]" started-at="2024-11-06T19:40:21 IST" name="CreditNote" description="Creating Credit Note" finished-at="2024-11-06T19:41:49 IST" depends-on-methods="com.pinsystem.Create_invoiceAndCreditNote.digital_invoice" duration-ms="87802" status="PASS">
+        <test-method signature="CreditNote()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@6548bb7d]" started-at="2024-11-07T15:39:18 IST" name="CreditNote" description="Creating Credit Note" finished-at="2024-11-07T15:40:58 IST" depends-on-methods="com.pinsystem.Create_invoiceAndCreditNote.digital_invoice" duration-ms="99698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreditNote -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@1ad777f]" started-at="2024-11-06T19:41:49 IST" name="afterMethod" finished-at="2024-11-06T19:41:49 IST" duration-ms="223" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@6548bb7d]" started-at="2024-11-07T15:40:58 IST" name="afterMethod" finished-at="2024-11-07T15:40:58 IST" duration-ms="203" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CreditNote status=SUCCESS method=Create_invoiceAndCreditNote.CreditNote()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@1ad777f] output={null}]]]>
+                <![CDATA[[TestResult name=CreditNote status=SUCCESS method=Create_invoiceAndCreditNote.CreditNote()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@6548bb7d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@1ad777f]" started-at="2024-11-06T19:41:49 IST" name="afterClass" finished-at="2024-11-06T19:41:51 IST" duration-ms="1328" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote@6548bb7d]" started-at="2024-11-07T15:40:58 IST" name="afterClass" finished-at="2024-11-07T15:40:59 IST" duration-ms="777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.pinsystem.Create_invoiceAndCreditNote -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

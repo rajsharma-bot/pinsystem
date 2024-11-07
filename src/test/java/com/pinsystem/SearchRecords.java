@@ -18,27 +18,21 @@ public class SearchRecords extends TestBase {
 
 	@Test(description = "Search Schedule")
 	public void searchSchedule() throws InterruptedException {
-		ObjectReader.reader = new PropertyReader();
-		FrameHelper fh = new FrameHelper(driver);
-		MenuObjects Mo = new MenuObjects(driver);
-		SwitchTabs st= new SwitchTabs(driver);
-		HomeNavigationObjects HN = new HomeNavigationObjects(driver);
-		DropDownHelper dh = new DropDownHelper(driver);
 		LoginClass lc = new LoginClass(driver);
 		log.info("Runner has been invoked");
 		lc.loginRunner();
-		fh.switchToFrame(ObjectReader.reader.topframe());
-		HN.MEDIA();
+		FrameHelper.switchToFrame(ObjectReader.reader.topframe());
+		HomeNavigationObjects.MEDIA();
 		log.info("Media has been cliked");
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.leftframe());
-		Mo.ListSchedule_page();
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.rightframe());
-		dh.selectUsingVisibleText(Mo.monthDll(), "ALL");
-		dh.selectUsingVisibleText(Mo.yearDll(), "2024");
-		Mo.searchSchedule("TEST123EIRW/TV/2400090");
-		Mo.findButton();
-		st.schedule_search();
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());
+		MenuObjects.ListSchedule_page();
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+		DropDownHelper.selectUsingVisibleText(MenuObjects.monthDll(), "ALL");
+		DropDownHelper.selectUsingVisibleText(MenuObjects.yearDll(), "2024");
+		MenuObjects.searchSchedule("TEST123EIRW/TV/2400090");
+		MenuObjects.findButton();
+		SwitchTabs.schedule_search();
 	}
 }

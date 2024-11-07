@@ -3,14 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-<!--      <class name="com.pinsystem.Digital_Campaign_schedule"/>-->
+<!--      <class name="com.pinsystem.LoginTestCase"/>-->
 <!--      <class name="com.pinsystem.NavigateToCampaignMenuTabs"/>-->
+<!--      <class name="com.pinsystem.SearchRecords"/>-->
+      <class name="com.pinsystem.Digital_Campaign_schedule"/>
+      <class name="com.pinsystem.Create_invoiceAndCreditNote"/>      
 <!--      <class name="com.pinsystem.New_Campaign"/>-->
 <!--      <class name="com.pinsystem.ForTesting2"/>-->
-<!--      <class name="com.pinsystem.LoginTestCase"/>-->
-      <class name="com.pinsystem.Create_invoiceAndCreditNote"/>
-<!--      <class name="com.pinsystem.ForTesting"/>-->
-<!--      <class name="com.pinsystem.SearchRecords"/>-->
+<!--      <class name="com.pinsystem.ForTesting"/>-->      
 <!--      <class name="com.pinsystem.TestClass"/>-->
     </classes>
   </test> <!-- Test -->

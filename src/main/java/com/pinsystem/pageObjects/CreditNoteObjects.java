@@ -55,7 +55,7 @@ public class CreditNoteObjects {
 		driver.findElement(CreditNotePageObjects.Generate_CreditNote).click();
 	}
 	
-	public void getInvoice_Number() {
+	public void getInvoice_Number() throws InterruptedException {
 		String filePath = ResourceHelper.getCreditNoteCode();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		Boolean value = driver.findElement(CreditNotePageObjects.getCreditNote_No).isDisplayed();
@@ -66,6 +66,7 @@ public class CreditNoteObjects {
 		} else {
 			log.error("Creditnote is not created");
 		}
+		Thread.sleep(10000);
 	}
 	
 	public void approve_CN() {

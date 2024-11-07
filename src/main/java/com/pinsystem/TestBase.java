@@ -25,15 +25,14 @@ import com.pinsystem.pageObjects.MenuObjects;
 import com.pinsystem.pageObjects.MixMediaSchedule;
 import com.pinsystem.pageObjects.ScheduleObjects;
 import com.pinsystem.utils.DropDownHelper;
-import com.pinsystem.utils.EmailUtility;
 import com.pinsystem.utils.ExtentManager;
+import com.pinsystem.utils.FrameHelper;
 import com.pinsystem.utils.ObjectReader;
 import com.pinsystem.utils.PropertyReader;
 import com.pinsystem.utils.ScreenshotUtility;
+import com.pinsystem.utils.SwitchTabs;
 import com.pinsystem.utils.WaitHelper;
 import com.pinsystem.utils.WindowHandler;
-import com.pinsystem.utils.FileUtil;
-import com.pinsystem.utils.FrameHelper;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -47,16 +46,19 @@ public class TestBase {
 
     // Declare helper and page object instances
     
-    protected FrameHelper fh;
-    protected MenuObjects Mo;
-    protected WaitHelper wh;
-    protected HomeNavigationObjects HN;
-    protected DropDownHelper dh;
-    protected MixMediaSchedule mx;
-    protected InvoiceObjects IO;
-    protected ScheduleObjects so;
+    protected FrameHelper FrameHelper;
+    protected MenuObjects MenuObjects;
+    protected WaitHelper WaitHelper;
+    protected HomeNavigationObjects HomeNavigationObjects;
+    protected DropDownHelper DropDownHelper;
+    protected MixMediaSchedule MixMediaSchedule;
+    protected InvoiceObjects InvoiceObjects;
+    protected ScheduleObjects ScheduleObjects;
     protected WindowHandler pop;
-    protected CreditNoteObjects CO;
+    protected CreditNoteObjects CreditNoteObjects;
+    protected SwitchTabs SwitchTabs;
+    protected static PropertyReader reader; //Sample
+  
 
 	@BeforeSuite
 	public void beforeSuite() throws Exception {
@@ -69,16 +71,18 @@ public class TestBase {
 		test = extent.createTest(getClass().getSimpleName());
 
         // Initialize helper and page objects
-        fh = new FrameHelper(driver);
-        Mo = new MenuObjects(driver);
-        wh = new WaitHelper(driver);
-        HN = new HomeNavigationObjects(driver);
-        dh = new DropDownHelper(driver);
-        mx = new MixMediaSchedule(driver);
-        IO = new InvoiceObjects(driver);
-        so = new ScheduleObjects(driver);
-        pop= new WindowHandler(driver);
-        CO= new CreditNoteObjects(driver);
+		FrameHelper = new FrameHelper(driver);
+		MenuObjects = new MenuObjects(driver);
+		WaitHelper = new WaitHelper(driver);
+		HomeNavigationObjects = new HomeNavigationObjects(driver);
+		DropDownHelper = new DropDownHelper(driver);
+		MixMediaSchedule = new MixMediaSchedule(driver);
+		InvoiceObjects = new InvoiceObjects(driver);
+		ScheduleObjects = new ScheduleObjects(driver);
+		pop= new WindowHandler(driver);
+		CreditNoteObjects= new CreditNoteObjects(driver);
+		SwitchTabs=new SwitchTabs(driver);
+        reader = new PropertyReader(); //Sample
 	}
 
 	@BeforeMethod
@@ -87,13 +91,28 @@ public class TestBase {
 		log.info("**************" + method.getName() + " Started ***************");
 	}
 
+//	@AfterClass
+//	public void afterClass() {
+//		if (driver != null) {
+//			driver.quit();
+//		}
+//		ExtentManager.getInstance().flush(); 
+//	}
+	
+	
 	@AfterClass
 	public void afterClass() {
-		if (driver != null) {
-			driver.quit();
-		}
-		ExtentManager.getInstance().flush(); 
+	    if (driver != null) {
+	        driver.quit();  // Close the WebDriver
+	    }
+
+	    // Export the Extent report data to Excel
+	    ExtentManager.exportReportToExcel();
+
+	    // Flush the ExtentReports to finalize the report
+	    ExtentManager.getInstance().flush();
 	}
+
 
 	@AfterMethod
 	public void afterMethod(ITestResult result) throws IOException {
@@ -119,9 +138,9 @@ public class TestBase {
 		driver = new ChromeDriver();
 		log.info("Initialize Web driver: " + driver.hashCode());
 
-		wh = new WaitHelper(driver); // Initialize WaitHelper here as it's used in startUp
-		wh.setImplicitWait(ObjectReader.reader.getExplicitWait());
-		wh.pageLoadTime(ObjectReader.reader.getPageLoadTime());
+		WaitHelper = new WaitHelper(driver); // Initialize WaitHelper here as it's used in startUp
+		WaitHelper.setImplicitWait(ObjectReader.reader.getExplicitWait());
+		WaitHelper.pageLoadTime(ObjectReader.reader.getPageLoadTime());
 		
 		getApplicationUrl();
 		driver.manage().window().maximize();
