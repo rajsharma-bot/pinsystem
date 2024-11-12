@@ -9,7 +9,7 @@ public class ResourceHelper {
 
 	
 	public static String getCampaignCode() {
-        return getResourcePath("src/main/resources/Data/output.txt");
+        return getResourcePath("src/main/resources/Data/CampaignNo.txt");
     }
 	
 	public static String getInvoiceCode() {
@@ -20,4 +20,15 @@ public class ResourceHelper {
         return getResourcePath("src/main/resources/Data/CN_No.txt");
     }
 	
+	public static String getScheduleNo() {
+		 return getResourcePath("src/main/resources/Data/Schedule.txt");
+	}
+	
+	public static String getAAno() {
+		 return getResourcePath("src/main/resources/Data/aaNo.txt");
+	}
+	
+	public static String getMONumber() {
+		 return getResourcePath("src/main/resources/Data/MO_NO.txt");
+	}
 }

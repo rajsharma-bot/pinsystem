@@ -174,17 +174,41 @@ public class PropertyReader implements ConfigReader {
 		return OR.getProperty("TRAFFIC");
 	}
 
+	@Override
+	public String clientname() {
+		if (System.getProperty("clientName") != null) {
+			return System.getProperty("clientName");
+		}
+		return OR.getProperty("clientName");
+	}
+
+	@Override
+	public String soldToParty() {
+		if (System.getProperty("soldToParty") != null) {
+			return System.getProperty("soldToParty");
+		}
+		return OR.getProperty("soldToParty");
+	}
+
+	@Override
+	public String product() {
+		if (System.getProperty("product") != null) {
+			return System.getProperty("product");
+		}
+		return OR.getProperty("product");
+	}
+
+	@Override
+	public String Contract() {
+		if (System.getProperty("Contract") != null) {
+			return System.getProperty("Contract");
+		}
+		return OR.getProperty("Contract");
+	}
+
+	
 	
 
 	
-
-//	@Override
-//	public String EditMediaFrame() {
-//		if (System.getProperty("EditMediaFrame") != null) {
-//			return System.getProperty("EditMediaFrame");
-//		}
-//		// TODO Auto-generated method stub
-//		return OR.getProperty("EditMediaFrame");
-//	}
 
 }

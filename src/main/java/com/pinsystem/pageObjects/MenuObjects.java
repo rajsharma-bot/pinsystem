@@ -13,6 +13,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pinsystem.utils.FileSaver;
+import com.pinsystem.utils.FrameHelper;
+import com.pinsystem.utils.ObjectReader;
+import com.pinsystem.utils.ResourceHelper;
 import com.pinsystem.utils.WaitHelper;
 
 public class MenuObjects {
@@ -26,6 +29,7 @@ public class MenuObjects {
 		this.driver = driver;
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(30)); //// global WebDriverWait
 	}
+
 ///////////////////////////////////////////////////////////Just for Testing
 	// Generic method to click elements
 	public void clickElement(By locator, String elementName) {
@@ -64,6 +68,7 @@ public class MenuObjects {
 			return null;
 		}
 	}
+
 //////////////////////////////////////////////////////////////////////////////////////////
 	public void ListCampaign_page() {
 		clickElement(MenuPageObjects.ListCampaign, "List Campaign");
@@ -88,18 +93,16 @@ public class MenuObjects {
 		log.info("Switched to Close Tab");
 		clickElement(MenuPageObjects.CLOSE_TAB, "Campaign close tab");
 	}
-	
+
 	public void CampaignCancelTab() {
 		log.info("Switched to Cancel Tab");
 		clickElement(MenuPageObjects.CANCEL_TAB, "Campaign Cancel tab");
 	}
-	
+
 	public void Campaign_no(String campaignName) {
 		sendText(MenuPageObjects.SEARCH_CAM, campaignName, "Campaign Name");
 		log.info(campaignName + "Has been passed");
 	}
-
-	
 
 	public void Campaign_searchbutton() {
 		driver.findElement(MenuPageObjects.Find_buttonC).click();
@@ -111,26 +114,48 @@ public class MenuObjects {
 
 	// Element for List Schedule
 	public void ListSchedule_page() {
+		FrameHelper FrameHelper = new FrameHelper(driver);
+
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());
 		log.info("List Schedule has been clicked");
 		clickElement(MenuPageObjects.ListSchedule, "List Schedule");
+
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 	}
 
 	public void Schedule_ConfirmedTab() {
-		log.info("Switched to Confirmed Tab");
-		clickElement(MenuPageObjects.Confirmed_Tab, "Schedule Confirmed tab");
+		try {
+			Thread.sleep(10000);
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.Confirmed_Tab));
+			log.info("Switched to Confirmed Tab");
+			clickElement(MenuPageObjects.Confirmed_Tab, "Schedule Confirmed tab");
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 
 	public void Schedule_PendingTab() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.Pending_Tab));
 		log.info("Switched to Pending Tab");
 		clickElement(MenuPageObjects.Pending_Tab, "Schedule Pending tab");
 	}
 
 	public void Schedule_CancelledTab() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.Cancelled_Tab));
 		log.info("Switched to Cancelled Tab");
 		clickElement(MenuPageObjects.Cancelled_Tab, "Schedule Cancelled tab");
 	}
 
 	public void Schedule_RevisionTab() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.Revision_Tab));
 		log.info("Switched to Revision Tab");
 		clickElement(MenuPageObjects.Revision_Tab, "Schedule Revision tab");
 	}
@@ -174,21 +199,26 @@ public class MenuObjects {
 
 	public void searchSchedule(String ScheduleNo) {
 		log.info("Clicked on free text");
-		driver.findElement(MenuPageObjects.searchText).click();
+		// driver.findElement(MenuPageObjects.searchText).click();
+		clickElement(MenuPageObjects.searchText, "Schedule number has been passed");
 		log.info("Passing shedule no");
-		driver.findElement(MenuPageObjects.searchText).sendKeys(ScheduleNo);
+		// driver.findElement(MenuPageObjects.searchText).sendKeys(ScheduleNo);
+		sendText(MenuPageObjects.searchText, ScheduleNo, "Schedule number has been passed");
 		log.info("Schedule no is passed");
 	}
 
 	public void findButton() {
 		log.info("Clicked  on find button");
-		driver.findElement(MenuPageObjects.findButton).click();
+		// driver.findElement(MenuPageObjects.findButton).click();
+		clickElement(MenuPageObjects.findButton, "Clicked on Find button");
 
 	}
 
-	public void clickOnRecord() {
-		driver.findElement(MenuPageObjects.SearchSchedule).click();
+	public void clickOnRecord() throws InterruptedException {
+		Thread.sleep(20000);
 		log.info("Clicked on searched record");
+		clickElement(MenuPageObjects.SearchSchedule, "Clicked on searched record");
+
 	}
 
 	public boolean tabText() {
@@ -206,8 +236,17 @@ public class MenuObjects {
 
 	// New Campaign
 	public void newCampaign() {
+		FrameHelper FrameHelper = new FrameHelper(driver);
+
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());
+
 		log.info("New Campaign has been clicked");
-		driver.findElement(MenuPageObjects.NewCampaign).click();
+		// driver.findElement(MenuPageObjects.NewCampaign).click();
+		clickElement(MenuPageObjects.NewCampaign, "Click on New Schedule button");
+
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 	}
 
 	public WebElement clientDDL() throws InterruptedException {
@@ -224,7 +263,7 @@ public class MenuObjects {
 	}
 
 	public void Find_ALL() {
-		//driver.findElement(MenuPageObjects.Find_AA).click();
+		// driver.findElement(MenuPageObjects.Find_AA).click();
 		clickElement(MenuPageObjects.Find_AA, "Find AA button");
 	}
 
@@ -240,32 +279,22 @@ public class MenuObjects {
 		return DDL_SEARCH;
 	}
 
-//	public void StartDate() {
-//		driver.findElement(MenuPageObjects.StartDate).clear();
-//		driver.switchTo().alert().accept();
-//	}
-
 	public void StartDate(String startdate) throws InterruptedException {
-		
+
 		driver.findElement(MenuPageObjects.StartDate).clear();
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
 
-		driver.findElement(MenuPageObjects.StartDate).sendKeys(startdate);
-
+		// driver.findElement(MenuPageObjects.StartDate).sendKeys(startdate);
+		sendText(MenuPageObjects.StartDate, startdate, "Passing Start Date");
 	}
-
-//	public void EndDate() {
-//		driver.findElement(MenuPageObjects.EndDate).clear();
-//		driver.switchTo().alert().accept();
-//
-//	}
 
 	public void EndDate(String EndDate) throws InterruptedException {
 		driver.findElement(MenuPageObjects.EndDate).clear();
 		driver.switchTo().alert().accept();
 		Thread.sleep(1000);
-		driver.findElement(MenuPageObjects.EndDate).sendKeys(EndDate);
+		// driver.findElement(MenuPageObjects.EndDate).sendKeys(EndDate);
+		sendText(MenuPageObjects.EndDate, EndDate, "Passing End Date");
 
 	}
 
@@ -284,16 +313,21 @@ public class MenuObjects {
 	}
 
 	public void CampaignName(String campaignName) {
-		driver.findElement(MenuPageObjects.Campaign_name).sendKeys(campaignName);
+		log.info("Passing Campaign Name");
+//		driver.findElement(MenuPageObjects.Campaign_name).sendKeys(campaignName);
+		sendText(MenuPageObjects.Campaign_name, campaignName, "Passing Campaign name has been passed");
 	}
 
 	public void Save() {
-		driver.findElement(MenuPageObjects.SaveOnlyAndViewCampaign).click();
+		log.info("Clicking on Save button");
+		// driver.findElement(MenuPageObjects.SaveOnlyAndViewCampaign).click();
+		clickElement(MenuPageObjects.SaveOnlyAndViewCampaign, "Click on Save Only And View Campaign ");
 		if (driver.switchTo().alert() != null) {
 			driver.switchTo().alert().accept();
 		} else {
 			log.info("No alert");
-			driver.findElement(MenuPageObjects.SaveOnlyAndViewCampaign).click();
+//			driver.findElement(MenuPageObjects.SaveOnlyAndViewCampaign).click();
+			clickElement(MenuPageObjects.SaveOnlyAndViewCampaign, "Click on Save Only And View Campaign ");
 		}
 	}
 
@@ -305,13 +339,16 @@ public class MenuObjects {
 
 	public void searchTitle(String media_title) throws InterruptedException {
 		driver.findElement(MenuPageObjects.Search_MediaTitle).clear();
-		driver.findElement(MenuPageObjects.Search_MediaTitle).sendKeys(media_title);
+		// driver.findElement(MenuPageObjects.Search_MediaTitle).sendKeys(media_title);
+		sendText(MenuPageObjects.Search_MediaTitle, media_title, "Searching media title");
 		Thread.sleep(3000);
 	}
 
-	public boolean checkBox() throws InterruptedException {
-		Thread.sleep(3000);
-		driver.findElement(MenuPageObjects.checkBox).click();
+	public boolean checkBox() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		// driver.findElement(MenuPageObjects.checkBox).click();
+		clickElement(MenuPageObjects.checkBox, "Click on Save Only And View Campaign ");
+
 		if (driver.findElement(MenuPageObjects.checkBox).isDisplayed()) {
 			log.info("true");
 			return true;
@@ -321,84 +358,38 @@ public class MenuObjects {
 
 	public void campaignCode() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		String filePath = ResourceHelper.getCampaignCode();
 		Boolean value = driver.findElement(MenuPageObjects.CampaignCode).isDisplayed();
 		if (value == true) {
 			log.info("Campaign has been created");
 			log.info(driver.findElement(MenuPageObjects.CampaignCode).getText());
-			// FileSaver.saveTextToFile(driver.findElement(MenuPageObjects.CampaignCode).getText(),
-			// "output.txt");
-			FileSaver.saveTextToFile(driver.findElement(MenuPageObjects.CampaignCode).getText(),
-					"C:\\Users\\rasharma\\Automation\\pinsystem\\src\\main\\resources\\Data\\output.txt");
+			FileSaver.saveTextToFile(driver.findElement(MenuPageObjects.CampaignCode).getText(), filePath);
 		} else {
 			log.error("Campaign is not created");
 		}
 
 	}
+	public String verifycampaignCode() {
+		String campaign_code= driver.findElement(MenuPageObjects.CampaignCode).getText();
+		return campaign_code;
+	}
+	
+	
 
 	/**
 	 * @Case :: New schedule
 	 */
 
 	public void new_schedule() {
-		driver.findElement((MenuPageObjects.New_schedule)).click();
-	}
+		FrameHelper FrameHelper = new FrameHelper(driver);
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 
-	// Vendor Selection
-	public WebElement Vendor1() throws InterruptedException {
-		Thread.sleep(1000);
-		driver.findElement(MenuPageObjects.VendorDDL).click();
-		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL);
-		log.info("vendor has been passed");
-		return DDL_vendor;
-	}
+		// driver.findElement((MenuPageObjects.New_schedule)).click();
+		clickElement(MenuPageObjects.New_schedule, "New schedule");
 
-	public WebElement Vendor2() throws InterruptedException {
-
-		Thread.sleep(1000);
-		driver.findElement(MenuPageObjects.VendorDDL2).click();
-		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL2);
-		log.info("vendor has been passed");
-		return DDL_vendor;
-	}
-
-	public WebElement Vendor3() throws InterruptedException {
-		Thread.sleep(1000);
-		driver.findElement(MenuPageObjects.VendorDDL3).click();
-		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL3);
-		log.info("vendor has been passed");
-		return DDL_vendor;
-	}
-
-	public WebElement Vendor4() throws InterruptedException {
-		Thread.sleep(1000);
-		driver.findElement(MenuPageObjects.VendorDDL4).click();
-		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL4);
-		log.info("vendor has been passed");
-		return DDL_vendor;
-	}
-
-	public WebElement Vendor5() throws InterruptedException {
-		Thread.sleep(1000);
-		driver.findElement(MenuPageObjects.VendorDDL5).click();
-		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL5);
-		log.info("vendor has been passed");
-		return DDL_vendor;
-	}
-
-	public WebElement Vendor6() throws InterruptedException {
-		Thread.sleep(1000);
-		driver.findElement(MenuPageObjects.VendorDDL6).click();
-		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL6);
-		log.info("vendor has been passed");
-		return DDL_vendor;
-	}
-
-	public WebElement Vendor7() throws InterruptedException {
-		Thread.sleep(1000);
-		driver.findElement(MenuPageObjects.VendorDDL7).click();
-		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL7);
-		log.info("vendor has been passed");
-		return DDL_vendor;
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 	}
 
 	public WebElement pop_mediaType() {
@@ -421,7 +412,7 @@ public class MenuObjects {
 
 	public void Schedule_Grid() throws InterruptedException {
 
-		Thread.sleep(1000);
+		Thread.sleep(30000);
 		driver.findElement(MenuPageObjects.Schedule_Grid).click();
 		if (driver.switchTo().alert() != null) {
 			driver.switchTo().alert().accept();
@@ -580,7 +571,7 @@ public class MenuObjects {
 
 	public void listAA() {
 		log.info("Switched to list AA");
-		//driver.findElement(MenuPageObjects.ListAA).click();
+		// driver.findElement(MenuPageObjects.ListAA).click();
 		clickElement(MenuPageObjects.ListAA, "List AA page");
 	}
 
@@ -747,4 +738,63 @@ public class MenuObjects {
 			log.info("No alert to accept.");
 		}
 	}
+
+	// Vendor Selection
+	public WebElement Vendor1() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(MenuPageObjects.VendorDDL).click();
+		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL);
+		log.info("vendor has been passed");
+		return DDL_vendor;
+	}
+
+	public WebElement Vendor2() throws InterruptedException {
+
+		Thread.sleep(1000);
+		driver.findElement(MenuPageObjects.VendorDDL2).click();
+		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL2);
+		log.info("vendor has been passed");
+		return DDL_vendor;
+	}
+
+	public WebElement Vendor3() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(MenuPageObjects.VendorDDL3).click();
+		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL3);
+		log.info("vendor has been passed");
+		return DDL_vendor;
+	}
+
+	public WebElement Vendor4() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(MenuPageObjects.VendorDDL4).click();
+		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL4);
+		log.info("vendor has been passed");
+		return DDL_vendor;
+	}
+
+	public WebElement Vendor5() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(MenuPageObjects.VendorDDL5).click();
+		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL5);
+		log.info("vendor has been passed");
+		return DDL_vendor;
+	}
+
+	public WebElement Vendor6() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(MenuPageObjects.VendorDDL6).click();
+		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL6);
+		log.info("vendor has been passed");
+		return DDL_vendor;
+	}
+
+	public WebElement Vendor7() throws InterruptedException {
+		Thread.sleep(1000);
+		driver.findElement(MenuPageObjects.VendorDDL7).click();
+		WebElement DDL_vendor = driver.findElement(MenuPageObjects.VendorDDL7);
+		log.info("vendor has been passed");
+		return DDL_vendor;
+	}
+
 }

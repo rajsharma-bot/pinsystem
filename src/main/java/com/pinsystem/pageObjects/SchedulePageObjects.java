@@ -13,4 +13,9 @@ public class SchedulePageObjects {
 	public static By Confirm_mo= By.xpath("//input[@id='btnConfirmMO']");
 	public static By mo_status= By.xpath("//tr[@id='gvMoDetail_DXDataRow0']//td[@class='dxgv'][normalize-space()='Confirm']");
 	
+	// Schedule MO
+	
+	public static final By MOLink = By.xpath("//a[@id='gvMoDetail_cell0_6_hyperMoNo']");
+	public static final By verifyMOpage = By.xpath("//span[@id='lblOrderNo']");
+	
 			}

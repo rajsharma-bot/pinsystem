@@ -11,6 +11,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import com.pinsystem.utils.FileSaver;
+import com.pinsystem.utils.FrameHelper;
+import com.pinsystem.utils.ObjectReader;
 import com.pinsystem.utils.ResourceHelper;
 
 public class InvoiceObjects {
@@ -24,10 +26,20 @@ public class InvoiceObjects {
 	}
 
 	public void UnbilledMedia_PI() {
+		FrameHelper FrameHelper = new FrameHelper(driver);
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());
+		
 		driver.findElement(InvoicePageObjects.UnbilledMedia_PI).click();
+		
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 	}
 
 	public void StartDate(String startdate) {
+		
+		
+		
 		 WebElement dateInput = driver.findElement(InvoicePageObjects.StartDate);
 		 JavascriptExecutor js = (JavascriptExecutor) driver;
 		 js.executeScript("arguments[0].value='" + startdate + "';", dateInput);
@@ -114,6 +126,11 @@ public class InvoiceObjects {
 		} else {
 			log.error("Invoice is not created");
 		}
+	}
+	
+	public String validateInvoice_Number() {
+			String invoiceNo= driver.findElement(InvoicePageObjects.getInvoiceNumber).getText();
+			return invoiceNo;
 	}
 	
 	public void Confirm_invoice() {

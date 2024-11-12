@@ -4,6 +4,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
+import com.pinsystem.utils.FrameHelper;
+import com.pinsystem.utils.ObjectReader;
+
 public class HomeNavigationObjects {
 
 	private static Logger log = LogManager.getLogger(HomeNavigationObjects.class);
@@ -46,6 +49,8 @@ public class HomeNavigationObjects {
 	}
 
 	public void MEDIA() {
+		FrameHelper FrameHelper = new FrameHelper(driver);
+		FrameHelper.switchToFrame(ObjectReader.reader.topframe());
 		driver.findElement(HomeNavigationPageObjects.MEDIA).click();
 		log.info("Clicked on Media ");
 	}
@@ -106,8 +111,12 @@ public class HomeNavigationObjects {
 	}
 
 	public void FINANCE() {
-		driver.findElement(HomeNavigationPageObjects.FINANCE).click();
+		FrameHelper FrameHelper = new FrameHelper(driver);
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.topframe());
 		log.info("Clicked on Finance");
+		driver.findElement(HomeNavigationPageObjects.FINANCE).click();
+		
 	}
 
 	public boolean FINANCE(String value) {

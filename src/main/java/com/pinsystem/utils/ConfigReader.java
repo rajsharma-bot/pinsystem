@@ -25,6 +25,11 @@ public interface ConfigReader {
 	public String TRAFFIC();
 	public String Add_line();
 	public String pop_up_frame();
+	public String clientname();
+	public String soldToParty();
+	public String product();
+	public String Contract();
+
 	
 	
 

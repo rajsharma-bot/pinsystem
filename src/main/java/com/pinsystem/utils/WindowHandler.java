@@ -41,6 +41,7 @@ public class WindowHandler {
 		driver.switchTo().window(parentWindow); // Switch to the parent window
 		log.info("Switched back to Parent Window: " + parentWindow);
 		//System.out.println("Switched back to Parent Window: " + parentWindow);
+	
 	}
 
 }

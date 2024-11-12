@@ -24,6 +24,7 @@ import com.pinsystem.pageObjects.InvoiceObjects;
 import com.pinsystem.pageObjects.MenuObjects;
 import com.pinsystem.pageObjects.MixMediaSchedule;
 import com.pinsystem.pageObjects.ScheduleObjects;
+import com.pinsystem.pageObjects.ViewLineBylineObjects;
 import com.pinsystem.utils.DropDownHelper;
 import com.pinsystem.utils.ExtentManager;
 import com.pinsystem.utils.FrameHelper;
@@ -33,6 +34,7 @@ import com.pinsystem.utils.ScreenshotUtility;
 import com.pinsystem.utils.SwitchTabs;
 import com.pinsystem.utils.WaitHelper;
 import com.pinsystem.utils.WindowHandler;
+import com.pinsystem.pageObjects.GenericElementObjects;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -57,8 +59,9 @@ public class TestBase {
     protected WindowHandler pop;
     protected CreditNoteObjects CreditNoteObjects;
     protected SwitchTabs SwitchTabs;
-    protected static PropertyReader reader; //Sample
-  
+    protected static PropertyReader reader;
+    protected GenericElementObjects GenericElementObjects;
+    protected ViewLineBylineObjects ViewLineBylineObjects;
 
 	@BeforeSuite
 	public void beforeSuite() throws Exception {
@@ -83,6 +86,8 @@ public class TestBase {
 		CreditNoteObjects= new CreditNoteObjects(driver);
 		SwitchTabs=new SwitchTabs(driver);
         reader = new PropertyReader(); //Sample
+        GenericElementObjects =new GenericElementObjects(driver);
+        ViewLineBylineObjects = new ViewLineBylineObjects(driver);
 	}
 
 	@BeforeMethod
@@ -91,14 +96,6 @@ public class TestBase {
 		log.info("**************" + method.getName() + " Started ***************");
 	}
 
-//	@AfterClass
-//	public void afterClass() {
-//		if (driver != null) {
-//			driver.quit();
-//		}
-//		ExtentManager.getInstance().flush(); 
-//	}
-	
 	
 	@AfterClass
 	public void afterClass() {

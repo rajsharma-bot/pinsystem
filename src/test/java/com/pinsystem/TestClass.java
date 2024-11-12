@@ -1,33 +1,20 @@
 package com.pinsystem;
 
-import java.io.IOException;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
-import com.pinsystem.pageObjects.HomeNavigationObjects;
-import com.pinsystem.pageObjects.LoginObjects;
-import com.pinsystem.utils.FrameHelper;
-import com.pinsystem.utils.ObjectReader;
-import com.pinsystem.utils.PropertyReader;
-
-public class TestClass extends TestBase {
+public class TestClass  {
+	
+	private static Logger log = LogManager.getLogger(ForTesting2.class);
 	
 	@Test
-	public void SampleRunner() throws IOException, InterruptedException {
+	public void SampleRunner() {
 		
-		ObjectReader.reader = new PropertyReader();
-		LoginObjects lg = new LoginObjects(driver);
-		HomeNavigationObjects hm= new HomeNavigationObjects(driver);
-		FrameHelper fh= new FrameHelper(driver);
-		lg.login(ObjectReader.reader.getUserName(), ObjectReader.reader.getPassword());
-		lg.remMe();
-		lg.submit();
-		fh.switchToFrame(ObjectReader.reader.topframe());
-		
-		hm.FINANCE();
-		Thread.sleep(1000);
-		hm.FINANCE(ObjectReader.reader.FINANCE());
-	
+	log.info("I'm Info");
+	log.debug("I'm Dubug");
+	log.error("I'm Error");
+	log.trace("I'm Trace");
 		
 		
 	}

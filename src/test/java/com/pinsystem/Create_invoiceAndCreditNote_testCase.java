@@ -1,5 +1,7 @@
 package com.pinsystem;
 
+import static org.testng.Assert.assertNotNull;
+
 import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
@@ -9,29 +11,24 @@ import org.testng.annotations.Test;
 
 import com.pinsystem.utils.FileUtil;
 import com.pinsystem.utils.ObjectReader;
-import com.pinsystem.utils.PropertyReader;
 import com.pinsystem.utils.ResourceHelper;
 
-public class Create_invoiceAndCreditNote extends TestBase {
+public class Create_invoiceAndCreditNote_testCase extends TestBase {
 
-	private static Logger log = LogManager.getLogger(Create_invoiceAndCreditNote.class);
+	private static Logger log = LogManager.getLogger(Create_invoiceAndCreditNote_testCase.class);
 
 	@Test(description = "Creating Invoice")
-	public void digital_invoice() throws InterruptedException {
+	public void createInvoice() throws InterruptedException {
 		String filePath = ResourceHelper.getCampaignCode();
-		ObjectReader.reader = new PropertyReader();
 		FileUtil fileUtil = new FileUtil(filePath);
 		WaitHelper.setImplicitWait(ObjectReader.reader.getExplicitWait());
 		LoginClass lc = new LoginClass(driver);
 		log.info("Login runner has been invoked");
 		lc.loginRunner();
-		FrameHelper.switchToFrame(ObjectReader.reader.topframe());
 		HomeNavigationObjects.FINANCE();
-		FrameHelper.switchTodefault();
-		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());
 		InvoiceObjects.UnbilledMedia_PI();
-		FrameHelper.switchTodefault();
-		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+		
+		// Searching invoice
 		InvoiceObjects.StartDate("01/01/2024"); // DD/MM/YYYY
 		InvoiceObjects.EndDate("31/03/2024"); // DD/MM/YYYY
 		DropDownHelper.selectUsingVisibleText(InvoiceObjects.Search_DDL(), "Campaign Code");
@@ -42,34 +39,44 @@ public class Create_invoiceAndCreditNote extends TestBase {
 			InvoiceObjects.txt_box(data);
 
 		} catch (IOException e) {
-			log.error("File not found : " + e);
-			e.printStackTrace(); // Handle any I/O exceptions
+			log.error("File not found : " + e.getMessage());
+			Assert.fail("Failed to read campaign code file.");
 		}
 		InvoiceObjects.UnbilledMedia_find();
-		//Assert.assertEquals(InvoiceObjects.checkBox_visible(), true);
 		InvoiceObjects.selectAll_CheckBox();
 		InvoiceObjects.createInvoice();
+		
+		//Generating Invoice
 		InvoiceObjects.Generate_Invoice();
 		InvoiceObjects.getInvoice_Number();
+		assertNotNull(InvoiceObjects.validateInvoice_Number(), "Invoice number should not be null!");
 		InvoiceObjects.Confirm_invoice();
+		
+		//Changing Invoice Import Status
+		log.info("Changing import status to Success");
+		GenericElementObjects.ImportStatus();
+		pop.switchToChildWindow(driver);
+		DropDownHelper.selectUsingValue(GenericElementObjects.ImportStatus_DDL(), "Success");
+		GenericElementObjects.ImportStatus_SaveBtn();
+		pop.switchToParentWindow(driver);
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+        Assert.assertEquals(GenericElementObjects.GetImportStatus(), "Import Success", "Import status should be 'Import Success'");
+
+		
 
 	}
 
 	
-	@Test(dependsOnMethods="digital_invoice" , description = "Creating Credit Note")
+	@Test(dependsOnMethods="createInvoice" , description = "Creating Credit Note")
 	public void CreditNote() throws InterruptedException {
 		String filePath = ResourceHelper.getInvoiceCode();
-		ObjectReader.reader = new PropertyReader();
 		FileUtil fileUtil = new FileUtil(filePath);
 		WaitHelper.setImplicitWait(ObjectReader.reader.getExplicitWait());
-		FrameHelper.switchTodefault();
-		FrameHelper.switchToFrame(ObjectReader.reader.topframe());
 		HomeNavigationObjects.FINANCE();
-		FrameHelper.switchTodefault();
-		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());
+		
+		//Searching Invoice from Invoice List
 		CreditNoteObjects.Invoice_list();
-		FrameHelper.switchTodefault();
-		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 		DropDownHelper.selectUsingVisibleText(CreditNoteObjects.ListAll_MonthDDL(), "List All");
 		log.info(CreditNoteObjects.ListAll_MonthDDL());
 		try {
@@ -79,24 +86,32 @@ public class Create_invoiceAndCreditNote extends TestBase {
 			CreditNoteObjects.Invoice_search(data);
 
 		} catch (IOException e) {
-			log.error("File not found : " + e);
-			e.printStackTrace(); // Handle any I/O exceptions
+			log.error("File not found : " + e.getMessage());
+			Assert.fail("Failed to read invoice code file.");
 		}
 		CreditNoteObjects.SearchInvoice();
 		CreditNoteObjects.Invoice_link();
+		
+		//Generating creditNote
 		CreditNoteObjects.Create_CreditNoteBtn();
 		CreditNoteObjects.generate_CreditNote();
 		CreditNoteObjects.approve_CN();
-		CreditNoteObjects.getInvoice_Number();
-		CreditNoteObjects.ImportStatus();
-		FrameHelper.switchTodefault();
-		pop.switchToChildWindow(driver);		
-		DropDownHelper.selectUsingValue(CreditNoteObjects.ImportDDL(), "Success");
-		CreditNoteObjects.ImportSave_btn();
+		CreditNoteObjects.getCreditNote_Number();
+		assertNotNull(CreditNoteObjects.validateCreditNote_Number(), "CreditNote number should not be null!");
+		
+		//Changing CN ImportStatus
+		 log.info("Changing CN import status to Success");
+		GenericElementObjects.ImportStatus();
+		pop.switchToChildWindow(driver);
+		DropDownHelper.selectUsingValue(GenericElementObjects.ImportStatus_DDL(), "Success");
+		GenericElementObjects.ImportStatus_SaveBtn();
 		pop.switchToParentWindow(driver);
 		FrameHelper.switchTodefault();
 		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
-		Assert.assertEquals(CreditNoteObjects.GetImportStatus(), "Import Success");
+        Assert.assertEquals(GenericElementObjects.GetImportStatus(), "Import Success", "Credit Note import status should be 'Success'");
+
+		
+		//Release All Spots
 		CreditNoteObjects.ReleaseAllSpots();
 		
 

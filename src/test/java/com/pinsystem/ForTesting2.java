@@ -2,48 +2,37 @@ package com.pinsystem;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import com.pinsystem.pageObjects.HomeNavigationObjects;
-import com.pinsystem.pageObjects.MenuObjects;
-import com.pinsystem.pageObjects.MixMediaSchedule;
-import com.pinsystem.utils.DropDownHelper;
-import com.pinsystem.utils.FrameHelper;
+import com.pinsystem.pageObjects.ViewLineBylineObjects;
 import com.pinsystem.utils.ObjectReader;
-import com.pinsystem.utils.PropertyReader;
-import com.pinsystem.utils.WaitHelper;
 
 public class ForTesting2 extends TestBase{
 	
 	private static Logger log = LogManager.getLogger(ForTesting2.class);
 	
-	@Test
-	public void forTesting() {
-		ObjectReader.reader = new PropertyReader();
-		FrameHelper fh = new FrameHelper(driver);
-		MenuObjects Mo = new MenuObjects(driver);
-		WaitHelper wh = new WaitHelper(driver);
-		HomeNavigationObjects HN = new HomeNavigationObjects(driver);
-		DropDownHelper dh = new DropDownHelper(driver);
-		MixMediaSchedule mx = new MixMediaSchedule(driver);
-		wh.setImplicitWait(ObjectReader.reader.getExplicitWait());
+	@Test(description = "Creating Invoice")
+	public void digital_invoice() throws InterruptedException {
+		WaitHelper.setImplicitWait(ObjectReader.reader.getExplicitWait());
+		ViewLineBylineObjects vo = new ViewLineBylineObjects(driver);
 		LoginClass lc = new LoginClass(driver);
 		log.info("Login runner has been invoked");
 		lc.loginRunner();
-		fh.switchToFrame(ObjectReader.reader.topframe());
-		HN.MEDIA();
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.leftframe());
-		Mo.ListCampaign_page();
-		fh.switchTodefault();
-		fh.switchToFrame(ObjectReader.reader.rightframe());
-		dh.selectUsingValue(Mo.Campaign_search(), "Campaign No.");
-		Mo.Campaign_no("B004/JSR/2400191");
-		Mo.Campaign_searchbutton();
+		driver.get("https://the-internet.herokuapp.com/checkboxes");
 		
 		
+		driver.findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
+		
+		Thread.sleep(10000);
+		
+//		WebElement  sd =driver.findElement(By.xpath("//span[@id='gvMoDetail_header0_cbPage']"));
+		boolean sd =driver.findElement(By.xpath("(//input[@type='checkbox'])[1]")).isSelected();
 		
 		
+		System.out.println(sd);
+
 	}
+
 
 }
