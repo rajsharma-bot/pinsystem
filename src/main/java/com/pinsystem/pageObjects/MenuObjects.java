@@ -491,14 +491,14 @@ public class MenuObjects {
 		log.info("Daily Budget has been passed" + " " + budget);
 	}
 
-	public void Entering_Digital_Spots() {
+	public void Entering_Digital_Spots(String value) {
 		// Find all text boxes matching the XPath
 		List<WebElement> inputFields = driver.findElements(MenuPageObjects.ClientAndVendorRates);
 		// Iterate over the found elements and set their values
 		for (WebElement inputField : inputFields) {
 			inputField.click();
 			inputField.clear();
-			inputField.sendKeys("2000");
+			inputField.sendKeys(value);
 		}
 		log.info("rate has been passed");
 	}

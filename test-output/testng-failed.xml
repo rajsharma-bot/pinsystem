@@ -10,6 +10,7 @@
           <include name="beforeMethod"/>
           <include name="Digital_Schedule"/>
           <include name="beforeSuite"/>
+          <include name="view_line_by_line"/>
           <include name="viewMOpage"/>
           <include name="afterClass"/>
           <include name="afterMethod"/>

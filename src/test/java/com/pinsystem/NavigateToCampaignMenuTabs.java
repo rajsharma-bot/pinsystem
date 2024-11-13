@@ -2,13 +2,10 @@ package com.pinsystem;
 
 import java.io.IOException;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.pinsystem.utils.ObjectReader;
-import com.pinsystem.utils.PropertyReader;
 
 public class NavigateToCampaignMenuTabs extends TestBase {
 

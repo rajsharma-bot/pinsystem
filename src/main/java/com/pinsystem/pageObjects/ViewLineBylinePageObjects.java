@@ -4,10 +4,6 @@ import org.openqa.selenium.By;
 
 public class ViewLineBylinePageObjects {
 	
-	/**
-	 * Need to Handle
-	 * //iframe[@id='popEditMediaSchedule_CIF-1']
-	 */
 
 	public static final By viewlinebyline =By.xpath("//input[@id='btnViewLineByPopUp']");
 	public static final By scheduleNumber_linebyline = By.xpath("//div[@id='tblHeader']//div[3]"); // getting schedule number to verify
@@ -16,8 +12,7 @@ public class ViewLineBylinePageObjects {
 	public static final By clientInvoiceRemark_textBox= By.xpath("//textarea[@id='popClientInvoiceRemarks_memoClientInvoiceRemarks_I']");//CIR remark
 	public static final By clientInvoiceRemark_SaveBtn= By.xpath("//div[@id='popClientInvoiceRemarks_btnSaveClientInvoiceRemarks_CD']"); // CIR save
 	public static final By get_CIRremark=By.xpath("a[id='gvMOView_ByLine_DXCBtn1'] span[class='dx-vam']"); //CIR remark on view line by line
-	public static final By pencilEdit= By.xpath("//tr[@id='gvMOView_ByLine_DXDataRow1']//td[2]");
-	public static final By pencilEdit2 = By.xpath("//img[@id='gvMOView_ByLine_DXCBtn0Img']");
+	public static final By pencilEdit = By.xpath("//img[@id='gvMOView_ByLine_DXCBtn0Img']");
 	public static final By editMediaSchedulePopUp= By.xpath("//div[@id='popEditMediaSchedule_PW-1']"); // Edit Media Schedule post pencil edit
 	public static final By updatingClientRate= By.xpath("//input[@id='txtLBL_ClientCost']");
 	public static final By updatingBuyingRate= By.xpath("//input[@id='txtLBL_BuyingCost']");
@@ -26,6 +21,7 @@ public class ViewLineBylinePageObjects {
 	public static final By AAHyperLink =By.xpath("//td[@id='gvMOView_ByLine_tccell1_40']");
 	public static final By getScheduleNo =By.xpath("//td[@class='title']//small");
 	
+	public static final By insertionDetailHyperLink =By.xpath("//a[@id='gvMOView_ByLine_cell1_7_hyperInsDetails']");
 	
 	
 	

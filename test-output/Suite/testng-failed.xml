@@ -2,18 +2,21 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="isEditMO" value="false"/>
     <classes>
-      <class name="com.pinsystem.Create_invoiceAndCreditNote">
+      <class name="com.pinsystem.Digital_Campaign_scheduleTestCase">
         <methods>
-          <include name="digital_invoice"/>
+          <include name="digital_campaign"/>
           <include name="BeforeClass"/>
           <include name="beforeMethod"/>
+          <include name="Digital_Schedule"/>
           <include name="beforeSuite"/>
-          <include name="CreditNote"/>
+          <include name="viewMOpage"/>
+          <include name="view_line_by_line" invocation-numbers="0"/>
           <include name="afterClass"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.pinsystem.Create_invoiceAndCreditNote -->
+      </class> <!-- com.pinsystem.Digital_Campaign_scheduleTestCase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

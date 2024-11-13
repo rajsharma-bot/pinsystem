@@ -13,8 +13,6 @@ import org.testng.Assert;
 
 import com.pinsystem.utils.FileSaver;
 import com.pinsystem.utils.ResourceHelper;
-import com.pinsystem.utils.SwitchTabs;
-import com.pinsystem.utils.WaitHelper;
 
 public class ViewLineBylineObjects {
 	
@@ -114,7 +112,7 @@ public class ViewLineBylineObjects {
 		
 		Thread.sleep(30000);
 		log.info("Click on Pencil edit");
-		clickElement(ViewLineBylinePageObjects.pencilEdit2, "View line by line Pencil edit");
+		clickElement(ViewLineBylinePageObjects.pencilEdit, "View line by line Pencil edit");
 		Thread.sleep(30000);
 		
 		
@@ -189,6 +187,61 @@ public class ViewLineBylineObjects {
 
 	}
 	
+	public void insertionDetail() {
+		log.info("Clicking on Insertion Hyperlink");
+		clickElement(ViewLineBylinePageObjects.insertionDetailHyperLink, "Insertion Detail hyperlink / Edit mediaorder pop-up");
+	}
+	
+	
+//	public void view_line_by_line(boolean isEditMO) throws InterruptedException {
+//	    
+//	    String filePath = ResourceHelper.getScheduleNo();
+//	    FileUtil fileUtil = new FileUtil(filePath);
+//	    ViewLineBylineObjects ViewLineBylineObjects = new ViewLineBylineObjects(driver);
+//	    WindowHandler pop = new WindowHandler(driver);
+//	    FrameHelper FrameHelper = new FrameHelper(driver);
+//	    MenuObjects MenuObjects = new MenuObjects(driver);
+//	    ObjectReader.reader = new PropertyReader();
+//	    
+//
+//	    // Click on view line by line
+//	    ViewLineBylineObjects.clickOnViewLineBylineBtn();
+//	    pop.switchToChildWindow(driver);
+//
+//	    try {
+//	        String data = fileUtil.readAllTextFromFile();
+//	        log.info("Data read from file:\n" + data);
+//	        ViewLineBylineObjects.verifyRedirectToViewLineByLine(data);
+//	    } catch (IOException e) {
+//	        log.error("File not found : " + e.getMessage());
+//	        Assert.fail("Failed to read schedule number file.");
+//	    }
+//
+//	    if (isEditMO) {
+//	        // Logic for "view line by line via edit MO hyperlink"
+//	        ViewLineBylineObjects.insertionDetail();
+//	        FrameHelper.switchToFrame(ObjectReader.reader.Add_line());
+//	        MenuObjects.Entering_Digital_Spots("3500");
+//	        ViewLineBylineObjects.changeReason("Creating AA for Testing Reason");
+//	        ViewLineBylineObjects.updateAA();
+//	    } else {
+//	        // Logic for "view line by line via pencil icon"
+//	        ViewLineBylineObjects.pencilEdit();
+//	        FrameHelper.switchToFrame(ObjectReader.reader.Add_line());
+//	        ViewLineBylineObjects.SettingClientRate("3000");
+//	        ViewLineBylineObjects.settingBuyingRate("2000");
+//	        ViewLineBylineObjects.changeReason("Creating AA for Testing Reason");
+//	        ViewLineBylineObjects.updateAA();
+//	    }
+//
+//	    // Back to View line by line page
+//	    FrameHelper.switchTodefault();
+//	    ViewLineBylineObjects.getAA_no();
+//	    assertNotNull(ViewLineBylineObjects.verifygetAA_no(), "AA number should not be null!");
+//	    driver.close();
+//	    pop.switchToParentWindow(driver);
+//	}
+
 	
 
 }

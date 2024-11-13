@@ -7,9 +7,9 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.pinsystem.pageObjects.SchedulePageObjects;
 import com.pinsystem.utils.FileUtil;
 import com.pinsystem.utils.ObjectReader;
 import com.pinsystem.utils.ResourceHelper;
@@ -44,7 +44,7 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 		assertNotNull(MenuObjects.verifycampaignCode(), "Campaign code should not be null!");
 	}
 
-	@Test(dependsOnMethods = {"digital_campaign"} , description = "Digital Schedule")
+	@Test(dependsOnMethods = { "digital_campaign" }, description = "Digital Schedule")
 	public void Digital_Schedule() throws InterruptedException {
 
 		// Creating New Schedule
@@ -71,68 +71,34 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 
 	}
 
-	@Test(dependsOnMethods =  {"Digital_Schedule" }, description = " Performing operation on view line by line page")
-	public void view_line_by_line() throws InterruptedException {
-		
-		String filePath = ResourceHelper.getScheduleNo();
-		FileUtil fileUtil = new FileUtil(filePath);
-
-		// Click on view line by line
-		ViewLineBylineObjects.clickOnViewLineBylineBtn();
-		pop.switchToChildWindow(driver); //try
-		try {
-
-			String data = fileUtil.readAllTextFromFile();
-			log.info("Data read from file:\n" + data);
-			ViewLineBylineObjects.verifyRedirectToViewLineByLine(data);
-
-		} catch (IOException e) {
-			log.error("File not found : " + e.getMessage());
-			Assert.fail("Failed to read schedule number file.");
-		}
-
-		ViewLineBylineObjects.clientInvoiceRemark_btn();
-		ViewLineBylineObjects.clientInvoiceRemark_PopUp();
-		ViewLineBylineObjects.clientInvoiceRemarkText();
-		ViewLineBylineObjects.clientInvoiceRemark_SaveBtn();
-
-		// Creating AA via Pencil Edit
-		ViewLineBylineObjects.pencilEdit();
-		FrameHelper.switchToFrame(ObjectReader.reader.Add_line());
-		ViewLineBylineObjects.SettingClientRate("3000");
-		ViewLineBylineObjects.settingBuyingRate("2000");
-		ViewLineBylineObjects.changeReason("Creating AA for Testing Reason");
-		ViewLineBylineObjects.updateAA();
-
-		// Back to View line by line page
-		FrameHelper.switchTodefault();
-		ViewLineBylineObjects.getAA_no();
-		assertNotNull(ViewLineBylineObjects.verifygetAA_no(), "AA number should not be null!");
-		driver.close();
-		pop.switchToParentWindow(driver);
-		
-//		ScheduleObjects.getMOnumber();
-//		assertNotNull(ScheduleObjects.MOnumber(), "MO number should not be null!");
-//		ScheduleObjects.clickOnMOnumber();
-//		pop.switchToChildWindow(driver);		
-		
+	/**
+	 * 
+	 * @throws InterruptedException
+	 * @toggle value =True or False
+	 * @true will run Insertion detail hyper link pop-up to update placement line
+	 * @false will run Pencil edit to update placement line
+	 */
+	@Parameters("isEditMO")
+	@Test(dependsOnMethods = { "Digital_Schedule" }, description = "Performing operation on view line by line page")
+	public void view_line_by_line(boolean isEditMO) throws InterruptedException {
+		log.info("Value has set as "+ isEditMO);
+		toggle_pencilEditAndEditMO(isEditMO); // true = Insertion Hyperlink popup & False= Pencil edit icon
 	}
-	
-	@Test(dependsOnMethods =  {"view_line_by_line" }, description = "View MO page")
-	public void viewMOpage() {
+
+	@Test(dependsOnMethods = { "view_line_by_line" }, description = "View MO page")
+	public void viewMOpage() throws InterruptedException {
 
 		String filePath = ResourceHelper.getMONumber();
 		FileUtil fileUtil = new FileUtil(filePath);
-		
+
 		FrameHelper.switchTodefault();
 		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
-		
+
 		ScheduleObjects.getMOnumber();
 		assertNotNull(ScheduleObjects.MOnumber(), "MO number should not be null!");
 		ScheduleObjects.clickOnMOnumber();
-		pop.switchToChildWindow(driver);	
-		
-		
+		pop.switchToChildWindow(driver);
+
 		try {
 
 			String data = fileUtil.readAllTextFromFile();
@@ -144,9 +110,70 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 			Assert.fail("Failed to read MO number number file.");
 		}
 		
-		
+		ScheduleObjects.moPage_moStatus();
+
 	}
 	
+	
+	
+	
+	
 
+	/*
+	 * Performing operation on view line by line page for creating AA Created
+	 * Separate method to handle pencil edit and edit Media order Pop-up
+	 */
 
+	private void toggle_pencilEditAndEditMO(boolean isEditMO) throws InterruptedException {
+
+		String filePath = ResourceHelper.getScheduleNo();
+		FileUtil fileUtil = new FileUtil(filePath);
+
+		// Click on view line by line
+		ViewLineBylineObjects.clickOnViewLineBylineBtn();
+		pop.switchToChildWindow(driver);
+
+		try {
+			String data = fileUtil.readAllTextFromFile();
+			log.info("Data read from file:\n" + data);
+			ViewLineBylineObjects.verifyRedirectToViewLineByLine(data);
+		} catch (IOException e) {
+			log.error("File not found : " + e.getMessage());
+			Assert.fail("Failed to read schedule number file.");
+		}
+
+		if (isEditMO) {
+			// Edit MO case
+			ViewLineBylineObjects.clientInvoiceRemark_btn();
+			ViewLineBylineObjects.clientInvoiceRemark_PopUp();
+			ViewLineBylineObjects.clientInvoiceRemarkText();
+			ViewLineBylineObjects.clientInvoiceRemark_SaveBtn();
+			ViewLineBylineObjects.insertionDetail();
+			log.info("Clicking on insertion hyperlink");
+			FrameHelper.switchToFrame(ObjectReader.reader.Add_line());
+			MenuObjects.Entering_Digital_Spots("3500");
+			ViewLineBylineObjects.changeReason("Creating AA for Testing Reason");
+		} else {
+			// Pencil Edit case
+			ViewLineBylineObjects.clientInvoiceRemark_btn();
+			ViewLineBylineObjects.clientInvoiceRemark_PopUp();
+			ViewLineBylineObjects.clientInvoiceRemarkText();
+			ViewLineBylineObjects.clientInvoiceRemark_SaveBtn();
+			ViewLineBylineObjects.pencilEdit();
+			log.info("Clicking on Pencil edit icon");
+			FrameHelper.switchToFrame(ObjectReader.reader.Add_line());
+			ViewLineBylineObjects.SettingClientRate("3000");
+			ViewLineBylineObjects.settingBuyingRate("2000");
+			ViewLineBylineObjects.changeReason("Creating AA for Testing Reason");
+		}
+
+		ViewLineBylineObjects.updateAA();
+
+		// Back to View line by line page
+		FrameHelper.switchTodefault();
+		ViewLineBylineObjects.getAA_no();
+		assertNotNull(ViewLineBylineObjects.verifygetAA_no(), "AA number should not be null!");
+		driver.close();
+		pop.switchToParentWindow(driver);
+	}
 }

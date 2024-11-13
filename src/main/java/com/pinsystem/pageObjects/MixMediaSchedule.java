@@ -229,7 +229,7 @@ public class MixMediaSchedule {
 		Mo.Proceed_btn();
 		dh.selectUsingValue(Mo.Adtype_Digital(), "9151");
 		Mo.set_Description_d("Digital Placement");
-		Mo.Entering_Digital_Spots();
+		Mo.Entering_Digital_Spots("2000");
 		Mo.Placement_line_add();
 		// fh.switchTodefault();
 

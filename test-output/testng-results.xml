@@ -1,129 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-12T10:50:26 IST" name="Default suite" finished-at="2024-11-12T10:58:10 IST" duration-ms="464154">
+  <suite started-at="2024-11-12T17:45:56 IST" name="Default suite" finished-at="2024-11-12T17:47:14 IST" duration-ms="78539">
     <groups>
     </groups>
-    <test started-at="2024-11-12T10:50:26 IST" name="Default test" finished-at="2024-11-12T10:58:10 IST" duration-ms="464154">
-      <class name="com.pinsystem.Digital_Campaign_scheduleTestCase">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:50:25 IST" name="beforeSuite" finished-at="2024-11-12T10:50:26 IST" duration-ms="725" status="PASS">
+    <test started-at="2024-11-12T17:45:56 IST" name="Default test" finished-at="2024-11-12T17:47:14 IST" duration-ms="78539">
+      <class name="com.pinsystem.ForTesting2">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pinsystem.ForTesting2@214894fc]" started-at="2024-11-12T17:45:55 IST" name="beforeSuite" finished-at="2024-11-12T17:45:56 IST" duration-ms="505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:50:26 IST" name="BeforeClass" finished-at="2024-11-12T10:50:39 IST" duration-ms="12900" status="PASS">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.ForTesting2@214894fc]" started-at="2024-11-12T17:45:56 IST" name="BeforeClass" finished-at="2024-11-12T17:46:05 IST" duration-ms="9045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:50:39 IST" name="beforeMethod" finished-at="2024-11-12T10:50:39 IST" duration-ms="24" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.ForTesting2@214894fc]" started-at="2024-11-12T17:46:05 IST" name="beforeMethod" finished-at="2024-11-12T17:46:05 IST" duration-ms="24" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pinsystem.Digital_Campaign_scheduleTestCase.digital_campaign() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.pinsystem.ForTesting2.digital_invoice() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="digital_campaign()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:50:39 IST" name="digital_campaign" description="Digital Campaign" finished-at="2024-11-12T10:52:16 IST" duration-ms="97542" status="PASS">
+        <test-method signature="digital_invoice()[pri:0, instance:com.pinsystem.ForTesting2@214894fc]" started-at="2024-11-12T17:46:05 IST" name="digital_invoice" description="Creating Invoice" finished-at="2024-11-12T17:47:11 IST" duration-ms="65652" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- digital_campaign -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:52:16 IST" name="afterMethod" finished-at="2024-11-12T10:52:17 IST" duration-ms="336" status="PASS">
+        </test-method> <!-- digital_invoice -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.ForTesting2@214894fc]" started-at="2024-11-12T17:47:11 IST" name="afterMethod" finished-at="2024-11-12T17:47:11 IST" duration-ms="226" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=digital_campaign status=SUCCESS method=Digital_Campaign_scheduleTestCase.digital_campaign()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db] output={null}]]]>
+                <![CDATA[[TestResult name=digital_invoice status=SUCCESS method=ForTesting2.digital_invoice()[pri:0, instance:com.pinsystem.ForTesting2@214894fc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:52:17 IST" name="beforeMethod" finished-at="2024-11-12T10:52:17 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.pinsystem.Digital_Campaign_scheduleTestCase.Digital_Schedule() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="Digital_Schedule()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:52:17 IST" name="Digital_Schedule" description="Digital Schedule" finished-at="2024-11-12T10:55:56 IST" depends-on-methods="com.pinsystem.Digital_Campaign_scheduleTestCase.digital_campaign" duration-ms="219388" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Digital_Schedule -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:55:56 IST" name="afterMethod" finished-at="2024-11-12T10:55:56 IST" duration-ms="237" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Digital_Schedule status=SUCCESS method=Digital_Campaign_scheduleTestCase.Digital_Schedule()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:55:56 IST" name="beforeMethod" finished-at="2024-11-12T10:55:56 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.pinsystem.Digital_Campaign_scheduleTestCase.view_line_by_line() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="view_line_by_line()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:55:56 IST" name="view_line_by_line" description=" Performing operation on view line by line page" finished-at="2024-11-12T10:57:57 IST" depends-on-methods="com.pinsystem.Digital_Campaign_scheduleTestCase.Digital_Schedule" duration-ms="120995" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- view_line_by_line -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:57:57 IST" name="afterMethod" finished-at="2024-11-12T10:57:58 IST" duration-ms="923" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=view_line_by_line status=SUCCESS method=Digital_Campaign_scheduleTestCase.view_line_by_line()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:57:58 IST" name="beforeMethod" finished-at="2024-11-12T10:57:58 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.pinsystem.Digital_Campaign_scheduleTestCase.viewMOpage()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="viewMOpage()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:57:58 IST" name="viewMOpage" description="View MO page" finished-at="2024-11-12T10:58:00 IST" depends-on-methods="com.pinsystem.Digital_Campaign_scheduleTestCase.view_line_by_line" duration-ms="1922" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- viewMOpage -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:58:00 IST" name="afterMethod" finished-at="2024-11-12T10:58:01 IST" duration-ms="597" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=viewMOpage status=SUCCESS method=Digital_Campaign_scheduleTestCase.viewMOpage()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@2899a8db]" started-at="2024-11-12T10:58:01 IST" name="afterClass" finished-at="2024-11-12T10:58:10 IST" duration-ms="9113" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.ForTesting2@214894fc]" started-at="2024-11-12T17:47:11 IST" name="afterClass" finished-at="2024-11-12T17:47:14 IST" duration-ms="3486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.pinsystem.Digital_Campaign_scheduleTestCase -->
+      </class> <!-- com.pinsystem.ForTesting2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

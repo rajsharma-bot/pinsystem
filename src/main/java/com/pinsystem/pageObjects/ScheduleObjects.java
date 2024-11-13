@@ -1,10 +1,11 @@
 package com.pinsystem.pageObjects;
 
+import static org.testng.Assert.assertEquals;
+
 import java.time.Duration;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -39,6 +40,8 @@ public class ScheduleObjects {
 		}
 	}
 
+
+	
 	private WebElement waitForElementToBeClickable(By locator) {
 		try {
 			return wait.until(ExpectedConditions.elementToBeClickable(locator));
@@ -212,6 +215,19 @@ public class ScheduleObjects {
 		}else {
 			log.info("unable to fetch MO number");
 		}	
+		
+	}
+	
+	public void moPage_moStatus() {
+		log.info("verifying MO status");	
+		String status =driver.findElement(SchedulePageObjects.viewMOPageStatus).getText();
+		if(status.contains("Confirmed")){
+			log.info(status);
+			assertEquals(status, "Confirmed");
+		}
+		else {
+			log.info("MO status doesn't matches");
+		}
 		
 	}
 	
