@@ -15,7 +15,6 @@ public class SearchRecords extends TestBase {
 		LoginClass lc = new LoginClass(driver);
 		log.info("Runner has been invoked");
 		lc.loginRunner();
-		FrameHelper.switchToFrame(ObjectReader.reader.topframe());
 		HomeNavigationObjects.MEDIA();
 		log.info("Media has been cliked");
 		FrameHelper.switchTodefault();

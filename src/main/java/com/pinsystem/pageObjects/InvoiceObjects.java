@@ -56,12 +56,6 @@ public class InvoiceObjects {
 	public void createInvoice() throws InterruptedException {
 		Thread.sleep(30000);
 		driver.findElement(InvoicePageObjects.Create_Invoice).click();
-//		if (driver.switchTo().alert() != null) {
-//			driver.switchTo().alert().accept();
-//			selectAll_CheckBox();	
-//		}else {
-//			System.out.println("Issue with selecting checkbox");
-//		}
 	}
 
 	public WebElement Search_DDL() {

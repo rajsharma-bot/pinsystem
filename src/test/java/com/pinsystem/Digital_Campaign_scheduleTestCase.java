@@ -72,12 +72,11 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 	}
 
 	/**
-	 * 
-	 * @throws InterruptedException
 	 * @toggle value =True or False
 	 * @true will run Insertion detail hyper link pop-up to update placement line
 	 * @false will run Pencil edit to update placement line
 	 */
+	
 	@Parameters("isEditMO")
 	@Test(dependsOnMethods = { "Digital_Schedule" }, description = "Performing operation on view line by line page")
 	public void view_line_by_line(boolean isEditMO) throws InterruptedException {

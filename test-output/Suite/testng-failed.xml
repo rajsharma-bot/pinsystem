@@ -4,19 +4,40 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="isEditMO" value="false"/>
     <classes>
-      <class name="com.pinsystem.Digital_Campaign_scheduleTestCase">
+      <class name="com.pinsystem.NavigateToCampaignMenuTabs">
         <methods>
-          <include name="digital_campaign"/>
+          <include name="navigateTo_ListAA"/>
+          <include name="navigateTo_ListMO"/>
           <include name="BeforeClass"/>
           <include name="beforeMethod"/>
-          <include name="Digital_Schedule"/>
+          <include name="navigateToListScheduleTab"/>
           <include name="beforeSuite"/>
-          <include name="viewMOpage"/>
-          <include name="view_line_by_line" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="NavigationToListCampaignAllTabs"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.pinsystem.NavigateToCampaignMenuTabs -->
+      <class name="com.pinsystem.SearchRecords">
+        <methods>
+          <include name="BeforeClass"/>
+          <include name="searchSchedule"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
           <include name="afterClass"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.pinsystem.Digital_Campaign_scheduleTestCase -->
+      </class> <!-- com.pinsystem.SearchRecords -->
+      <class name="com.pinsystem.New_Campaign">
+        <methods>
+          <include name="BeforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="new_Schedule"/>
+          <include name="afterClass"/>
+          <include name="new_Campaign"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.pinsystem.New_Campaign -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

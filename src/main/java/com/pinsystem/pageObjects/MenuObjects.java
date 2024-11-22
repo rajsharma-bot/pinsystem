@@ -2,6 +2,8 @@ package com.pinsystem.pageObjects;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Collections;
+
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -472,18 +474,36 @@ public class MenuObjects {
 		}
 	}
 
+//	public void Entering_Spots() {
+//		WebElement parentElement = driver.findElement(MenuPageObjects.divCalendar);
+//		List<WebElement> childElements = parentElement.findElements(MenuPageObjects.txt_Spot);
+//
+//		// Iterate through each text box element and send keys
+//		for (WebElement txt_spots : childElements) {
+//
+//			txt_spots.click();
+//			txt_spots.sendKeys("1");
+//			txt_spots.sendKeys(Keys.TAB);
+//		}
+//
+//	}
+//	
 	public void Entering_Spots() {
-		WebElement parentElement = driver.findElement(MenuPageObjects.divCalendar);
-		List<WebElement> childElements = parentElement.findElements(MenuPageObjects.txt_Spot);
+	    WebElement parentElement = driver.findElement(MenuPageObjects.divCalendar);
+	    List<WebElement> childElements = parentElement.findElements(MenuPageObjects.txt_Spot);
 
-		// Iterate through each text box element and send keys
-		for (WebElement txt_spots : childElements) {
+	    // Shuffle the list to randomize the order
+	    Collections.shuffle(childElements);
 
-			txt_spots.click();
-			txt_spots.sendKeys("1");
-			txt_spots.sendKeys(Keys.TAB);
-		}
+	    // Select the first 10 text boxes from the shuffled list
+	    List<WebElement> selectedTextBoxes = childElements.subList(0, Math.min(10, childElements.size()));
 
+	    // Iterate through the selected text boxes and send keys
+	    for (WebElement txt_spots : selectedTextBoxes) {
+	        txt_spots.click();
+	        txt_spots.sendKeys("1");
+	        txt_spots.sendKeys(Keys.TAB);
+	    }
 	}
 
 	public void Daily_Budget(String budget) {

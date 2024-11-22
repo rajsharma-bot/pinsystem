@@ -3,19 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pinsystem.Digital_Campaign_scheduleTestCase">
+      <class name="com.pinsystem.New_Campaign">
         <methods>
-          <include name="digital_campaign"/>
           <include name="BeforeClass"/>
           <include name="beforeMethod"/>
-          <include name="Digital_Schedule"/>
           <include name="beforeSuite"/>
-          <include name="view_line_by_line"/>
-          <include name="viewMOpage"/>
-          <include name="afterClass"/>
+          <include name="new_Schedule"/>
+          <include name="new_Campaign"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.pinsystem.Digital_Campaign_scheduleTestCase -->
+      </class> <!-- com.pinsystem.New_Campaign -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

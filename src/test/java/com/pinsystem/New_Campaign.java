@@ -17,7 +17,6 @@ public class New_Campaign extends TestBase {
 		LoginClass lc = new LoginClass(driver);
 		log.info("Login runner has been invoked");
 		lc.loginRunner();
-		FrameHelper.switchToFrame(ObjectReader.reader.topframe());
 		HomeNavigationObjects.MEDIA();
 		FrameHelper.switchTodefault();
 		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());

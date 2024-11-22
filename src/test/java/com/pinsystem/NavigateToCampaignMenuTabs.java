@@ -15,7 +15,6 @@ public class NavigateToCampaignMenuTabs extends TestBase {
 	public void NavigationToListCampaignAllTabs() throws IOException, InterruptedException {
 		LoginClass lc= new LoginClass(driver);
 		lc.loginRunner();
-		FrameHelper.switchToFrame(ObjectReader.reader.topframe());
 		HomeNavigationObjects.MEDIA();
 		Assert.assertEquals(true, HomeNavigationObjects.MEDIA(ObjectReader.reader.MEDIA()));
 		FrameHelper.switchTodefault();

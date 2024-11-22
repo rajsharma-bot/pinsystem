@@ -31,37 +31,37 @@ public class MixMediaSchedule {
 		dh.selectUsingVisibleText(Mo.mediaType(), "Cinema");
 		Mo.searchTitle("Cathay Cineplex");
 		Mo.checkBox();
-		Thread.sleep(500);
+		Thread.sleep(1000);
 
 		dh.selectUsingVisibleText(Mo.mediaType(), "Magazine");
 		Mo.searchTitle("3C Digital");
 		Mo.checkBox();
-		Thread.sleep(500);
+		Thread.sleep(1000);
 
 		dh.selectUsingVisibleText(Mo.mediaType(), "Newspaper");
-		Mo.searchTitle("Adstream Cost");
+		Mo.searchTitle("CTSJ Newspaper");
 		Mo.checkBox();
-		Thread.sleep(500);
+		Thread.sleep(1000);
 
 		dh.selectUsingVisibleText(Mo.mediaType(), "Others");
 		Mo.searchTitle("Aducation Media");
 		Mo.checkBox();
-		Thread.sleep(500);
+		Thread.sleep(1000);
 
 		dh.selectUsingVisibleText(Mo.mediaType(), "Outdoor");
 		Mo.searchTitle("Ad-On-Bus");
 		Mo.checkBox();
-		Thread.sleep(500);
+		Thread.sleep(1000);
 
 		dh.selectUsingVisibleText(Mo.mediaType(), "Radio");
 		Mo.searchTitle("988 FM");
 		Mo.checkBox();
-		Thread.sleep(500);
+		Thread.sleep(1000);
 
 		dh.selectUsingVisibleText(Mo.mediaType(), "TV");
 		Mo.searchTitle("8TV");
 		Mo.checkBox();
-		Thread.sleep(500);
+		Thread.sleep(1000);
 
 	}
 
@@ -74,7 +74,13 @@ public class MixMediaSchedule {
 		dh.selectUsingVisibleText(Mo.mediaType(), "Digital");
 		Mo.searchTitle("Linkedin");
 		Mo.checkBox();
-		Thread.sleep(500);
+		Thread.sleep(1000);
+		//New
+//		Mo.searchTitle("Youtube");
+//		Mo.checkBox();
+//		Thread.sleep(1000);
+		//New
+		
 
 	}
 
@@ -94,12 +100,12 @@ public class MixMediaSchedule {
 		ObjectReader.reader = new PropertyReader();
 		MenuObjects Mo = new MenuObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
-		Thread.sleep(500);
+		Thread.sleep(10000);
 		dh.selectUsingValue(Mo.Vendor1(), "124|MYR|1.0000000|1|1|15|15|0"); // Cinema
 		log.info("vendor 1 has been passed");
 		dh.selectUsingValue(Mo.Vendor2(), "923|EUR|4.0000000|1|1|15|15|0"); // Magazine
 		log.info("vendor 2 has been passed");
-		dh.selectUsingValue(Mo.Vendor3(), "1435|MYR|1.0000000|1|1|0|0|0"); // Newspaper
+		dh.selectUsingValue(Mo.Vendor3(), "3353|USD|1.5000000|1|1|0|0|0"); // Newspaper
 		log.info("vendor 3 has been passed");
 		dh.selectUsingValue(Mo.Vendor4(), "108|MYR|1.0000000|1|1|15|15|0"); // outdoor
 		log.info("vendor 4 has been passed");

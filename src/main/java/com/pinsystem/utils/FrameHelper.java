@@ -42,7 +42,8 @@ private static Logger log = LogManager.getLogger(FrameHelper.class);
 	
 	public void switchTodefault() {
 		//log.info("Frame has been switched default or parent frame" );
-		driver.switchTo().defaultContent();
 		log.info("Frame has been switched default or parent frame" );
+		driver.switchTo().defaultContent();
+		
 	}
 }
