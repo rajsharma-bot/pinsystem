@@ -59,6 +59,7 @@ public class New_Campaign extends TestBase {
 		MixMediaSchedule.cinema_placement(); // Cinema_line added correctly
 		//mx.Magazine();
 		//mx.Newspaper();
+		//mx.Tv();
 
 	}
 
