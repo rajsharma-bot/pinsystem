@@ -97,7 +97,7 @@ public class TestBase {
 	}
 
 	
-//	@AfterClass
+	@AfterClass
 	public void afterClass() {
 	    if (driver != null) {
 	        driver.quit();  // Close the WebDriver

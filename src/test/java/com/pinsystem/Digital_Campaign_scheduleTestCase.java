@@ -60,7 +60,7 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 
 		ScheduleObjects.confirm_schedule();
 
-		// Creating MO and MO c
+		// Creating MO and MO Confirm
 		ScheduleObjects.Create_MO_By_Vendor();
 		WaitHelper.waitForElementVisibility(ScheduleObjects.MO_number(), 30);
 		ScheduleObjects.Select_checkBox();

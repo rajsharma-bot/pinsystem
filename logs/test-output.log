@@ -1,0 +1,53 @@
+[INFO ] 2024-12-10 11:50:47.921 [main] WebDriverManager - Using chromedriver 131.0.6778.87 (resolved driver for Chrome 131)
+[INFO ] 2024-12-10 11:50:48.135 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\131.0.6778.87\chromedriver.exe
+[INFO ] 2024-12-10 11:50:53.628 [main] TestBase - Initialize Web driver: 1589640004
+[INFO ] 2024-12-10 11:50:53.635 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-12-10 11:50:53.664 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-12-10 11:50:53.678 [main] WaitHelper - page is loaded
+[INFO ] 2024-12-10 11:50:55.942 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-10 11:50:56.024 [main] TestBase - **************digital_campaign Started ***************
+[INFO ] 2024-12-10 11:50:56.049 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-12-10 11:50:56.074 [main] Digital_Campaign_scheduleTestCase - Login runner has been invoked
+[INFO ] 2024-12-10 11:50:56.081 [main] LoginClass - Login Runner has been invoke
+[INFO ] 2024-12-10 11:50:57.372 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-12-10 11:50:57.913 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-12-10 11:50:57.914 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-12-10 11:51:01.062 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-12-10 11:51:31.188 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-12-10 11:51:31.515 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-12-10 11:51:31.516 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-10 11:51:31.594 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-12-10 11:51:31.595 [main] MenuObjects - New Campaign has been clicked
+[INFO ] 2024-12-10 11:51:32.001 [main] MenuObjects - Click on New Schedule button clicked successfully.
+[INFO ] 2024-12-10 11:51:32.001 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-10 11:51:32.987 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-10 11:51:34.051 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
+[INFO ] 2024-12-10 11:51:35.235 [main] DropDownHelper - selectUsingValue and value is: 50222
+[INFO ] 2024-12-10 11:51:36.560 [main] MenuObjects - Text '01/01/2024' entered in Passing Start Date
+[INFO ] 2024-12-10 11:51:37.789 [main] MenuObjects - Text '31/03/2024' entered in Passing End Date
+[INFO ] 2024-12-10 11:51:38.831 [main] DropDownHelper - selectUsingValue and value is: 11491
+[INFO ] 2024-12-10 11:51:39.969 [main] DropDownHelper - selectUsingValue and value is: 1047
+[INFO ] 2024-12-10 11:51:40.058 [main] MenuObjects - Passing Campaign Name
+[INFO ] 2024-12-10 11:51:40.228 [main] MenuObjects - Text 'Digital Record' entered in Passing Campaign name has been passed
+[INFO ] 2024-12-10 11:51:40.229 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-10 11:51:42.282 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Digital
+[INFO ] 2024-12-10 11:51:42.631 [main] MenuObjects - Text 'Linkedin' entered in Searching media title
+[INFO ] 2024-12-10 11:51:45.950 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2024-12-10 11:51:46.988 [main] MenuObjects - Clicking on Save button
+[INFO ] 2024-12-10 11:51:47.296 [main] MenuObjects - Click on Save Only And View Campaign  clicked successfully.
+[INFO ] 2024-12-10 11:51:52.892 [main] MenuObjects - Campaign has been created
+[INFO ] 2024-12-10 11:51:52.946 [main] MenuObjects - B004/JSR/2400398
+[INFO ] 2024-12-10 11:51:53.368 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\digital_campaign_success_20241210_115153.png
+[INFO ] 2024-12-10 11:51:53.373 [main] TestBase - ************** digital_campaign Finished ***************
+[INFO ] 2024-12-10 11:51:53.382 [main] TestBase - **************Digital_Schedule Started ***************
+[INFO ] 2024-12-10 11:51:53.385 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-10 11:51:53.461 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-10 11:51:54.903 [main] MenuObjects - New schedule clicked successfully.
+[INFO ] 2024-12-10 11:51:54.904 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-10 11:51:54.983 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-10 11:51:54.984 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-10 11:51:57.307 [main] DropDownHelper - selectUsingVisibleText and visibleText is: MYR
+[INFO ] 2024-12-10 11:51:57.391 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-10 11:51:58.762 [main] MenuObjects - vendor has been passed
+[INFO ] 2024-12-10 11:51:58.788 [main] DropDownHelper - selectUsingValue and value is: 4640|MYR|1.0000000|1|1|0|0|0
+[INFO ] 2024-12-10 11:51:58.967 [main] MenuObjects - vendor 1 has been passed

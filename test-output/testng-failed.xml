@@ -9,6 +9,7 @@
           <include name="beforeMethod"/>
           <include name="beforeSuite"/>
           <include name="new_Schedule"/>
+          <include name="afterClass"/>
           <include name="new_Campaign"/>
           <include name="afterMethod"/>
         </methods>

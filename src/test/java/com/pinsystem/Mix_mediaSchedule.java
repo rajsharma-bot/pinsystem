@@ -1,14 +1,16 @@
 package com.pinsystem;
 
+import static org.testng.Assert.assertNotNull;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 import com.pinsystem.utils.ObjectReader;
 
-public class New_Campaign extends TestBase {
+public class Mix_mediaSchedule extends TestBase {
 
-	private static Logger log = LogManager.getLogger(New_Campaign.class);
+	private static Logger log = LogManager.getLogger(Mix_mediaSchedule.class);
 
 	@Test(description = "PINSYS-1808-New Campaign")
 	public void new_Campaign() throws InterruptedException {
@@ -70,8 +72,12 @@ public class New_Campaign extends TestBase {
 		
 		//Creating Auto Monthly MO
 		ScheduleObjects.createAutoMonthlyMO();
-		
-
+		WaitHelper.waitForElementVisibility(ScheduleObjects.MO_number(), 30);
+		ScheduleObjects.Select_checkBox();
+		ScheduleObjects.Confirm_mo();
+		ScheduleObjects.MO_status();
+		ScheduleObjects.getScheduleCode();
+		assertNotNull(ScheduleObjects.verifyScheduleNo(), "Schedule number should not be null!");		
 	}
 
 }

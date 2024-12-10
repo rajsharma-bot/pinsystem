@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-09T18:15:22 IST" name="Default suite" finished-at="2024-12-09T18:19:20 IST" duration-ms="238022">
+  <suite started-at="2024-12-10T11:37:03 IST" name="Default suite" finished-at="2024-12-10T11:46:48 IST" duration-ms="584968">
     <groups>
     </groups>
-    <test started-at="2024-12-09T18:15:22 IST" name="Default test" finished-at="2024-12-09T18:19:20 IST" duration-ms="238022">
+    <test started-at="2024-12-10T11:37:03 IST" name="Default test" finished-at="2024-12-10T11:46:48 IST" duration-ms="584968">
       <class name="com.pinsystem.New_Campaign">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pinsystem.New_Campaign@1c4ee95c]" started-at="2024-12-09T18:15:22 IST" name="beforeSuite" finished-at="2024-12-09T18:15:22 IST" duration-ms="753" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pinsystem.New_Campaign@79c4715d]" started-at="2024-12-10T11:37:02 IST" name="beforeSuite" finished-at="2024-12-10T11:37:03 IST" duration-ms="679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.New_Campaign@1c4ee95c]" started-at="2024-12-09T18:15:23 IST" name="BeforeClass" finished-at="2024-12-09T18:15:37 IST" duration-ms="14129" status="PASS">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.New_Campaign@79c4715d]" started-at="2024-12-10T11:37:03 IST" name="BeforeClass" finished-at="2024-12-10T11:37:14 IST" duration-ms="10525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.New_Campaign@1c4ee95c]" started-at="2024-12-09T18:15:37 IST" name="beforeMethod" finished-at="2024-12-09T18:15:37 IST" duration-ms="29" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.New_Campaign@79c4715d]" started-at="2024-12-10T11:37:14 IST" name="beforeMethod" finished-at="2024-12-10T11:37:14 IST" duration-ms="33" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,22 +26,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="new_Campaign()[pri:0, instance:com.pinsystem.New_Campaign@1c4ee95c]" started-at="2024-12-09T18:15:37 IST" name="new_Campaign" description="PINSYS-1808-New Campaign" finished-at="2024-12-09T18:17:57 IST" duration-ms="139760" status="PASS">
+        <test-method signature="new_Campaign()[pri:0, instance:com.pinsystem.New_Campaign@79c4715d]" started-at="2024-12-10T11:37:14 IST" name="new_Campaign" description="PINSYS-1808-New Campaign" finished-at="2024-12-10T11:39:21 IST" duration-ms="127214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- new_Campaign -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.New_Campaign@1c4ee95c]" started-at="2024-12-09T18:17:57 IST" name="afterMethod" finished-at="2024-12-09T18:17:57 IST" duration-ms="405" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.New_Campaign@79c4715d]" started-at="2024-12-10T11:39:21 IST" name="afterMethod" finished-at="2024-12-10T11:39:21 IST" duration-ms="300" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=new_Campaign status=SUCCESS method=New_Campaign.new_Campaign()[pri:0, instance:com.pinsystem.New_Campaign@1c4ee95c] output={null}]]]>
+                <![CDATA[[TestResult name=new_Campaign status=SUCCESS method=New_Campaign.new_Campaign()[pri:0, instance:com.pinsystem.New_Campaign@79c4715d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.New_Campaign@1c4ee95c]" started-at="2024-12-09T18:17:57 IST" name="beforeMethod" finished-at="2024-12-09T18:17:57 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.New_Campaign@79c4715d]" started-at="2024-12-10T11:39:21 IST" name="beforeMethod" finished-at="2024-12-10T11:39:21 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,88 +52,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="new_Schedule()[pri:0, instance:com.pinsystem.New_Campaign@1c4ee95c]" started-at="2024-12-09T18:17:57 IST" name="new_Schedule" description="PINSYS-1813:: New Schedule(New layout)" finished-at="2024-12-09T18:19:20 IST" depends-on-methods="com.pinsystem.New_Campaign.new_Campaign" duration-ms="83240" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='popEditMediaSchedule_PW-1']"}
-  (Session info: chrome=131.0.6778.86)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f84de865f086575577e9e5c94a86be7, findElement {using=xpath, value=//div[@id='popEditMediaSchedule_PW-1']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65333}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65333/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f84de865f086575577e9e5c94a86be7]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='popEditMediaSchedule_PW-1']"}
-  (Session info: chrome=131.0.6778.86)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8f84de865f086575577e9e5c94a86be7, findElement {using=xpath, value=//div[@id='popEditMediaSchedule_PW-1']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.87 (ce31cae94873..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65333}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65333/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8f84de865f086575577e9e5c94a86be7
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at com.pinsystem.pageObjects.MenuObjects.editMedia_popUp(MenuObjects.java:598)
-at com.pinsystem.New_Campaign.new_Schedule(New_Campaign.java:54)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="new_Schedule()[pri:0, instance:com.pinsystem.New_Campaign@79c4715d]" started-at="2024-12-10T11:39:21 IST" name="new_Schedule" description="PINSYS-1813:: New Schedule(New layout)" finished-at="2024-12-10T11:46:41 IST" depends-on-methods="com.pinsystem.New_Campaign.new_Campaign" duration-ms="439951" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- new_Schedule -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.New_Campaign@1c4ee95c]" started-at="2024-12-09T18:19:20 IST" name="afterMethod" finished-at="2024-12-09T18:19:20 IST" duration-ms="310" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.New_Campaign@79c4715d]" started-at="2024-12-10T11:46:41 IST" name="afterMethod" finished-at="2024-12-10T11:46:42 IST" duration-ms="402" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=new_Schedule status=FAILURE method=New_Campaign.new_Schedule()[pri:0, instance:com.pinsystem.New_Campaign@1c4ee95c] output={null}]]]>
+                <![CDATA[[TestResult name=new_Schedule status=SUCCESS method=New_Campaign.new_Schedule()[pri:0, instance:com.pinsystem.New_Campaign@79c4715d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.New_Campaign@79c4715d]" started-at="2024-12-10T11:46:42 IST" name="afterClass" finished-at="2024-12-10T11:46:48 IST" duration-ms="6403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
       </class> <!-- com.pinsystem.New_Campaign -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
