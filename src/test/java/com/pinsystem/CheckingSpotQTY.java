@@ -45,7 +45,6 @@ String Url="https://devbr.pinsystem.com/MediaSchedule.aspx?Id=S6CBAm3ssPAl7Ul1d1
 //            textBox.sendKeys(Keys.TAB);
 //        }
 
-		mx.cinema_placement();
 		
 
 		driver.quit();

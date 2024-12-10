@@ -110,6 +110,23 @@ public class ScheduleObjects {
 		}
 
 	}
+	
+	
+	public void createAutoMonthlyMO() throws InterruptedException {
+		driver.findElement(SchedulePageObjects.createAutoMonthly_MO).click();
+		driver.switchTo().alert().accept();
+		log.info("Create Mo by vendor button has been clicked");
+		Thread.sleep(30000);
+		if (driver.findElement(MenuPageObjects.editMediaOrder_popup).isDisplayed() == true) {
+			driver.findElement(MenuPageObjects.Close_media_schedule).click();
+			log.info(true);
+			log.info("Pop-up is closed");
+		} else {
+			log.info("Edit Pop has been ignored");
+		}
+
+	}
+	
 
 	public WebElement MO_number() {
 		WebElement MO = driver.findElement(SchedulePageObjects.MO_created);

@@ -9,6 +9,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -346,18 +347,34 @@ public class MenuObjects {
 		Thread.sleep(3000);
 	}
 
+//	public boolean checkBox() throws InterruptedException {
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+//		// driver.findElement(MenuPageObjects.checkBox).click();
+//		clickElement(MenuPageObjects.checkBox, "Click on Save Only And View Campaign ");
+//
+//		if (driver.findElement(MenuPageObjects.checkBox).isDisplayed()) {
+//			log.info("true");
+//			return true;
+//		}
+//		return false;
+//	}
+
+	
+	
+	
 	public boolean checkBox() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		// driver.findElement(MenuPageObjects.checkBox).click();
-		clickElement(MenuPageObjects.checkBox, "Click on Save Only And View Campaign ");
-
-		if (driver.findElement(MenuPageObjects.checkBox).isDisplayed()) {
-			log.info("true");
-			return true;
-		}
-		return false;
+	    try {
+	        WebElement checkbox = driver.findElement(MenuPageObjects.checkBox);
+	        if (!checkbox.isSelected()) {
+	            clickElement(MenuPageObjects.checkBox, "Select Checkbox");
+	        }
+	        return checkbox.isDisplayed();
+	    } catch (NoSuchElementException e) {
+	        log.error("Checkbox not found", e);
+	        return false;
+	    }
 	}
-
+	
 	public void campaignCode() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		String filePath = ResourceHelper.getCampaignCode();
@@ -495,7 +512,7 @@ public class MenuObjects {
 	    // Shuffle the list to randomize the order
 	    Collections.shuffle(childElements);
 
-	    // Select the first 10 text boxes from the shuffled list
+	    // Select the first 20 text boxes from the shuffled list
 	    List<WebElement> selectedTextBoxes = childElements.subList(0, Math.min(10, childElements.size()));
 
 	    // Iterate through the selected text boxes and send keys

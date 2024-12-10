@@ -25,10 +25,8 @@ public class New_Campaign extends TestBase {
 		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 		DropDownHelper.selectUsingVisibleText(MenuObjects.clientDDL(), "1001 MEDIA SDN BHD | DUO1 MYR");
 		DropDownHelper.selectUsingValue(MenuObjects.soldToParty(), "50222");
-		//Mo.StartDate();
 		MenuObjects.StartDate("01/01/2024");
-		//Mo.EndDate();
-		MenuObjects.EndDate("31/01/2024");
+		MenuObjects.EndDate("31/03/2024");
 		DropDownHelper.selectUsingValue(MenuObjects.Product(), "11491");
 		DropDownHelper.selectUsingValue(MenuObjects.Contract(), "1047");
 		MenuObjects.CampaignName("For Testing");
@@ -39,6 +37,7 @@ public class New_Campaign extends TestBase {
 
 	@Test(dependsOnMethods = "new_Campaign", description = "PINSYS-1813:: New Schedule(New layout)")
 	public void new_Schedule() throws InterruptedException {
+		
 		FrameHelper.switchTodefault();
 		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 		MenuObjects.new_schedule();
@@ -46,7 +45,7 @@ public class New_Campaign extends TestBase {
 		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 		MixMediaSchedule.selectVendorCurreny();
 		Thread.sleep(1000);
-		MixMediaSchedule.selecMultipleVendors();
+		MixMediaSchedule.selectMultipleVendors();
 		Thread.sleep(1000);
 		MenuObjects.Schedule_Grid();
 		Thread.sleep(1000);
@@ -56,10 +55,22 @@ public class New_Campaign extends TestBase {
 		FrameHelper.switchTodefault();
 		Thread.sleep(1000);
 		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
-		MixMediaSchedule.cinema_placement(); // Cinema_line added correctly
-		//mx.Magazine();
-		//mx.Newspaper();
-		//mx.Tv();
+		
+		//adding placement line of all media types in one schedule or adding placement in mix media schedule
+		MixMediaSchedule.cinemaPlacement();
+		MixMediaSchedule.magazinePlacement();
+		MixMediaSchedule.newspaperPlacement();
+		MixMediaSchedule.outdoorPlacement();
+		MixMediaSchedule.otherPlacement();
+		MixMediaSchedule.radioPlacement();
+		MixMediaSchedule.tvPlacement();
+		
+		//Schedule confirm 
+		ScheduleObjects.confirm_schedule();
+		
+		//Creating Auto Monthly MO
+		ScheduleObjects.createAutoMonthlyMO();
+		
 
 	}
 

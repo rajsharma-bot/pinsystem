@@ -12,6 +12,7 @@ public class SchedulePageObjects {
 	public static final By confirm_mo_checkBox= By.id("gvMoDetail_header0_cbPage_S_D");//Seleting all checkbox
 	public static final By Confirm_mo= By.xpath("//input[@id='btnConfirmMO']");
 	public static By mo_status= By.xpath("//tr[@id='gvMoDetail_DXDataRow0']//td[@class='dxgv'][normalize-space()='Confirm']");
+	public static final By createAutoMonthly_MO=By.xpath("//input[@id='btnCreateAutoMonthlyMO']");
 	
 	// Schedule MO
 	

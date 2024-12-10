@@ -1,10 +1,15 @@
 package com.pinsystem.pageObjects;
 
+import java.time.Duration;
+import java.util.Map;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pinsystem.utils.DropDownHelper;
 import com.pinsystem.utils.FrameHelper;
@@ -17,52 +22,39 @@ public class MixMediaSchedule {
 	private static Logger log = LogManager.getLogger(MenuObjects.class);
 
 	WebDriver driver;
+	WebDriverWait wait;
 
 	public MixMediaSchedule(WebDriver driver) {
 		this.driver = driver;
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(30)); //// global WebDriverWait
 	}
 
 	public void selectMultipleMediaTypes() throws InterruptedException {
 		ObjectReader.reader = new PropertyReader();
-		// FrameHelper fh = new FrameHelper(driver);
 		MenuObjects Mo = new MenuObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
 
-		dh.selectUsingVisibleText(Mo.mediaType(), "Cinema");
-		Mo.searchTitle("Cathay Cineplex");
-		Mo.checkBox();
-		Thread.sleep(1000);
+		// Map of media types and corresponding search titles
+		Map<String, String> mediaTypeTitleMap = Map.of("Cinema", "Cathay Cineplex", "Magazine", "3C Digital",
+				"Newspaper", "CTSJ Newspaper", "Others", "Aducation Media", "Outdoor", "Ad-On-Bus", "Radio", "988 FM",
+				"TV", "8TV");
 
-		dh.selectUsingVisibleText(Mo.mediaType(), "Magazine");
-		Mo.searchTitle("3C Digital");
-		Mo.checkBox();
-		Thread.sleep(1000);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-		dh.selectUsingVisibleText(Mo.mediaType(), "Newspaper");
-		Mo.searchTitle("CTSJ Newspaper");
-		Mo.checkBox();
-		Thread.sleep(1000);
+		for (Map.Entry<String, String> entry : mediaTypeTitleMap.entrySet()) {
+			String mediaType = entry.getKey();
+			String title = entry.getValue();
 
-		dh.selectUsingVisibleText(Mo.mediaType(), "Others");
-		Mo.searchTitle("Aducation Media");
-		Mo.checkBox();
-		Thread.sleep(1000);
+			// Select the media type from the dropdown
+			dh.selectUsingVisibleText(Mo.mediaType(), mediaType);
 
-		dh.selectUsingVisibleText(Mo.mediaType(), "Outdoor");
-		Mo.searchTitle("Ad-On-Bus");
-		Mo.checkBox();
-		Thread.sleep(1000);
+			// Search for the title
+			Mo.searchTitle(title);
 
-		dh.selectUsingVisibleText(Mo.mediaType(), "Radio");
-		Mo.searchTitle("988 FM");
-		Mo.checkBox();
-		Thread.sleep(1000);
-
-		dh.selectUsingVisibleText(Mo.mediaType(), "TV");
-		Mo.searchTitle("8TV");
-		Mo.checkBox();
-		Thread.sleep(1000);
-
+			// Wait until the checkbox is clickable and then select it
+			Thread.sleep(5000);
+			Mo.checkBox();
+		}
 	}
 
 	public void digital_media() throws InterruptedException {
@@ -75,12 +67,11 @@ public class MixMediaSchedule {
 		Mo.searchTitle("Linkedin");
 		Mo.checkBox();
 		Thread.sleep(1000);
-		//New
+		// New
 //		Mo.searchTitle("Youtube");
 //		Mo.checkBox();
 //		Thread.sleep(1000);
-		//New
-		
+		// New
 
 	}
 
@@ -96,25 +87,33 @@ public class MixMediaSchedule {
 		dh.selectUsingVisibleText(Mo.vendorCurrency(), selectedValue);
 	}
 
-	public void selecMultipleVendors() throws InterruptedException {
+	public void selectMultipleVendors() throws InterruptedException {
 		ObjectReader.reader = new PropertyReader();
 		MenuObjects Mo = new MenuObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
-		Thread.sleep(10000);
-		dh.selectUsingValue(Mo.Vendor1(), "124|MYR|1.0000000|1|1|15|15|0"); // Cinema
-		log.info("vendor 1 has been passed");
-		dh.selectUsingValue(Mo.Vendor2(), "923|EUR|4.0000000|1|1|15|15|0"); // Magazine
-		log.info("vendor 2 has been passed");
-		dh.selectUsingValue(Mo.Vendor3(), "3353|USD|1.5000000|1|1|0|0|0"); // Newspaper
-		log.info("vendor 3 has been passed");
-		dh.selectUsingValue(Mo.Vendor4(), "108|MYR|1.0000000|1|1|15|15|0"); // outdoor
-		log.info("vendor 4 has been passed");
-		dh.selectUsingValue(Mo.Vendor5(), "2476|IDR|1.3000000|1|1|0|0|0"); // other
-		log.info("vendor 5 has been passed");
-		dh.selectUsingValue(Mo.Vendor6(), "14|MYR|1.0000000|1|1|15|15|0");// Radio
-		log.info("vendor 6 has been passed");
-		dh.selectUsingValue(Mo.Vendor7(), "177|MYR|1.0000000|1|1|0|0|0");// TV
-		log.info("vendor 7 has been passed");
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+		// Arrays for dropdowns and corresponding vendor names
+		WebElement[] dropdowns = { Mo.Vendor1(), Mo.Vendor2(), Mo.Vendor3(), Mo.Vendor4(), Mo.Vendor5(), Mo.Vendor6(),
+				Mo.Vendor7() };
+
+		String[] vendorNames = { "Digital Cinema Media Sdn Bhd", "MunSang Poh",
+				"Exponential Interactive Singapore Pte (USD)", "Ad-On-Bus Sdn Bhd", "APRILIS MAJU MEDIA",
+				"Adscreen Media Sdn Bhd", "CH-9 MEDIA SDN BHD" };
+
+		// Iterate over both arrays and perform actions
+		for (int i = 0; i < dropdowns.length; i++) {
+			try {
+				// Wait for dropdown to be clickable
+				wait.until(ExpectedConditions.elementToBeClickable(dropdowns[i]));
+				Thread.sleep(2000);
+				// Select vendor
+				dh.selectUsingVisibleText(dropdowns[i], vendorNames[i]);
+				log.info("Vendor " + (i + 1) + " (" + vendorNames[i] + ") has been passed");
+			} catch (Exception e) {
+				log.error("Failed to select vendor " + (i + 1) + ": " + vendorNames[i], e);
+			}
+		}
 	}
 
 	public void digital_vendor() throws InterruptedException {
@@ -125,14 +124,14 @@ public class MixMediaSchedule {
 
 	}
 
-	public void cinema_placement() throws InterruptedException {
+	public void cinemaPlacement() throws InterruptedException {
 		ObjectReader.reader = new PropertyReader();
 		MenuObjects Mo = new MenuObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
 		FrameHelper fh = new FrameHelper(driver);
 		Thread.sleep(2000);
 
-		fh.switchTodefault();
+		// fh.switchTodefault();
 		WaitHelper w = new WaitHelper(driver);
 		w.waitForElementVisibility(Mo.media_line(), 120);
 		Mo.Add_media_line();
@@ -144,11 +143,14 @@ public class MixMediaSchedule {
 		}
 
 		dh.selectUsingValue(Mo.pop_mediaType(), "657|C");
-		dh.selectUsingIndex(Mo.pop_vendor(), 1);
+		Thread.sleep(2000);
+		dh.selectUsingVisibleText(Mo.pop_vendor(), "Digital Cinema Media Sdn Bhd");
+		Thread.sleep(2000);
 		Mo.Proceed_btn();
 		fh.switchTodefault();
+		fh.switchToFrame(ObjectReader.reader.rightframe());
 		Thread.sleep(2000);
-
+		System.out.println("Going to select ad type");
 		fh.switchToFrame(ObjectReader.reader.Add_line());
 		dh.selectUsingValue(Mo.Adtype_Others(), "26275");
 		Mo.set_Description("Cinema Placement");
@@ -160,23 +162,32 @@ public class MixMediaSchedule {
 
 	}
 
-	public void Magazine() throws InterruptedException {
+	public void magazinePlacement() throws InterruptedException {
 		ObjectReader.reader = new PropertyReader();
 		MenuObjects Mo = new MenuObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
 		FrameHelper fh = new FrameHelper(driver);
-		Thread.sleep(2000);
+		Thread.sleep(10000);
+
+		fh.switchToFrame(ObjectReader.reader.rightframe());
 		WaitHelper w = new WaitHelper(driver);
 		w.waitForElementVisibility(Mo.media_line(), 120);
-
 		Mo.Add_media_line();
-		fh.switchToFrame(ObjectReader.reader.Add_line());
+		try {
+			fh.switchToFrame(ObjectReader.reader.Add_line());
+			log.info("Add line");
+		} catch (Exception e) {
+			log.info("Ignore");
+		}
+
 		dh.selectUsingValue(Mo.pop_mediaType(), "240|M");
-		dh.selectUsingIndex(Mo.pop_vendor(), 0);
+		Thread.sleep(2000);
+		dh.selectUsingVisibleText(Mo.pop_vendor(), "MunSang Poh");
+		Thread.sleep(2000);
 		Mo.Proceed_btn();
 		fh.switchTodefault();
+		fh.switchToFrame(ObjectReader.reader.rightframe());
 		Thread.sleep(2000);
-
 		fh.switchToFrame(ObjectReader.reader.Add_line());
 		dh.selectUsingValue(Mo.Adtype_magazine(), "26196");
 		Mo.set_Description_m("Magazine Placement");
@@ -185,29 +196,36 @@ public class MixMediaSchedule {
 		Mo.Entering_Spots();
 		Mo.Placement_line_add();
 		fh.switchTodefault();
-
 	}
 
-	public void Newspaper() throws InterruptedException {
+	public void newspaperPlacement() throws InterruptedException {
 
 		ObjectReader.reader = new PropertyReader();
 		MenuObjects Mo = new MenuObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
 		FrameHelper fh = new FrameHelper(driver);
-		Thread.sleep(2000);
+		Thread.sleep(10000);
+
+		fh.switchToFrame(ObjectReader.reader.rightframe());
 		WaitHelper w = new WaitHelper(driver);
 		w.waitForElementVisibility(Mo.media_line(), 120);
-
 		Mo.Add_media_line();
-		fh.switchToFrame(ObjectReader.reader.Add_line());
-		dh.selectUsingValue(Mo.pop_mediaType(), "3109|N");
-		dh.selectUsingIndex(Mo.pop_vendor(), 0);
+		try {
+			fh.switchToFrame(ObjectReader.reader.Add_line());
+			log.info("Add line");
+		} catch (Exception e) {
+			log.info("Ignore");
+		}
+		dh.selectUsingValue(Mo.pop_mediaType(), "4485|N");
+		Thread.sleep(2000);
+		dh.selectUsingVisibleText(Mo.pop_vendor(), "Exponential Interactive Singapore Pte (USD)");
+		Thread.sleep(2000);
 		Mo.Proceed_btn();
 		fh.switchTodefault();
+		fh.switchToFrame(ObjectReader.reader.rightframe());
 		Thread.sleep(2000);
-
 		fh.switchToFrame(ObjectReader.reader.Add_line());
-		dh.selectUsingValue(Mo.Adtype_newspaper(), "5623");
+		dh.selectUsingValue(Mo.Adtype_newspaper(), "9395");
 		Mo.newspaper_h("1");
 		Mo.newspaper_w("1");
 		Mo.set_Description_n("Newspaper Placement");
@@ -216,7 +234,6 @@ public class MixMediaSchedule {
 		Mo.Entering_Spots();
 		Mo.Placement_line_add();
 		fh.switchTodefault();
-
 	}
 
 	public void digital_placement() throws InterruptedException {
@@ -241,4 +258,157 @@ public class MixMediaSchedule {
 
 	}
 
+	public void outdoorPlacement() throws InterruptedException {
+		ObjectReader.reader = new PropertyReader();
+		MenuObjects Mo = new MenuObjects(driver);
+		DropDownHelper dh = new DropDownHelper(driver);
+		FrameHelper fh = new FrameHelper(driver);
+		Thread.sleep(10000);
+
+		fh.switchToFrame(ObjectReader.reader.rightframe());
+		WaitHelper w = new WaitHelper(driver);
+		w.waitForElementVisibility(Mo.media_line(), 120);
+		Mo.Add_media_line();
+		try {
+			fh.switchToFrame(ObjectReader.reader.Add_line());
+			log.info("Add line");
+		} catch (Exception e) {
+			log.info("Ignore");
+		}
+
+		dh.selectUsingValue(Mo.pop_mediaType(), "618|O");
+		Thread.sleep(2000);
+		dh.selectUsingVisibleText(Mo.pop_vendor(), "Ad-On-Bus Sdn Bhd");
+		Thread.sleep(2000);
+		Mo.Proceed_btn();
+		fh.switchTodefault();
+		fh.switchToFrame(ObjectReader.reader.rightframe());
+		Thread.sleep(2000);
+		System.out.println("Going to select ad type");
+		fh.switchToFrame(ObjectReader.reader.Add_line());
+		dh.selectUsingValue(Mo.Adtype_Others(), "26276");
+		Mo.set_Description("Outdoor Placement");
+		Mo.setClient_rate("400");
+		Mo.setVendor_rate("200");
+		Mo.Entering_Spots();
+		Mo.Placement_line_add();
+		fh.switchTodefault();
+
+	}
+
+	public void otherPlacement() throws InterruptedException {
+		ObjectReader.reader = new PropertyReader();
+		MenuObjects Mo = new MenuObjects(driver);
+		DropDownHelper dh = new DropDownHelper(driver);
+		FrameHelper fh = new FrameHelper(driver);
+		Thread.sleep(10000);
+
+		fh.switchToFrame(ObjectReader.reader.rightframe());
+		WaitHelper w = new WaitHelper(driver);
+		w.waitForElementVisibility(Mo.media_line(), 120);
+		Mo.Add_media_line();
+		try {
+			fh.switchToFrame(ObjectReader.reader.Add_line());
+			log.info("Add line");
+		} catch (Exception e) {
+			log.info("Ignore");
+		}
+
+		dh.selectUsingValue(Mo.pop_mediaType(), "4477|OT");
+		Thread.sleep(2000);
+		dh.selectUsingVisibleText(Mo.pop_vendor(), "APRILIS MAJU MEDIA");
+		Thread.sleep(2000);
+		Mo.Proceed_btn();
+		fh.switchTodefault();
+		fh.switchToFrame(ObjectReader.reader.rightframe());
+		Thread.sleep(2000);
+		System.out.println("Going to select ad type");
+		fh.switchToFrame(ObjectReader.reader.Add_line());
+		dh.selectUsingValue(Mo.Adtype_Others(), "9374");
+		Mo.set_Description("Other Placement");
+		Mo.setClient_rate("400");
+		Mo.setVendor_rate("200");
+		Mo.Entering_Spots();
+		Mo.Placement_line_add();
+		fh.switchTodefault();
+
+	}
+
+	public void radioPlacement() throws InterruptedException {
+		ObjectReader.reader = new PropertyReader();
+		MenuObjects Mo = new MenuObjects(driver);
+		DropDownHelper dh = new DropDownHelper(driver);
+		FrameHelper fh = new FrameHelper(driver);
+		Thread.sleep(10000);
+
+		fh.switchToFrame(ObjectReader.reader.rightframe());
+		WaitHelper w = new WaitHelper(driver);
+		w.waitForElementVisibility(Mo.media_line(), 120);
+		Mo.Add_media_line();
+		try {
+			fh.switchToFrame(ObjectReader.reader.Add_line());
+			log.info("Add line");
+		} catch (Exception e) {
+			log.info("Ignore");
+		}
+
+		dh.selectUsingValue(Mo.pop_mediaType(), "615|R");
+		Thread.sleep(2000);
+		dh.selectUsingVisibleText(Mo.pop_vendor(), "Adscreen Media Sdn Bhd");
+		Thread.sleep(2000);
+		Mo.Proceed_btn();
+		fh.switchTodefault();
+		fh.switchToFrame(ObjectReader.reader.rightframe());
+
+		Thread.sleep(2000);
+		System.out.println("Going to select ad type");
+		fh.switchToFrame(ObjectReader.reader.Add_line());
+		dh.selectUsingValue(Mo.Adtype_radio(), "276");
+		Mo.set_Description_R("Radio Placement");
+		Mo.setClient_rate("400");
+		Mo.setVendor_rate("200");
+		Mo.Entering_Spots();
+		Mo.Placement_line_add();
+		fh.switchTodefault();
+
+	}
+
+	public void tvPlacement() throws InterruptedException {
+		ObjectReader.reader = new PropertyReader();
+		MenuObjects Mo = new MenuObjects(driver);
+		DropDownHelper dh = new DropDownHelper(driver);
+		FrameHelper fh = new FrameHelper(driver);
+		Thread.sleep(10000);
+
+		fh.switchToFrame(ObjectReader.reader.rightframe());
+		WaitHelper w = new WaitHelper(driver);
+		w.waitForElementVisibility(Mo.media_line(), 120);
+		Mo.Add_media_line();
+		try {
+			fh.switchToFrame(ObjectReader.reader.Add_line());
+			log.info("Add line");
+		} catch (Exception e) {
+			log.info("Ignore");
+		}
+
+		dh.selectUsingValue(Mo.pop_mediaType(), "613|TV");
+		Thread.sleep(2000);
+		dh.selectUsingVisibleText(Mo.pop_vendor(), "CH-9 MEDIA SDN BHD");
+		Thread.sleep(2000);
+		Mo.Proceed_btn();
+		fh.switchTodefault();
+		fh.switchToFrame(ObjectReader.reader.rightframe());
+
+		Thread.sleep(2000);
+		System.out.println("Going to select ad type");
+		fh.switchToFrame(ObjectReader.reader.Add_line());
+		dh.selectUsingValue(Mo.Adtype_TV(), "10588");
+		Mo.set_Description_TV("TV Placement");
+		Mo.setClient_rate("400");
+		Mo.setVendor_rate("200");
+		Mo.Entering_Spots();
+		Mo.Placement_line_add();
+		fh.switchTodefault();
+
+	}
 }

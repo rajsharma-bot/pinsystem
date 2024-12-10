@@ -151,7 +151,7 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 			log.info("Clicking on insertion hyperlink");
 			FrameHelper.switchToFrame(ObjectReader.reader.Add_line());
 			MenuObjects.Entering_Digital_Spots("3500");
-			ViewLineBylineObjects.changeReason("Creating AA for Testing Reason");
+			ViewLineBylineObjects.changeReason("Creating AA");
 		} else {
 			// Pencil Edit case
 			ViewLineBylineObjects.clientInvoiceRemark_btn();
@@ -163,7 +163,7 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 			FrameHelper.switchToFrame(ObjectReader.reader.Add_line());
 			ViewLineBylineObjects.SettingClientRate("3000");
 			ViewLineBylineObjects.settingBuyingRate("2000");
-			ViewLineBylineObjects.changeReason("Creating AA for Testing Reason");
+			ViewLineBylineObjects.changeReason("Creating AA ");
 		}
 
 		ViewLineBylineObjects.updateAA();
