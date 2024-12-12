@@ -8,12 +8,67 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">584,968</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">10</td><td class="num attn">4</td><td class="num">0</td><td class="num attn">2</td><td class="num">1,894,060</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.pinsystem.New_Campaign</td><td><a href="#m0">new_Campaign</a></td><td rowspan="1">1733810834190</td><td rowspan="1">127214</td></tr><tr class="passedeven"><td><a href="#m1">new_Schedule</a></td><td rowspan="1">1733810961717</td><td rowspan="1">439951</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.pinsystem.Create_invoiceAndCreditNote_testCase</td><td><a href="#m0">createInvoice</a></td><td rowspan="1">1733921135822</td><td rowspan="1">163919</td></tr><tr class="failedodd"><td rowspan="1">com.pinsystem.NavigateToCampaignMenuTabs</td><td><a href="#m1">NavigationToListCampaignAllTabs</a></td><td rowspan="1">1733922521683</td><td rowspan="1">40341</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.pinsystem.Create_invoiceAndCreditNote_testCase</td><td><a href="#m2">CreditNote</a></td><td rowspan="1">1733921300147</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="3">com.pinsystem.NavigateToCampaignMenuTabs</td><td><a href="#m3">navigateToListScheduleTab</a></td><td rowspan="1">1733922562387</td><td rowspan="1">1</td></tr><tr class="skippedodd"><td><a href="#m4">navigateTo_ListAA</a></td><td rowspan="1">1733922562401</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td><a href="#m5">navigateTo_ListMO</a></td><td rowspan="1">1733922562395</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.pinsystem.Digital_Campaign_scheduleTestCase</td><td><a href="#m6">Digital_Schedule</a></td><td rowspan="1">1733920803069</td><td rowspan="1">235070</td></tr><tr class="passedeven"><td><a href="#m7">digital_campaign</a></td><td rowspan="1">1733920691844</td><td rowspan="1">110510</td></tr><tr class="passedeven"><td><a href="#m8">viewMOpage</a></td><td rowspan="1">1733921115232</td><td rowspan="1">3013</td></tr><tr class="passedeven"><td><a href="#m9">view_line_by_line</a></td><td rowspan="1">1733921038526</td><td rowspan="1">76035</td></tr><tr class="passedodd"><td rowspan="3">com.pinsystem.LoginTestCase</td><td><a href="#m10">verify_login_page_withInValid_creds</a></td><td rowspan="1">1733922308065</td><td rowspan="1">8166</td></tr><tr class="passedodd"><td><a href="#m11">verify_login_page_withOut_username</a></td><td rowspan="1">1733922321269</td><td rowspan="1">4323</td></tr><tr class="passedodd"><td><a href="#m12">verify_login_page_withValid_creds</a></td><td rowspan="1">1733922326365</td><td rowspan="1">6845</td></tr><tr class="passedeven"><td rowspan="2">com.pinsystem.Mix_mediaSchedule</td><td><a href="#m13">new_Campaign</a></td><td rowspan="1">1733921313691</td><td rowspan="1">241614</td></tr><tr class="passedeven"><td><a href="#m14">new_Schedule</a></td><td rowspan="1">1733921556731</td><td rowspan="1">733483</td></tr><tr class="passedodd"><td rowspan="1">com.pinsystem.SearchRecords</td><td><a href="#m15">searchSchedule</a></td><td rowspan="1">1733922345377</td><td rowspan="1">166986</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.pinsystem.New_Campaign#new_Campaign</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.pinsystem.New_Campaign#new_Schedule</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.pinsystem.Create_invoiceAndCreditNote_testCase#createInvoice</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.util.NoSuchElementException
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1025)
+	at java.base/java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:1046)
+	at com.pinsystem.utils.WindowHandler.switchToChildWindow(WindowHandler.java:28)
+	at com.pinsystem.Create_invoiceAndCreditNote_testCase.createInvoice(Create_invoiceAndCreditNote_testCase.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.pinsystem.NavigateToCampaignMenuTabs#NavigationToListCampaignAllTabs</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [81f016c36894d692a9e7e83fedb15b55, clickElement {id=f.F31065DDDC2B7FD1052F1FC0750DBA09.d.4FBEF5385C69CAA3D2015F27E00D6A66.e.223}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59947}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59947/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (81f016c36894d692a9e7e83fedb15b55)] -&gt; xpath: //input[@id=&apos;btnCamp0&apos;]]
+Session ID: 81f016c36894d692a9e7e83fedb15b55
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.pinsystem.pageObjects.MenuObjects.clickElement(MenuObjects.java:41)
+	at com.pinsystem.pageObjects.MenuObjects.CampaignPlanningTab(MenuObjects.java:82)
+	at com.pinsystem.NavigateToCampaignMenuTabs.NavigationToListCampaignAllTabs(NavigateToCampaignMenuTabs.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.pinsystem.Create_invoiceAndCreditNote_testCase#CreditNote</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.pinsystem.Create_invoiceAndCreditNote_testCase.CreditNote() on instance com.pinsystem.Create_invoiceAndCreditNote_testCase@5a772895 depends on not successfully finished methods 
+[com.pinsystem.Create_invoiceAndCreditNote_testCase.createInvoice() on instance com.pinsystem.Create_invoiceAndCreditNote_testCase@5a772895]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.pinsystem.NavigateToCampaignMenuTabs#navigateToListScheduleTab</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.pinsystem.NavigateToCampaignMenuTabs.navigateToListScheduleTab() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969 depends on not successfully finished methods 
+[com.pinsystem.NavigateToCampaignMenuTabs.NavigationToListCampaignAllTabs() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.pinsystem.NavigateToCampaignMenuTabs#navigateTo_ListAA</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.pinsystem.NavigateToCampaignMenuTabs.navigateTo_ListAA() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969 depends on not successfully finished methods 
+[com.pinsystem.NavigateToCampaignMenuTabs.navigateTo_ListMO() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.pinsystem.NavigateToCampaignMenuTabs#navigateTo_ListMO</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.pinsystem.NavigateToCampaignMenuTabs.navigateTo_ListMO() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969 depends on not successfully finished methods 
+[com.pinsystem.NavigateToCampaignMenuTabs.navigateToListScheduleTab() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.pinsystem.Digital_Campaign_scheduleTestCase#Digital_Schedule</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.pinsystem.Digital_Campaign_scheduleTestCase#digital_campaign</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.pinsystem.Digital_Campaign_scheduleTestCase#viewMOpage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.pinsystem.Digital_Campaign_scheduleTestCase#view_line_by_line</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>true</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.pinsystem.LoginTestCase#verify_login_page_withInValid_creds</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.pinsystem.LoginTestCase#verify_login_page_withOut_username</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.pinsystem.LoginTestCase#verify_login_page_withValid_creds</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.pinsystem.Mix_mediaSchedule#new_Campaign</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.pinsystem.Mix_mediaSchedule#new_Schedule</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.pinsystem.SearchRecords#searchSchedule</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

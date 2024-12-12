@@ -143,10 +143,8 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 
 		if (isEditMO) {
 			// Edit MO case
-			ViewLineBylineObjects.clientInvoiceRemark_btn();
-			ViewLineBylineObjects.clientInvoiceRemark_PopUp();
-			ViewLineBylineObjects.clientInvoiceRemarkText();
-			ViewLineBylineObjects.clientInvoiceRemark_SaveBtn();
+			handleClientInvoiceRemark();
+			Thread.sleep(10000);
 			ViewLineBylineObjects.insertionDetail();
 			log.info("Clicking on insertion hyperlink");
 			FrameHelper.switchToFrame(ObjectReader.reader.Add_line());
@@ -154,10 +152,8 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 			ViewLineBylineObjects.changeReason("Creating AA");
 		} else {
 			// Pencil Edit case
-			ViewLineBylineObjects.clientInvoiceRemark_btn();
-			ViewLineBylineObjects.clientInvoiceRemark_PopUp();
-			ViewLineBylineObjects.clientInvoiceRemarkText();
-			ViewLineBylineObjects.clientInvoiceRemark_SaveBtn();
+			handleClientInvoiceRemark();
+			Thread.sleep(10000);
 			ViewLineBylineObjects.pencilEdit();
 			log.info("Clicking on Pencil edit icon");
 			FrameHelper.switchToFrame(ObjectReader.reader.Add_line());
@@ -174,5 +170,14 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 		assertNotNull(ViewLineBylineObjects.verifygetAA_no(), "AA number should not be null!");
 		driver.close();
 		pop.switchToParentWindow(driver);
+	}
+	
+	
+	private void handleClientInvoiceRemark() throws InterruptedException {
+	    log.info("Handling Client Invoice Remark...");
+	    ViewLineBylineObjects.clientInvoiceRemark_btn();
+	    ViewLineBylineObjects.clientInvoiceRemark_PopUp();
+	    ViewLineBylineObjects.clientInvoiceRemarkText();
+	    ViewLineBylineObjects.clientInvoiceRemark_SaveBtn();
 	}
 }

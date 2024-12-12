@@ -1,53 +1,519 @@
-[INFO ] 2024-12-10 11:50:47.921 [main] WebDriverManager - Using chromedriver 131.0.6778.87 (resolved driver for Chrome 131)
-[INFO ] 2024-12-10 11:50:48.135 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\131.0.6778.87\chromedriver.exe
-[INFO ] 2024-12-10 11:50:53.628 [main] TestBase - Initialize Web driver: 1589640004
-[INFO ] 2024-12-10 11:50:53.635 [main] WaitHelper - Implicit Wait has been set to: 30
-[INFO ] 2024-12-10 11:50:53.664 [main] WaitHelper - waiting for page to load for : 100
-[INFO ] 2024-12-10 11:50:53.678 [main] WaitHelper - page is loaded
-[INFO ] 2024-12-10 11:50:55.942 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-12-10 11:50:56.024 [main] TestBase - **************digital_campaign Started ***************
-[INFO ] 2024-12-10 11:50:56.049 [main] WaitHelper - Implicit Wait has been set to: 30
-[INFO ] 2024-12-10 11:50:56.074 [main] Digital_Campaign_scheduleTestCase - Login runner has been invoked
-[INFO ] 2024-12-10 11:50:56.081 [main] LoginClass - Login Runner has been invoke
-[INFO ] 2024-12-10 11:50:57.372 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
-[INFO ] 2024-12-10 11:50:57.913 [main] LoginObjects - Passing Only Password : asd123
-[INFO ] 2024-12-10 11:50:57.914 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
-[INFO ] 2024-12-10 11:51:01.062 [main] LoginObjects - Clicked on submit
-[INFO ] 2024-12-10 11:51:31.188 [main] FrameHelper - Frame has been switched to topframe
-[INFO ] 2024-12-10 11:51:31.515 [main] HomeNavigationObjects - Clicked on Media 
-[INFO ] 2024-12-10 11:51:31.516 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-12-10 11:51:31.594 [main] FrameHelper - Frame has been switched to left
-[INFO ] 2024-12-10 11:51:31.595 [main] MenuObjects - New Campaign has been clicked
-[INFO ] 2024-12-10 11:51:32.001 [main] MenuObjects - Click on New Schedule button clicked successfully.
-[INFO ] 2024-12-10 11:51:32.001 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-12-10 11:51:32.987 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-12-10 11:51:34.051 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
-[INFO ] 2024-12-10 11:51:35.235 [main] DropDownHelper - selectUsingValue and value is: 50222
-[INFO ] 2024-12-10 11:51:36.560 [main] MenuObjects - Text '01/01/2024' entered in Passing Start Date
-[INFO ] 2024-12-10 11:51:37.789 [main] MenuObjects - Text '31/03/2024' entered in Passing End Date
-[INFO ] 2024-12-10 11:51:38.831 [main] DropDownHelper - selectUsingValue and value is: 11491
-[INFO ] 2024-12-10 11:51:39.969 [main] DropDownHelper - selectUsingValue and value is: 1047
-[INFO ] 2024-12-10 11:51:40.058 [main] MenuObjects - Passing Campaign Name
-[INFO ] 2024-12-10 11:51:40.228 [main] MenuObjects - Text 'Digital Record' entered in Passing Campaign name has been passed
-[INFO ] 2024-12-10 11:51:40.229 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-12-10 11:51:42.282 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Digital
-[INFO ] 2024-12-10 11:51:42.631 [main] MenuObjects - Text 'Linkedin' entered in Searching media title
-[INFO ] 2024-12-10 11:51:45.950 [main] MenuObjects - Select Checkbox clicked successfully.
-[INFO ] 2024-12-10 11:51:46.988 [main] MenuObjects - Clicking on Save button
-[INFO ] 2024-12-10 11:51:47.296 [main] MenuObjects - Click on Save Only And View Campaign  clicked successfully.
-[INFO ] 2024-12-10 11:51:52.892 [main] MenuObjects - Campaign has been created
-[INFO ] 2024-12-10 11:51:52.946 [main] MenuObjects - B004/JSR/2400398
-[INFO ] 2024-12-10 11:51:53.368 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\digital_campaign_success_20241210_115153.png
-[INFO ] 2024-12-10 11:51:53.373 [main] TestBase - ************** digital_campaign Finished ***************
-[INFO ] 2024-12-10 11:51:53.382 [main] TestBase - **************Digital_Schedule Started ***************
-[INFO ] 2024-12-10 11:51:53.385 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-12-10 11:51:53.461 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-12-10 11:51:54.903 [main] MenuObjects - New schedule clicked successfully.
-[INFO ] 2024-12-10 11:51:54.904 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2024-12-10 11:51:54.983 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2024-12-10 11:51:54.984 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-12-10 11:51:57.307 [main] DropDownHelper - selectUsingVisibleText and visibleText is: MYR
-[INFO ] 2024-12-10 11:51:57.391 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2024-12-10 11:51:58.762 [main] MenuObjects - vendor has been passed
-[INFO ] 2024-12-10 11:51:58.788 [main] DropDownHelper - selectUsingValue and value is: 4640|MYR|1.0000000|1|1|0|0|0
-[INFO ] 2024-12-10 11:51:58.967 [main] MenuObjects - vendor 1 has been passed
+[INFO ] 2024-12-11 18:07:56.104 [main] WebDriverManager - Using chromedriver 131.0.6778.108 (resolved driver for Chrome 131)
+[INFO ] 2024-12-11 18:07:56.277 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\131.0.6778.108\chromedriver.exe
+[INFO ] 2024-12-11 18:08:05.410 [main] TestBase - Initialize Web driver: 390010388
+[INFO ] 2024-12-11 18:08:05.421 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-12-11 18:08:05.459 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-12-11 18:08:05.486 [main] WaitHelper - page is loaded
+[INFO ] 2024-12-11 18:08:11.552 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:08:11.838 [main] TestBase - **************digital_campaign Started ***************
+[INFO ] 2024-12-11 18:08:11.916 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-12-11 18:08:11.977 [main] Digital_Campaign_scheduleTestCase - Login runner has been invoked
+[INFO ] 2024-12-11 18:08:11.990 [main] LoginClass - Login Runner has been invoke
+[INFO ] 2024-12-11 18:08:15.839 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-12-11 18:08:17.456 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-12-11 18:08:17.457 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-12-11 18:08:23.085 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-12-11 18:08:53.282 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-12-11 18:08:53.672 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-12-11 18:08:53.673 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:08:53.766 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-12-11 18:08:53.767 [main] MenuObjects - New Campaign has been clicked
+[INFO ] 2024-12-11 18:08:54.290 [main] MenuObjects - Click on New Schedule button clicked successfully.
+[INFO ] 2024-12-11 18:08:54.291 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:08:57.225 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:08:58.301 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
+[INFO ] 2024-12-11 18:08:59.575 [main] DropDownHelper - selectUsingValue and value is: 50222
+[INFO ] 2024-12-11 18:09:01.217 [main] MenuObjects - Text '01/01/2024' entered in Passing Start Date
+[INFO ] 2024-12-11 18:09:02.958 [main] MenuObjects - Text '31/03/2024' entered in Passing End Date
+[INFO ] 2024-12-11 18:09:04.072 [main] DropDownHelper - selectUsingValue and value is: 11491
+[INFO ] 2024-12-11 18:09:05.388 [main] DropDownHelper - selectUsingValue and value is: 1047
+[INFO ] 2024-12-11 18:09:05.576 [main] MenuObjects - Passing Campaign Name
+[INFO ] 2024-12-11 18:09:05.963 [main] MenuObjects - Text 'Digital Record' entered in Passing Campaign name has been passed
+[INFO ] 2024-12-11 18:09:05.967 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:09:08.040 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Digital
+[INFO ] 2024-12-11 18:09:08.683 [main] MenuObjects - Text 'Linkedin' entered in Searching media title
+[INFO ] 2024-12-11 18:09:12.175 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2024-12-11 18:09:13.221 [main] MenuObjects - Clicking on Save button
+[INFO ] 2024-12-11 18:09:13.737 [main] MenuObjects - Click on Save Only And View Campaign  clicked successfully.
+[INFO ] 2024-12-11 18:10:02.072 [main] MenuObjects - Campaign has been created
+[INFO ] 2024-12-11 18:10:02.158 [main] MenuObjects - B004/JSR/2400410
+[INFO ] 2024-12-11 18:10:03.034 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\digital_campaign_success_20241211_181002.png
+[INFO ] 2024-12-11 18:10:03.049 [main] TestBase - ************** digital_campaign Finished ***************
+[INFO ] 2024-12-11 18:10:03.067 [main] TestBase - **************Digital_Schedule Started ***************
+[INFO ] 2024-12-11 18:10:03.076 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:10:03.218 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:10:06.111 [main] MenuObjects - New schedule clicked successfully.
+[INFO ] 2024-12-11 18:10:06.112 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:10:06.302 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:10:06.303 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:10:09.138 [main] DropDownHelper - selectUsingVisibleText and visibleText is: MYR
+[INFO ] 2024-12-11 18:10:09.315 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:10:10.820 [main] MenuObjects - vendor has been passed
+[INFO ] 2024-12-11 18:10:10.857 [main] DropDownHelper - selectUsingValue and value is: 4640|MYR|1.0000000|1|1|0|0|0
+[INFO ] 2024-12-11 18:10:11.220 [main] MenuObjects - vendor 1 has been passed
+[INFO ] 2024-12-11 18:11:03.730 [main] MenuObjects - true
+[INFO ] 2024-12-11 18:11:03.731 [main] MenuObjects - Pop-up is closed
+[INFO ] 2024-12-11 18:11:03.734 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:11:05.780 [main] MenuObjects - Adding Media line
+[INFO ] 2024-12-11 18:11:06.234 [main] MenuObjects - Clicked on media line
+[INFO ] 2024-12-11 18:11:09.178 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:11:09.257 [main] MenuObjects - Selecting Media title
+[INFO ] 2024-12-11 18:11:09.309 [main] DropDownHelper - selectUsingValue and value is: 3721|I
+[INFO ] 2024-12-11 18:11:09.569 [main] MenuObjects - Selecting vendor
+[INFO ] 2024-12-11 18:11:09.615 [main] DropDownHelper - selectUsingIndex and index is: 0
+[INFO ] 2024-12-11 18:11:13.111 [main] MenuObjects - Digital ad type has been selected
+[INFO ] 2024-12-11 18:11:13.403 [main] DropDownHelper - selectUsingValue and value is: 9151
+[INFO ] 2024-12-11 18:11:14.510 [main] MenuObjects - Remark has been passed for Digital placement line
+[INFO ] 2024-12-11 18:11:23.248 [main] MenuObjects - rate has been passed
+[INFO ] 2024-12-11 18:11:24.450 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:11:24.584 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:11:54.908 [main] ScheduleObjects - Schedule confirm button has been clicked
+[INFO ] 2024-12-11 18:12:25.249 [main] ScheduleObjects - true
+[INFO ] 2024-12-11 18:12:25.249 [main] ScheduleObjects - Pop-up is closed
+[INFO ] 2024-12-11 18:12:25.598 [main] ScheduleObjects - Create Mo by vendor button has been clicked
+[INFO ] 2024-12-11 18:12:56.255 [main] ScheduleObjects - true
+[INFO ] 2024-12-11 18:12:56.256 [main] ScheduleObjects - Pop-up is closed
+[INFO ] 2024-12-11 18:12:56.322 [main] ScheduleObjects - MO number can be seen
+[INFO ] 2024-12-11 18:12:56.376 [main] ScheduleObjects - Clicked on Select All checkbox 
+[INFO ] 2024-12-11 18:13:27.522 [main] ScheduleObjects - MO has been confirmed
+[INFO ] 2024-12-11 18:13:27.609 [main] ScheduleObjects - Edit Pop has been ignored
+[INFO ] 2024-12-11 18:13:57.904 [main] ScheduleObjects - true
+[INFO ] 2024-12-11 18:13:57.904 [main] ScheduleObjects - Pop-up is closed
+[INFO ] 2024-12-11 18:13:57.967 [main] ScheduleObjects - MO Status is : Confirm
+[INFO ] 2024-12-11 18:13:58.023 [main] ScheduleObjects - Schedule has been created
+[INFO ] 2024-12-11 18:13:58.061 [main] ScheduleObjects - TEST123JSR/I/2400489
+[INFO ] 2024-12-11 18:13:58.517 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\Digital_Schedule_success_20241211_181358.png
+[INFO ] 2024-12-11 18:13:58.518 [main] TestBase - ************** Digital_Schedule Finished ***************
+[INFO ] 2024-12-11 18:13:58.525 [main] TestBase - **************view_line_by_line Started ***************
+[INFO ] 2024-12-11 18:13:58.533 [main] Digital_Campaign_scheduleTestCase - Value has set as true
+[INFO ] 2024-12-11 18:13:58.537 [main] ViewLineBylineObjects - Click on view line by line button
+[INFO ] 2024-12-11 18:13:59.160 [main] ViewLineBylineObjects - View line by line Btn clicked successfully.
+[INFO ] 2024-12-11 18:13:59.235 [main] WindowHandler - Parent Window: FD51B3DC3CE976D86D518C6A6B35FAB1
+[INFO ] 2024-12-11 18:13:59.237 [main] WindowHandler - Child Window: F0145C681383CA4FB87C52C98A344717
+[INFO ] 2024-12-11 18:13:59.268 [main] Digital_Campaign_scheduleTestCase - Data read from file:
+TEST123JSR/I/2400489
+[INFO ] 2024-12-11 18:13:59.271 [main] ViewLineBylineObjects - Verify if landed on View line by line page
+[INFO ] 2024-12-11 18:14:05.511 [main] Digital_Campaign_scheduleTestCase - Handling Client Invoice Remark...
+[INFO ] 2024-12-11 18:14:05.512 [main] ViewLineBylineObjects - Client invoice remark
+[INFO ] 2024-12-11 18:14:06.022 [main] ViewLineBylineObjects - Client Invoice remark button clicked successfully.
+[INFO ] 2024-12-11 18:14:06.023 [main] ViewLineBylineObjects - Client Invoice remark pop-up
+[INFO ] 2024-12-11 18:14:26.096 [main] ViewLineBylineObjects - Passing remark in CIR
+[INFO ] 2024-12-11 18:14:26.469 [main] ViewLineBylineObjects - Text 'Sample text for CIR 2' entered in Passed CIR remark 
+[INFO ] 2024-12-11 18:14:26.470 [main] ViewLineBylineObjects - Click on Client invoice remark Save button
+[INFO ] 2024-12-11 18:14:26.796 [main] ViewLineBylineObjects - Client Invoice remark button clicked successfully.
+[INFO ] 2024-12-11 18:14:36.811 [main] ViewLineBylineObjects - Clicking on Insertion Hyperlink
+[INFO ] 2024-12-11 18:14:37.002 [main] ViewLineBylineObjects - Insertion Detail hyperlink / Edit mediaorder pop-up clicked successfully.
+[INFO ] 2024-12-11 18:14:37.003 [main] Digital_Campaign_scheduleTestCase - Clicking on insertion hyperlink
+[INFO ] 2024-12-11 18:15:07.111 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:15:12.706 [main] MenuObjects - rate has been passed
+[INFO ] 2024-12-11 18:15:12.707 [main] ViewLineBylineObjects - Passing AA Reason
+[INFO ] 2024-12-11 18:15:13.187 [main] ViewLineBylineObjects - Text 'Creating AA' entered in Added AA reason
+[INFO ] 2024-12-11 18:15:13.188 [main] ViewLineBylineObjects - Clicking on Update Button
+[INFO ] 2024-12-11 18:15:13.872 [main] ViewLineBylineObjects - Click on Update Button clicked successfully.
+[INFO ] 2024-12-11 18:15:13.874 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:15:14.118 [main] ViewLineBylineObjects - AA has been created
+[INFO ] 2024-12-11 18:15:14.223 [main] ViewLineBylineObjects - 
+[INFO ] 2024-12-11 18:15:14.427 [main] ViewLineBylineObjects - 
+[INFO ] 2024-12-11 18:15:14.560 [main] WindowHandler - Switched back to Parent Window: FD51B3DC3CE976D86D518C6A6B35FAB1
+[INFO ] 2024-12-11 18:15:15.220 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\view_line_by_line_success_20241211_181514.png
+[INFO ] 2024-12-11 18:15:15.222 [main] TestBase - ************** view_line_by_line Finished ***************
+[INFO ] 2024-12-11 18:15:15.230 [main] TestBase - **************viewMOpage Started ***************
+[INFO ] 2024-12-11 18:15:15.239 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:15:15.378 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:15:15.488 [main] ScheduleObjects - MO has been created
+[INFO ] 2024-12-11 18:15:15.556 [main] ScheduleObjects - B004/MO/I/2400716
+[INFO ] 2024-12-11 18:15:15.639 [main] ScheduleObjects - Clicking on MO hyperlink
+[INFO ] 2024-12-11 18:15:15.710 [main] ScheduleObjects - Clicking on MO hyperlink
+[INFO ] 2024-12-11 18:15:16.494 [main] ScheduleObjects -  Click on MO number hyperlink clicked successfully.
+[INFO ] 2024-12-11 18:15:16.604 [main] WindowHandler - Parent Window: FD51B3DC3CE976D86D518C6A6B35FAB1
+[INFO ] 2024-12-11 18:15:16.606 [main] WindowHandler - Child Window: 9BD45F597532B2B6EB9699F959477F7C
+[INFO ] 2024-12-11 18:15:16.620 [main] Digital_Campaign_scheduleTestCase - Data read from file:
+B004/MO/I/2400716
+[INFO ] 2024-12-11 18:15:16.621 [main] ScheduleObjects - Verify if landed on View line by line page
+[INFO ] 2024-12-11 18:15:18.111 [main] ScheduleObjects - Successfully Landed on View MO Page
+[INFO ] 2024-12-11 18:15:18.112 [main] ScheduleObjects - verifying MO status
+[INFO ] 2024-12-11 18:15:18.244 [main] ScheduleObjects - Confirmed
+[INFO ] 2024-12-11 18:15:19.078 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\viewMOpage_success_20241211_181518.png
+[INFO ] 2024-12-11 18:15:19.080 [main] TestBase - ************** viewMOpage Finished ***************
+[INFO ] 2024-12-11 18:15:25.328 [main] WebDriverManager - Using chromedriver 131.0.6778.108 (resolved driver for Chrome 131)
+[INFO ] 2024-12-11 18:15:25.619 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\131.0.6778.108\chromedriver.exe
+[INFO ] 2024-12-11 18:15:31.448 [main] TestBase - Initialize Web driver: 1420694080
+[INFO ] 2024-12-11 18:15:31.449 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-12-11 18:15:31.517 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-12-11 18:15:31.532 [main] WaitHelper - page is loaded
+[INFO ] 2024-12-11 18:15:35.801 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:15:35.819 [main] TestBase - **************createInvoice Started ***************
+[INFO ] 2024-12-11 18:15:35.837 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-12-11 18:15:35.855 [main] Create_invoiceAndCreditNote_testCase - Login runner has been invoked
+[INFO ] 2024-12-11 18:15:35.859 [main] LoginClass - Login Runner has been invoke
+[INFO ] 2024-12-11 18:15:36.767 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-12-11 18:15:37.449 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-12-11 18:15:37.451 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-12-11 18:15:40.952 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-12-11 18:15:40.953 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:16:11.151 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-12-11 18:16:11.152 [main] HomeNavigationObjects - Clicked on Finance
+[INFO ] 2024-12-11 18:16:12.053 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:16:12.244 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-12-11 18:16:13.129 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:16:24.193 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:16:24.499 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Campaign Code
+[INFO ] 2024-12-11 18:16:24.799 [main] Create_invoiceAndCreditNote_testCase - Data read from file:
+B004/JSR/2400410
+[INFO ] 2024-12-11 18:16:25.117 [main] InvoiceObjects - Clicked on find button
+[INFO ] 2024-12-11 18:16:36.095 [main] InvoiceObjects - selectAll_CheckBox
+[INFO ] 2024-12-11 18:16:46.138 [main] InvoiceObjects - false
+[INFO ] 2024-12-11 18:17:16.430 [main] InvoiceObjects - Checking Generate invoice button is Enabled
+[INFO ] 2024-12-11 18:17:46.445 [main] InvoiceObjects - Generate invoice button is Enabled
+[INFO ] 2024-12-11 18:17:58.152 [main] InvoiceObjects - Invoice has been created
+[INFO ] 2024-12-11 18:17:58.210 [main] InvoiceObjects - M24122299
+[INFO ] 2024-12-11 18:17:58.749 [main] Create_invoiceAndCreditNote_testCase - Changing import status to Success
+[INFO ] 2024-12-11 18:17:58.750 [main] GenericElementObjects - Clicked on Import Status
+[INFO ] 2024-12-11 18:17:59.710 [main] GenericElementObjects - Clicked on Import Status Hyperlink clicked successfully.
+[INFO ] 2024-12-11 18:18:19.724 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:18:19.739 [main] WindowHandler - Parent Window: 454D29D9754333ED8B3BA4BE2BD39D21
+[INFO ] 2024-12-11 18:18:20.142 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\createInvoice_failure_20241211_181819.png
+[INFO ] 2024-12-11 18:18:20.142 [main] TestBase - ************** createInvoice Finished ***************
+[INFO ] 2024-12-11 18:18:22.177 [main] WebDriverManager - Using chromedriver 131.0.6778.108 (resolved driver for Chrome 131)
+[INFO ] 2024-12-11 18:18:22.344 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\131.0.6778.108\chromedriver.exe
+[INFO ] 2024-12-11 18:18:28.741 [main] TestBase - Initialize Web driver: 1398433431
+[INFO ] 2024-12-11 18:18:28.742 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-12-11 18:18:28.766 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-12-11 18:18:28.778 [main] WaitHelper - page is loaded
+[INFO ] 2024-12-11 18:18:33.676 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:18:33.690 [main] TestBase - **************new_Campaign Started ***************
+[INFO ] 2024-12-11 18:18:33.699 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-12-11 18:18:33.728 [main] Mix_mediaSchedule - Login runner has been invoked
+[INFO ] 2024-12-11 18:18:33.732 [main] LoginClass - Login Runner has been invoke
+[INFO ] 2024-12-11 18:18:34.765 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-12-11 18:18:35.348 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-12-11 18:18:35.349 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-12-11 18:18:38.633 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-12-11 18:19:08.781 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-12-11 18:19:09.239 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-12-11 18:19:09.240 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:19:09.349 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-12-11 18:19:09.350 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:19:09.452 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-12-11 18:19:09.453 [main] MenuObjects - New Campaign has been clicked
+[INFO ] 2024-12-11 18:19:10.168 [main] MenuObjects - Click on New Schedule button clicked successfully.
+[INFO ] 2024-12-11 18:19:10.168 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:19:11.742 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:19:11.742 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:19:11.937 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:19:13.080 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1 MYR
+[INFO ] 2024-12-11 18:19:14.482 [main] DropDownHelper - selectUsingValue and value is: 50222
+[INFO ] 2024-12-11 18:19:16.066 [main] MenuObjects - Text '01/01/2024' entered in Passing Start Date
+[INFO ] 2024-12-11 18:19:17.554 [main] MenuObjects - Text '31/03/2024' entered in Passing End Date
+[INFO ] 2024-12-11 18:19:18.621 [main] DropDownHelper - selectUsingValue and value is: 11491
+[INFO ] 2024-12-11 18:19:19.833 [main] DropDownHelper - selectUsingValue and value is: 1047
+[INFO ] 2024-12-11 18:19:19.979 [main] MenuObjects - Passing Campaign Name
+[INFO ] 2024-12-11 18:19:20.248 [main] MenuObjects - Text 'For Testing' entered in Passing Campaign name has been passed
+[INFO ] 2024-12-11 18:19:20.251 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:19:22.327 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Cinema
+[INFO ] 2024-12-11 18:19:23.521 [main] MenuObjects - Text 'Cathay Cineplex' entered in Searching media title
+[INFO ] 2024-12-11 18:19:32.488 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2024-12-11 18:19:34.726 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Outdoor
+[INFO ] 2024-12-11 18:19:37.032 [main] MenuObjects - Text 'Ad-On-Bus' entered in Searching media title
+[INFO ] 2024-12-11 18:19:47.869 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2024-12-11 18:19:54.355 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Magazine
+[INFO ] 2024-12-11 18:19:57.971 [main] MenuObjects - Text '3C Digital' entered in Searching media title
+[INFO ] 2024-12-11 18:20:16.225 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2024-12-11 18:20:23.412 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Others
+[INFO ] 2024-12-11 18:20:44.632 [main] MenuObjects - Text 'Aducation Media' entered in Searching media title
+[INFO ] 2024-12-11 18:20:56.692 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2024-12-11 18:20:59.411 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Radio
+[INFO ] 2024-12-11 18:21:02.235 [main] MenuObjects - Text '988 FM' entered in Searching media title
+[INFO ] 2024-12-11 18:21:11.309 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2024-12-11 18:21:13.459 [main] DropDownHelper - selectUsingVisibleText and visibleText is: TV
+[INFO ] 2024-12-11 18:21:14.682 [main] MenuObjects - Text '8TV' entered in Searching media title
+[INFO ] 2024-12-11 18:21:23.684 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2024-12-11 18:21:25.898 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Newspaper
+[INFO ] 2024-12-11 18:21:27.555 [main] MenuObjects - Text 'CTSJ Newspaper' entered in Searching media title
+[INFO ] 2024-12-11 18:21:35.945 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2024-12-11 18:21:35.976 [main] MenuObjects - Clicking on Save button
+[INFO ] 2024-12-11 18:21:36.480 [main] MenuObjects - Click on Save Only And View Campaign  clicked successfully.
+[INFO ] 2024-12-11 18:22:34.866 [main] MenuObjects - Campaign has been created
+[INFO ] 2024-12-11 18:22:35.110 [main] MenuObjects - B004/JSR/2400411
+[INFO ] 2024-12-11 18:22:36.722 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\new_Campaign_success_20241211_182235.png
+[INFO ] 2024-12-11 18:22:36.723 [main] TestBase - ************** new_Campaign Finished ***************
+[INFO ] 2024-12-11 18:22:36.730 [main] TestBase - **************new_Schedule Started ***************
+[INFO ] 2024-12-11 18:22:36.737 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:22:37.015 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:22:37.016 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:22:37.218 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:22:41.438 [main] MenuObjects - New schedule clicked successfully.
+[INFO ] 2024-12-11 18:22:41.439 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:22:41.558 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:22:41.559 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:22:41.664 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:22:41.665 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:22:44.415 [main] DropDownHelper - selectUsingVisibleText and visibleText is: MYR
+[INFO ] 2024-12-11 18:22:45.778 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:23:02.652 [main] MenuObjects - vendor has been passed
+[INFO ] 2024-12-11 18:23:02.840 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Digital Cinema Media Sdn Bhd
+[INFO ] 2024-12-11 18:23:04.339 [main] MenuObjects - vendor 1 has been passed
+[INFO ] 2024-12-11 18:23:08.762 [main] MenuObjects - vendor has been passed
+[INFO ] 2024-12-11 18:23:08.909 [main] DropDownHelper - selectUsingVisibleText and visibleText is: MunSang Poh
+[INFO ] 2024-12-11 18:23:09.820 [main] MenuObjects - vendor 2 has been passed
+[INFO ] 2024-12-11 18:23:14.294 [main] MenuObjects - vendor has been passed
+[INFO ] 2024-12-11 18:23:14.412 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Exponential Interactive Singapore Pte (USD)
+[INFO ] 2024-12-11 18:23:15.151 [main] MenuObjects - vendor 3 has been passed
+[INFO ] 2024-12-11 18:23:20.160 [main] MenuObjects - vendor has been passed
+[INFO ] 2024-12-11 18:23:20.277 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Ad-On-Bus Sdn Bhd
+[INFO ] 2024-12-11 18:23:21.068 [main] MenuObjects - vendor 4 has been passed
+[INFO ] 2024-12-11 18:23:25.556 [main] MenuObjects - vendor has been passed
+[INFO ] 2024-12-11 18:23:25.648 [main] DropDownHelper - selectUsingVisibleText and visibleText is: APRILIS MAJU MEDIA
+[INFO ] 2024-12-11 18:23:26.306 [main] MenuObjects - vendor 5 has been passed
+[INFO ] 2024-12-11 18:23:31.294 [main] MenuObjects - vendor has been passed
+[INFO ] 2024-12-11 18:23:31.375 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Adscreen Media Sdn Bhd
+[INFO ] 2024-12-11 18:23:31.944 [main] MenuObjects - vendor 6 has been passed
+[INFO ] 2024-12-11 18:23:35.656 [main] MenuObjects - vendor has been passed
+[INFO ] 2024-12-11 18:23:35.694 [main] DropDownHelper - selectUsingVisibleText and visibleText is: CH-9 MEDIA SDN BHD
+[INFO ] 2024-12-11 18:23:35.888 [main] MenuObjects - vendor 7 has been passed
+[INFO ] 2024-12-11 18:24:28.310 [main] MenuObjects - true
+[INFO ] 2024-12-11 18:24:28.311 [main] MenuObjects - Pop-up is closed
+[INFO ] 2024-12-11 18:24:58.520 [main] FrameHelper - Frame has been switched to popShowAddedLayout_CIF-1
+[INFO ] 2024-12-11 18:24:59.263 [main] MenuObjects - Media layout is selected
+[INFO ] 2024-12-11 18:24:59.264 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:25:00.398 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:25:00.400 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:25:02.434 [main] MenuObjects - Adding Media line
+[INFO ] 2024-12-11 18:25:02.937 [main] MenuObjects - Clicked on media line
+[INFO ] 2024-12-11 18:25:07.329 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:25:07.330 [main] MenuObjects - Add line
+[INFO ] 2024-12-11 18:25:07.943 [main] MenuObjects - Selecting Media title
+[INFO ] 2024-12-11 18:25:08.098 [main] DropDownHelper - selectUsingValue and value is: 657|C
+[INFO ] 2024-12-11 18:25:11.194 [main] MenuObjects - Selecting vendor
+[INFO ] 2024-12-11 18:25:11.262 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Digital Cinema Media Sdn Bhd
+[INFO ] 2024-12-11 18:25:15.380 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:25:15.773 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:25:18.399 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:25:20.054 [main] MenuObjects - Other (cinema, Other & outdoor) ad type has been selected
+[INFO ] 2024-12-11 18:25:20.152 [main] DropDownHelper - selectUsingValue and value is: 26275
+[INFO ] 2024-12-11 18:25:21.361 [main] MenuObjects - Remark has been passed for Other media type placement line
+[INFO ] 2024-12-11 18:26:14.871 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:26:14.952 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:26:25.253 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:26:25.412 [main] MenuObjects - Adding Media line
+[INFO ] 2024-12-11 18:26:28.281 [main] MenuObjects - Clicked on media line
+[INFO ] 2024-12-11 18:26:30.549 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:26:30.553 [main] MenuObjects - Add line
+[INFO ] 2024-12-11 18:26:30.794 [main] MenuObjects - Selecting Media title
+[INFO ] 2024-12-11 18:26:30.928 [main] DropDownHelper - selectUsingValue and value is: 240|M
+[INFO ] 2024-12-11 18:26:34.130 [main] MenuObjects - Selecting vendor
+[INFO ] 2024-12-11 18:26:34.684 [main] DropDownHelper - selectUsingVisibleText and visibleText is: MunSang Poh
+[INFO ] 2024-12-11 18:26:40.235 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:26:40.427 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:26:42.871 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:26:45.184 [main] MenuObjects - Newspaper ad type has been selected
+[INFO ] 2024-12-11 18:26:45.275 [main] DropDownHelper - selectUsingValue and value is: 26196
+[INFO ] 2024-12-11 18:26:46.614 [main] MenuObjects - Remark has been passed for magazine placement line
+[INFO ] 2024-12-11 18:27:20.462 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:27:20.590 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:27:31.715 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:27:31.867 [main] MenuObjects - Adding Media line
+[INFO ] 2024-12-11 18:27:33.844 [main] MenuObjects - Clicked on media line
+[INFO ] 2024-12-11 18:27:35.463 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:27:35.464 [main] MenuObjects - Add line
+[INFO ] 2024-12-11 18:27:35.605 [main] MenuObjects - Selecting Media title
+[INFO ] 2024-12-11 18:27:35.686 [main] DropDownHelper - selectUsingValue and value is: 4485|N
+[INFO ] 2024-12-11 18:27:38.290 [main] MenuObjects - Selecting vendor
+[INFO ] 2024-12-11 18:27:38.373 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Exponential Interactive Singapore Pte (USD)
+[INFO ] 2024-12-11 18:27:41.928 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:27:42.109 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:27:44.390 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:27:45.694 [main] MenuObjects - Newspaper ad type has been selected
+[INFO ] 2024-12-11 18:27:45.771 [main] DropDownHelper - selectUsingValue and value is: 9395
+[INFO ] 2024-12-11 18:27:49.440 [main] MenuObjects - Remark has been passed for newspaper placement line
+[INFO ] 2024-12-11 18:28:10.242 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:28:10.253 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:28:20.393 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:28:20.433 [main] MenuObjects - Adding Media line
+[INFO ] 2024-12-11 18:28:21.512 [main] MenuObjects - Clicked on media line
+[INFO ] 2024-12-11 18:28:22.729 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:28:22.730 [main] MenuObjects - Add line
+[INFO ] 2024-12-11 18:28:22.846 [main] MenuObjects - Selecting Media title
+[INFO ] 2024-12-11 18:28:22.916 [main] DropDownHelper - selectUsingValue and value is: 618|O
+[INFO ] 2024-12-11 18:28:25.396 [main] MenuObjects - Selecting vendor
+[INFO ] 2024-12-11 18:28:25.427 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Ad-On-Bus Sdn Bhd
+[INFO ] 2024-12-11 18:28:28.181 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:28:28.320 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:28:30.585 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:28:31.296 [main] MenuObjects - Other (cinema, Other & outdoor) ad type has been selected
+[INFO ] 2024-12-11 18:28:31.340 [main] DropDownHelper - selectUsingValue and value is: 26276
+[INFO ] 2024-12-11 18:28:32.122 [main] MenuObjects - Remark has been passed for Other media type placement line
+[INFO ] 2024-12-11 18:28:46.791 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:28:46.805 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:28:57.095 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:28:57.174 [main] MenuObjects - Adding Media line
+[INFO ] 2024-12-11 18:28:58.261 [main] MenuObjects - Clicked on media line
+[INFO ] 2024-12-11 18:28:59.541 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:28:59.542 [main] MenuObjects - Add line
+[INFO ] 2024-12-11 18:28:59.665 [main] MenuObjects - Selecting Media title
+[INFO ] 2024-12-11 18:28:59.837 [main] DropDownHelper - selectUsingValue and value is: 4477|OT
+[INFO ] 2024-12-11 18:29:02.402 [main] MenuObjects - Selecting vendor
+[INFO ] 2024-12-11 18:29:02.441 [main] DropDownHelper - selectUsingVisibleText and visibleText is: APRILIS MAJU MEDIA
+[INFO ] 2024-12-11 18:29:05.416 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:29:05.527 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:29:07.844 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:29:09.080 [main] MenuObjects - Other (cinema, Other & outdoor) ad type has been selected
+[INFO ] 2024-12-11 18:29:09.146 [main] DropDownHelper - selectUsingValue and value is: 9374
+[INFO ] 2024-12-11 18:29:10.693 [main] MenuObjects - Remark has been passed for Other media type placement line
+[INFO ] 2024-12-11 18:29:45.681 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:29:45.713 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:29:56.842 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:29:57.461 [main] MenuObjects - Adding Media line
+[INFO ] 2024-12-11 18:30:01.459 [main] MenuObjects - Clicked on media line
+[INFO ] 2024-12-11 18:30:04.231 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:30:04.233 [main] MenuObjects - Add line
+[INFO ] 2024-12-11 18:30:04.525 [main] MenuObjects - Selecting Media title
+[INFO ] 2024-12-11 18:30:04.991 [main] DropDownHelper - selectUsingValue and value is: 615|R
+[INFO ] 2024-12-11 18:30:09.671 [main] MenuObjects - Selecting vendor
+[INFO ] 2024-12-11 18:30:10.528 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Adscreen Media Sdn Bhd
+[INFO ] 2024-12-11 18:30:17.766 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:30:19.697 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:30:22.176 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:30:27.337 [main] MenuObjects - Newspaper ad type has been selected
+[INFO ] 2024-12-11 18:30:27.522 [main] DropDownHelper - selectUsingValue and value is: 276
+[INFO ] 2024-12-11 18:30:32.313 [main] MenuObjects - Remark has been passed for Radio placement line
+[INFO ] 2024-12-11 18:31:02.258 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:31:02.272 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:31:12.915 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:31:13.025 [main] MenuObjects - Adding Media line
+[INFO ] 2024-12-11 18:31:15.242 [main] MenuObjects - Clicked on media line
+[INFO ] 2024-12-11 18:31:17.096 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:31:17.098 [main] MenuObjects - Add line
+[INFO ] 2024-12-11 18:31:17.678 [main] MenuObjects - Selecting Media title
+[INFO ] 2024-12-11 18:31:17.967 [main] DropDownHelper - selectUsingValue and value is: 613|TV
+[INFO ] 2024-12-11 18:31:21.093 [main] MenuObjects - Selecting vendor
+[INFO ] 2024-12-11 18:31:21.321 [main] DropDownHelper - selectUsingVisibleText and visibleText is: CH-9 MEDIA SDN BHD
+[INFO ] 2024-12-11 18:31:27.236 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:31:27.517 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:31:29.982 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2024-12-11 18:31:32.175 [main] MenuObjects - Newspaper ad type has been selected
+[INFO ] 2024-12-11 18:31:32.266 [main] DropDownHelper - selectUsingValue and value is: 10588
+[INFO ] 2024-12-11 18:31:33.621 [main] MenuObjects - Remark has been passed for TV placement line
+[INFO ] 2024-12-11 18:32:01.287 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:32:01.302 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:32:01.455 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:32:32.214 [main] ScheduleObjects - Schedule confirm button has been clicked
+[INFO ] 2024-12-11 18:33:04.249 [main] ScheduleObjects - true
+[INFO ] 2024-12-11 18:33:04.250 [main] ScheduleObjects - Pop-up is closed
+[INFO ] 2024-12-11 18:33:05.245 [main] ScheduleObjects - Create Mo by vendor button has been clicked
+[INFO ] 2024-12-11 18:33:37.057 [main] ScheduleObjects - true
+[INFO ] 2024-12-11 18:33:37.058 [main] ScheduleObjects - Pop-up is closed
+[INFO ] 2024-12-11 18:33:37.228 [main] ScheduleObjects - MO number can be seen
+[INFO ] 2024-12-11 18:33:37.450 [main] ScheduleObjects - Clicked on Select All checkbox 
+[INFO ] 2024-12-11 18:34:18.277 [main] ScheduleObjects - MO has been confirmed
+[INFO ] 2024-12-11 18:34:18.445 [main] ScheduleObjects - Edit Pop has been ignored
+[INFO ] 2024-12-11 18:34:49.432 [main] ScheduleObjects - true
+[INFO ] 2024-12-11 18:34:49.433 [main] ScheduleObjects - Pop-up is closed
+[INFO ] 2024-12-11 18:34:49.608 [main] ScheduleObjects - MO Status is : Confirm
+[INFO ] 2024-12-11 18:34:49.875 [main] ScheduleObjects - Schedule has been created
+[INFO ] 2024-12-11 18:34:50.010 [main] ScheduleObjects - TEST123JSR/C/2400490
+[INFO ] 2024-12-11 18:34:51.073 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\new_Schedule_success_20241211_183450.png
+[INFO ] 2024-12-11 18:34:51.075 [main] TestBase - ************** new_Schedule Finished ***************
+[INFO ] 2024-12-11 18:34:54.449 [main] WebDriverManager - Using chromedriver 131.0.6778.108 (resolved driver for Chrome 131)
+[INFO ] 2024-12-11 18:34:54.604 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\131.0.6778.108\chromedriver.exe
+[INFO ] 2024-12-11 18:35:01.635 [main] TestBase - Initialize Web driver: 1602467078
+[INFO ] 2024-12-11 18:35:01.636 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-12-11 18:35:01.656 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-12-11 18:35:01.674 [main] WaitHelper - page is loaded
+[INFO ] 2024-12-11 18:35:08.051 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:35:08.063 [main] TestBase - **************verify_login_page_withInValid_creds Started ***************
+[INFO ] 2024-12-11 18:35:11.519 [main] LoginObjects - Passing Only username : Teshjhz@jhjd.com
+[INFO ] 2024-12-11 18:35:12.717 [main] LoginObjects - Passing Only Password : 87832
+[INFO ] 2024-12-11 18:35:12.718 [main] LoginObjects - Both username = Teshjhz@jhjd.com Password= 87832 Is Passed
+[INFO ] 2024-12-11 18:35:14.976 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-12-11 18:35:21.254 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withInValid_creds_success_20241211_183516.png
+[INFO ] 2024-12-11 18:35:21.255 [main] TestBase - ************** verify_login_page_withInValid_creds Finished ***************
+[INFO ] 2024-12-11 18:35:21.267 [main] TestBase - **************verify_login_page_withOut_username Started ***************
+[INFO ] 2024-12-11 18:35:24.850 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-12-11 18:35:25.271 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-12-11 18:35:26.356 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withOut_username_success_20241211_183525.png
+[INFO ] 2024-12-11 18:35:26.357 [main] TestBase - ************** verify_login_page_withOut_username Finished ***************
+[INFO ] 2024-12-11 18:35:26.364 [main] TestBase - **************verify_login_page_withValid_creds Started ***************
+[INFO ] 2024-12-11 18:35:26.370 [main] LoginTestCase - Broswer has been invoked
+[INFO ] 2024-12-11 18:35:27.940 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-12-11 18:35:28.805 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-12-11 18:35:28.808 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-12-11 18:35:33.102 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-12-11 18:35:33.103 [main] LoginTestCase - Clicked on submit
+[INFO ] 2024-12-11 18:35:34.688 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\verify_login_page_withValid_creds_success_20241211_183533.png
+[INFO ] 2024-12-11 18:35:34.690 [main] TestBase - ************** verify_login_page_withValid_creds Finished ***************
+[INFO ] 2024-12-11 18:35:38.043 [main] WebDriverManager - Using chromedriver 131.0.6778.108 (resolved driver for Chrome 131)
+[INFO ] 2024-12-11 18:35:38.101 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\131.0.6778.108\chromedriver.exe
+[INFO ] 2024-12-11 18:35:42.482 [main] TestBase - Initialize Web driver: 1337900430
+[INFO ] 2024-12-11 18:35:42.483 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-12-11 18:35:42.531 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-12-11 18:35:42.542 [main] WaitHelper - page is loaded
+[INFO ] 2024-12-11 18:35:45.367 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:35:45.376 [main] TestBase - **************searchSchedule Started ***************
+[INFO ] 2024-12-11 18:35:45.382 [main] SearchRecords - Runner has been invoked
+[INFO ] 2024-12-11 18:35:45.386 [main] LoginClass - Login Runner has been invoke
+[INFO ] 2024-12-11 18:35:45.999 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-12-11 18:35:46.568 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-12-11 18:35:46.569 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-12-11 18:35:51.175 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-12-11 18:36:21.366 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-12-11 18:36:22.191 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-12-11 18:36:22.192 [main] SearchRecords - Media has been cliked
+[INFO ] 2024-12-11 18:36:22.193 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:36:22.395 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-12-11 18:36:22.397 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:36:22.577 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-12-11 18:36:22.578 [main] MenuObjects - List Schedule has been clicked
+[INFO ] 2024-12-11 18:36:23.281 [main] MenuObjects - List Schedule clicked successfully.
+[INFO ] 2024-12-11 18:36:23.282 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:36:24.877 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:36:24.878 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:36:25.092 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:36:25.260 [main] DropDownHelper - selectUsingVisibleText and visibleText is: ALL
+[INFO ] 2024-12-11 18:36:25.828 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 2024
+[INFO ] 2024-12-11 18:36:26.029 [main] MenuObjects - Clicked on free text
+[INFO ] 2024-12-11 18:36:26.922 [main] MenuObjects - Schedule number has been passed clicked successfully.
+[INFO ] 2024-12-11 18:36:26.923 [main] MenuObjects - Passing shedule no
+[INFO ] 2024-12-11 18:36:27.296 [main] MenuObjects - Text 'TEST123EIRW/TV/2400090' entered in Schedule number has been passed
+[INFO ] 2024-12-11 18:36:27.297 [main] MenuObjects - Schedule no is passed
+[INFO ] 2024-12-11 18:36:27.298 [main] MenuObjects - Clicked  on find button
+[INFO ] 2024-12-11 18:36:28.070 [main] MenuObjects - Clicked on Find button clicked successfully.
+[INFO ] 2024-12-11 18:36:28.167 [main] MenuObjects - Switched to Pending Tab
+[INFO ] 2024-12-11 18:36:28.891 [main] MenuObjects - Schedule Pending tab clicked successfully.
+[INFO ] 2024-12-11 18:36:59.083 [main] MenuObjects - Switched to Confirmed Tab
+[INFO ] 2024-12-11 18:36:59.798 [main] MenuObjects - Schedule Confirmed tab clicked successfully.
+[INFO ] 2024-12-11 18:37:19.906 [main] MenuObjects - Switched to Revision Tab
+[INFO ] 2024-12-11 18:37:20.477 [main] MenuObjects - Schedule Revision tab clicked successfully.
+[INFO ] 2024-12-11 18:37:40.596 [main] MenuObjects - Switched to Cancelled Tab
+[INFO ] 2024-12-11 18:37:41.071 [main] MenuObjects - Schedule Cancelled tab clicked successfully.
+[INFO ] 2024-12-11 18:38:01.116 [main] SwitchTabs - In Cancelled Tab
+[INFO ] 2024-12-11 18:38:21.120 [main] MenuObjects - Clicked on searched record
+[INFO ] 2024-12-11 18:38:32.362 [main] MenuObjects - Clicked on searched record clicked successfully.
+[INFO ] 2024-12-11 18:38:32.742 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\searchSchedule_success_20241211_183832.png
+[INFO ] 2024-12-11 18:38:32.742 [main] TestBase - ************** searchSchedule Finished ***************
+[INFO ] 2024-12-11 18:38:34.066 [main] WebDriverManager - Using chromedriver 131.0.6778.108 (resolved driver for Chrome 131)
+[INFO ] 2024-12-11 18:38:34.155 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\131.0.6778.108\chromedriver.exe
+[INFO ] 2024-12-11 18:38:38.795 [main] TestBase - Initialize Web driver: 1154301609
+[INFO ] 2024-12-11 18:38:38.796 [main] WaitHelper - Implicit Wait has been set to: 30
+[INFO ] 2024-12-11 18:38:38.808 [main] WaitHelper - waiting for page to load for : 100
+[INFO ] 2024-12-11 18:38:38.820 [main] WaitHelper - page is loaded
+[INFO ] 2024-12-11 18:38:41.674 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2024-12-11 18:38:41.682 [main] TestBase - **************NavigationToListCampaignAllTabs Started ***************
+[INFO ] 2024-12-11 18:38:41.689 [main] LoginClass - Login Runner has been invoke
+[INFO ] 2024-12-11 18:38:42.899 [main] LoginObjects - Passing Only username : agency@blueocean.net.my
+[INFO ] 2024-12-11 18:38:45.026 [main] LoginObjects - Passing Only Password : asd123
+[INFO ] 2024-12-11 18:38:45.027 [main] LoginObjects - Both username = agency@blueocean.net.my Password= asd123 Is Passed
+[INFO ] 2024-12-11 18:38:48.547 [main] LoginObjects - Clicked on submit
+[INFO ] 2024-12-11 18:39:18.670 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2024-12-11 18:39:19.042 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2024-12-11 18:39:19.122 [main] HomeNavigationObjects - Element are matching
+[INFO ] 2024-12-11 18:39:19.123 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:39:19.214 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2024-12-11 18:39:19.691 [main] MenuObjects - List Campaign clicked successfully.
+[INFO ] 2024-12-11 18:39:19.692 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2024-12-11 18:39:21.124 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2024-12-11 18:39:21.125 [main] MenuObjects - Switched to Buying Tab
+[INFO ] 2024-12-11 18:39:21.631 [main] MenuObjects - Campaign Buying tab clicked successfully.
+[INFO ] 2024-12-11 18:39:21.632 [main] MenuObjects - Switched to Planning Tab
+[INFO ] 2024-12-11 18:39:22.385 [main] ScreenshotUtility - Screenshot saved as: C:\Users\rasharma\Automation\pinsystem\src\main\resources\screenShots\NavigationToListCampaignAllTabs_failure_20241211_183922.png
+[INFO ] 2024-12-11 18:39:22.386 [main] TestBase - ************** NavigationToListCampaignAllTabs Finished ***************

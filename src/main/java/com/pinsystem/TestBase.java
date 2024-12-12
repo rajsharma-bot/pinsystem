@@ -19,6 +19,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.pinsystem.pageObjects.CreditNoteObjects;
+import com.pinsystem.pageObjects.GenericElementObjects;
 import com.pinsystem.pageObjects.HomeNavigationObjects;
 import com.pinsystem.pageObjects.InvoiceObjects;
 import com.pinsystem.pageObjects.MenuObjects;
@@ -34,7 +35,6 @@ import com.pinsystem.utils.ScreenshotUtility;
 import com.pinsystem.utils.SwitchTabs;
 import com.pinsystem.utils.WaitHelper;
 import com.pinsystem.utils.WindowHandler;
-import com.pinsystem.pageObjects.GenericElementObjects;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -46,26 +46,27 @@ public class TestBase {
 	public static File reportDirectory;
 	private static Logger log = LogManager.getLogger(TestBase.class);
 
-    // Declare helper and page object instances
-    
-    protected FrameHelper FrameHelper;
-    protected MenuObjects MenuObjects;
-    protected WaitHelper WaitHelper;
-    protected HomeNavigationObjects HomeNavigationObjects;
-    protected DropDownHelper DropDownHelper;
-    protected MixMediaSchedule MixMediaSchedule;
-    protected InvoiceObjects InvoiceObjects;
-    protected ScheduleObjects ScheduleObjects;
-    protected WindowHandler pop;
-    protected CreditNoteObjects CreditNoteObjects;
-    protected SwitchTabs SwitchTabs;
-    protected static PropertyReader reader;
-    protected GenericElementObjects GenericElementObjects;
-    protected ViewLineBylineObjects ViewLineBylineObjects;
+	// Declare helper and page object instances
+
+	protected FrameHelper FrameHelper;
+	protected MenuObjects MenuObjects;
+	protected WaitHelper WaitHelper;
+	protected HomeNavigationObjects HomeNavigationObjects;
+	protected DropDownHelper DropDownHelper;
+	protected MixMediaSchedule MixMediaSchedule;
+	protected InvoiceObjects InvoiceObjects;
+	protected ScheduleObjects ScheduleObjects;
+	protected WindowHandler pop;
+	protected CreditNoteObjects CreditNoteObjects;
+	protected SwitchTabs SwitchTabs;
+	protected static PropertyReader reader;
+	protected GenericElementObjects GenericElementObjects;
+	protected ViewLineBylineObjects ViewLineBylineObjects;
 
 	@BeforeSuite
 	public void beforeSuite() throws Exception {
 		extent = ExtentManager.getInstance();
+
 	}
 
 	@BeforeClass
@@ -73,7 +74,7 @@ public class TestBase {
 		startUp();
 		test = extent.createTest(getClass().getSimpleName());
 
-        // Initialize helper and page objects
+		// Initialize helper and page objects methods
 		FrameHelper = new FrameHelper(driver);
 		MenuObjects = new MenuObjects(driver);
 		WaitHelper = new WaitHelper(driver);
@@ -82,12 +83,12 @@ public class TestBase {
 		MixMediaSchedule = new MixMediaSchedule(driver);
 		InvoiceObjects = new InvoiceObjects(driver);
 		ScheduleObjects = new ScheduleObjects(driver);
-		pop= new WindowHandler(driver);
-		CreditNoteObjects= new CreditNoteObjects(driver);
-		SwitchTabs=new SwitchTabs(driver);
-        reader = new PropertyReader(); //Sample
-        GenericElementObjects =new GenericElementObjects(driver);
-        ViewLineBylineObjects = new ViewLineBylineObjects(driver);
+		pop = new WindowHandler(driver);
+		CreditNoteObjects = new CreditNoteObjects(driver);
+		SwitchTabs = new SwitchTabs(driver);
+		reader = new PropertyReader(); // Sample
+		GenericElementObjects = new GenericElementObjects(driver);
+		ViewLineBylineObjects = new ViewLineBylineObjects(driver);
 	}
 
 	@BeforeMethod
@@ -96,37 +97,35 @@ public class TestBase {
 		log.info("**************" + method.getName() + " Started ***************");
 	}
 
-	
 	@AfterClass
 	public void afterClass() {
-	    if (driver != null) {
-	        driver.quit();  // Close the WebDriver
-	    }
+		if (driver != null) {
+			driver.quit(); // Close the WebDriver
+		}
 
-	    // Export the Extent report data to Excel
-	    ExtentManager.exportReportToExcel();
+		// Export the Extent report data to Excel
+		ExtentManager.exportReportToExcel();
 
-	    // Flush the ExtentReports to finalize the report
-	    ExtentManager.getInstance().flush();
+		// Flush the ExtentReports to finalize the report
+		ExtentManager.getInstance().flush();
 	}
-
 
 	@AfterMethod
 	public void afterMethod(ITestResult result) throws IOException {
-	    if (result.getStatus() == ITestResult.FAILURE) {
-	        test.log(Status.FAIL, "Test failed: " + result.getThrowable());
-	        String screenshotPath = ScreenshotUtility.captureScreenshot(driver, result.getName() + "_failure");
-	        test.addScreenCaptureFromPath(screenshotPath);
-	    } else if (result.getStatus() == ITestResult.SUCCESS) {
-	        test.log(Status.PASS, result.getName() + " passed successfully.");
-	        String screenshotPath = ScreenshotUtility.captureScreenshot(driver, result.getName() + "_success");
-	        test.addScreenCaptureFromPath(screenshotPath);
-	    } else if (result.getStatus() == ITestResult.SKIP) {
-	        test.log(Status.SKIP, "Test skipped: " + result.getThrowable());
-	    }
-	    
-	    log.info("************** " + result.getName() + " Finished ***************");
-	    test.log(Status.INFO, result.getName() + " test ended.");
+		if (result.getStatus() == ITestResult.FAILURE) {
+			test.log(Status.FAIL, "Test failed: " + result.getThrowable());
+			String screenshotPath = ScreenshotUtility.captureScreenshot(driver, result.getName() + "_failure");
+			test.addScreenCaptureFromPath(screenshotPath);
+		} else if (result.getStatus() == ITestResult.SUCCESS) {
+			test.log(Status.PASS, result.getName() + " passed successfully.");
+			String screenshotPath = ScreenshotUtility.captureScreenshot(driver, result.getName() + "_success");
+			test.addScreenCaptureFromPath(screenshotPath);
+		} else if (result.getStatus() == ITestResult.SKIP) {
+			test.log(Status.SKIP, "Test skipped: " + result.getThrowable());
+		}
+
+		log.info("************** " + result.getName() + " Finished ***************");
+		test.log(Status.INFO, result.getName() + " test ended.");
 	}
 
 	public void startUp() throws IOException {
@@ -138,7 +137,7 @@ public class TestBase {
 		WaitHelper = new WaitHelper(driver); // Initialize WaitHelper here as it's used in startUp
 		WaitHelper.setImplicitWait(ObjectReader.reader.getExplicitWait());
 		WaitHelper.pageLoadTime(ObjectReader.reader.getPageLoadTime());
-		
+
 		getApplicationUrl();
 		driver.manage().window().maximize();
 	}

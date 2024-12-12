@@ -25,6 +25,7 @@ public class LoginTestCase extends TestBase {
 		LoginObjects lg = new LoginObjects(driver);
 		log.info("Broswer has been invoked");
 		lg.login(ObjectReader.reader.getUserName(), ObjectReader.reader.getPassword());
+		//lg.login(ObjectReader.reader.invalidUsername(), ObjectReader.reader.invalidPassword());
 		lg.remMe();
 		lg.submit();
 		log.info("Clicked on submit");

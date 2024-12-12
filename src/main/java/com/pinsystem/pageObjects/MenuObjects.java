@@ -230,7 +230,7 @@ public class MenuObjects {
 		return d;
 	}
 
-	// --------------------------Test Code-------------------------------
+	
 
 	public String labelText() {
 		String labelText = driver.findElement(MenuPageObjects.lableText).getText();
