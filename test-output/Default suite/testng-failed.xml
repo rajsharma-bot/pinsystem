@@ -3,16 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pinsystem.LoginTestCase">
+      <class name="com.pin.automation.Mix_mediaSchedule">
         <methods>
-          <include name="verify_login_page_withValid_creds"/>
+          <include name="afterClass"/>
           <include name="BeforeClass"/>
           <include name="beforeMethod"/>
-          <include name="beforeSuite"/>
-          <include name="afterClass"/>
+          <include name="new_Schedule"/>
           <include name="afterMethod"/>
+          <include name="new_Campaign"/>
+          <include name="beforeSuite"/>
         </methods>
-      </class> <!-- com.pinsystem.LoginTestCase -->
+      </class> <!-- com.pin.automation.Mix_mediaSchedule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

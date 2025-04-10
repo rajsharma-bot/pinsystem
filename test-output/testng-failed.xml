@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="isEditMO" value="true"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pinsystem.Create_invoiceAndCreditNote_testCase">
+      <class name="com.pin.automation.Mix_mediaSchedule">
         <methods>
+          <include name="afterClass"/>
           <include name="BeforeClass"/>
           <include name="beforeMethod"/>
-          <include name="CreditNote"/>
-          <include name="beforeSuite"/>
-          <include name="afterClass"/>
-          <include name="createInvoice"/>
+          <include name="new_Schedule"/>
           <include name="afterMethod"/>
-        </methods>
-      </class> <!-- com.pinsystem.Create_invoiceAndCreditNote_testCase -->
-      <class name="com.pinsystem.NavigateToCampaignMenuTabs">
-        <methods>
-          <include name="navigateTo_ListAA"/>
-          <include name="navigateTo_ListMO"/>
-          <include name="BeforeClass"/>
-          <include name="navigateToListScheduleTab"/>
-          <include name="beforeMethod"/>
+          <include name="new_Campaign"/>
           <include name="beforeSuite"/>
-          <include name="afterClass"/>
-          <include name="NavigationToListCampaignAllTabs"/>
-          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.pinsystem.NavigateToCampaignMenuTabs -->
+      </class> <!-- com.pin.automation.Mix_mediaSchedule -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

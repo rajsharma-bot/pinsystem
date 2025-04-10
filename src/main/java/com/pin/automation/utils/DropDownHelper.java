@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class DropDownHelper {
 
-	@SuppressWarnings("unused")
+	
 	private WebDriver driver;
 	
 	private static Logger log = LogManager.getLogger(DropDownHelper.class);

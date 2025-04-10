@@ -29,6 +29,7 @@ public class MenuPageObjects {
 	public static final By client_currency = By.xpath("//select[@id='ddlCurrency']");
 	public static final By vendor_currency = By.xpath("//select[@id='ddlCurrency1']");
 	public static final By schedule_grid_error = By.xpath("//*[@id='pnlError']");
+	public static final By label_digital=By.xpath("//label[text()='Linkedin']"); ///
 
 	// Vendors
 	public static final By VendorDDL = By.xpath("//select[@id='rptTV_ctl01_ddlVendor']");
@@ -41,7 +42,7 @@ public class MenuPageObjects {
 
 	// New Schedule Page
 	public static final By editMediaOrder_popup = By.xpath("//div[@id='popEditMediaSchedule_PW-1']");
-//public static final By close_edit_popup= By.xpath("//div[@id='popEditMediaSchedule_HCB-1']//img[@alt='Close']");
+    public static final By close_edit_popup= By.xpath("//div[@id='popEditMediaSchedule_HCB-1']//img[@alt='Close']");
 	public static final By Close_media_schedule = By.xpath("//div[@id='popEditMediaSchedule_HCB-1']");
 
 	public static final By layout_popUp = By.xpath("//div[@id='popShowAddedLayout_PW-1']");

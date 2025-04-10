@@ -83,7 +83,7 @@ public class GenericElementObjects {
 	
 	public void ImportStatus_SaveBtn() {
 		log.info("Clicked on import save button");
-		driver.findElement(CreditNotePageObjects.ImportSave_btn).click();
+		//driver.findElement(CreditNotePageObjects.ImportSave_btn).click();
 		clickElement(GenericElementPageObjects.ImportSave_btn, "Clicked on Import Save button");
 	}
 	

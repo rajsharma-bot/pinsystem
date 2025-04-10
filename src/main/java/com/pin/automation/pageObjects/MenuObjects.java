@@ -4,7 +4,6 @@ import java.time.Duration;
 import java.util.List;
 import java.util.Collections;
 
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -139,7 +138,7 @@ public class MenuObjects {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	public void Schedule_PendingTab() {
@@ -230,8 +229,6 @@ public class MenuObjects {
 		return d;
 	}
 
-	
-
 	public String labelText() {
 		String labelText = driver.findElement(MenuPageObjects.lableText).getText();
 		return labelText;
@@ -301,6 +298,18 @@ public class MenuObjects {
 
 	}
 
+	public void label() {
+		if (driver.findElements(MenuPageObjects.label_digital).size() > 0) {
+			checkBox(); // Call your method to click the checkbox
+		} else {
+			System.out.println("Linkedin label not found on UI.");
+		}
+	}
+
+	public static By getMediaTitleLabel(String title) {
+		return By.xpath("//label[text()='" + title + "']");
+	}
+
 	public WebElement Product() throws InterruptedException {
 		Thread.sleep(1000);
 		WebElement DDL_Product = driver.findElement(MenuPageObjects.ProductDDL);
@@ -359,24 +368,25 @@ public class MenuObjects {
 //		return false;
 //	}
 
-	
-	
-	
 	public boolean checkBox() {
-	    try {
-	        WebElement checkbox = driver.findElement(MenuPageObjects.checkBox);
-	        if (!checkbox.isSelected()) {
-	            clickElement(MenuPageObjects.checkBox, "Select Checkbox");
-	        }
-	        return checkbox.isDisplayed();
-	    } catch (NoSuchElementException e) {
-	        log.error("Checkbox not found", e);
-	        return false;
-	    }
+		try {
+			WebElement checkbox = driver.findElement(MenuPageObjects.checkBox);
+			if (!checkbox.isSelected()) {
+				clickElement(MenuPageObjects.checkBox, "Select Checkbox");
+			}
+			return checkbox.isDisplayed();
+		} catch (NoSuchElementException e) {
+			log.error("Checkbox not found", e);
+			return false;
+		}
 	}
-	
+
 	public void campaignCode() {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
+		FrameHelper FrameHelper = new FrameHelper(driver);
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 		String filePath = ResourceHelper.getCampaignCode();
 		Boolean value = driver.findElement(MenuPageObjects.CampaignCode).isDisplayed();
 		if (value == true) {
@@ -388,12 +398,11 @@ public class MenuObjects {
 		}
 
 	}
+
 	public String verifycampaignCode() {
-		String campaign_code= driver.findElement(MenuPageObjects.CampaignCode).getText();
+		String campaign_code = driver.findElement(MenuPageObjects.CampaignCode).getText();
 		return campaign_code;
 	}
-	
-	
 
 	/**
 	 * @Case :: New schedule
@@ -425,8 +434,10 @@ public class MenuObjects {
 		return selectElement;
 	}
 
-	public void Proceed_btn() {
+	public void Proceed_btn() throws InterruptedException {
+		Thread.sleep(3000);
 		driver.findElement(MenuPageObjects.proceed_btn).click();
+		Thread.sleep(5000);
 	}
 
 	public void Schedule_Grid() throws InterruptedException {
@@ -506,21 +517,21 @@ public class MenuObjects {
 //	}
 //	
 	public void Entering_Spots() {
-	    WebElement parentElement = driver.findElement(MenuPageObjects.divCalendar);
-	    List<WebElement> childElements = parentElement.findElements(MenuPageObjects.txt_Spot);
+		WebElement parentElement = driver.findElement(MenuPageObjects.divCalendar);
+		List<WebElement> childElements = parentElement.findElements(MenuPageObjects.txt_Spot);
 
-	    // Shuffle the list to randomize the order
-	    Collections.shuffle(childElements);
+		// Shuffle the list to randomize the order
+		Collections.shuffle(childElements);
 
-	    // Select the first 20 text boxes from the shuffled list
-	    List<WebElement> selectedTextBoxes = childElements.subList(0, Math.min(10, childElements.size()));
+		// Select the first 20 text boxes from the shuffled list
+		List<WebElement> selectedTextBoxes = childElements.subList(0, Math.min(10, childElements.size()));
 
-	    // Iterate through the selected text boxes and send keys
-	    for (WebElement txt_spots : selectedTextBoxes) {
-	        txt_spots.click();
-	        txt_spots.sendKeys("1");
-	        txt_spots.sendKeys(Keys.TAB);
-	    }
+		// Iterate through the selected text boxes and send keys
+		for (WebElement txt_spots : selectedTextBoxes) {
+			txt_spots.click();
+			txt_spots.sendKeys("1");
+			txt_spots.sendKeys(Keys.TAB);
+		}
 	}
 
 	public void Daily_Budget(String budget) {
@@ -594,7 +605,8 @@ public class MenuObjects {
 		return ddl_vendor_curr;
 	}
 
-	public void editMedia_popUp() {
+	public void editMedia_popUp() throws InterruptedException {
+		Thread.sleep(5000);
 		if (driver.findElement(MenuPageObjects.editMediaOrder_popup).isDisplayed() == true) {
 			driver.findElement(MenuPageObjects.Close_media_schedule).click();
 			log.info(true);
@@ -637,9 +649,12 @@ public class MenuObjects {
 
 	}
 
-	public void Add_media_line() {
-		driver.findElement(MenuPageObjects.AddMediaLine).click();
+	public void Add_media_line() throws InterruptedException {
+		Thread.sleep(10000);
 		log.info("Clicked on media line");
+		driver.findElement(MenuPageObjects.AddMediaLine).click();
+		Thread.sleep(10000);
+		
 	}
 
 	public WebElement media_line() {
@@ -750,8 +765,7 @@ public class MenuObjects {
 	public WebElement Adtype_Digital() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Wait for up to 10 seconds
 		try {
-			WebElement adTypeElement = wait
-					.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.Adtype_D));
+			WebElement adTypeElement = wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.Adtype_D));
 			if (adTypeElement.isDisplayed()) {
 				adTypeElement.click();
 				log.info("Digital ad type has been selected");

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+
+		<parameter name="isEditMO" value="true" />
+		<classes>
+			<class name="com.pin.automation.Digital_Campaign_scheduleTestCase" />
+			<class name="com.pin.automation.Create_invoiceAndCreditNote_testCase" />
+			<class name="com.pin.automation.Mix_mediaSchedule" />
+			<!--      <class name="com.pin.automation.TestClass"/>-->
+			<!--      <class name="com.pin.automation.ForTesting2"/>-->
+			<!--      <class name="com.pin.automation.LoginTestCase"/>-->
+			<!--      <class name="com.pin.automation.SearchRecords"/>-->
+			<!--      <class
+			name="com.pin.automation.NavigateToCampaignMenuTabs"/>-->
+			<!--      <class name="com.pin.automation.NewSampleRunner"/>-->
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

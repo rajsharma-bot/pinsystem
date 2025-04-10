@@ -32,11 +32,11 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 		// Entering Campaign Details
 		DropDownHelper.selectUsingVisibleText(MenuObjects.clientDDL(), ObjectReader.reader.clientname());
 		DropDownHelper.selectUsingValue(MenuObjects.soldToParty(), ObjectReader.reader.soldToParty());
-		MenuObjects.StartDate("01/01/2024");
-		MenuObjects.EndDate("31/03/2024");
+		MenuObjects.StartDate("01/01/2025");
+		MenuObjects.EndDate("28/02/2025");
 		DropDownHelper.selectUsingValue(MenuObjects.Product(), ObjectReader.reader.product());
 		DropDownHelper.selectUsingValue(MenuObjects.Contract(), ObjectReader.reader.Contract());
-		MenuObjects.CampaignName("Digital Record");
+		MenuObjects.CampaignName("Digital Record for test");
 
 		// Save and generate campaign code
 		MixMediaSchedule.digital_media();
@@ -57,8 +57,8 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 
 		// Passing placement details
 		MenuObjects.editMedia_popUp();
+		Thread.sleep(10000);
 		MixMediaSchedule.digital_placement();
-
 		ScheduleObjects.confirm_schedule();
 
 		// Creating MO and MO Confirm

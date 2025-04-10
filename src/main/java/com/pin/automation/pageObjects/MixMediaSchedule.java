@@ -1,14 +1,17 @@
 package com.pin.automation.pageObjects;
 
 import java.time.Duration;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Sleeper;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pin.automation.utils.DropDownHelper;
@@ -29,15 +32,50 @@ public class MixMediaSchedule {
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(30)); //// global WebDriverWait
 	}
 
+//	public void selectMultipleMediaTypes() throws InterruptedException {
+//		ObjectReader.reader = new PropertyReader();
+//		MenuObjects Mo = new MenuObjects(driver);
+//		DropDownHelper dh = new DropDownHelper(driver);
+//
+//		// Map of media types and corresponding search titles
+//		Map<String, String> mediaTypeTitleMap = Map.of("Cinema", "Cathay Cineplex", "Magazine", "3C Digital",
+//				"Newspaper", "CTSJ Newspaper", "Others", "Aducation Media", "Outdoor", "Ad-On-Bus", "Radio", "988 FM",
+//				"TV", "8TV");
+//
+//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//
+//		for (Map.Entry<String, String> entry : mediaTypeTitleMap.entrySet()) {
+//			String mediaType = entry.getKey();
+//			String title = entry.getValue();
+//
+//			// Select the media type from the dropdown
+//			dh.selectUsingVisibleText(Mo.mediaType(), mediaType);
+//
+//			// Search for the title
+//			Mo.searchTitle(title);
+//
+//			// Wait until the checkbox is clickable and then select it
+//			Thread.sleep(5000);
+//			Mo.checkBox();
+//		}
+//	}
+
+
+
 	public void selectMultipleMediaTypes() throws InterruptedException {
 		ObjectReader.reader = new PropertyReader();
 		MenuObjects Mo = new MenuObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
 
-		// Map of media types and corresponding search titles
-		Map<String, String> mediaTypeTitleMap = Map.of("Cinema", "Cathay Cineplex", "Magazine", "3C Digital",
-				"Newspaper", "CTSJ Newspaper", "Others", "Aducation Media", "Outdoor", "Ad-On-Bus", "Radio", "988 FM",
-				"TV", "8TV");
+		Map<String, String> mediaTypeTitleMap = Map.of(
+			"Cinema", "Cathay Cineplex",
+			"Magazine", "3C Digital",
+			"Newspaper", "CTSJ Newspaper",
+			"Others", "Aducation Media",
+			"Outdoor", "Ad-On-Bus",
+			"Radio", "988 FM",
+			"TV", "8TV"
+		);
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -45,33 +83,36 @@ public class MixMediaSchedule {
 			String mediaType = entry.getKey();
 			String title = entry.getValue();
 
-			// Select the media type from the dropdown
 			dh.selectUsingVisibleText(Mo.mediaType(), mediaType);
-
-			// Search for the title
 			Mo.searchTitle(title);
 
-			// Wait until the checkbox is clickable and then select it
-			Thread.sleep(5000);
-			Mo.checkBox();
+			By titleLocator = Mo.getMediaTitleLabel(title);
+
+			if (!driver.findElements(titleLocator).isEmpty()) {
+				Thread.sleep(2000); // or use WebDriverWait if needed
+				Mo.checkBox();
+			} else {
+				System.out.println("Media title not found on UI: " + title);
+			}
 		}
 	}
 
+	
+	
 	public void digital_media() throws InterruptedException {
 		ObjectReader.reader = new PropertyReader();
 		// FrameHelper fh = new FrameHelper(driver);
 		MenuObjects Mo = new MenuObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
 
+		Thread.sleep(3000);
 		dh.selectUsingVisibleText(Mo.mediaType(), "Digital");
 		Mo.searchTitle("Linkedin");
-		Mo.checkBox();
-		Thread.sleep(1000);
-		// New
-//		Mo.searchTitle("Youtube");
-//		Mo.checkBox();
-//		Thread.sleep(1000);
-		// New
+		Thread.sleep(5000);
+		Mo.label();
+		
+		//Mo.checkBox();
+		Thread.sleep(3000);
 
 	}
 
@@ -87,37 +128,7 @@ public class MixMediaSchedule {
 		dh.selectUsingVisibleText(Mo.vendorCurrency(), selectedValue);
 	}
 
-//	public void selectMultipleVendors() throws InterruptedException {
-//		ObjectReader.reader = new PropertyReader();
-//		MenuObjects Mo = new MenuObjects(driver);
-//		DropDownHelper dh = new DropDownHelper(driver);
-//		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(5));
-//
-//		// Arrays for dropdowns and corresponding vendor names
-//		WebElement[] dropdowns = { Mo.Vendor1(), Mo.Vendor2(), Mo.Vendor3(), Mo.Vendor4(), Mo.Vendor5(), Mo.Vendor6(),
-//				Mo.Vendor7() };
-//
-//		String[] vendorNames = { "Digital Cinema Media Sdn Bhd", "MunSang Poh",
-//				"Exponential Interactive Singapore Pte (USD)", "Ad-On-Bus Sdn Bhd", "APRILIS MAJU MEDIA",
-//				"Adscreen Media Sdn Bhd", "CH-9 MEDIA SDN BHD" };
-//
-//		Thread.sleep(3000);
-//		// Iterate over both arrays and perform actions
-//		for (int i = 0; i < dropdowns.length; i++) {
-//			try {
-//				Thread.sleep(3000);
-//				// Wait for dropdown to be clickable
-//				wait.until(ExpectedConditions.elementToBeClickable(dropdowns[i]));
-//				Thread.sleep(3000);
-//				// Select vendor
-//				dh.selectUsingVisibleText(dropdowns[i], vendorNames[i]);
-//
-//				log.info("Vendor " + (i + 1) + " (" + vendorNames[i] + ") has been passed");
-//			} catch (Exception e) {
-//				log.error("Failed to select vendor " + (i + 1) + ": " + vendorNames[i], e);
-//			}
-//		}
-//	}
+
 
 	public void selectMultipleVendors() throws InterruptedException {
 		ObjectReader.reader = new PropertyReader();
@@ -150,7 +161,7 @@ public class MixMediaSchedule {
 	public void digital_vendor() throws InterruptedException {
 		MenuObjects Mo = new MenuObjects(driver);
 		DropDownHelper dh = new DropDownHelper(driver);
-		dh.selectUsingValue(Mo.Vendor1(), "4640|MYR|1.0000000|1|1|0|0|0"); // digital
+		dh.selectUsingValue(Mo.Vendor1(), "4640|MYR|1.0000000|1|1|1.5|1.5|0"); // digital
 		log.info("vendor 1 has been passed");
 
 	}
@@ -165,6 +176,7 @@ public class MixMediaSchedule {
 		// fh.switchTodefault();
 		WaitHelper w = new WaitHelper(driver);
 		w.waitForElementVisibility(Mo.media_line(), 120);
+		Thread.sleep(10000);
 		Mo.Add_media_line();
 		try {
 			fh.switchToFrame(ObjectReader.reader.Add_line());
@@ -202,6 +214,7 @@ public class MixMediaSchedule {
 		fh.switchToFrame(ObjectReader.reader.rightframe());
 		WaitHelper w = new WaitHelper(driver);
 		w.waitForElementVisibility(Mo.media_line(), 120);
+		Thread.sleep(10000);
 		Mo.Add_media_line();
 		try {
 			fh.switchToFrame(ObjectReader.reader.Add_line());
@@ -239,6 +252,7 @@ public class MixMediaSchedule {
 		fh.switchToFrame(ObjectReader.reader.rightframe());
 		WaitHelper w = new WaitHelper(driver);
 		w.waitForElementVisibility(Mo.media_line(), 120);
+		Thread.sleep(10000);
 		Mo.Add_media_line();
 		try {
 			fh.switchToFrame(ObjectReader.reader.Add_line());
@@ -275,6 +289,7 @@ public class MixMediaSchedule {
 		Thread.sleep(2000);
 		WaitHelper w = new WaitHelper(driver);
 		w.waitForElementVisibility(Mo.media_line(), 30);
+		Thread.sleep(10000);
 		Mo.Add_media_line();
 		fh.switchToFrame(ObjectReader.reader.Add_line());
 		dh.selectUsingValue(Mo.pop_mediaType(), "3721|I");
@@ -298,6 +313,7 @@ public class MixMediaSchedule {
 		fh.switchToFrame(ObjectReader.reader.rightframe());
 		WaitHelper w = new WaitHelper(driver);
 		w.waitForElementVisibility(Mo.media_line(), 120);
+		Thread.sleep(10000);
 		Mo.Add_media_line();
 		try {
 			fh.switchToFrame(ObjectReader.reader.Add_line());
@@ -335,6 +351,7 @@ public class MixMediaSchedule {
 		fh.switchToFrame(ObjectReader.reader.rightframe());
 		WaitHelper w = new WaitHelper(driver);
 		w.waitForElementVisibility(Mo.media_line(), 120);
+		Thread.sleep(10000);
 		Mo.Add_media_line();
 		try {
 			fh.switchToFrame(ObjectReader.reader.Add_line());
@@ -372,6 +389,7 @@ public class MixMediaSchedule {
 		fh.switchToFrame(ObjectReader.reader.rightframe());
 		WaitHelper w = new WaitHelper(driver);
 		w.waitForElementVisibility(Mo.media_line(), 120);
+		Thread.sleep(10000);
 		Mo.Add_media_line();
 		try {
 			fh.switchToFrame(ObjectReader.reader.Add_line());
@@ -410,6 +428,7 @@ public class MixMediaSchedule {
 		fh.switchToFrame(ObjectReader.reader.rightframe());
 		WaitHelper w = new WaitHelper(driver);
 		w.waitForElementVisibility(Mo.media_line(), 120);
+		Thread.sleep(10000);
 		Mo.Add_media_line();
 		try {
 			fh.switchToFrame(ObjectReader.reader.Add_line());

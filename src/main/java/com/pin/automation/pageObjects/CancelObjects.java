@@ -85,7 +85,6 @@ public class CancelObjects {
 		System.out.println(molink);
 		
 		if (molink.isEmpty()) {
-			
 		    log.info("MO is cancelled");
 		} else {
 		    log.info("MO is not cancelled");

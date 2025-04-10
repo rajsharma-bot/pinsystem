@@ -3,11 +3,14 @@ package com.pin.automation;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -72,6 +75,7 @@ public class TestBase {
 	@BeforeClass
 	public void BeforeClass() throws IOException {
 		startUp();
+
 		test = extent.createTest(getClass().getSimpleName());
 
 		// Initialize helper and page objects methods
@@ -130,8 +134,17 @@ public class TestBase {
 
 	public void startUp() throws IOException {
 		ObjectReader.reader = new PropertyReader();
+		final Map<String, Object> chromePrefs = new HashMap<>();
+		chromePrefs.put("credentials_enable_service", false);
+		chromePrefs.put("profile.password_manager_enabled", false);
+		chromePrefs.put("profile.password_manager_leak_detection", false); // <======== This is the important one
+
+		final ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.setExperimentalOption("prefs", chromePrefs);
+
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(chromeOptions);
+		//ChromeDriver driver = new ChromeDriver(chromeOptions);
 		log.info("Initialize Web driver: " + driver.hashCode());
 
 		WaitHelper = new WaitHelper(driver); // Initialize WaitHelper here as it's used in startUp

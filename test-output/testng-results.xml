@@ -1,283 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="10" failed="2" skipped="4">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-11T18:07:49 IST" name="Suite" finished-at="2024-12-11T18:39:23 IST" duration-ms="1894060">
+  <suite started-at="2025-04-09T18:09:28 IST" name="Default suite" finished-at="2025-04-09T18:14:22 IST" duration-ms="294825">
     <groups>
     </groups>
-    <test started-at="2024-12-11T18:07:49 IST" name="Test" finished-at="2024-12-11T18:39:23 IST" duration-ms="1894060">
-      <class name="com.pinsystem.Create_invoiceAndCreditNote_testCase">
-        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote_testCase@5a772895]" started-at="2024-12-11T18:15:25 IST" name="BeforeClass" finished-at="2024-12-11T18:15:35 IST" duration-ms="10618" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote_testCase@5a772895]" started-at="2024-12-11T18:15:35 IST" name="beforeMethod" finished-at="2024-12-11T18:15:35 IST" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.pinsystem.Create_invoiceAndCreditNote_testCase.createInvoice() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="createInvoice()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote_testCase@5a772895]" started-at="2024-12-11T18:15:35 IST" name="createInvoice" description="Creating Invoice" finished-at="2024-12-11T18:18:19 IST" duration-ms="163919" status="FAIL">
-          <exception class="java.util.NoSuchElementException">
-            <full-stacktrace>
-              <![CDATA[java.util.NoSuchElementException
-at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:1025)
-at java.base/java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:1046)
-at com.pinsystem.utils.WindowHandler.switchToChildWindow(WindowHandler.java:28)
-at com.pinsystem.Create_invoiceAndCreditNote_testCase.createInvoice(Create_invoiceAndCreditNote_testCase.java:58)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.util.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createInvoice -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote_testCase@5a772895]" started-at="2024-12-11T18:18:19 IST" name="afterMethod" finished-at="2024-12-11T18:18:20 IST" duration-ms="397" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=createInvoice status=FAILURE method=Create_invoiceAndCreditNote_testCase.createInvoice()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote_testCase@5a772895] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="CreditNote()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote_testCase@5a772895]" started-at="2024-12-11T18:18:20 IST" name="CreditNote" description="Creating Credit Note" finished-at="2024-12-11T18:18:20 IST" depends-on-methods="com.pinsystem.Create_invoiceAndCreditNote_testCase.createInvoice" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.pinsystem.Create_invoiceAndCreditNote_testCase.CreditNote() on instance com.pinsystem.Create_invoiceAndCreditNote_testCase@5a772895 depends on not successfully finished methods 
-[com.pinsystem.Create_invoiceAndCreditNote_testCase.createInvoice() on instance com.pinsystem.Create_invoiceAndCreditNote_testCase@5a772895]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.pinsystem.Create_invoiceAndCreditNote_testCase.CreditNote() on instance com.pinsystem.Create_invoiceAndCreditNote_testCase@5a772895 depends on not successfully finished methods 
-[com.pinsystem.Create_invoiceAndCreditNote_testCase.createInvoice() on instance com.pinsystem.Create_invoiceAndCreditNote_testCase@5a772895]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreditNote -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.Create_invoiceAndCreditNote_testCase@5a772895]" started-at="2024-12-11T18:18:20 IST" name="afterClass" finished-at="2024-12-11T18:18:22 IST" duration-ms="1954" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.pinsystem.Create_invoiceAndCreditNote_testCase -->
-      <class name="com.pinsystem.Digital_Campaign_scheduleTestCase">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:07:48 IST" name="beforeSuite" finished-at="2024-12-11T18:07:49 IST" duration-ms="1139" status="PASS">
+    <test started-at="2025-04-09T18:09:28 IST" name="Default test" finished-at="2025-04-09T18:14:22 IST" duration-ms="294825">
+      <class name="com.pin.automation.Mix_mediaSchedule">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:09:27 IST" name="beforeSuite" finished-at="2025-04-09T18:09:28 IST" duration-ms="636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:07:49 IST" name="BeforeClass" finished-at="2024-12-11T18:08:11 IST" duration-ms="21928" status="PASS">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:09:28 IST" name="BeforeClass" finished-at="2025-04-09T18:09:43 IST" duration-ms="14820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:08:11 IST" name="beforeMethod" finished-at="2024-12-11T18:08:11 IST" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:09:43 IST" name="beforeMethod" finished-at="2025-04-09T18:09:43 IST" duration-ms="35" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pinsystem.Digital_Campaign_scheduleTestCase.digital_campaign() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.pin.automation.Mix_mediaSchedule.new_Campaign() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="digital_campaign()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:08:11 IST" name="digital_campaign" description="Digital Campaign" finished-at="2024-12-11T18:10:02 IST" duration-ms="110510" status="PASS">
+        <test-method signature="new_Campaign()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:09:43 IST" name="new_Campaign" description="PINSYS-1808-New Campaign" finished-at="2025-04-09T18:11:31 IST" duration-ms="108630" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- digital_campaign -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:10:02 IST" name="afterMethod" finished-at="2024-12-11T18:10:03 IST" duration-ms="683" status="PASS">
+        </test-method> <!-- new_Campaign -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:11:31 IST" name="afterMethod" finished-at="2025-04-09T18:11:32 IST" duration-ms="296" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=digital_campaign status=SUCCESS method=Digital_Campaign_scheduleTestCase.digital_campaign()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366] output={null}]]]>
+                <![CDATA[[TestResult name=new_Campaign status=SUCCESS method=Mix_mediaSchedule.new_Campaign()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:10:03 IST" name="beforeMethod" finished-at="2024-12-11T18:10:03 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:11:32 IST" name="beforeMethod" finished-at="2025-04-09T18:11:32 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pinsystem.Digital_Campaign_scheduleTestCase.Digital_Schedule() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.pin.automation.Mix_mediaSchedule.new_Schedule() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="Digital_Schedule()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:10:03 IST" name="Digital_Schedule" description="Digital Schedule" finished-at="2024-12-11T18:13:58 IST" depends-on-methods="com.pinsystem.Digital_Campaign_scheduleTestCase.digital_campaign" duration-ms="235070" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Digital_Schedule -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:13:58 IST" name="afterMethod" finished-at="2024-12-11T18:13:58 IST" duration-ms="377" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Digital_Schedule status=SUCCESS method=Digital_Campaign_scheduleTestCase.Digital_Schedule()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:13:58 IST" name="beforeMethod" finished-at="2024-12-11T18:13:58 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.pinsystem.Digital_Campaign_scheduleTestCase.view_line_by_line(boolean) throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="view_line_by_line(boolean)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:13:58 IST" name="view_line_by_line" description="Performing operation on view line by line page" finished-at="2024-12-11T18:15:14 IST" depends-on-methods="com.pinsystem.Digital_Campaign_scheduleTestCase.Digital_Schedule" duration-ms="76035" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- view_line_by_line -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:15:14 IST" name="afterMethod" finished-at="2024-12-11T18:15:15 IST" duration-ms="657" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=view_line_by_line status=SUCCESS method=Digital_Campaign_scheduleTestCase.view_line_by_line(boolean)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:15:15 IST" name="beforeMethod" finished-at="2024-12-11T18:15:15 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.pinsystem.Digital_Campaign_scheduleTestCase.viewMOpage() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="viewMOpage()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:15:15 IST" name="viewMOpage" description="View MO page" finished-at="2024-12-11T18:15:18 IST" depends-on-methods="com.pinsystem.Digital_Campaign_scheduleTestCase.view_line_by_line" duration-ms="3013" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- viewMOpage -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:15:18 IST" name="afterMethod" finished-at="2024-12-11T18:15:19 IST" duration-ms="829" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=viewMOpage status=SUCCESS method=Digital_Campaign_scheduleTestCase.viewMOpage()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.Digital_Campaign_scheduleTestCase@159e366]" started-at="2024-12-11T18:15:19 IST" name="afterClass" finished-at="2024-12-11T18:15:25 IST" duration-ms="6105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.pinsystem.Digital_Campaign_scheduleTestCase -->
-      <class name="com.pinsystem.NavigateToCampaignMenuTabs">
-        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@5d332969]" started-at="2024-12-11T18:38:34 IST" name="BeforeClass" finished-at="2024-12-11T18:38:41 IST" duration-ms="7652" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@5d332969]" started-at="2024-12-11T18:38:41 IST" name="beforeMethod" finished-at="2024-12-11T18:38:41 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.pinsystem.NavigateToCampaignMenuTabs.NavigationToListCampaignAllTabs() throws java.io.IOException,java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="NavigationToListCampaignAllTabs()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@5d332969]" started-at="2024-12-11T18:38:41 IST" name="NavigationToListCampaignAllTabs" description="Navigation To List Campaign All Tabs" finished-at="2024-12-11T18:39:22 IST" duration-ms="40341" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method signature="new_Schedule()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:11:32 IST" name="new_Schedule" description="PINSYS-1813:: New Schedule(New layout)" finished-at="2025-04-09T18:14:17 IST" depends-on-methods="com.pin.automation.Mix_mediaSchedule.new_Campaign" duration-ms="165112" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[stale element reference: stale element not found in the current frame
-  (Session info: chrome=131.0.6778.86)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+              <![CDATA[element click intercepted: Element <iframe id="popShowAddedLayout_CIF-1" scrolling="auto" frameborder="0" src="MediaScheduleLayout.aspx?mode=2&amp;Id=S6CBAm3ssPAl7Ul1d1===Y6zoEE:::IrBwR5ltDhiqqB2Kc=&amp;bid=eDO0izlStC8=&amp;ClientID=37768&amp;MediaCat=C,M,N,O,OT,R,TV&amp;OtherId=5212,5473,6786,3491,3813" style="width: 100%; height: 253px; overflow: auto; backface-visibility: hidden; vertical-align: text-bottom;" cd_frame_id_="44078584f11e7e06e3a2997c1c41784f"></iframe> is not clickable at point (670, 316). Other element would receive the click: <iframe id="popEditMediaSchedule_CIF-1" scrolling="auto" frameborder="0" src="EditMediaSchedule.aspx?Id=S6CBAm3ssPAl7Ul1d1===Y6zoEE:::IrBwR5ltDhiqqB2Kc=&amp;bid=eDO0izlStC8=&amp;history=3===CNlgJ8OM4=&amp;Period=01/01/2025 - 31/03/2025&amp;Mode=op&amp;DecimalDigits=2" style="width: 100%; height: 548px; overflow: auto; backface-visibility: hidden; vertical-align: text-bottom;"></iframe>
+  (Session info: chrome=135.0.7049.42)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81f016c36894d692a9e7e83fedb15b55, clickElement {id=f.F31065DDDC2B7FD1052F1FC0750DBA09.d.4FBEF5385C69CAA3D2015F27E00D6A66.e.223}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59947}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59947/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (81f016c36894d692a9e7e83fedb15b55)] -> xpath: //input[@id='btnCamp0']]
-Session ID: 81f016c36894d692a9e7e83fedb15b55]]>
+Command: [0b7477cda975c75454c3d08e6400379f, clickElement {id=f.A7C06878E7A8FDCB9D33DD67D6BE3026.d.B76BAF828DE17FEDB50B42B06403473A.e.718}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54902}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54902/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0b7477cda975c75454c3d08e6400379f)] -> xpath: //td[normalize-space()='Mix Media Type']]
+Session ID: 0b7477cda975c75454c3d08e6400379f]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=131.0.6778.86)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <iframe id="popShowAddedLayout_CIF-1" scrolling="auto" frameborder="0" src="MediaScheduleLayout.aspx?mode=2&amp;Id=S6CBAm3ssPAl7Ul1d1===Y6zoEE:::IrBwR5ltDhiqqB2Kc=&amp;bid=eDO0izlStC8=&amp;ClientID=37768&amp;MediaCat=C,M,N,O,OT,R,TV&amp;OtherId=5212,5473,6786,3491,3813" style="width: 100%; height: 253px; overflow: auto; backface-visibility: hidden; vertical-align: text-bottom;" cd_frame_id_="44078584f11e7e06e3a2997c1c41784f"></iframe> is not clickable at point (670, 316). Other element would receive the click: <iframe id="popEditMediaSchedule_CIF-1" scrolling="auto" frameborder="0" src="EditMediaSchedule.aspx?Id=S6CBAm3ssPAl7Ul1d1===Y6zoEE:::IrBwR5ltDhiqqB2Kc=&amp;bid=eDO0izlStC8=&amp;history=3===CNlgJ8OM4=&amp;Period=01/01/2025 - 31/03/2025&amp;Mode=op&amp;DecimalDigits=2" style="width: 100%; height: 548px; overflow: auto; backface-visibility: hidden; vertical-align: text-bottom;"></iframe>
+  (Session info: chrome=135.0.7049.42)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [81f016c36894d692a9e7e83fedb15b55, clickElement {id=f.F31065DDDC2B7FD1052F1FC0750DBA09.d.4FBEF5385C69CAA3D2015F27E00D6A66.e.223}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59947}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59947/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (81f016c36894d692a9e7e83fedb15b55)] -> xpath: //input[@id='btnCamp0']]
-Session ID: 81f016c36894d692a9e7e83fedb15b55
+Command: [0b7477cda975c75454c3d08e6400379f, clickElement {id=f.A7C06878E7A8FDCB9D33DD67D6BE3026.d.B76BAF828DE17FEDB50B42B06403473A.e.718}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54902}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54902/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0b7477cda975c75454c3d08e6400379f)] -> xpath: //td[normalize-space()='Mix Media Type']]
+Session ID: 0b7477cda975c75454c3d08e6400379f
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -290,9 +87,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at com.pinsystem.pageObjects.MenuObjects.clickElement(MenuObjects.java:41)
-at com.pinsystem.pageObjects.MenuObjects.CampaignPlanningTab(MenuObjects.java:82)
-at com.pinsystem.NavigateToCampaignMenuTabs.NavigationToListCampaignAllTabs(NavigateToCampaignMenuTabs.java:26)
+at com.pin.automation.pageObjects.MenuObjects.select_media_layout(MenuObjects.java:654)
+at com.pin.automation.Mix_mediaSchedule.new_Schedule(Mix_mediaSchedule.java:57)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -321,314 +117,26 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NavigationToListCampaignAllTabs -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@5d332969]" started-at="2024-12-11T18:39:22 IST" name="afterMethod" finished-at="2024-12-11T18:39:22 IST" duration-ms="356" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=NavigationToListCampaignAllTabs status=FAILURE method=NavigateToCampaignMenuTabs.NavigationToListCampaignAllTabs()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@5d332969] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="navigateToListScheduleTab()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@5d332969]" started-at="2024-12-11T18:39:22 IST" name="navigateToListScheduleTab" description="Navigation To List Schedule All Tabs" finished-at="2024-12-11T18:39:22 IST" depends-on-methods="com.pinsystem.NavigateToCampaignMenuTabs.NavigationToListCampaignAllTabs" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.pinsystem.NavigateToCampaignMenuTabs.navigateToListScheduleTab() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969 depends on not successfully finished methods 
-[com.pinsystem.NavigateToCampaignMenuTabs.NavigationToListCampaignAllTabs() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.pinsystem.NavigateToCampaignMenuTabs.navigateToListScheduleTab() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969 depends on not successfully finished methods 
-[com.pinsystem.NavigateToCampaignMenuTabs.NavigationToListCampaignAllTabs() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToListScheduleTab -->
-        <test-method signature="navigateTo_ListMO()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@5d332969]" started-at="2024-12-11T18:39:22 IST" name="navigateTo_ListMO" description="Navigation To List MenuObjects All Tabs" finished-at="2024-12-11T18:39:22 IST" depends-on-methods="com.pinsystem.NavigateToCampaignMenuTabs.navigateToListScheduleTab" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.pinsystem.NavigateToCampaignMenuTabs.navigateTo_ListMO() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969 depends on not successfully finished methods 
-[com.pinsystem.NavigateToCampaignMenuTabs.navigateToListScheduleTab() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.pinsystem.NavigateToCampaignMenuTabs.navigateTo_ListMO() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969 depends on not successfully finished methods 
-[com.pinsystem.NavigateToCampaignMenuTabs.navigateToListScheduleTab() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateTo_ListMO -->
-        <test-method signature="navigateTo_ListAA()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@5d332969]" started-at="2024-12-11T18:39:22 IST" name="navigateTo_ListAA" description="Navigation To List MenuObjects All Tabs" finished-at="2024-12-11T18:39:22 IST" depends-on-methods="com.pinsystem.NavigateToCampaignMenuTabs.navigateTo_ListMO" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.pinsystem.NavigateToCampaignMenuTabs.navigateTo_ListAA() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969 depends on not successfully finished methods 
-[com.pinsystem.NavigateToCampaignMenuTabs.navigateTo_ListMO() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.pinsystem.NavigateToCampaignMenuTabs.navigateTo_ListAA() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969 depends on not successfully finished methods 
-[com.pinsystem.NavigateToCampaignMenuTabs.navigateTo_ListMO() on instance com.pinsystem.NavigateToCampaignMenuTabs@5d332969]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateTo_ListAA -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.NavigateToCampaignMenuTabs@5d332969]" started-at="2024-12-11T18:39:22 IST" name="afterClass" finished-at="2024-12-11T18:39:23 IST" duration-ms="1279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.pinsystem.NavigateToCampaignMenuTabs -->
-      <class name="com.pinsystem.SearchRecords">
-        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.SearchRecords@3ee39da0]" started-at="2024-12-11T18:35:38 IST" name="BeforeClass" finished-at="2024-12-11T18:35:45 IST" duration-ms="7354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.SearchRecords@3ee39da0]" started-at="2024-12-11T18:35:45 IST" name="beforeMethod" finished-at="2024-12-11T18:35:45 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.pinsystem.SearchRecords.searchSchedule() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="searchSchedule()[pri:0, instance:com.pinsystem.SearchRecords@3ee39da0]" started-at="2024-12-11T18:35:45 IST" name="searchSchedule" description="Search Schedule" finished-at="2024-12-11T18:38:32 IST" duration-ms="166986" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchSchedule -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.SearchRecords@3ee39da0]" started-at="2024-12-11T18:38:32 IST" name="afterMethod" finished-at="2024-12-11T18:38:32 IST" duration-ms="375" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchSchedule status=SUCCESS method=SearchRecords.searchSchedule()[pri:0, instance:com.pinsystem.SearchRecords@3ee39da0] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.SearchRecords@3ee39da0]" started-at="2024-12-11T18:38:32 IST" name="afterClass" finished-at="2024-12-11T18:38:34 IST" duration-ms="1281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.pinsystem.SearchRecords -->
-      <class name="com.pinsystem.LoginTestCase">
-        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.LoginTestCase@704b2127]" started-at="2024-12-11T18:34:54 IST" name="BeforeClass" finished-at="2024-12-11T18:35:08 IST" duration-ms="13670" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.LoginTestCase@704b2127]" started-at="2024-12-11T18:35:08 IST" name="beforeMethod" finished-at="2024-12-11T18:35:08 IST" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.pinsystem.LoginTestCase.verify_login_page_withInValid_creds() throws java.lang.InterruptedException,java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verify_login_page_withInValid_creds()[pri:0, instance:com.pinsystem.LoginTestCase@704b2127]" started-at="2024-12-11T18:35:08 IST" name="verify_login_page_withInValid_creds" description="PINSYS-1755 : Verifying login with invalid username and password" finished-at="2024-12-11T18:35:16 IST" duration-ms="8166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_login_page_withInValid_creds -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.LoginTestCase@704b2127]" started-at="2024-12-11T18:35:16 IST" name="afterMethod" finished-at="2024-12-11T18:35:21 IST" duration-ms="5016" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_login_page_withInValid_creds status=SUCCESS method=LoginTestCase.verify_login_page_withInValid_creds()[pri:0, instance:com.pinsystem.LoginTestCase@704b2127] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.LoginTestCase@704b2127]" started-at="2024-12-11T18:35:21 IST" name="beforeMethod" finished-at="2024-12-11T18:35:21 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.pinsystem.LoginTestCase.verify_login_page_withOut_username() throws java.io.IOException,java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verify_login_page_withOut_username()[pri:0, instance:com.pinsystem.LoginTestCase@704b2127]" started-at="2024-12-11T18:35:21 IST" name="verify_login_page_withOut_username" description="PINSYS-1755 : Verifying login with invalid username" finished-at="2024-12-11T18:35:25 IST" duration-ms="4323" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_login_page_withOut_username -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.LoginTestCase@704b2127]" started-at="2024-12-11T18:35:25 IST" name="afterMethod" finished-at="2024-12-11T18:35:26 IST" duration-ms="759" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_login_page_withOut_username status=SUCCESS method=LoginTestCase.verify_login_page_withOut_username()[pri:0, instance:com.pinsystem.LoginTestCase@704b2127] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.LoginTestCase@704b2127]" started-at="2024-12-11T18:35:26 IST" name="beforeMethod" finished-at="2024-12-11T18:35:26 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.pinsystem.LoginTestCase.verify_login_page_withValid_creds() throws java.lang.InterruptedException,java.io.IOException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verify_login_page_withValid_creds()[pri:0, instance:com.pinsystem.LoginTestCase@704b2127]" started-at="2024-12-11T18:35:26 IST" name="verify_login_page_withValid_creds" description="PINSYS-1755 : Verifying login with valid username and password" finished-at="2024-12-11T18:35:33 IST" duration-ms="6845" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_login_page_withValid_creds -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.LoginTestCase@704b2127]" started-at="2024-12-11T18:35:33 IST" name="afterMethod" finished-at="2024-12-11T18:35:34 IST" duration-ms="1476" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verify_login_page_withValid_creds status=SUCCESS method=LoginTestCase.verify_login_page_withValid_creds()[pri:0, instance:com.pinsystem.LoginTestCase@704b2127] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.LoginTestCase@704b2127]" started-at="2024-12-11T18:35:34 IST" name="afterClass" finished-at="2024-12-11T18:35:38 IST" duration-ms="3325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.pinsystem.LoginTestCase -->
-      <class name="com.pinsystem.Mix_mediaSchedule">
-        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pinsystem.Mix_mediaSchedule@39fc6b2c]" started-at="2024-12-11T18:18:22 IST" name="BeforeClass" finished-at="2024-12-11T18:18:33 IST" duration-ms="11571" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Mix_mediaSchedule@39fc6b2c]" started-at="2024-12-11T18:18:33 IST" name="beforeMethod" finished-at="2024-12-11T18:18:33 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.pinsystem.Mix_mediaSchedule.new_Campaign() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="new_Campaign()[pri:0, instance:com.pinsystem.Mix_mediaSchedule@39fc6b2c]" started-at="2024-12-11T18:18:33 IST" name="new_Campaign" description="PINSYS-1808-New Campaign" finished-at="2024-12-11T18:22:35 IST" duration-ms="241614" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- new_Campaign -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Mix_mediaSchedule@39fc6b2c]" started-at="2024-12-11T18:22:35 IST" name="afterMethod" finished-at="2024-12-11T18:22:36 IST" duration-ms="1411" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=new_Campaign status=SUCCESS method=Mix_mediaSchedule.new_Campaign()[pri:0, instance:com.pinsystem.Mix_mediaSchedule@39fc6b2c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pinsystem.Mix_mediaSchedule@39fc6b2c]" started-at="2024-12-11T18:22:36 IST" name="beforeMethod" finished-at="2024-12-11T18:22:36 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.pinsystem.Mix_mediaSchedule.new_Schedule() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="new_Schedule()[pri:0, instance:com.pinsystem.Mix_mediaSchedule@39fc6b2c]" started-at="2024-12-11T18:22:36 IST" name="new_Schedule" description="PINSYS-1813:: New Schedule(New layout)" finished-at="2024-12-11T18:34:50 IST" depends-on-methods="com.pinsystem.Mix_mediaSchedule.new_Campaign" duration-ms="733483" status="PASS">
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- new_Schedule -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pinsystem.Mix_mediaSchedule@39fc6b2c]" started-at="2024-12-11T18:34:50 IST" name="afterMethod" finished-at="2024-12-11T18:34:51 IST" duration-ms="856" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:14:17 IST" name="afterMethod" finished-at="2025-04-09T18:14:17 IST" duration-ms="439" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=new_Schedule status=SUCCESS method=Mix_mediaSchedule.new_Schedule()[pri:0, instance:com.pinsystem.Mix_mediaSchedule@39fc6b2c] output={null}]]]>
+                <![CDATA[[TestResult name=new_Schedule status=FAILURE method=Mix_mediaSchedule.new_Schedule()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pinsystem.Mix_mediaSchedule@39fc6b2c]" started-at="2024-12-11T18:34:51 IST" name="afterClass" finished-at="2024-12-11T18:34:54 IST" duration-ms="3307" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:14:17 IST" name="afterClass" finished-at="2025-04-09T18:14:22 IST" duration-ms="5350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.pinsystem.Mix_mediaSchedule -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.pin.automation.Mix_mediaSchedule -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

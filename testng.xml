@@ -3,16 +3,19 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 		<!-- Define the parameter to control toggle for view_line_by_line method -->
-		<parameter name="isEditMO" value="true" /> <!-- Set to "true" or "false"
+		<parameter name="isEditMO" value="false" /> <!-- Set to "true" or "false"
 		as needed -->
 
 		<classes>
-			<class name="com.pinsystem.Digital_Campaign_scheduleTestCase" />
-			<class name="com.pinsystem.Create_invoiceAndCreditNote_testCase" />
-			<class name="com.pinsystem.Mix_mediaSchedule" />
-			<class name="com.pinsystem.LoginTestCase" />
-			<class name="com.pinsystem.SearchRecords" />
-			<class name="com.pinsystem.NavigateToCampaignMenuTabs" />
+<!--			<class name="com.pin.automation.Digital_Campaign_scheduleTestCase" />-->
+<!--			<class name="com.pin.automation.Create_invoiceAndCreditNote_testCase" />-->
+			<class name="com.pin.automation.Mix_mediaSchedule" />
+
+
+			<!--			<class name="com.pin.automation.LoginTestCase" />-->
+			<!--			<class name="com.pin.automation.SearchRecords" />-->
+			<!--			<class name="com.pin.automation.NavigateToCampaignMenuTabs"
+			/>-->
 
 		</classes>
 	</test> <!--

@@ -28,11 +28,11 @@ public class Mix_mediaSchedule extends TestBase {
 		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 		DropDownHelper.selectUsingVisibleText(MenuObjects.clientDDL(), "1001 MEDIA SDN BHD | DUO1 MYR");
 		DropDownHelper.selectUsingValue(MenuObjects.soldToParty(), "50222");
-		MenuObjects.StartDate("01/01/2024");
-		MenuObjects.EndDate("31/03/2024");
+		MenuObjects.StartDate("01/01/2025");
+		MenuObjects.EndDate("31/03/2025");
 		DropDownHelper.selectUsingValue(MenuObjects.Product(), "11491");
 		DropDownHelper.selectUsingValue(MenuObjects.Contract(), "1047");
-		MenuObjects.CampaignName("For Testing");
+		MenuObjects.CampaignName("Mix media campaign for test");
 		MixMediaSchedule.selectMultipleMediaTypes();
 		MenuObjects.Save();
 		MenuObjects.campaignCode();

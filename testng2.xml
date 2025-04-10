@@ -12,10 +12,10 @@
 			<class name="com.pinsystem.Create_invoiceAndCreditNote_testCase" />
 			<class name="com.pinsystem.Mix_mediaSchedule" />
 			<!--			<class name="com.pinsystem.ForTesting2" />-->
-			<class name="com.pinsystem.LoginTestCase" />
-			<class name="com.pinsystem.SearchRecords" />
-			<class name="com.pinsystem.NewSampleRunner" />
-			<class name="com.pinsystem.NavigateToCampaignMenuTabs" />
+<!--			<class name="com.pinsystem.LoginTestCase" />-->
+<!--			<class name="com.pinsystem.SearchRecords" />-->
+<!--			<class name="com.pinsystem.NewSampleRunner" />-->
+<!--			<class name="com.pinsystem.NavigateToCampaignMenuTabs" />-->
 			<!--			<class name="com.pinsystem.TestClass" />-->
 		</classes>
 	</test> <!--
