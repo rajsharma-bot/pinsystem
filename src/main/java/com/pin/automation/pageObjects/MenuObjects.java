@@ -32,7 +32,6 @@ public class MenuObjects {
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(30)); //// global WebDriverWait
 	}
 
-///////////////////////////////////////////////////////////Just for Testing
 	// Generic method to click elements
 	public void clickElement(By locator, String elementName) {
 		WebElement element = waitForElementToBeClickable(locator);
