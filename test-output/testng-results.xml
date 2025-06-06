@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-09T18:09:28 IST" name="Default suite" finished-at="2025-04-09T18:14:22 IST" duration-ms="294825">
+  <suite started-at="2025-06-06T16:21:30 IST" name="Suite" finished-at="2025-06-06T16:38:10 IST" duration-ms="1000365">
     <groups>
     </groups>
-    <test started-at="2025-04-09T18:09:28 IST" name="Default test" finished-at="2025-04-09T18:14:22 IST" duration-ms="294825">
+    <test started-at="2025-06-06T16:21:30 IST" name="Test" finished-at="2025-06-06T16:38:10 IST" duration-ms="1000365">
       <class name="com.pin.automation.Mix_mediaSchedule">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:09:27 IST" name="beforeSuite" finished-at="2025-04-09T18:09:28 IST" duration-ms="636" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:09:28 IST" name="BeforeClass" finished-at="2025-04-09T18:09:43 IST" duration-ms="14820" status="PASS">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.pin.automation.Mix_mediaSchedule@5a12c728]" started-at="2025-06-06T16:27:55 IST" name="BeforeClass" finished-at="2025-06-06T16:28:00 IST" duration-ms="5134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pi2]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:09:43 IST" name="beforeMethod" finished-at="2025-04-09T18:09:43 IST" duration-ms="35" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pin.automation.Mix_mediaSchedule@5a12c728]" started-at="2025-06-06T16:28:00 IST" name="beforeMethod" finished-at="2025-06-06T16:28:00 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,22 +29,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="new_Campaign()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:09:43 IST" name="new_Campaign" description="PINSYS-1808-New Campaign" finished-at="2025-04-09T18:11:31 IST" duration-ms="108630" status="PASS">
+        <test-method signature="new_Campaign()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@5a12c728]" started-at="2025-06-06T16:28:00 IST" name="new_Campaign" description="PINSYS-1808-New Campaign" finished-at="2025-06-06T16:30:09 IST" duration-ms="128906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- new_Campaign -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:11:31 IST" name="afterMethod" finished-at="2025-04-09T18:11:32 IST" duration-ms="296" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pin.automation.Mix_mediaSchedule@5a12c728]" started-at="2025-06-06T16:30:09 IST" name="afterMethod" finished-at="2025-06-06T16:30:11 IST" duration-ms="1327" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=new_Campaign status=SUCCESS method=Mix_mediaSchedule.new_Campaign()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27] output={null}]]]>
+                <![CDATA[[TestResult name=new_Campaign status=SUCCESS method=Mix_mediaSchedule.new_Campaign()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@5a12c728] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:11:32 IST" name="beforeMethod" finished-at="2025-04-09T18:11:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pin.automation.Mix_mediaSchedule@5a12c728]" started-at="2025-06-06T16:30:11 IST" name="beforeMethod" finished-at="2025-06-06T16:30:11 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,29 +55,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="new_Schedule()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:11:32 IST" name="new_Schedule" description="PINSYS-1813:: New Schedule(New layout)" finished-at="2025-04-09T18:14:17 IST" depends-on-methods="com.pin.automation.Mix_mediaSchedule.new_Campaign" duration-ms="165112" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="new_Schedule()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@5a12c728]" started-at="2025-06-06T16:30:11 IST" name="new_Schedule" description="PINSYS-1813:: New Schedule(New layout)" finished-at="2025-06-06T16:38:07 IST" depends-on-methods="com.pin.automation.Mix_mediaSchedule.new_Campaign" duration-ms="476249" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[element click intercepted: Element <iframe id="popShowAddedLayout_CIF-1" scrolling="auto" frameborder="0" src="MediaScheduleLayout.aspx?mode=2&amp;Id=S6CBAm3ssPAl7Ul1d1===Y6zoEE:::IrBwR5ltDhiqqB2Kc=&amp;bid=eDO0izlStC8=&amp;ClientID=37768&amp;MediaCat=C,M,N,O,OT,R,TV&amp;OtherId=5212,5473,6786,3491,3813" style="width: 100%; height: 253px; overflow: auto; backface-visibility: hidden; vertical-align: text-bottom;" cd_frame_id_="44078584f11e7e06e3a2997c1c41784f"></iframe> is not clickable at point (670, 316). Other element would receive the click: <iframe id="popEditMediaSchedule_CIF-1" scrolling="auto" frameborder="0" src="EditMediaSchedule.aspx?Id=S6CBAm3ssPAl7Ul1d1===Y6zoEE:::IrBwR5ltDhiqqB2Kc=&amp;bid=eDO0izlStC8=&amp;history=3===CNlgJ8OM4=&amp;Period=01/01/2025 - 31/03/2025&amp;Mode=op&amp;DecimalDigits=2" style="width: 100%; height: 548px; overflow: auto; backface-visibility: hidden; vertical-align: text-bottom;"></iframe>
-  (Session info: chrome=135.0.7049.42)
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0b7477cda975c75454c3d08e6400379f, clickElement {id=f.A7C06878E7A8FDCB9D33DD67D6BE3026.d.B76BAF828DE17FEDB50B42B06403473A.e.718}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54902}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54902/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0b7477cda975c75454c3d08e6400379f)] -> xpath: //td[normalize-space()='Mix Media Type']]
-Session ID: 0b7477cda975c75454c3d08e6400379f]]>
+Command: [4003cf79980fa9944036df970b3f8837, clickElement {id=f.F8DD55B687E55DC22FF39AA68AC36CBF.d.DCB93D0B461202B302309B40B22802AD.e.3796}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.56, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64670}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64670/devtoo..., se:cdpVersion: 137.0.7151.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4003cf79980fa9944036df970b3f8837)] -> xpath: //input[@id='btnConfirmSchedule']]
+Session ID: 4003cf79980fa9944036df970b3f8837]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <iframe id="popShowAddedLayout_CIF-1" scrolling="auto" frameborder="0" src="MediaScheduleLayout.aspx?mode=2&amp;Id=S6CBAm3ssPAl7Ul1d1===Y6zoEE:::IrBwR5ltDhiqqB2Kc=&amp;bid=eDO0izlStC8=&amp;ClientID=37768&amp;MediaCat=C,M,N,O,OT,R,TV&amp;OtherId=5212,5473,6786,3491,3813" style="width: 100%; height: 253px; overflow: auto; backface-visibility: hidden; vertical-align: text-bottom;" cd_frame_id_="44078584f11e7e06e3a2997c1c41784f"></iframe> is not clickable at point (670, 316). Other element would receive the click: <iframe id="popEditMediaSchedule_CIF-1" scrolling="auto" frameborder="0" src="EditMediaSchedule.aspx?Id=S6CBAm3ssPAl7Ul1d1===Y6zoEE:::IrBwR5ltDhiqqB2Kc=&amp;bid=eDO0izlStC8=&amp;history=3===CNlgJ8OM4=&amp;Period=01/01/2025 - 31/03/2025&amp;Mode=op&amp;DecimalDigits=2" style="width: 100%; height: 548px; overflow: auto; backface-visibility: hidden; vertical-align: text-bottom;"></iframe>
-  (Session info: chrome=135.0.7049.42)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.18.1', revision: 'b1d3319b48'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0b7477cda975c75454c3d08e6400379f, clickElement {id=f.A7C06878E7A8FDCB9D33DD67D6BE3026.d.B76BAF828DE17FEDB50B42B06403473A.e.718}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54902}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54902/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0b7477cda975c75454c3d08e6400379f)] -> xpath: //td[normalize-space()='Mix Media Type']]
-Session ID: 0b7477cda975c75454c3d08e6400379f
+Command: [4003cf79980fa9944036df970b3f8837, clickElement {id=f.F8DD55B687E55DC22FF39AA68AC36CBF.d.DCB93D0B461202B302309B40B22802AD.e.3796}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.56, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64670}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64670/devtoo..., se:cdpVersion: 137.0.7151.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4003cf79980fa9944036df970b3f8837)] -> xpath: //input[@id='btnConfirmSchedule']]
+Session ID: 4003cf79980fa9944036df970b3f8837
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -87,8 +92,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at com.pin.automation.pageObjects.MenuObjects.select_media_layout(MenuObjects.java:654)
-at com.pin.automation.Mix_mediaSchedule.new_Schedule(Mix_mediaSchedule.java:57)
+at com.pin.automation.pageObjects.ScheduleObjects.confirm_schedule(ScheduleObjects.java:81)
+at com.pin.automation.Mix_mediaSchedule.new_Schedule(Mix_mediaSchedule.java:95)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -117,26 +122,191 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- new_Schedule -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:14:17 IST" name="afterMethod" finished-at="2025-04-09T18:14:17 IST" duration-ms="439" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pin.automation.Mix_mediaSchedule@5a12c728]" started-at="2025-06-06T16:38:07 IST" name="afterMethod" finished-at="2025-06-06T16:38:10 IST" duration-ms="2557" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=new_Schedule status=FAILURE method=Mix_mediaSchedule.new_Schedule()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27] output={null}]]]>
+                <![CDATA[[TestResult name=new_Schedule status=FAILURE method=Mix_mediaSchedule.new_Schedule()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@5a12c728] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@1db0ec27]" started-at="2025-04-09T18:14:17 IST" name="afterClass" finished-at="2025-04-09T18:14:22 IST" duration-ms="5350" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pin.automation.Mix_mediaSchedule@5a12c728]" started-at="2025-06-06T16:38:10 IST" name="afterClass" finished-at="2025-06-06T16:38:10 IST" duration-ms="931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.pin.automation.Mix_mediaSchedule -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.pin.automation.Digital_Campaign_scheduleTestCase">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:21:29 IST" name="beforeSuite" finished-at="2025-06-06T16:21:30 IST" duration-ms="575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pi2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:21:30 IST" name="BeforeClass" finished-at="2025-06-06T16:21:44 IST" duration-ms="13614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pi2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:21:44 IST" name="beforeMethod" finished-at="2025-06-06T16:21:44 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pin.automation.Digital_Campaign_scheduleTestCase.digital_campaign() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="digital_campaign()[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:21:44 IST" name="digital_campaign" description="Digital Campaign" finished-at="2025-06-06T16:23:19 IST" duration-ms="95328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- digital_campaign -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:23:19 IST" name="afterMethod" finished-at="2025-06-06T16:23:21 IST" duration-ms="1987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=digital_campaign status=SUCCESS method=Digital_Campaign_scheduleTestCase.digital_campaign()[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:23:21 IST" name="beforeMethod" finished-at="2025-06-06T16:23:21 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pin.automation.Digital_Campaign_scheduleTestCase.Digital_Schedule() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="Digital_Schedule()[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:23:21 IST" name="Digital_Schedule" description="Digital Schedule" finished-at="2025-06-06T16:26:55 IST" depends-on-methods="com.pin.automation.Digital_Campaign_scheduleTestCase.digital_campaign" duration-ms="213667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Digital_Schedule -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:26:55 IST" name="afterMethod" finished-at="2025-06-06T16:26:56 IST" duration-ms="1516" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Digital_Schedule status=SUCCESS method=Digital_Campaign_scheduleTestCase.Digital_Schedule()[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:26:56 IST" name="beforeMethod" finished-at="2025-06-06T16:26:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pin.automation.Digital_Campaign_scheduleTestCase.view_line_by_line(boolean) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="view_line_by_line(boolean)[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:26:56 IST" name="view_line_by_line" description="Performing operation on view line by line page" finished-at="2025-06-06T16:27:45 IST" depends-on-methods="com.pin.automation.Digital_Campaign_scheduleTestCase.Digital_Schedule" duration-ms="48356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- view_line_by_line -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:27:45 IST" name="afterMethod" finished-at="2025-06-06T16:27:47 IST" duration-ms="2402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=view_line_by_line status=SUCCESS method=Digital_Campaign_scheduleTestCase.view_line_by_line(boolean)[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:27:47 IST" name="beforeMethod" finished-at="2025-06-06T16:27:47 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pin.automation.Digital_Campaign_scheduleTestCase.viewMOpage() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="viewMOpage()[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:27:47 IST" name="viewMOpage" description="View MO page" finished-at="2025-06-06T16:27:49 IST" depends-on-methods="com.pin.automation.Digital_Campaign_scheduleTestCase.view_line_by_line" duration-ms="2148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewMOpage -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:27:49 IST" name="afterMethod" finished-at="2025-06-06T16:27:52 IST" duration-ms="2387" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=viewMOpage status=SUCCESS method=Digital_Campaign_scheduleTestCase.viewMOpage()[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:27:52 IST" name="beforeMethod" finished-at="2025-06-06T16:27:52 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pin.automation.Digital_Campaign_scheduleTestCase.clientInvoiceRemark() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="clientInvoiceRemark()[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:27:52 IST" name="clientInvoiceRemark" description="Client Invoice Remark" finished-at="2025-06-06T16:27:52 IST" depends-on-methods="com.pin.automation.Digital_Campaign_scheduleTestCase.viewMOpage" duration-ms="189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clientInvoiceRemark -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:27:52 IST" name="afterMethod" finished-at="2025-06-06T16:27:54 IST" duration-ms="2413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clientInvoiceRemark status=SUCCESS method=Digital_Campaign_scheduleTestCase.clientInvoiceRemark()[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd]" started-at="2025-06-06T16:27:54 IST" name="afterClass" finished-at="2025-06-06T16:27:55 IST" duration-ms="1139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.pin.automation.Digital_Campaign_scheduleTestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

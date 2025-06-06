@@ -13,8 +13,9 @@ public class SearchRecords extends TestBase {
 
 	@Test(description = "Search Schedule")
 	public void searchSchedule() throws InterruptedException {
-		LoginClass lc = new LoginClass(driver);
-		log.info("Runner has been invoked");
+		String env = System.getProperty("env", "pi2");  // Default to pi2 if not set
+        LoginClass lc = new LoginClass(driver, env);
+        log.info("Login runner has been invoked for env: " + env);
 		lc.loginRunner();
 		HomeNavigationObjects.MEDIA();
 		log.info("Media has been cliked");

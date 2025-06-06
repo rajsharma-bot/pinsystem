@@ -8,23 +8,21 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">294,825</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">1,000,365</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.pin.automation.Mix_mediaSchedule</td><td><a href="#m0">new_Schedule</a></td><td rowspan="1">1744202492042</td><td rowspan="1">165112</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.pin.automation.Mix_mediaSchedule</td><td><a href="#m1">new_Campaign</a></td><td rowspan="1">1744202383105</td><td rowspan="1">108630</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.pin.automation.Mix_mediaSchedule</td><td><a href="#m0">new_Schedule</a></td><td rowspan="1">1749207611196</td><td rowspan="1">476249</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.pin.automation.Digital_Campaign_scheduleTestCase</td><td><a href="#m1">Digital_Schedule</a></td><td rowspan="1">1749207201593</td><td rowspan="1">213667</td></tr><tr class="passedeven"><td><a href="#m2">clientInvoiceRemark</a></td><td rowspan="1">1749207472079</td><td rowspan="1">189</td></tr><tr class="passedeven"><td><a href="#m3">digital_campaign</a></td><td rowspan="1">1749207104263</td><td rowspan="1">95328</td></tr><tr class="passedeven"><td><a href="#m4">viewMOpage</a></td><td rowspan="1">1749207467542</td><td rowspan="1">2148</td></tr><tr class="passedeven"><td><a href="#m5">view_line_by_line</a></td><td rowspan="1">1749207416782</td><td rowspan="1">48356</td></tr><tr class="passedodd"><td rowspan="1">com.pin.automation.Mix_mediaSchedule</td><td><a href="#m6">new_Campaign</a></td><td rowspan="1">1749207480959</td><td rowspan="1">128906</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.pin.automation.Mix_mediaSchedule#new_Schedule</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;iframe id=&quot;popShowAddedLayout_CIF-1&quot; scrolling=&quot;auto&quot; frameborder=&quot;0&quot; src=&quot;MediaScheduleLayout.aspx?mode=2&amp;amp;Id=S6CBAm3ssPAl7Ul1d1===Y6zoEE:::IrBwR5ltDhiqqB2Kc=&amp;amp;bid=eDO0izlStC8=&amp;amp;ClientID=37768&amp;amp;MediaCat=C,M,N,O,OT,R,TV&amp;amp;OtherId=5212,5473,6786,3491,3813&quot; style=&quot;width: 100%; height: 253px; overflow: auto; backface-visibility: hidden; vertical-align: text-bottom;&quot; cd_frame_id_=&quot;44078584f11e7e06e3a2997c1c41784f&quot;&gt;&lt;/iframe&gt; is not clickable at point (670, 316). Other element would receive the click: &lt;iframe id=&quot;popEditMediaSchedule_CIF-1&quot; scrolling=&quot;auto&quot; frameborder=&quot;0&quot; src=&quot;EditMediaSchedule.aspx?Id=S6CBAm3ssPAl7Ul1d1===Y6zoEE:::IrBwR5ltDhiqqB2Kc=&amp;amp;bid=eDO0izlStC8=&amp;amp;history=3===CNlgJ8OM4=&amp;amp;Period=01/01/2025 - 31/03/2025&amp;amp;Mode=op&amp;amp;DecimalDigits=2&quot; style=&quot;width: 100%; height: 548px; overflow: auto; backface-visibility: hidden; vertical-align: text-bottom;&quot;&gt;&lt;/iframe&gt;
-  (Session info: chrome=135.0.7049.42)
+<h2>Test</h2><h3 id="m0">com.pin.automation.Mix_mediaSchedule#new_Schedule</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0b7477cda975c75454c3d08e6400379f, clickElement {id=f.A7C06878E7A8FDCB9D33DD67D6BE3026.d.B76BAF828DE17FEDB50B42B06403473A.e.718}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54902}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54902/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0b7477cda975c75454c3d08e6400379f)] -&gt; xpath: //td[normalize-space()=&apos;Mix Media Type&apos;]]
-Session ID: 0b7477cda975c75454c3d08e6400379f
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+Command: [4003cf79980fa9944036df970b3f8837, clickElement {id=f.F8DD55B687E55DC22FF39AA68AC36CBF.d.DCB93D0B461202B302309B40B22802AD.e.3796}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.56, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64670}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64670/devtoo..., se:cdpVersion: 137.0.7151.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4003cf79980fa9944036df970b3f8837)] -&gt; xpath: //input[@id=&apos;btnConfirmSchedule&apos;]]
+Session ID: 4003cf79980fa9944036df970b3f8837
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -34,35 +32,15 @@ Session ID: 0b7477cda975c75454c3d08e6400379f
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at com.pin.automation.pageObjects.MenuObjects.select_media_layout(MenuObjects.java:654)
-	at com.pin.automation.Mix_mediaSchedule.new_Schedule(Mix_mediaSchedule.java:57)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at com.pin.automation.pageObjects.ScheduleObjects.confirm_schedule(ScheduleObjects.java:81)
+	at com.pin.automation.Mix_mediaSchedule.new_Schedule(Mix_mediaSchedule.java:95)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.pin.automation.Mix_mediaSchedule#new_Campaign</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.pin.automation.Digital_Campaign_scheduleTestCase#Digital_Schedule</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.pin.automation.Digital_Campaign_scheduleTestCase#clientInvoiceRemark</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.pin.automation.Digital_Campaign_scheduleTestCase#digital_campaign</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.pin.automation.Digital_Campaign_scheduleTestCase#viewMOpage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.pin.automation.Digital_Campaign_scheduleTestCase#view_line_by_line</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>true</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.pin.automation.Mix_mediaSchedule#new_Campaign</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -17,8 +17,9 @@ public class NewSampleRunner extends TestBase {
 	@Test
 	public void testRunner() throws InterruptedException {
 		WaitHelper.setImplicitWait(ObjectReader.reader.getExplicitWait());
-		LoginClass lc = new LoginClass(driver);
-		log.info("Login runner has been invoked");
+		String env = System.getProperty("env", "pi2");  // Default to pi2 if not set
+        LoginClass lc = new LoginClass(driver, env);
+        log.info("Login runner has been invoked for env: " + env);
 		lc.loginRunner();
 //		HomeNavigationObjects.MEDIA();
 //		MenuObjects.newCampaign();

@@ -2,19 +2,22 @@ package com.pin.automation;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.pin.automation.TestBase;
 import com.pin.automation.utils.ObjectReader;
 
 public class NavigateToCampaignMenuTabs extends TestBase {
 
-	//private static Logger log = LogManager.getLogger(NavigateToCampaignMenuTabs.class);
+	private static Logger log = LogManager.getLogger(NavigateToCampaignMenuTabs.class);
 
 	@Test(description = "Navigation To List Campaign All Tabs", priority =0)
 	public void NavigationToListCampaignAllTabs() throws IOException, InterruptedException {
-		LoginClass lc= new LoginClass(driver);
+		String env = System.getProperty("env", "pi2");  // Default to pi2 if not set
+        LoginClass lc = new LoginClass(driver, env);
+        log.info("Login runner has been invoked for env: " + env);
 		lc.loginRunner();
 		HomeNavigationObjects.MEDIA();
 		Assert.assertEquals(true, HomeNavigationObjects.MEDIA(ObjectReader.reader.MEDIA()));

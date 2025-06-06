@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 09 17:34:42 IST 2025</td>
+<td>Started on:</td><td>Fri Jun 06 16:21:30 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>293 seconds (293178 ms)</td>
+<tr><td>Total time:</td><td>1000 seconds (1000365 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,15 +77,16 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.pin.automation.Mix_mediaSchedule.new_Schedule()'><b>new_Schedule</b><br>Test class: com.pin.automation.Mix_mediaSchedule<br>Test method: PINSYS-1813:: New Schedule(New layout)</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;iframe id=&quot;popShowAddedLayout_CIF-1&quot; scrolling=&quot;auto&quot; frameborder=&quot;0&quot; src=&quot;/MediaScheduleLayout.aspx?mode=2&amp;amp;Id=S6CBAm3ssPAl7Ul1d1===Y69yIeLOdMnbi78cxfdQ7a8c=&amp;amp;bid=eDO0izlStC8=&amp;amp;ClientID=37768&amp;amp;MediaCat=C,M,N,O,OT,R,TV&amp;amp;OtherId=5212,5473,6786,3491,3813&quot; style=&quot;width: 100%; height: 253px; overflow: auto; backface-visibility: hidden; vertical-align: text-bottom;&quot; cd_frame_id_=&quot;517cba232d6e29c4fe3454c1ebc1ad17&quot;&gt;&lt;/iframe&gt; is not clickable at point (670, 316). Other element would receive the click: &lt;iframe id=&quot;popEditMediaSchedule_CIF-1&quot; scrolling=&quot;auto&quot; frameborder=&quot;0&quot; src=&quot;/EditMediaSchedule.aspx?Id=S6CBAm3ssPAl7Ul1d1===Y69yIeLOdMnbi78cxfdQ7a8c=&amp;amp;bid=eDO0izlStC8=&amp;amp;history=3===CNlgJ8OM4=&amp;amp;Period=01/01/2025 - 31/03/2025&amp;amp;Mode=op&amp;amp;DecimalDigits=2&quot; style=&quot;width: 100%; height: 548px; overflow: auto; backface-visibility: hidden; vertical-align: text-bottom;&quot;&gt;&lt;/iframe&gt;
-  (Session info: chrome=135.0.7049.42)
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b3606a11e4f25a6980f00b5743c477d4, clickElement {id=f.1358FF4488DE785485670E65F5E838F3.d.B9F47DAB59A8A4E6F3C4DC6A06484D71.e.760}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64275/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b3606a11e4f25a6980f00b5743c477d4)] -&gt; xpath: //td[normalize-space()=&apos;Mix Media Type&apos;]]
-Session ID: b3606a11e4f25a6980f00b5743c477d4
+Command: [4003cf79980fa9944036df970b3f8837, clickElement {id=f.F8DD55B687E55DC22FF39AA68AC36CBF.d.DCB93D0B461202B302309B40B22802AD.e.3796}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.56, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64670}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64670/devtoo..., se:cdpVersion: 137.0.7151.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4003cf79980fa9944036df970b3f8837)] -&gt; xpath: //input[@id=&apos;btnConfirmSchedule&apos;]]
+Session ID: 4003cf79980fa9944036df970b3f8837
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -95,19 +96,20 @@ Session ID: b3606a11e4f25a6980f00b5743c477d4
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at com.pin.automation.pageObjects.MenuObjects.select_media_layout(MenuObjects.java:646)
-	at com.pin.automation.Mix_mediaSchedule.new_Schedule(Mix_mediaSchedule.java:57)
+	at com.pin.automation.pageObjects.ScheduleObjects.confirm_schedule(ScheduleObjects.java:81)
+	at com.pin.automation.Mix_mediaSchedule.new_Schedule(Mix_mediaSchedule.java:95)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1413886848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1413886848'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;iframe id=&quot;popShowAddedLayout_CIF-1&quot; scrolling=&quot;auto&quot; frameborder=&quot;0&quot; src=&quot;/MediaScheduleLayout.aspx?mode=2&amp;amp;Id=S6CBAm3ssPAl7Ul1d1===Y69yIeLOdMnbi78cxfdQ7a8c=&amp;amp;bid=eDO0izlStC8=&amp;amp;ClientID=37768&amp;amp;MediaCat=C,M,N,O,OT,R,TV&amp;amp;OtherId=5212,5473,6786,3491,3813&quot; style=&quot;width: 100%; height: 253px; overflow: auto; backface-visibility: hidden; vertical-align: text-bottom;&quot; cd_frame_id_=&quot;517cba232d6e29c4fe3454c1ebc1ad17&quot;&gt;&lt;/iframe&gt; is not clickable at point (670, 316). Other element would receive the click: &lt;iframe id=&quot;popEditMediaSchedule_CIF-1&quot; scrolling=&quot;auto&quot; frameborder=&quot;0&quot; src=&quot;/EditMediaSchedule.aspx?Id=S6CBAm3ssPAl7Ul1d1===Y69yIeLOdMnbi78cxfdQ7a8c=&amp;amp;bid=eDO0izlStC8=&amp;amp;history=3===CNlgJ8OM4=&amp;amp;Period=01/01/2025 - 31/03/2025&amp;amp;Mode=op&amp;amp;DecimalDigits=2&quot; style=&quot;width: 100%; height: 548px; overflow: auto; backface-visibility: hidden; vertical-align: text-bottom;&quot;&gt;&lt;/iframe&gt;
-  (Session info: chrome=135.0.7049.42)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1877226071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1877226071'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=137.0.7151.56)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b3606a11e4f25a6980f00b5743c477d4, clickElement {id=f.1358FF4488DE785485670E65F5E838F3.d.B9F47DAB59A8A4E6F3C4DC6A06484D71.e.760}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.42, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64275}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64275/devtoo..., se:cdpVersion: 135.0.7049.42, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b3606a11e4f25a6980f00b5743c477d4)] -&gt; xpath: //td[normalize-space()=&apos;Mix Media Type&apos;]]
-Session ID: b3606a11e4f25a6980f00b5743c477d4
+Command: [4003cf79980fa9944036df970b3f8837, clickElement {id=f.F8DD55B687E55DC22FF39AA68AC36CBF.d.DCB93D0B461202B302309B40B22802AD.e.3796}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.56, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64670}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64670/devtoo..., se:cdpVersion: 137.0.7151.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4003cf79980fa9944036df970b3f8837)] -&gt; xpath: //input[@id=&apos;btnConfirmSchedule&apos;]]
+Session ID: 4003cf79980fa9944036df970b3f8837
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -120,8 +122,8 @@ Session ID: b3606a11e4f25a6980f00b5743c477d4
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at com.pin.automation.pageObjects.MenuObjects.select_media_layout(MenuObjects.java:646)
-	at com.pin.automation.Mix_mediaSchedule.new_Schedule(Mix_mediaSchedule.java:57)
+	at com.pin.automation.pageObjects.ScheduleObjects.confirm_schedule(ScheduleObjects.java:81)
+	at com.pin.automation.Mix_mediaSchedule.new_Schedule(Mix_mediaSchedule.java:95)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -149,8 +151,8 @@ Session ID: b3606a11e4f25a6980f00b5743c477d4
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>159</td>
-<td>com.pin.automation.Mix_mediaSchedule@e27ba81</td></tr>
+<td>476</td>
+<td>com.pin.automation.Mix_mediaSchedule@5a12c728</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -161,10 +163,35 @@ Session ID: b3606a11e4f25a6980f00b5743c477d4
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.pin.automation.Digital_Campaign_scheduleTestCase.Digital_Schedule()'><b>Digital_Schedule</b><br>Test class: com.pin.automation.Digital_Campaign_scheduleTestCase<br>Test method: Digital Schedule</td>
+<td></td>
+<td>213</td>
+<td>com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd</td></tr>
+<tr>
+<td title='com.pin.automation.Digital_Campaign_scheduleTestCase.digital_campaign()'><b>digital_campaign</b><br>Test class: com.pin.automation.Digital_Campaign_scheduleTestCase<br>Test method: Digital Campaign</td>
+<td></td>
+<td>95</td>
+<td>com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd</td></tr>
+<tr>
+<td title='com.pin.automation.Digital_Campaign_scheduleTestCase.view_line_by_line()'><b>view_line_by_line</b><br>Test class: com.pin.automation.Digital_Campaign_scheduleTestCase<br>Test method: Performing operation on view line by line page<br>Parameters: true</td>
+<td></td>
+<td>48</td>
+<td>com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd</td></tr>
+<tr>
+<td title='com.pin.automation.Digital_Campaign_scheduleTestCase.clientInvoiceRemark()'><b>clientInvoiceRemark</b><br>Test class: com.pin.automation.Digital_Campaign_scheduleTestCase<br>Test method: Client Invoice Remark</td>
+<td></td>
+<td>0</td>
+<td>com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd</td></tr>
+<tr>
+<td title='com.pin.automation.Digital_Campaign_scheduleTestCase.viewMOpage()'><b>viewMOpage</b><br>Test class: com.pin.automation.Digital_Campaign_scheduleTestCase<br>Test method: View MO page</td>
+<td></td>
+<td>2</td>
+<td>com.pin.automation.Digital_Campaign_scheduleTestCase@1556f2dd</td></tr>
+<tr>
 <td title='com.pin.automation.Mix_mediaSchedule.new_Campaign()'><b>new_Campaign</b><br>Test class: com.pin.automation.Mix_mediaSchedule<br>Test method: PINSYS-1808-New Campaign</td>
 <td></td>
-<td>116</td>
-<td>com.pin.automation.Mix_mediaSchedule@e27ba81</td></tr>
+<td>128</td>
+<td>com.pin.automation.Mix_mediaSchedule@5a12c728</td></tr>
 </table><p>
 </body>
 </html>

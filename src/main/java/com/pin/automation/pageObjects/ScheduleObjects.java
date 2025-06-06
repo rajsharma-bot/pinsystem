@@ -7,6 +7,7 @@ import java.time.Duration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -16,6 +17,7 @@ import org.testng.Assert;
 import com.pin.automation.utils.FileSaver;
 import com.pin.automation.utils.FrameHelper;
 import com.pin.automation.utils.ObjectReader;
+import com.pin.automation.utils.PopupHandler;
 import com.pin.automation.utils.ResourceHelper;
 
 public class ScheduleObjects {
@@ -40,8 +42,6 @@ public class ScheduleObjects {
 		}
 	}
 
-
-	
 	private WebElement waitForElementToBeClickable(By locator) {
 		try {
 			return wait.until(ExpectedConditions.elementToBeClickable(locator));
@@ -77,7 +77,7 @@ public class ScheduleObjects {
 		FrameHelper.switchTodefault();
 		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 
-		Thread.sleep(30000);
+		Thread.sleep(10000);
 		driver.findElement(SchedulePageObjects.confirm_schedule).click();
 		if (driver.switchTo().alert() != null) {
 			driver.switchTo().alert().accept();
@@ -87,13 +87,7 @@ public class ScheduleObjects {
 		}
 		log.info("Schedule confirm button has been clicked");
 		Thread.sleep(30000);
-		if (driver.findElement(MenuPageObjects.editMediaOrder_popup).isDisplayed() == true) {
-			driver.findElement(MenuPageObjects.Close_media_schedule).click();
-			log.info(true);
-			log.info("Pop-up is closed");
-		} else {
-			log.info("Edit Pop has been ignored");
-		}
+		PopupHandler.closeEditMediaOrderPopups(driver, log);
 	}
 
 	public void Create_MO_By_Vendor() throws InterruptedException {
@@ -101,32 +95,19 @@ public class ScheduleObjects {
 		driver.switchTo().alert().accept();
 		log.info("Create Mo by vendor button has been clicked");
 		Thread.sleep(30000);
-		if (driver.findElement(MenuPageObjects.editMediaOrder_popup).isDisplayed() == true) {
-			driver.findElement(MenuPageObjects.Close_media_schedule).click();
-			log.info(true);
-			log.info("Pop-up is closed");
-		} else {
-			log.info("Edit Pop has been ignored");
-		}
+		PopupHandler.closeEditMediaOrderPopups(driver, log);
 
 	}
-	
-	
+
 	public void createAutoMonthlyMO() throws InterruptedException {
 		driver.findElement(SchedulePageObjects.createAutoMonthly_MO).click();
 		driver.switchTo().alert().accept();
 		log.info("Create Mo by vendor button has been clicked");
 		Thread.sleep(30000);
-		if (driver.findElement(MenuPageObjects.editMediaOrder_popup).isDisplayed() == true) {
-			driver.findElement(MenuPageObjects.Close_media_schedule).click();
-			log.info(true);
-			log.info("Pop-up is closed");
-		} else {
-			log.info("Edit Pop has been ignored");
-		}
+
+		PopupHandler.closeEditMediaOrderPopups(driver, log);
 
 	}
-	
 
 	public WebElement MO_number() {
 		WebElement MO = driver.findElement(SchedulePageObjects.MO_created);
@@ -140,8 +121,9 @@ public class ScheduleObjects {
 	}
 
 	public void Confirm_mo() throws InterruptedException {
+		Thread.sleep(1000);
 		driver.findElement(SchedulePageObjects.Confirm_mo).click();
-		Thread.sleep(30000);
+		Thread.sleep(5000);
 		if (driver.switchTo().alert() != null) {
 			driver.switchTo().alert().accept();
 		} else {
@@ -150,24 +132,13 @@ public class ScheduleObjects {
 		}
 		log.info("MO has been confirmed");
 
-		if (driver.findElement(MenuPageObjects.editMediaOrder_popup).isDisplayed() == true) {
-			driver.findElement(MenuPageObjects.Close_media_schedule).click();
-			log.info(true);
-			log.info("Pop-up is closed");
-		} else {
-			log.info("Edit Pop has been ignored");
-		}
+		PopupHandler.closeEditMediaOrderPopups(driver, log);
 	}
 
 	public void MO_status() throws InterruptedException {
 		Thread.sleep(30000);
-		if (driver.findElement(MenuPageObjects.editMediaOrder_popup).isDisplayed() == true) {
-			driver.findElement(MenuPageObjects.Close_media_schedule).click();
-			log.info(true);
-			log.info("Pop-up is closed");
-		} else {
-			log.info("Edit Pop-up has been ignored");
-		}
+
+		PopupHandler.closeEditMediaOrderPopups(driver, log);
 
 		String status = driver.findElement(SchedulePageObjects.mo_status).getText();
 		if (status.equalsIgnoreCase("Confirm")) {
@@ -199,15 +170,14 @@ public class ScheduleObjects {
 		log.info("Clicking on MO hyperlink");
 		clickElement(SchedulePageObjects.MOLink, " Click on MO number hyperlink");
 	}
-	
+
 	public String MOnumber() {
 
 		log.info("Clicking on MO hyperlink");
-		String MO= driver.findElement(SchedulePageObjects.MOLink).getText();
+		String MO = driver.findElement(SchedulePageObjects.MOLink).getText();
 		return MO;
 	}
 
-	
 	public void getMOnumber() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		String filePath = ResourceHelper.getMONumber();
@@ -220,32 +190,31 @@ public class ScheduleObjects {
 			log.error("MO is not created");
 		}
 	}
-	
+
 	public void verifyViewMOpage(String mo) {
 		log.info("Verify if landed on View line by line page");
-		
-		String ScheduleNo =driver.findElement(SchedulePageObjects.verifyMOpage).getText();
-		if(ScheduleNo.contains(mo)) {
+
+		String ScheduleNo = driver.findElement(SchedulePageObjects.verifyMOpage).getText();
+		if (ScheduleNo.contains(mo)) {
 			log.info("Successfully Landed on View MO Page");
-			Boolean value =true;
+			Boolean value = true;
 			Assert.assertEquals(value, true);
-		}else {
+		} else {
 			log.info("unable to fetch MO number");
-		}	
-		
+		}
+
 	}
-	
+
 	public void moPage_moStatus() {
-		log.info("verifying MO status");	
-		String status =driver.findElement(SchedulePageObjects.viewMOPageStatus).getText();
-		if(status.contains("Confirmed")){
+		log.info("verifying MO status");
+		String status = driver.findElement(SchedulePageObjects.viewMOPageStatus).getText();
+		if (status.contains("Confirmed")) {
 			log.info(status);
 			assertEquals(status, "Confirmed");
-		}
-		else {
+		} else {
 			log.info("MO status doesn't matches");
 		}
-		
+
 	}
-	
+
 }

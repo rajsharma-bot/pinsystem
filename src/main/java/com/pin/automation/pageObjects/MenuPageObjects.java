@@ -13,6 +13,7 @@ public class MenuPageObjects {
 	// popShowAddedLayout_CIF-1
 	/** New Campaign Element * {@Date}= DD/MM/YYYY */
 	public static final By ClientDDL = By.xpath("//select[@id='ddlMediaClient']");
+	public static final By ServiceBy= By.xpath("//select[@id='ddlPersonnel']"); //New added
 	public static final By SoldToParty = By.xpath("//select[@id='ddlThirdParty']");
 	public static final By StartDate = By.xpath("//input[@id='txtFrom']");
 	public static final By EndDate = By.xpath("//input[@id='txtTo']");
@@ -29,7 +30,9 @@ public class MenuPageObjects {
 	public static final By client_currency = By.xpath("//select[@id='ddlCurrency']");
 	public static final By vendor_currency = By.xpath("//select[@id='ddlCurrency1']");
 	public static final By schedule_grid_error = By.xpath("//*[@id='pnlError']");
-	public static final By label_digital=By.xpath("//label[text()='Linkedin']"); ///
+	//public static final By label_digital=By.xpath("//label[text()='Linkedin']"); ///
+	public static final By label_digital=By.xpath("//input[@id='chkLstMediaCat_0']");
+	
 
 	// Vendors
 	public static final By VendorDDL = By.xpath("//select[@id='rptTV_ctl01_ddlVendor']");
@@ -44,13 +47,16 @@ public class MenuPageObjects {
 	public static final By editMediaOrder_popup = By.xpath("//div[@id='popEditMediaSchedule_PW-1']");
     public static final By close_edit_popup= By.xpath("//div[@id='popEditMediaSchedule_HCB-1']//img[@alt='Close']");
 	public static final By Close_media_schedule = By.xpath("//div[@id='popEditMediaSchedule_HCB-1']");
-
+	
+	public static final By nestedMediaOrder_popup= By.xpath("//div[@id='popShowAddedLayout_PWC-1']"); //New Added
+	public static final By nestedMediaOrder_popup_closed= By.xpath("//div[@id='popShowAddedLayout_HCB-1']//img[@alt='Close']"); //New added
+	
 	public static final By layout_popUp = By.xpath("//div[@id='popShowAddedLayout_PW-1']");
 	public static final By selectMediaLayout = By.xpath("//td[normalize-space()='Mix Media Type']");
-
 	public static final By AddMediaLine = By.xpath("//input[@id='btnAddMediaLine']");
 	public static final By AddMediaLine_PopUp = By.xpath("//input[@id='btnProceed']");
 	public static final By AdvanceCosting = By.xpath("//td[@align='right']");
+	public static final By Duration = By.xpath("//input[@id='txtO_Duration']");
 	public static final By ClientRate = By.xpath("//input[@id='txtClientRate']");
 	public static final By VendorRate = By.xpath("//input[@id='txtBuyingRate']");
 	public static final By fee1 = By.xpath("//input[@id='rptTV_ctl01_txtFee']");
@@ -127,7 +133,7 @@ public class MenuPageObjects {
 	// Search Schedule
 	public static final By monthDll = By.xpath("//select[@id='ddlMonth']");
 	public static final By yearDll = By.xpath("//select[@id='ddlYear']");
-	public static final By searchBY = By.xpath("//select[@id='ddlItem']");
+	public static final By searchBY = By.xpath("//select[@id='ddlPersonnel']");
 	public static final By searchText = By.xpath("//input[@id='txtClientName']");
 	public static final By findButton = By.id("btnFind");
 	public static final By SearchSchedule = By.xpath("//a[@id='gvOrder_ctl02_hypOrderNo']");

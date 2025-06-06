@@ -17,6 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.pin.automation.utils.FileSaver;
 import com.pin.automation.utils.FrameHelper;
 import com.pin.automation.utils.ObjectReader;
+import com.pin.automation.utils.PopupHandler;
 import com.pin.automation.utils.ResourceHelper;
 import com.pin.automation.utils.WaitHelper;
 
@@ -244,11 +245,15 @@ public class MenuObjects {
 		// driver.findElement(MenuPageObjects.NewCampaign).click();
 		clickElement(MenuPageObjects.NewCampaign, "Click on New Schedule button");
 
-		FrameHelper.switchTodefault();
-		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+//		FrameHelper.switchTodefault();
+//		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 	}
 
 	public WebElement clientDDL() throws InterruptedException {
+		FrameHelper FrameHelper = new FrameHelper(driver);
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+		Thread.sleep(1000);
 		WebElement DDL_Client = driver.findElement(MenuPageObjects.ClientDDL);
 		Thread.sleep(1000);
 		return DDL_Client;
@@ -271,6 +276,14 @@ public class MenuObjects {
 		WebElement DDL_STP = driver.findElement(MenuPageObjects.SoldToParty);
 		return DDL_STP;
 
+	}
+
+	public WebElement serviceBy() throws InterruptedException {
+		FrameHelper FrameHelper = new FrameHelper(driver);
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+		WebElement DDL_Service = driver.findElement(MenuPageObjects.searchBY);
+		return DDL_Service;
 	}
 
 	public WebElement Campaign_search() {
@@ -355,18 +368,6 @@ public class MenuObjects {
 		Thread.sleep(3000);
 	}
 
-//	public boolean checkBox() throws InterruptedException {
-//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-//		// driver.findElement(MenuPageObjects.checkBox).click();
-//		clickElement(MenuPageObjects.checkBox, "Click on Save Only And View Campaign ");
-//
-//		if (driver.findElement(MenuPageObjects.checkBox).isDisplayed()) {
-//			log.info("true");
-//			return true;
-//		}
-//		return false;
-//	}
-
 	public boolean checkBox() {
 		try {
 			WebElement checkbox = driver.findElement(MenuPageObjects.checkBox);
@@ -415,8 +416,8 @@ public class MenuObjects {
 		// driver.findElement((MenuPageObjects.New_schedule)).click();
 		clickElement(MenuPageObjects.New_schedule, "New schedule");
 
-		FrameHelper.switchTodefault();
-		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+//		FrameHelper.switchTodefault();
+//		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 	}
 
 	public WebElement pop_mediaType() {
@@ -441,7 +442,7 @@ public class MenuObjects {
 
 	public void Schedule_Grid() throws InterruptedException {
 
-		Thread.sleep(30000);
+		Thread.sleep(10000);
 		driver.findElement(MenuPageObjects.Schedule_Grid).click();
 		if (driver.switchTo().alert() != null) {
 			driver.switchTo().alert().accept();
@@ -585,6 +586,12 @@ public class MenuObjects {
 		driver.findElement(MenuPageObjects.txt_Radio_Description).sendKeys(txt);
 		log.info("Remark has been passed for Radio placement line");
 	}
+	
+	public void set_duration(int value) {
+		log.info("Adding duration");
+		driver.findElement(MenuPageObjects.Duration).sendKeys(String.valueOf(value));
+	}
+
 
 	public void set_Description_TV(String txt) {
 		driver.findElement(MenuPageObjects.txt_TV_Description).isDisplayed();
@@ -605,14 +612,8 @@ public class MenuObjects {
 	}
 
 	public void editMedia_popUp() throws InterruptedException {
-		Thread.sleep(5000);
-		if (driver.findElement(MenuPageObjects.editMediaOrder_popup).isDisplayed() == true) {
-			driver.findElement(MenuPageObjects.Close_media_schedule).click();
-			log.info(true);
-			log.info("Pop-up is closed");
-		} else {
-			log.info("Edit Pop has been ignored");
-		}
+		Thread.sleep(20000);
+		PopupHandler.closeEditMediaOrderPopups(driver, log);
 	}
 
 	// ----------------List AA
@@ -643,8 +644,20 @@ public class MenuObjects {
 
 	public void select_media_layout() {
 
-		driver.findElement(MenuPageObjects.selectMediaLayout).click();
-		log.info("Media layout is selected");
+		FrameHelper FrameHelper = new FrameHelper(driver);
+		
+	
+		if (driver.findElement(MenuPageObjects.selectMediaLayout).isDisplayed()) {
+			FrameHelper.switchTodefault();
+			FrameHelper.switchToFrame(ObjectReader.reader.pop_up_frame());
+			driver.findElement(MenuPageObjects.selectMediaLayout).click();
+			log.info("Media layout is selected");
+		} else {
+			log.info("Media layout is ignored");
+		}
+		FrameHelper.switchTodefault();
+		// Thread.sleep(1000);
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 
 	}
 
@@ -653,12 +666,13 @@ public class MenuObjects {
 		log.info("Clicked on media line");
 		driver.findElement(MenuPageObjects.AddMediaLine).click();
 		Thread.sleep(10000);
-		
+
 	}
 
-	public WebElement media_line() {
+	public WebElement media_line() throws InterruptedException {
+		Thread.sleep(5000);
 		WebElement menu = driver.findElement(MenuPageObjects.AddMediaLine);
-		log.info("Adding Media line");
+		log.info("Add Media line button is visible");
 		return menu;
 	}
 
@@ -764,7 +778,8 @@ public class MenuObjects {
 	public WebElement Adtype_Digital() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Wait for up to 10 seconds
 		try {
-			WebElement adTypeElement = wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.Adtype_D));
+			WebElement adTypeElement = wait
+					.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.Adtype_D));
 			if (adTypeElement.isDisplayed()) {
 				adTypeElement.click();
 				log.info("Digital ad type has been selected");

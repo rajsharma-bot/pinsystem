@@ -5,9 +5,24 @@ public interface ConfigReader {
 	public int getImpliciteWait();
 	public int getExplicitWait();
 	public int getPageLoadTime();
-	public String getUrl();
+	
+	public String getUrl();	
 	public String getUserName();
 	public String getPassword();
+	public String getEnv();
+	
+	public String getIntegratedUrl();
+	public String getIntegratedUsername();
+	public String getIntegratedPassword();
+	
+	public String getValue(String key);
+	
+	public String getClientName(String key);
+	public String getSoldToParty(String key);
+	public String getProduct(String key);
+	public String getContract(String key);
+	public String getService(String key);
+	
 	public String invalidUsername();
 	public String invalidPassword();
 	public String topframe();
@@ -25,12 +40,11 @@ public interface ConfigReader {
 	public String TRAFFIC();
 	public String Add_line();
 	public String pop_up_frame();
-	public String clientname();
-	public String soldToParty();
-	public String product();
-	public String Contract();
-
-	
+	/*
+	 * public String clientname(); public String soldToParty(); public String
+	 * product(); public String Contract();
+	 * 
+	 */
 	
 
 }

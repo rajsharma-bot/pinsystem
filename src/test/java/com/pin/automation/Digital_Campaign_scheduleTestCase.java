@@ -10,7 +10,6 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.pin.automation.TestBase;
 import com.pin.automation.utils.FileUtil;
 import com.pin.automation.utils.ObjectReader;
 import com.pin.automation.utils.ResourceHelper;
@@ -23,20 +22,60 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 	public void digital_campaign() throws InterruptedException {
 
 		WaitHelper.setImplicitWait(ObjectReader.reader.getExplicitWait());
-		LoginClass lc = new LoginClass(driver);
-		log.info("Login runner has been invoked");
+
+		String env = System.getProperty("env", "devbr"); // Default env
+		System.out.println(env);
+
+		// Fetch properties using environment prefix
+		String clientName = ObjectReader.reader.getClientName(env + ".clientName");
+		String soldToParty = ObjectReader.reader.getSoldToParty(env + ".soldToParty");
+		String product = ObjectReader.reader.getProduct(env + ".product");
+		String contract = ObjectReader.reader.getContract(env + ".contract");
+		String serviceBy = ObjectReader.reader.getService(env + ".serviceby");
+
+		// Log to confirm values
+		log.info("Using environment: " + env);
+		log.info("Client Name: " + clientName);
+		log.info("Sold To Party: " + soldToParty);
+		log.info("Product: " + product);
+		log.info("Contract: " + contract);
+		log.info("ServiceBy: " + serviceBy);
+
+		// Login and navigate
+		LoginClass lc = new LoginClass(driver, env);
+		log.info("Login runner has been invoked for env: " + env);
 		lc.loginRunner();
+
 		HomeNavigationObjects.MEDIA();
 		MenuObjects.newCampaign();
 
-		// Entering Campaign Details
-		DropDownHelper.selectUsingVisibleText(MenuObjects.clientDDL(), ObjectReader.reader.clientname());
-		DropDownHelper.selectUsingValue(MenuObjects.soldToParty(), ObjectReader.reader.soldToParty());
+		if (env.equalsIgnoreCase("pdt")) {
+			DropDownHelper.selectUsingVisibleText(MenuObjects.serviceBy(), serviceBy);
+			log.info("Service by is selected :" + serviceBy);
+		} else {
+			log.info("Service By has been ignored");
+		}
+
+		// Enter campaign details
+		DropDownHelper.selectUsingVisibleText(MenuObjects.clientDDL(), clientName);
+
+		if (env.equals("devbr") || env.equals("pdt")) {
+			DropDownHelper.selectUsingValue(MenuObjects.soldToParty(), soldToParty);
+		} else {
+			log.info("Sold To Party is ignored for env: " + env);
+		}
+
 		MenuObjects.StartDate("01/01/2025");
 		MenuObjects.EndDate("28/02/2025");
-		DropDownHelper.selectUsingValue(MenuObjects.Product(), ObjectReader.reader.product());
-		DropDownHelper.selectUsingValue(MenuObjects.Contract(), ObjectReader.reader.Contract());
-		MenuObjects.CampaignName("Digital Record for test");
+		DropDownHelper.selectUsingValue(MenuObjects.Product(), product);
+
+		if (env.equals("devbr") || env.equals("pdt")) {
+			DropDownHelper.selectUsingValue(MenuObjects.Contract(), contract);
+		} else {
+			log.info("Contract is ignored for env: " + env);
+		}
+
+		MenuObjects.CampaignName("Final Check 5");
 
 		// Save and generate campaign code
 		MixMediaSchedule.digital_media();
@@ -52,7 +91,7 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 		MenuObjects.new_schedule();
 		MixMediaSchedule.selectVendorCurreny();
 		MixMediaSchedule.digital_vendor();
-		// Thread.sleep(30000);
+
 		MenuObjects.Schedule_Grid();
 
 		// Passing placement details
@@ -69,7 +108,6 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 		ScheduleObjects.MO_status();
 		ScheduleObjects.getScheduleCode();
 		assertNotNull(ScheduleObjects.verifyScheduleNo(), "Schedule number should not be null!");
-
 	}
 
 	/**
@@ -77,11 +115,10 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 	 * @true will run Insertion detail hyper link pop-up to update placement line
 	 * @false will run Pencil edit to update placement line
 	 */
-	
 	@Parameters("isEditMO")
 	@Test(dependsOnMethods = { "Digital_Schedule" }, description = "Performing operation on view line by line page")
 	public void view_line_by_line(boolean isEditMO) throws InterruptedException {
-		log.info("Value has set as "+ isEditMO);
+		log.info("Value has set as " + isEditMO);
 		toggle_pencilEditAndEditMO(isEditMO); // true = Insertion Hyperlink popup & False= Pencil edit icon
 	}
 
@@ -107,23 +144,40 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 
 		} catch (IOException e) {
 			log.error("File not found : " + e.getMessage());
-			Assert.fail("Failed to read MO number number file.");
+			Assert.fail("Failed to read MO number file.");
 		}
-		
+
 		ScheduleObjects.moPage_moStatus();
+		driver.close();
+		pop.switchToParentWindow(driver);
 
 	}
-	
-	
-	
-	
-	
+
+	@Test(dependsOnMethods = { "viewMOpage" }, description = "Client Invoice Remark")
+	public void clientInvoiceRemark() throws InterruptedException {
+		String env = ObjectReader.reader.getEnv();
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+
+		ViewLineBylineObjects.clickOnViewLineBylineBtn();
+		pop.switchToChildWindow(driver);
+
+		if(env.equalsIgnoreCase("devbr") || env.equalsIgnoreCase("pdt")){
+			handleClientInvoiceRemark();
+		}else {
+			log.info("Env is " +env + "so Client Invoice remark is ignored");
+		}
+		
+		
+
+		driver.close();
+		pop.switchToParentWindow(driver);
+	}
 
 	/*
 	 * Performing operation on view line by line page for creating AA Created
 	 * Separate method to handle pencil edit and edit Media order Pop-up
 	 */
-
 	private void toggle_pencilEditAndEditMO(boolean isEditMO) throws InterruptedException {
 
 		String filePath = ResourceHelper.getScheduleNo();
@@ -142,9 +196,10 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 			Assert.fail("Failed to read schedule number file.");
 		}
 
+		// handleClientInvoiceRemark();
+
 		if (isEditMO) {
 			// Edit MO case
-			handleClientInvoiceRemark();
 			Thread.sleep(10000);
 			ViewLineBylineObjects.insertionDetail();
 			log.info("Clicking on insertion hyperlink");
@@ -153,7 +208,6 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 			ViewLineBylineObjects.changeReason("Creating AA");
 		} else {
 			// Pencil Edit case
-			handleClientInvoiceRemark();
 			Thread.sleep(10000);
 			ViewLineBylineObjects.pencilEdit();
 			log.info("Clicking on Pencil edit icon");
@@ -172,13 +226,13 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 		driver.close();
 		pop.switchToParentWindow(driver);
 	}
-	
-	
+
 	private void handleClientInvoiceRemark() throws InterruptedException {
-	    log.info("Handling Client Invoice Remark...");
-	    ViewLineBylineObjects.clientInvoiceRemark_btn();
-	    ViewLineBylineObjects.clientInvoiceRemark_PopUp();
-	    ViewLineBylineObjects.clientInvoiceRemarkText();
-	    ViewLineBylineObjects.clientInvoiceRemark_SaveBtn();
+		log.info("Handling Client Invoice Remark...");
+		ViewLineBylineObjects.clientInvoiceRemark_btn();
+		ViewLineBylineObjects.clientInvoiceRemark_PopUp();
+		ViewLineBylineObjects.clientInvoiceRemarkText();
+		ViewLineBylineObjects.clientInvoiceRemark_SaveBtn();
 	}
+
 }

@@ -88,21 +88,21 @@ public class PropertyReader implements ConfigReader {
 		}
 		return OR.getProperty("rightframe");
 	}
-	
+
 	public String Add_line() {
 		if (System.getProperty("Add_line") != null) {
 			return System.getProperty("Add_line");
 		}
 		return OR.getProperty("Add_line");
 	}
-	
+
 	public String pop_up_frame() {
 		if (System.getProperty("pop_up_frame") != null) {
 			return System.getProperty("pop_up_frame");
 		}
 		return OR.getProperty("pop_up_frame");
 	}
-	
+
 	public String Edit_layout_frame() {
 		if (System.getProperty("pop_up_frame") != null) {
 			return System.getProperty("pop_up_frame");
@@ -116,7 +116,6 @@ public class PropertyReader implements ConfigReader {
 		}
 		return OR.getProperty("HOME");
 	}
-
 
 	public String MEDIA() {
 		if (System.getProperty("MEDIA") != null) {
@@ -174,41 +173,85 @@ public class PropertyReader implements ConfigReader {
 		return OR.getProperty("TRAFFIC");
 	}
 
-	@Override
-	public String clientname() {
-		if (System.getProperty("clientName") != null) {
-			return System.getProperty("clientName");
+	/*
+	 * @Override public String clientname() { if (System.getProperty("clientName")
+	 * != null) { return System.getProperty("clientName"); } return
+	 * OR.getProperty("clientName"); }
+	 */
+	/*
+	 * @Override public String soldToParty() { if (System.getProperty("soldToParty")
+	 * != null) { return System.getProperty("soldToParty"); } return
+	 * OR.getProperty("soldToParty"); }
+	 */
+
+	/*
+	 * @Override public String product() { if (System.getProperty("product") !=
+	 * null) { return System.getProperty("product"); } return
+	 * OR.getProperty("product"); }
+	 */
+
+	/*
+	 * @Override public String Contract() { if (System.getProperty("Contract") !=
+	 * null) { return System.getProperty("Contract"); } return
+	 * OR.getProperty("Contract"); }
+	 */
+
+	public String getIntegratedUrl() {
+		if (System.getProperty("applicationUrl_INT") != null) {
+			return System.getProperty("applicationUrl_INT");
 		}
-		return OR.getProperty("clientName");
+		return OR.getProperty("applicationUrl_INT");
+	}
+
+	public String getIntegratedUsername() {
+		if (System.getProperty("INT_USER") != null) {
+			return System.getProperty("INT_USER");
+		}
+		return OR.getProperty("INT_USER");
+	}
+
+	public String getIntegratedPassword() {
+		if (System.getProperty("INT_PASS") != null) {
+			return System.getProperty("INT_PASS");
+		}
+		return OR.getProperty("INT_PASS");
+	}
+
+	public String getValue(String key) {
+		if (System.getProperty(key) != null) {
+			return System.getProperty(key);
+		}
+		return OR.getProperty(key);
 	}
 
 	@Override
-	public String soldToParty() {
-		if (System.getProperty("soldToParty") != null) {
-			return System.getProperty("soldToParty");
-		}
-		return OR.getProperty("soldToParty");
+	public String getClientName(String key) {
+		return System.getProperty(key, OR.getProperty(key));
 	}
 
 	@Override
-	public String product() {
-		if (System.getProperty("product") != null) {
-			return System.getProperty("product");
-		}
-		return OR.getProperty("product");
+	public String getSoldToParty(String key) {
+		return System.getProperty(key, OR.getProperty(key));
 	}
 
 	@Override
-	public String Contract() {
-		if (System.getProperty("Contract") != null) {
-			return System.getProperty("Contract");
-		}
-		return OR.getProperty("Contract");
+	public String getProduct(String key) {
+		return System.getProperty(key, OR.getProperty(key));
 	}
 
+	@Override
+	public String getContract(String key) {
+		return System.getProperty(key, OR.getProperty(key));
+	}
 	
 	
 
-	
+	public String getEnv() {
+		return System.getProperty("env");
+	}
 
+	@Override
+	public String getService(String key) {
+		return System.getProperty(key,OR.getProperty(key));
+	}
 }

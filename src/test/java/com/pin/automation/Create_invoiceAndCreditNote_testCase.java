@@ -22,8 +22,10 @@ public class Create_invoiceAndCreditNote_testCase extends TestBase {
 		String filePath = ResourceHelper.getCampaignCode();
 		FileUtil fileUtil = new FileUtil(filePath);
 		WaitHelper.setImplicitWait(ObjectReader.reader.getExplicitWait());
-		LoginClass lc = new LoginClass(driver);
-		log.info("Login runner has been invoked");
+		String env = System.getProperty("env", "pi2");  // Default to pi2 if not set
+
+        LoginClass lc = new LoginClass(driver, env);
+        log.info("Login runner has been invoked for env: " + env);
 		lc.loginRunner();
 		HomeNavigationObjects.FINANCE();
 		InvoiceObjects.UnbilledMedia_PI();
