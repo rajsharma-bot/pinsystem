@@ -60,7 +60,7 @@ public class Mix_mediaSchedule extends TestBase {
 		} else {
 			log.info("Contract is ignored for env: " + env);
 		}
-		MenuObjects.CampaignName("Final Check");
+		MenuObjects.CampaignName("Mix Media");
 		MixMediaSchedule.selectMultipleMediaTypes();
 		MenuObjects.Save();
 		MenuObjects.campaignCode();

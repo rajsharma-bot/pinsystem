@@ -11,12 +11,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pin.automation.utils.FrameHelper;
+import com.pin.automation.utils.WaitHelper;
 
 public class GenericElementObjects {
 
-	
 	private static Logger log = LogManager.getLogger(GenericElementObjects.class);
-	
+
 	WebDriver driver;
 	WebDriverWait wait;
 
@@ -24,7 +24,7 @@ public class GenericElementObjects {
 		this.driver = driver;
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(30)); //// global WebDriverWait
 	}
-	
+
 	public void clickElement(By locator, String elementName) {
 		WebElement element = waitForElementToBeClickable(locator);
 		if (element != null) {
@@ -61,39 +61,39 @@ public class GenericElementObjects {
 			return null;
 		}
 	}
-	
-	
-	
+
 	public void ImportStatus() throws InterruptedException {
 		FrameHelper FrameHelper = new FrameHelper(driver);
-		
+
 		log.info("Clicked on Import Status");
 		clickElement(GenericElementPageObjects.WaitingForImport, "Clicked on Import Status Hyperlink");
-		
+
 		Thread.sleep(20000);
 		FrameHelper.switchTodefault();
 	}
-	
+
 	public WebElement ImportStatus_DDL() {
 		log.info("Getting all option from Import DDL");
-		WebElement ImportDDl= driver.findElement(GenericElementPageObjects.Import_DLL);
+		WebElement ImportDDl = driver.findElement(GenericElementPageObjects.Import_DLL);
 		return ImportDDl;
 	}
-	
-	
+
 	public void ImportStatus_SaveBtn() {
 		log.info("Clicked on import save button");
-		//driver.findElement(CreditNotePageObjects.ImportSave_btn).click();
+		// driver.findElement(CreditNotePageObjects.ImportSave_btn).click();
 		clickElement(GenericElementPageObjects.ImportSave_btn, "Clicked on Import Save button");
 	}
-	
+
 	public String GetImportStatus() {
+		WaitHelper waitHelper = new WaitHelper(driver);
+		WebElement status = waitHelper.waitForElementVisibility(GenericElementPageObjects.WaitingForImport, 40);
+
 		log.info("Getting Import status text");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		String status =driver.findElement(GenericElementPageObjects.WaitingForImport).getText();
-		log.info("Status of Import Status is "+ status);
-		return status;
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		//String status_text = driver.findElement(GenericElementPageObjects.WaitingForImport).getText();
+		String status_text =status.getText();
+		log.info("Status of Import Status is " + status_text);
+		return status_text;
 	}
-	
-	
+
 }

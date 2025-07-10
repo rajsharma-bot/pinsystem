@@ -12,14 +12,11 @@ public class InvoicePageObjects {
 	public static final By search_ddl= By.xpath("//select[@id='ddlSearch']");
 	public static final By Search_txt=By.xpath("//input[@id='txtSearch']");
 	public static final By checkBox_visible =By.xpath("//td[@class='dxgv dxgvPBVC']");
-	public static final By selectAll_checkBox = By.xpath("//span[@id='gvUnBilledMediaPI_gr0_2_checkBox_S_D']");
+	public static final By selectAll_checkBox = By.xpath("//*[@id='gvUnBilledMediaPI_gr0_2_checkBox_S_D']");
+	//span[@id='gvUnBilledMediaPI_gr0_2_checkBox_S_D']
 	public static final By Generate_Invoice = By.xpath("//input[@id='btnSubmit']");
 	public static final By getInvoiceNumber = By.xpath("//span[@id='lblInvNo']");
 	public static final By confirm_invoice= By.xpath("//input[@id='btnApprove']");
-	
-	
-	
-	
-	
+		
 
 }

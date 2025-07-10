@@ -228,6 +228,14 @@ public class PropertyReader implements ConfigReader {
 	public String getClientName(String key) {
 		return System.getProperty(key, OR.getProperty(key));
 	}
+	
+	public String getJobClientName(String key) {
+		return System.getProperty(key, OR.getProperty(key));
+	}
+	
+	public String getOldJobClientName(String key) {
+		return System.getProperty(key, OR.getProperty(key));
+	}
 
 	@Override
 	public String getSoldToParty(String key) {

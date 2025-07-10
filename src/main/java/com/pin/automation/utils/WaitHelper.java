@@ -59,6 +59,22 @@ public class WaitHelper {
         }
     }
 	
+	public WebElement waitForElementVisibility(By locator, int timeoutInSeconds) {
+		long start = System.currentTimeMillis();
+	    try {
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+	        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+	        long timePassedInSeconds = (System.currentTimeMillis() - start) / 1000;
+	        log.info(timePassedInSeconds + " second(s) passed waiting for visibility of element => " + locator.toString());
+
+	        return element;
+	    } catch (Exception e) {
+	        log.error("Exception while waiting for visibility: " + e.getMessage());
+	        return null;
+	    }
+	}
+	
 	
 	public boolean waitForInvisibilityofElementLocatedBy(WebElement element, int implicitTimeoutInMilli) throws InterruptedException {
 		long start =System.currentTimeMillis();

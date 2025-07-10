@@ -231,11 +231,13 @@ public class MixMediaSchedule {
 		String vendor1 = vendors.size() >= 1 ? vendors.get(0) : "";
 
 		if (vendor1.isEmpty()) {
+
 			log.error("Vendor 1 not found for environment: " + env);
 			return;
 		}
 		Thread.sleep(10000);
 
+		System.out.println("Vendor is " + vendor1);
 		WaitHelper w = new WaitHelper(driver);
 		w.waitForElementVisibility(Mo.media_line(), 120);
 		Mo.Add_media_line();
@@ -252,9 +254,9 @@ public class MixMediaSchedule {
 			log.warn("Unknown env for mediaType. Using default: 657|C");
 			dh.selectUsingValue(Mo.pop_mediaType(), "657|C");
 		}
-
+		Thread.sleep(5000);
 		dh.selectUsingVisibleText(Mo.pop_vendor(), vendor1);
-		Thread.sleep(2000);
+
 		Mo.Proceed_btn();
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.rightframe());
@@ -319,8 +321,9 @@ public class MixMediaSchedule {
 			dh.selectUsingValue(Mo.pop_mediaType(), "240|M");
 		}
 
+		Thread.sleep(5000);
 		dh.selectUsingVisibleText(Mo.pop_vendor(), vendor2);
-		Thread.sleep(2000);
+		// Thread.sleep(2000);
 		Mo.Proceed_btn();
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.rightframe());
@@ -386,8 +389,9 @@ public class MixMediaSchedule {
 			dh.selectUsingValue(Mo.pop_mediaType(), "4485|N");
 		}
 
+		Thread.sleep(5000);
 		dh.selectUsingVisibleText(Mo.pop_vendor(), vendor3);
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		Mo.Proceed_btn();
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.rightframe());
@@ -451,9 +455,9 @@ public class MixMediaSchedule {
 			log.warn("Unknown env for mediaType. Using default: 618|O");
 			dh.selectUsingValue(Mo.pop_mediaType(), "618|O");
 		}
-
+		Thread.sleep(5000);
 		dh.selectUsingVisibleText(Mo.pop_vendor(), vendor4);
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		Mo.Proceed_btn();
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.rightframe());
@@ -515,9 +519,9 @@ public class MixMediaSchedule {
 			log.warn("Unknown env for mediaType. Using default: 4477|OT");
 			dh.selectUsingValue(Mo.pop_mediaType(), "4477|OT");
 		}
-
+		Thread.sleep(5000);
 		dh.selectUsingVisibleText(Mo.pop_vendor(), vendor5);
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		Mo.Proceed_btn();
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.rightframe());
@@ -580,9 +584,9 @@ public class MixMediaSchedule {
 			log.warn("Unknown env for mediaType. Using default: 615|R");
 			dh.selectUsingValue(Mo.pop_mediaType(), "615|R");
 		}
-
+		Thread.sleep(5000);
 		dh.selectUsingVisibleText(Mo.pop_vendor(), vendor6);
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		Mo.Proceed_btn();
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.rightframe());
@@ -644,9 +648,9 @@ public class MixMediaSchedule {
 			log.warn("Unknown env for mediaType. Using default: 613|TV");
 			dh.selectUsingValue(Mo.pop_mediaType(), "613|TV");
 		}
-
+		Thread.sleep(5000);
 		dh.selectUsingVisibleText(Mo.pop_vendor(), vendor7);
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		Mo.Proceed_btn();
 		fh.switchTodefault();
 		fh.switchToFrame(ObjectReader.reader.rightframe());

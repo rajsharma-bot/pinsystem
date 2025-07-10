@@ -18,6 +18,8 @@ public interface ConfigReader {
 	public String getValue(String key);
 	
 	public String getClientName(String key);
+	public String getJobClientName(String key);
+	public String getOldJobClientName(String key);
 	public String getSoldToParty(String key);
 	public String getProduct(String key);
 	public String getContract(String key);
@@ -34,11 +36,17 @@ public interface ConfigReader {
 	public String IT_DEPT();
 	public String ACCOUNTS();
 	public String FINANCE();
+
 	public String SALES();
+
 	public String HR_ADMIN();
+
 	public String CORPORATE_INFO();
+
 	public String TRAFFIC();
+
 	public String Add_line();
+
 	public String pop_up_frame();
 	/*
 	 * public String clientname(); public String soldToParty(); public String

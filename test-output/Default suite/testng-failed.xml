@@ -3,19 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pin.automation.LoginTestCase">
+      <class name="com.pin.automation.OldJob_testCase">
         <methods>
           <include name="afterClass"/>
-          <include name="loadProperties"/>
           <include name="BeforeClass"/>
-          <include name="verify_login_with_invalid_credentials"/>
+          <include name="old_job"/>
           <include name="beforeMethod"/>
-          <include name="initPageObjects"/>
           <include name="afterMethod"/>
-          <include name="verify_login_without_username_and_Password"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- com.pin.automation.LoginTestCase -->
+      </class> <!-- com.pin.automation.OldJob_testCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

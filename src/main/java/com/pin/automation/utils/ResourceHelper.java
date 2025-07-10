@@ -31,4 +31,16 @@ public class ResourceHelper {
 	public static String getMONumber() {
 		 return getResourcePath("src/main/resources/Data/MO_NO.txt");
 	}
+	
+	public static String getJobcode() {
+		 return getResourcePath("src/main/resources/Data/Job_Code.txt");
+	}
+	
+	public static String getOldJobcode() {
+		 return getResourcePath("src/main/resources/Data/OldFormat_JobCode.txt");
+	}
+	
+	public static String getProductionInvoiceNo() {
+		 return getResourcePath("src/main/resources/Data/ProductionInvoiceNotxt");
+	}
 }

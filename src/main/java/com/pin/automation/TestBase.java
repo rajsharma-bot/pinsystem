@@ -27,6 +27,7 @@ import com.pin.automation.pageObjects.CreditNoteObjects;
 import com.pin.automation.pageObjects.GenericElementObjects;
 import com.pin.automation.pageObjects.HomeNavigationObjects;
 import com.pin.automation.pageObjects.InvoiceObjects;
+import com.pin.automation.pageObjects.JobObjects;
 import com.pin.automation.pageObjects.MenuObjects;
 import com.pin.automation.pageObjects.MixMediaSchedule;
 import com.pin.automation.pageObjects.ScheduleObjects;
@@ -46,161 +47,164 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
-    public static ExtentReports extent;
-    public static ExtentTest test;
-    public static WebDriver driver;
-    public static File reportDirectory;
-    private static Logger log = LogManager.getLogger(TestBase.class);
+	public static ExtentReports extent;
+	public static ExtentTest test;
+	public static WebDriver driver;
+	public static File reportDirectory;
+	private static Logger log = LogManager.getLogger(TestBase.class);
 
-    // Declare helper and page object instances
-    protected FrameHelper FrameHelper;
-    protected MenuObjects MenuObjects;
-    protected WaitHelper WaitHelper;
-    protected HomeNavigationObjects HomeNavigationObjects;
-    protected DropDownHelper DropDownHelper;
-    protected MixMediaSchedule MixMediaSchedule;
-    protected InvoiceObjects InvoiceObjects;
-    protected ScheduleObjects ScheduleObjects;
-    protected WindowHandler pop;
-    protected CreditNoteObjects CreditNoteObjects;
-    protected SwitchTabs SwitchTabs;
-    protected static PropertyReader reader;
-    protected GenericElementObjects GenericElementObjects;
-    protected ViewLineBylineObjects ViewLineBylineObjects;
+	// Declare helper and page object instances
+	protected FrameHelper FrameHelper;
+	protected MenuObjects MenuObjects;
+	protected WaitHelper WaitHelper;
+	protected HomeNavigationObjects HomeNavigationObjects;
+	protected DropDownHelper DropDownHelper;
+	protected MixMediaSchedule MixMediaSchedule;
+	protected InvoiceObjects InvoiceObjects;
+	protected ScheduleObjects ScheduleObjects;
+	protected WindowHandler pop;
+	protected CreditNoteObjects CreditNoteObjects;
+	protected SwitchTabs SwitchTabs;
+	protected static PropertyReader reader;
+	protected GenericElementObjects GenericElementObjects;
+	protected ViewLineBylineObjects ViewLineBylineObjects;
+	protected JobObjects JobObjects;
 
-    @Parameters("env")
-    @BeforeSuite(alwaysRun = true)
-    public void beforeSuite(@Optional("pi2") String env) throws Exception {
-        EnvConfig.setEnvironment(env);
-        extent = ExtentManager.getInstance();
-    }
+	@Parameters("env")
+	@BeforeSuite(alwaysRun = true)
+	public void beforeSuite(@Optional("pi2") String env) throws Exception {
+		EnvConfig.setEnvironment(env);
+		extent = ExtentManager.getInstance();
+	}
 
-    @Parameters("env")
-    @BeforeClass(alwaysRun = true)
-    public void BeforeClass(@Optional("pi2") String env) throws IOException {
-        System.setProperty("env", env);
-        ExtentManager.getInstance();
+	@Parameters("env")
+	@BeforeClass(alwaysRun = true)
+	public void BeforeClass(@Optional("devbr") String env) throws IOException {
+		System.setProperty("env", env);
+		ExtentManager.getInstance();
 
-        if (driver == null) {  // Only start if driver not initialized yet
-            startUp();
-        }
+		if (driver == null) { // Only start if driver not initialized yet
+			startUp();
+		}
 
-        test = extent.createTest(getClass().getSimpleName());
+		test = extent.createTest(getClass().getSimpleName());
 
-        // Initialize helper and page objects
-        FrameHelper = new FrameHelper(driver);
-        MenuObjects = new MenuObjects(driver);
-        WaitHelper = new WaitHelper(driver);
-        HomeNavigationObjects = new HomeNavigationObjects(driver);
-        DropDownHelper = new DropDownHelper(driver);
-        MixMediaSchedule = new MixMediaSchedule(driver);
-        InvoiceObjects = new InvoiceObjects(driver);
-        ScheduleObjects = new ScheduleObjects(driver);
-        pop = new WindowHandler(driver);
-        CreditNoteObjects = new CreditNoteObjects(driver);
-        SwitchTabs = new SwitchTabs(driver);
-        reader = new PropertyReader();
-        GenericElementObjects = new GenericElementObjects(driver);
-        ViewLineBylineObjects = new ViewLineBylineObjects(driver);
-    }
+		// Initialize helper and page objects
+		FrameHelper = new FrameHelper(driver);
+		MenuObjects = new MenuObjects(driver);
+		WaitHelper = new WaitHelper(driver);
+		HomeNavigationObjects = new HomeNavigationObjects(driver);
+		DropDownHelper = new DropDownHelper(driver);
+		MixMediaSchedule = new MixMediaSchedule(driver);
+		InvoiceObjects = new InvoiceObjects(driver);
+		ScheduleObjects = new ScheduleObjects(driver);
+		pop = new WindowHandler(driver);
+		CreditNoteObjects = new CreditNoteObjects(driver);
+		SwitchTabs = new SwitchTabs(driver);
+		reader = new PropertyReader();
+		GenericElementObjects = new GenericElementObjects(driver);
+		ViewLineBylineObjects = new ViewLineBylineObjects(driver);
+		JobObjects = new JobObjects(driver);
 
-    @BeforeMethod(alwaysRun = true)
-    public void beforeMethod(Method method) {
-        test = extent.createTest(method.getName()); // Create test for every method
-        test.log(Status.INFO, method.getName() + " ************** test started ***************");
-        log.info("************** " + method.getName() + " Started ***************");
-    }
+	}
 
-    @AfterMethod(alwaysRun = true)
-    public void afterMethod(ITestResult result) throws IOException {
-        if (result.getStatus() == ITestResult.FAILURE) {
-            test.log(Status.FAIL, "Test failed: " + result.getThrowable());
-            String screenshotPath = ScreenshotUtility.captureScreenshot(driver, result.getName() + "_failure");
-            if (screenshotPath != null) {
-                test.addScreenCaptureFromPath(screenshotPath);
-            }
-        } else if (result.getStatus() == ITestResult.SUCCESS) {
-            test.log(Status.PASS, result.getName() + " passed successfully.");
-            String screenshotPath = ScreenshotUtility.captureScreenshot(driver, result.getName() + "_success");
-            if (screenshotPath != null) {
-                test.addScreenCaptureFromPath(screenshotPath);
-            }
-        } else if (result.getStatus() == ITestResult.SKIP) {
-            test.log(Status.SKIP, "Test skipped: " + result.getThrowable());
-        }
+	@BeforeMethod(alwaysRun = true)
+	public void beforeMethod(Method method) {
+		test = extent.createTest(method.getName()); // Create test for every method
+		test.log(Status.INFO, method.getName() + " ************** test started ***************");
+		log.info("************** " + method.getName() + " Started ***************");
+	}
 
-        log.info("************** " + result.getName() + " Finished ***************");
-        test.log(Status.INFO, result.getName() + " test ended.");
-    }
+	@AfterMethod(alwaysRun = true)
+	public void afterMethod(ITestResult result) throws IOException {
+		if (result.getStatus() == ITestResult.FAILURE) {
+			test.log(Status.FAIL, "Test failed: " + result.getThrowable());
+			String screenshotPath = ScreenshotUtility.captureScreenshot(driver, result.getName() + "_failure");
+			if (screenshotPath != null) {
+				test.addScreenCaptureFromPath(screenshotPath);
+			}
+		} else if (result.getStatus() == ITestResult.SUCCESS) {
+			test.log(Status.PASS, result.getName() + " passed successfully.");
+			String screenshotPath = ScreenshotUtility.captureScreenshot(driver, result.getName() + "_success");
+			if (screenshotPath != null) {
+				test.addScreenCaptureFromPath(screenshotPath);
+			}
+		} else if (result.getStatus() == ITestResult.SKIP) {
+			test.log(Status.SKIP, "Test skipped: " + result.getThrowable());
+		}
 
-    @AfterClass(alwaysRun = true)
-    public void afterClass() {
-        try {
-            if (driver != null) {
-                driver.quit();
-                log.info("Driver quit successfully.");
-            }
-        } catch (Exception e) {
-            log.error("Error quitting driver: ", e);
-        } finally {
-            driver = null;  // Nullify so next class will start fresh
-        }
+		log.info("************** " + result.getName() + " Finished ***************");
+		test.log(Status.INFO, result.getName() + " test ended.");
+	}
 
-        ExtentManager.exportReportToExcel();
-        ExtentManager.getInstance().flush();
-    }
+	@AfterClass(alwaysRun = true)
+	public void afterClass() {
+		try {
+			if (driver != null) {
+				driver.quit();
+				log.info("Driver quit successfully.");
+			}
+		} catch (Exception e) {
+			log.error("Error quitting driver: ", e);
+		} finally {
+			driver = null; // Nullify so next class will start fresh
+		}
 
-    public void startUp() throws IOException {
-        ObjectReader.reader = new PropertyReader();
-        final Map<String, Object> chromePrefs = new HashMap<>();
-        chromePrefs.put("credentials_enable_service", false);
-        chromePrefs.put("profile.password_manager_enabled", false);
-        chromePrefs.put("profile.password_manager_leak_detection", false);
+		ExtentManager.exportReportToExcel();
+		ExtentManager.getInstance().flush();
+	}
 
-        final ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setExperimentalOption("prefs", chromePrefs);
+	public void startUp() throws IOException {
+		ObjectReader.reader = new PropertyReader();
+		final Map<String, Object> chromePrefs = new HashMap<>();
+		chromePrefs.put("credentials_enable_service", false);
+		chromePrefs.put("profile.password_manager_enabled", false);
+		chromePrefs.put("profile.password_manager_leak_detection", false);
 
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver(chromeOptions);
-        log.info("Initialize Web driver: " + driver.hashCode());
+		final ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.setExperimentalOption("prefs", chromePrefs);
 
-        WaitHelper = new WaitHelper(driver);
-        WaitHelper.setImplicitWait(ObjectReader.reader.getExplicitWait());
-        WaitHelper.pageLoadTime(ObjectReader.reader.getPageLoadTime());
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver(chromeOptions);
+		log.info("Initialize Web driver: " + driver.hashCode());
 
-        getApplicationUrl();
-        driver.manage().window().maximize();
-    }
+		WaitHelper = new WaitHelper(driver);
+		WaitHelper.setImplicitWait(ObjectReader.reader.getExplicitWait());
+		WaitHelper.pageLoadTime(ObjectReader.reader.getPageLoadTime());
 
-    public void getApplicationUrl() throws IOException {
-        ObjectReader.reader = new PropertyReader();
+		getApplicationUrl();
+		driver.manage().window().maximize();
+	}
 
-        String env = System.getProperty("env");
-        if (env == null || env.isEmpty()) {
-            env = "devbr"; // default environment
-            System.setProperty("env", env);
-        }
-        env = env.toLowerCase();
+	public void getApplicationUrl() throws IOException {
+		ObjectReader.reader = new PropertyReader();
 
-        String url;
-        switch (env) {
-            case "pi2":
-                url = ObjectReader.reader.getValue("url.pi2");
-                break;
-            case "devbr":
-                url = ObjectReader.reader.getValue("url.devbr");
-                break;
-            case "pdt":
-                url = ObjectReader.reader.getValue("url.pdt");
-                break;
-            case "prsmpdt":
-                url = ObjectReader.reader.getValue("url.prsmpdt");
-                break;
-            default:
-                throw new IllegalArgumentException("Invalid environment: " + env);
-        }
+		String env = System.getProperty("env");
+		if (env == null || env.isEmpty()) {
+			env = "devbr"; // default environment
+			System.setProperty("env", env);
+		}
+		env = env.toLowerCase();
 
-        log.info(">>> Launching URL: " + url);
-        driver.get(url);
-    }
+		String url;
+		switch (env) {
+		case "pi2":
+			url = ObjectReader.reader.getValue("url.pi2");
+			break;
+		case "devbr":
+			url = ObjectReader.reader.getValue("url.devbr");
+			break;
+		case "pdt":
+			url = ObjectReader.reader.getValue("url.pdt");
+			break;
+		case "prsmpdt":
+			url = ObjectReader.reader.getValue("url.prsmpdt");
+			break;
+		default:
+			throw new IllegalArgumentException("Invalid environment: " + env);
+		}
+
+		log.info(">>> Launching URL: " + url);
+		driver.get(url);
+	}
 }

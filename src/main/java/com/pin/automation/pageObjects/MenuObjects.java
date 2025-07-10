@@ -435,9 +435,19 @@ public class MenuObjects {
 	}
 
 	public void Proceed_btn() throws InterruptedException {
-		Thread.sleep(3000);
-		driver.findElement(MenuPageObjects.proceed_btn).click();
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
+//		log.info("Clicking on Proceed Btn");
+//		driver.findElement(MenuPageObjects.proceed_btn).click();
+//		Thread.sleep(5000);
+		
+		 WaitHelper waitHelper = new WaitHelper(driver);
+		 WebElement proceed_btn = waitHelper.waitForElementVisibility(MenuPageObjects.proceed_btn, 40);
+		 try {
+			proceed_btn.click();
+		} catch (Exception e) {
+			log.info("Unable to click with Proceed btn");
+		}
+		 
 	}
 
 	public void Schedule_Grid() throws InterruptedException {

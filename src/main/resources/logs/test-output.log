@@ -1,0 +1,45 @@
+[INFO ] 2025-07-10 18:38:31.505 [main] WebDriverManager - Using chromedriver 138.0.7204.94 (resolved driver for Chrome 138)
+[INFO ] 2025-07-10 18:38:31.605 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\138.0.7204.94\chromedriver.exe
+[INFO ] 2025-07-10 18:38:33.827 [main] TestBase - Initialize Web driver: 218688965
+[INFO ] 2025-07-10 18:38:33.830 [main] WaitHelper - Implicit Wait has been set to: 60
+[INFO ] 2025-07-10 18:38:33.840 [main] WaitHelper - waiting for page to load for : 120
+[INFO ] 2025-07-10 18:38:33.847 [main] WaitHelper - page is loaded
+[INFO ] 2025-07-10 18:38:33.848 [main] TestBase - >>> Launching URL: https://devbr.pinsystem.com/login.aspx
+[INFO ] 2025-07-10 18:38:36.542 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2025-07-10 18:38:36.572 [main] TestBase - ************** old_job Started ***************
+[INFO ] 2025-07-10 18:38:36.581 [main] WaitHelper - Implicit Wait has been set to: 60
+[INFO ] 2025-07-10 18:38:36.585 [main] OldJob_testCase - Using environment: devbr
+[INFO ] 2025-07-10 18:38:36.585 [main] OldJob_testCase - Client Name: 1001 MEDIA SDN BHD | DUO1
+[INFO ] 2025-07-10 18:38:36.585 [main] OldJob_testCase - Product: 2589
+[INFO ] 2025-07-10 18:38:36.587 [main] OldJob_testCase - Login runner has been invoked for env: devbr
+[INFO ] 2025-07-10 18:38:36.588 [main] LoginClass - Starting login with user: agency@blueocean.net.my on environment: devbr
+[INFO ] 2025-07-10 18:38:36.590 [main] LoginObjects - Environment set to: devbr
+[INFO ] 2025-07-10 18:38:36.590 [main] LoginObjects - Using default username locator for env: devbr
+[INFO ] 2025-07-10 18:38:36.794 [main] LoginObjects - Entered username: agency@blueocean.net.my
+[INFO ] 2025-07-10 18:38:36.794 [main] LoginObjects - Using default password locator for env: devbr
+[INFO ] 2025-07-10 18:38:36.909 [main] LoginObjects - Entered password
+[INFO ] 2025-07-10 18:38:36.910 [main] LoginObjects - Login attempted with username and password.
+[INFO ] 2025-07-10 18:38:36.910 [main] LoginObjects - Using default submit locator for env: devbr
+[INFO ] 2025-07-10 18:38:37.034 [main] LoginObjects - Clicked submit/login button
+[INFO ] 2025-07-10 18:38:37.034 [main] LoginClass - Login process completed.
+[INFO ] 2025-07-10 18:39:37.108 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2025-07-10 18:39:37.230 [main] HomeNavigationObjects - Clicked on Traffic Menu
+[INFO ] 2025-07-10 18:39:37.231 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-07-10 18:39:37.270 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2025-07-10 18:39:37.271 [main] JobObjects - Clicked on Old job button
+[INFO ] 2025-07-10 18:39:37.427 [main] JobObjects - Clicked on old Job clicked successfully.
+[INFO ] 2025-07-10 18:39:47.440 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-07-10 18:39:47.475 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-07-10 18:39:47.475 [main] JobObjects - Selecting client from DDL
+[INFO ] 2025-07-10 18:39:47.505 [main] DropDownHelper - selectUsingVisibleText and visibleText is: 1001 MEDIA SDN BHD | DUO1
+[INFO ] 2025-07-10 18:39:57.623 [main] DropDownHelper - selectUsingValue and value is: 2589
+[INFO ] 2025-07-10 18:39:57.655 [main] JobObjects - Passing subject
+[INFO ] 2025-07-10 18:39:57.744 [main] JobObjects - Passing Product in text box
+[INFO ] 2025-07-10 18:39:57.816 [main] JobObjects - passing est sales 
+[INFO ] 2025-07-10 18:39:57.885 [main] JobObjects - passing est cost 
+[INFO ] 2025-07-10 18:39:57.962 [main] JobObjects - Passing Delivery Date
+[INFO ] 2025-07-10 18:39:58.212 [main] JobObjects - Clicked on Save and Add attachment clicked successfully.
+[INFO ] 2025-07-10 18:39:58.216 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-07-10 18:40:02.325 [main] ScreenshotUtility - Full-page screenshot saved: C:\Users\rasharma\Automation\pin-automation/src/main/resources/screenShots/old_job_failure_20250710_183958.png
+[INFO ] 2025-07-10 18:40:02.328 [main] TestBase - ************** old_job Finished ***************
+[INFO ] 2025-07-10 18:40:02.963 [main] TestBase - Driver quit successfully.

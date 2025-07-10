@@ -24,7 +24,7 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 		WaitHelper.setImplicitWait(ObjectReader.reader.getExplicitWait());
 
 		String env = System.getProperty("env", "devbr"); // Default env
-		System.out.println(env);
+		System.out.println("Selecteted environment is "+ env);
 
 		// Fetch properties using environment prefix
 		String clientName = ObjectReader.reader.getClientName(env + ".clientName");
@@ -75,7 +75,7 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 			log.info("Contract is ignored for env: " + env);
 		}
 
-		MenuObjects.CampaignName("Final Check 5");
+		MenuObjects.CampaignName("Checking for invoice");
 
 		// Save and generate campaign code
 		MixMediaSchedule.digital_media();

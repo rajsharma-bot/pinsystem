@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test thread-count="5" name="Test">
-		<!-- Define the parameter to control toggle for view_line_by_line method -->
-		<parameter name="isEditMO" value="false" /> <!-- Set to "true" or "false"
-		as needed -->
+    <!-- Set environment here: devbr, pdt, pi2, or prsmpdt -->
+    <parameter name="env" value="devbr" />
 
-		<classes>
-<!--			<class name="com.pin.automation.Digital_Campaign_scheduleTestCase" />-->
-<!--			<class name="com.pin.automation.Create_invoiceAndCreditNote_testCase" />-->
-			<class name="com.pin.automation.Mix_mediaSchedule" />
+    <test name="AutomationTest">
+        <!-- Run only the tests that match the env-specific group -->
+        <groups>
+            <run>
+                <include name="env-devbr" />
+                <include name="env-pdt" />
+                <!-- Do NOT include env-pi2 or env-prsmpdt -->
+            </run>
+        </groups>
 
-
-			<!--			<class name="com.pin.automation.LoginTestCase" />-->
-			<!--			<class name="com.pin.automation.SearchRecords" />-->
-			<!--			<class name="com.pin.automation.NavigateToCampaignMenuTabs"
-			/>-->
-
-		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+        <classes>
+            <class name="com.pin.automation.LoginTestCase" />
+            <class name="com.pin.automation.Digital_Campaign_scheduleTestCase" />
+            <class name="com.pin.automation.Create_invoiceAndCreditNote_testCase" />
+            <class name="com.pin.automation.Mix_mediaSchedule" />
+        </classes>
+    </test>
+</suite>

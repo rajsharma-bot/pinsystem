@@ -33,6 +33,8 @@ public class HomeNavigationObjects {
 	}
 
 	public void TRAFFIC() {
+		FrameHelper FrameHelper = new FrameHelper(driver);
+		FrameHelper.switchToFrame(ObjectReader.reader.topframe());
 		driver.findElement(HomeNavigationPageObjects.TRAFFIC).click();
 		log.info("Clicked on Traffic Menu");
 
@@ -116,7 +118,7 @@ public class HomeNavigationObjects {
 		FrameHelper.switchToFrame(ObjectReader.reader.topframe());
 		log.info("Clicked on Finance");
 		driver.findElement(HomeNavigationPageObjects.FINANCE).click();
-		
+
 	}
 
 	public boolean FINANCE(String value) {
