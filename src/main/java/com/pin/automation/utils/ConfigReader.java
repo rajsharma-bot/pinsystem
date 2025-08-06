@@ -24,6 +24,13 @@ public interface ConfigReader {
 	public String getProduct(String key);
 	public String getContract(String key);
 	public String getService(String key);
+//	public String getStartDate(String key);
+//	public String getEndDate(String key);
+//	public String getmixMediaEndtDate(String key);
+	
+	public String getStartDate();
+	public String getEndDate();
+	public String getmixMediaEndtDate();
 	
 	public String invalidUsername();
 	public String invalidPassword();
@@ -38,21 +45,10 @@ public interface ConfigReader {
 	public String FINANCE();
 
 	public String SALES();
-
 	public String HR_ADMIN();
-
 	public String CORPORATE_INFO();
-
 	public String TRAFFIC();
-
 	public String Add_line();
-
 	public String pop_up_frame();
-	/*
-	 * public String clientname(); public String soldToParty(); public String
-	 * product(); public String Contract();
-	 * 
-	 */
 	
-
 }

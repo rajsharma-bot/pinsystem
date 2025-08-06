@@ -77,7 +77,7 @@ public class ScheduleObjects {
 		FrameHelper.switchTodefault();
 		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 
-		Thread.sleep(10000);
+		Thread.sleep(20000);
 		driver.findElement(SchedulePageObjects.confirm_schedule).click();
 		if (driver.switchTo().alert() != null) {
 			driver.switchTo().alert().accept();

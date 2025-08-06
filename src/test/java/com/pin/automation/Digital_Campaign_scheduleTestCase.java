@@ -32,6 +32,9 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 		String product = ObjectReader.reader.getProduct(env + ".product");
 		String contract = ObjectReader.reader.getContract(env + ".contract");
 		String serviceBy = ObjectReader.reader.getService(env + ".serviceby");
+		String startDate=  ObjectReader.reader.getStartDate();
+		String endDate = ObjectReader.reader.getEndDate();
+
 
 		// Log to confirm values
 		log.info("Using environment: " + env);
@@ -40,6 +43,9 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 		log.info("Product: " + product);
 		log.info("Contract: " + contract);
 		log.info("ServiceBy: " + serviceBy);
+		log.info("StartDate:" +startDate);
+		log.info("EndDate :"+endDate);
+
 
 		// Login and navigate
 		LoginClass lc = new LoginClass(driver, env);
@@ -65,8 +71,9 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 			log.info("Sold To Party is ignored for env: " + env);
 		}
 
-		MenuObjects.StartDate("01/01/2025");
-		MenuObjects.EndDate("28/02/2025");
+		
+		MenuObjects.StartDate(startDate);
+		MenuObjects.EndDate(endDate);
 		DropDownHelper.selectUsingValue(MenuObjects.Product(), product);
 
 		if (env.equals("devbr") || env.equals("pdt")) {
@@ -75,7 +82,7 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 			log.info("Contract is ignored for env: " + env);
 		}
 
-		MenuObjects.CampaignName("Checking for invoice");
+		MenuObjects.CampaignName("Regression for Digital Media - 14-july-2025");
 
 		// Save and generate campaign code
 		MixMediaSchedule.digital_media();

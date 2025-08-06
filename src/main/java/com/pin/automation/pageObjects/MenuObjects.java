@@ -1,5 +1,7 @@
 package com.pin.automation.pageObjects;
 
+import java.awt.Menu;
+import java.io.File;
 import java.time.Duration;
 import java.util.List;
 import java.util.Collections;
@@ -73,6 +75,9 @@ public class MenuObjects {
 
 //////////////////////////////////////////////////////////////////////////////////////////
 	public void ListCampaign_page() {
+		FrameHelper FrameHelper = new FrameHelper(driver);
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());
 		clickElement(MenuPageObjects.ListCampaign, "List Campaign");
 	}
 
@@ -112,6 +117,11 @@ public class MenuObjects {
 
 	public void click_record() {
 		driver.findElement(MenuPageObjects.C_NUMBER).click();
+	}
+
+	public void clickOnCampaignNo() throws InterruptedException {
+		Thread.sleep(5000);
+		driver.findElement(MenuPageObjects.campaign_number).click();
 	}
 
 	// Element for List Schedule
@@ -287,6 +297,9 @@ public class MenuObjects {
 	}
 
 	public WebElement Campaign_search() {
+		FrameHelper FrameHelper = new FrameHelper(driver);
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 		WebElement DDL_SEARCH = driver.findElement(MenuPageObjects.SEARCH_BY);
 		return DDL_SEARCH;
 	}
@@ -439,15 +452,15 @@ public class MenuObjects {
 //		log.info("Clicking on Proceed Btn");
 //		driver.findElement(MenuPageObjects.proceed_btn).click();
 //		Thread.sleep(5000);
-		
-		 WaitHelper waitHelper = new WaitHelper(driver);
-		 WebElement proceed_btn = waitHelper.waitForElementVisibility(MenuPageObjects.proceed_btn, 40);
-		 try {
+
+		WaitHelper waitHelper = new WaitHelper(driver);
+		WebElement proceed_btn = waitHelper.waitForElementVisibility(MenuPageObjects.proceed_btn, 40);
+		try {
 			proceed_btn.click();
 		} catch (Exception e) {
 			log.info("Unable to click with Proceed btn");
 		}
-		 
+
 	}
 
 	public void Schedule_Grid() throws InterruptedException {
@@ -596,12 +609,11 @@ public class MenuObjects {
 		driver.findElement(MenuPageObjects.txt_Radio_Description).sendKeys(txt);
 		log.info("Remark has been passed for Radio placement line");
 	}
-	
+
 	public void set_duration(int value) {
 		log.info("Adding duration");
 		driver.findElement(MenuPageObjects.Duration).sendKeys(String.valueOf(value));
 	}
-
 
 	public void set_Description_TV(String txt) {
 		driver.findElement(MenuPageObjects.txt_TV_Description).isDisplayed();
@@ -655,8 +667,7 @@ public class MenuObjects {
 	public void select_media_layout() {
 
 		FrameHelper FrameHelper = new FrameHelper(driver);
-		
-	
+
 		if (driver.findElement(MenuPageObjects.selectMediaLayout).isDisplayed()) {
 			FrameHelper.switchTodefault();
 			FrameHelper.switchToFrame(ObjectReader.reader.pop_up_frame());
@@ -872,4 +883,147 @@ public class MenuObjects {
 		return DDL_vendor;
 	}
 
+	public void getScheduleSummary() {
+		log.info("Clicked on Schedule tab");
+		driver.findElement(MenuPageObjects.scheduleSummaryTab).click();
+	}
+
+	public void selectCheckBox() {
+		log.info("Selecting Check box");
+		driver.findElement(MenuPageObjects.selectCheckBox).click();
+	}
+
+	public void uploadClientPO() {
+		log.info("Click On Upload client PO");
+		driver.findElement(MenuPageObjects.uploadClientPO).click();
+	}
+
+	public void setClientPONumber(String poNumber) {
+		log.info("set client PO number");
+		driver.findElement(MenuPageObjects.setPONumber).sendKeys(poNumber);
+	}
+
+	public void setFileInput() {
+
+		File file = new File("src/main/resources/PO1.JPG");
+		String absolutePath = file.getAbsolutePath();
+		WebElement fileInput = driver.findElement(MenuPageObjects.setFileInput);
+		fileInput.sendKeys(absolutePath);
+	}
+
+	public void setAmount() {
+		log.info("Getting Gross amount");
+		String getAmount = driver.findElement(MenuPageObjects.getAmount).getText(); // Gettting final gross amount
+		log.info("Gross amount is :" + getAmount);
+
+		// Remove commas from amount string
+		String cleanedAmount = getAmount.replaceAll(",", "");
+
+		log.info("Set PO amount");
+		WebElement setAmount = driver.findElement(MenuPageObjects.setAmount); // setting final gross amount in po Amount
+		setAmount.sendKeys(cleanedAmount);
+	}
+
+	public void inclFeeCheckbox() {
+		driver.findElement(MenuPageObjects.inclFee).click();
+	}
+
+	public void inclTaxCheckbox() {
+		driver.findElement(MenuPageObjects.inclTax).click();
+	}
+
+	public void saveclientPO() {
+		driver.findElement(MenuPageObjects.saveClientPO).click();
+	}
+
+	public void getClientPONumber() {
+		Boolean getClientPONumber = driver.findElement(MenuPageObjects.clientPONumber).isDisplayed();
+		if (getClientPONumber == true) {
+			log.info("Client PO Number is created sucessfully");
+		} else {
+			log.info("Client PO number is not generated");
+		}
+
+	}
+
+	public void uploadScheduleDoc() {
+		driver.findElement(MenuPageObjects.uploadScheduleDoc).click();
+	}
+
+	public void setFileScheduleDoc() {
+
+		File file = new File("src/main/resources/PO1.JPG");
+		String absolutePath = file.getAbsolutePath();
+		WebElement fileInput = driver.findElement(MenuPageObjects.fileScheduleDoc);
+		fileInput.sendKeys(absolutePath);
+	}
+
+	public void saveUploadScheduleDoc() {
+		log.info("Clicking on Save button");
+		driver.findElement(MenuPageObjects.saveUploadScheduleDoc).click();
+	}
+
+	public void tickCheckBox() {
+		log.info("Selecting Check box");
+		driver.findElement(MenuPageObjects.firstCheckBox).click();
+	}
+
+	public void getAttachedIcon() {
+		log.info("Checking if doc is uploaded for schedule docs");
+		Boolean isdisplayed = driver.findElement(MenuPageObjects.attachmentIcon).isDisplayed();
+		if (isdisplayed == true) {
+			log.info("Document uploaded successfully");
+		} else {
+			log.info("document is not uploaded");
+		}
+	}
+
+	public void clickOnBillingRequest() {
+		FrameHelper FrameHelper = new FrameHelper(driver);
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());
+		driver.findElement(MenuPageObjects.billingRequest.billingRequest).click();
+	}
+
+	public WebElement setSearchBY() {
+		FrameHelper FrameHelper = new FrameHelper(driver);
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+		WebElement DDL_SEARCH = driver.findElement(MenuPageObjects.billingRequest.searchBy);
+		return DDL_SEARCH;
+	}
+
+	public void searchByText(String value) {
+		WebElement textSearch = driver.findElement(MenuPageObjects.billingRequest.searchTextBox);
+		textSearch.sendKeys(value);
+	}
+
+	public void clientPOEndDate(String EndDate) throws InterruptedException {
+		driver.findElement(MenuPageObjects.billingRequest.endDate).clear();
+		if(driver.switchTo().alert() != null) {
+			driver.switchTo().alert().accept();	
+		}
+		Thread.sleep(1000);
+		// driver.findElement(MenuPageObjects.EndDate).sendKeys(EndDate);
+		sendText(MenuPageObjects.billingRequest.endDate, EndDate, "Passing End Date");
+
+	}
+	
+	public void clientPOStartDate(String startdate) throws InterruptedException {
+
+		driver.findElement(MenuPageObjects.billingRequest.startDate).clear();
+		if(driver.switchTo().alert() != null) {
+			driver.switchTo().alert().accept();	
+		}
+
+		// driver.findElement(MenuPageObjects.StartDate).sendKeys(startdate);
+		sendText(MenuPageObjects.billingRequest.startDate, startdate, "Passing Start Date");
+	}
+	
+	public void clickOnFind() {
+		log.info("Clicked on Find button");
+		WebElement click= driver.findElement(MenuPageObjects.billingRequest.clickFind);
+		click.click();
+	}
+	
 }

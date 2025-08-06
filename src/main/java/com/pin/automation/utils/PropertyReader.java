@@ -173,28 +173,7 @@ public class PropertyReader implements ConfigReader {
 		return OR.getProperty("TRAFFIC");
 	}
 
-	/*
-	 * @Override public String clientname() { if (System.getProperty("clientName")
-	 * != null) { return System.getProperty("clientName"); } return
-	 * OR.getProperty("clientName"); }
-	 */
-	/*
-	 * @Override public String soldToParty() { if (System.getProperty("soldToParty")
-	 * != null) { return System.getProperty("soldToParty"); } return
-	 * OR.getProperty("soldToParty"); }
-	 */
 
-	/*
-	 * @Override public String product() { if (System.getProperty("product") !=
-	 * null) { return System.getProperty("product"); } return
-	 * OR.getProperty("product"); }
-	 */
-
-	/*
-	 * @Override public String Contract() { if (System.getProperty("Contract") !=
-	 * null) { return System.getProperty("Contract"); } return
-	 * OR.getProperty("Contract"); }
-	 */
 
 	public String getIntegratedUrl() {
 		if (System.getProperty("applicationUrl_INT") != null) {
@@ -262,4 +241,49 @@ public class PropertyReader implements ConfigReader {
 	public String getService(String key) {
 		return System.getProperty(key,OR.getProperty(key));
 	}
+	
+//	public String getUserName() {
+//		if (System.getProperty("username") != null) {
+//			return System.getProperty("username");
+//		}
+//		return OR.getProperty("username");
+//	}
+	
+	public String getStartDate () {
+		if(System.getProperty("startDate")!=null) {
+			return System.getProperty("startDate");
+		}
+		
+		return OR.getProperty("startDate");
+	}
+
+
+
+	public String getmixMediaEndtDate() {
+		if(System.getProperty("mixMediaEndDate")!=null) {
+			return System.getProperty("mixMediaEndDate");
+		}
+		return OR.getProperty("mixMediaEndDate");
+	}
+
+@Override
+public String getEndDate() {
+	if(System.getProperty("endDate")!= null) {
+		return System.getProperty("endDate");
+	}
+	return OR.getProperty("endDate");
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

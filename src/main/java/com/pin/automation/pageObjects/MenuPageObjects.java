@@ -13,7 +13,7 @@ public class MenuPageObjects {
 	// popShowAddedLayout_CIF-1
 	/** New Campaign Element * {@Date}= DD/MM/YYYY */
 	public static final By ClientDDL = By.xpath("//select[@id='ddlMediaClient']");
-	public static final By ServiceBy= By.xpath("//select[@id='ddlPersonnel']"); //New added
+	public static final By ServiceBy = By.xpath("//select[@id='ddlPersonnel']"); // New added
 	public static final By SoldToParty = By.xpath("//select[@id='ddlThirdParty']");
 	public static final By StartDate = By.xpath("//input[@id='txtFrom']");
 	public static final By EndDate = By.xpath("//input[@id='txtTo']");
@@ -30,9 +30,9 @@ public class MenuPageObjects {
 	public static final By client_currency = By.xpath("//select[@id='ddlCurrency']");
 	public static final By vendor_currency = By.xpath("//select[@id='ddlCurrency1']");
 	public static final By schedule_grid_error = By.xpath("//*[@id='pnlError']");
-	//public static final By label_digital=By.xpath("//label[text()='Linkedin']"); ///
-	public static final By label_digital=By.xpath("//input[@id='chkLstMediaCat_0']");
-	
+	// public static final By label_digital=By.xpath("//label[text()='Linkedin']");
+	// ///
+	public static final By label_digital = By.xpath("//input[@id='chkLstMediaCat_0']");
 
 	// Vendors
 	public static final By VendorDDL = By.xpath("//select[@id='rptTV_ctl01_ddlVendor']");
@@ -45,12 +45,13 @@ public class MenuPageObjects {
 
 	// New Schedule Page
 	public static final By editMediaOrder_popup = By.xpath("//div[@id='popEditMediaSchedule_PW-1']");
-    public static final By close_edit_popup= By.xpath("//div[@id='popEditMediaSchedule_HCB-1']//img[@alt='Close']");
+	public static final By close_edit_popup = By.xpath("//div[@id='popEditMediaSchedule_HCB-1']//img[@alt='Close']");
 	public static final By Close_media_schedule = By.xpath("//div[@id='popEditMediaSchedule_HCB-1']");
-	
-	public static final By nestedMediaOrder_popup= By.xpath("//div[@id='popShowAddedLayout_PWC-1']"); //New Added
-	public static final By nestedMediaOrder_popup_closed= By.xpath("//div[@id='popShowAddedLayout_HCB-1']//img[@alt='Close']"); //New added
-	
+
+	public static final By nestedMediaOrder_popup = By.xpath("//div[@id='popShowAddedLayout_PWC-1']"); // New Added
+	public static final By nestedMediaOrder_popup_closed = By
+			.xpath("//div[@id='popShowAddedLayout_HCB-1']//img[@alt='Close']"); // New added
+
 	public static final By layout_popUp = By.xpath("//div[@id='popShowAddedLayout_PW-1']");
 	public static final By selectMediaLayout = By.xpath("//td[normalize-space()='Mix Media Type']");
 	public static final By AddMediaLine = By.xpath("//input[@id='btnAddMediaLine']");
@@ -111,7 +112,6 @@ public class MenuPageObjects {
 	public static final By ClientAndVendorRates = By.xpath(
 			"//input[starts-with(@name, 'gvDigitalSpots$cell') and (contains(@name, '$txtClientCost') or contains(@name, '$txtBuyingCost'))]\r\n"
 					+ "");
-	
 
 	// Element for ListCampaig Tabs
 	public static final By PLANNING_TAB = By.xpath("//input[@id='btnCamp0']");
@@ -123,6 +123,8 @@ public class MenuPageObjects {
 	public static final By SEARCH_CAM = By.xpath("//input[@id='txtClientName']");
 	public static final By Find_buttonC = By.xpath("//input[@id='btnFind']");
 	public static final By C_NUMBER = By.xpath("//a[normalize-space()='B004/JSR/2400191']");
+	public static final By campaign_number = By.xpath("//*[@id='UpdatePanel2']/table[2]/tbody/tr[2]/td[1]/b/a");
+	public static final By scheduleSummaryTab = By.xpath("//input[@id='btnSchedule']");
 
 	// Elements for List Schedule
 	public static final By Confirmed_Tab = By.xpath("//input[@id='btn3']");
@@ -150,12 +152,47 @@ public class MenuPageObjects {
 	public static final By pop_up = By.xpath("//div[@id='popShowAddedLayout_PW-1']");
 
 	// ListAA
-	
-	public static final By AA_ALL=By.xpath("//select[@id='ddlMonth']");
-	public static final By Find_AA= By.xpath("//input[@id='btnFind']");
+
+	public static final By AA_ALL = By.xpath("//select[@id='ddlMonth']");
+	public static final By Find_AA = By.xpath("//input[@id='btnFind']");
 	public static final By AA_number = By.xpath("//a[@id='gvAAList_ctl02_hypAANo']");
 	public static final By AA_label = By.xpath("//span[@id='lblAANo']");
 
-	
-	
+	// Campaign SUmmary page
+
+	public static final By selectCheckBox = By.xpath("//span[@id='rptDetail_DXSelAllBtn0_D']");
+	public static final By uploadClientPO = By.xpath("//div[@id='btnCreateClientPO_CD']");
+	public static final By setPONumber = By.xpath("//input[@id='popClientPO_txtPO_Number_I']");
+	public static final By setFileInput = By.xpath("//input[@type='file' and contains(@id,'TextBox0_Input')]");
+	// public static final By setFileInput2 =
+	// By.xpath("//*[@id='popClientPO_upPOFile_Browse0']");
+	public static final By getAmount = By.xpath("//*[@id='rptDetail_DXFooterRow']/td[11]");
+	public static final By setAmount = By.xpath("//input[@id='popClientPO_txtPO_Amount_Exc_ASF_Tax_I']");
+	public static final By inclFee = By.xpath("//*[@id='popClientPO_chkIncludeFee_S_D']");
+	public static final By inclTax = By.xpath("//span[@id='popClientPO_chkIncludeTax_S_D']");
+	public static final By saveClientPO = By
+			.xpath("//div[@id='popClientPO_btnSavePO_CD']//span[@class='dx-vam'][normalize-space()='Save']");
+	public static final By clientPONumber = By.xpath("//a[@id='gvCampaignPO_cell0_1_hyperDocNo']");
+	public static final By uploadScheduleDoc = By.xpath("//span[normalize-space()='Upload Schedule Docs']");
+	public static final By fileScheduleDoc = By
+			.xpath("//input[@type='file' and contains(@id,'upSignedSchedule_TextBox0_Input')]");
+	public static final By saveUploadScheduleDoc = By.xpath(
+			"//div[@id='popSignedSchedule_btnSaveSignedSchedule_CD']//span[@class='dx-vam'][normalize-space()='Save']");
+	public static final By firstCheckBox = By.xpath("//span[@id='rptDetail_DXSelBtn0_D']");
+	public static final By attachmentIcon = By.xpath("//img[@id='rptDetail_cell0_17_btnScheduleImg']");
+
+	public static class billingRequest {
+
+		public static final By billingRequest = By.xpath("//td[@id='mnu2_9']");
+		public static final By searchBy = By.xpath("//select[@id='ddlSearchby']");
+		public static final By searchTextBox= By.xpath("//input[@id='txtSearchText']");
+		public static final By clickFind= By.xpath("//input[@id='btnFind']");
+		public static final By startDate= By.xpath("//input[@id='txtStartDate']");
+		public static final By endDate = By.xpath("//input[@id='txtEndDate']");
+		
+		
+
+	}
+
 }
+

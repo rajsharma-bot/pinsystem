@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<parameter name="env" value="devbr" /> 
+	<parameter name="env" value="pi2" />
 	<!-- Value =prsmpdt,pi2,pdt & devbr  -->
-	
+
 	<test thread-count="5" name="Test">
 		<!--<parameter name="env" value="pdt" />-->
 		<parameter name="isEditMO" value="true" />
 		<classes>
-<!--			<class name="com.pin.automation.LoginTestCase" />  
+		
+			<!--<class name="com.pin.automation.LoginTestCase" />  -->
 			<class name="com.pin.automation.Digital_Campaign_scheduleTestCase" />
-			<class name="com.pin.automation.Create_invoiceAndCreditNote_testCase" />	
-			<class name="com.pin.automation.Mix_mediaSchedule" />
+			<class name ="com.pin.automation.ClientPOAndBillingRequest"/>
+<!--			<class name="com.pin.automation.Mix_mediaSchedule" />
+			<class name="com.pin.automation.Create_invoiceAndCreditNote_testCase" />
 			<class name="com.pin.automation.SearchRecords" />
-			<class name="com.pin.automation.NavigateToCampaignMenuTabs"/>-->
-			<class name="com.pin.automation.NewJob_testCase"></class>
+			<class name="com.pin.automation.NavigateToCampaignMenuTabs" />
+			<class name="com.pin.automation.NewJob_testCase"/>
+			<class name="com.pin.automation.OldJob_testCase"/>-->
+
 			<!--  devbr-/pi2/>-->
 		</classes>
 	</test>

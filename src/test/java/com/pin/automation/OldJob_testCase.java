@@ -1,10 +1,15 @@
 package com.pin.automation;
 
+import java.io.IOException;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.pin.automation.utils.FileUtil;
 import com.pin.automation.utils.ObjectReader;
+import com.pin.automation.utils.ResourceHelper;
 
 public class OldJob_testCase extends TestBase {
 
@@ -33,13 +38,64 @@ public class OldJob_testCase extends TestBase {
 		JobObjects.setProducttxt("Agenvy");
 		JobObjects.setEstSales("20000");
 		JobObjects.setEstCost("20000");
-		JobObjects.setDate("01/07/2025");	
-		JobObjects.saveAddAttachment(); //Need to add accept alert
+		JobObjects.setDate("01/07/2025");
+		JobObjects.saveAddAttachment();
 		JobObjects.getOldJobCode();
-		
-		
-		
-		
+		JobObjects.setStatus();
+		FrameHelper.switchToFrame(JobObjects.switchToJobStatusPopFrame());
+		JobObjects.setStatusAsNew();
+		JobObjects.updateStatus();
+		Assert.assertEquals(JobObjects.selectTaskIsDisplayed(), true, "Status has been updated");
+	}
+
+	@Test(dependsOnMethods = { "old_job" }, description = "Creating Cost Estimate for Old job format")
+	public void creatingCostEstimate() {
+
+		DropDownHelper.selectUsingVisibleText(JobObjects.selectTask(), "Cost Estimate");
+		JobObjects.clickOnNew();
+		pop.switchToChildWindow(driver);
+		JobObjects.setTemplate();
+		JobObjects.templateProceedbtn();
+		pop.switchToParentWindow(driver);
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+		DropDownHelper.selectUsingValue(JobObjects.setCostType(), "6157");
+		JobObjects.confirmBtn();
+
+	}
+
+	@Test(dependsOnMethods = { "creatingCostEstimate" }, description = "Creating Invoice for CE")
+	public void wipInvoice() {
+		String filePath = ResourceHelper.getProductionInvoiceNo();
+		FileUtil fileUtil = new FileUtil(filePath);
+		JobObjects.createInvoice();
+		JobObjects.clickPartialBill();
+		JobObjects.setPartialBill("40");
+		JobObjects.clickOk();
+		JobObjects.createWIPInvoice();
+		JobObjects.getProductionInvoice();
+		JobObjects.redirectToJob();
+		try {
+
+			String data = fileUtil.readAllTextFromFile();
+			log.info("Data read from file: " + data);
+			String inv = JobObjects.ppInvoice();
+			Assert.assertEquals(data, inv, "Invoice number match");
+
+		} catch (IOException e) {
+			log.error("File not found : " + e.getMessage());
+			Assert.fail("Failed to read campaign code file.");
+		}
+	}
+	
+	@Test(dependsOnMethods = { "wipInvoice" }, description = "Edit estimate")
+	public void editEstimate() throws InterruptedException {
+		JobObjects.editEstimate();
+		JobObjects.selectEstPOCheckboxesAndCreatePO();
+		JobObjects.getOfficeAddress();
+		JobObjects.saveAsDraft();
+		JobObjects.clickEmailForApproval();
+		JobObjects.redirectToJobFromClientPO();
 		
 	}
 

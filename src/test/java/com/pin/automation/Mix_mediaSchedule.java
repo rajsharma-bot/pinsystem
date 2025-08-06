@@ -6,7 +6,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
-import com.pin.automation.TestBase;
 import com.pin.automation.utils.ObjectReader;
 
 public class Mix_mediaSchedule extends TestBase {
@@ -26,6 +25,9 @@ public class Mix_mediaSchedule extends TestBase {
 		String product = ObjectReader.reader.getProduct(env + ".product");
 		String contract = ObjectReader.reader.getContract(env + ".contract");
 		String serviceBy = ObjectReader.reader.getService(env + ".serviceby");
+		String startDate=  ObjectReader.reader.getStartDate();
+		String endDate = ObjectReader.reader.getmixMediaEndtDate();
+
 
 		// Log to confirm values
 		log.info("Using environment: " + env);
@@ -34,6 +36,8 @@ public class Mix_mediaSchedule extends TestBase {
 		log.info("Product: " + product);
 		log.info("Contract: " + contract);
 		log.info("ServiceBy: " + serviceBy);
+		log.info("StartDate:" +startDate);
+		log.info("EndDate :"+endDate);
 
 		LoginClass lc = new LoginClass(driver, env);
 		log.info("Login runner has been invoked for env: " + env);
@@ -52,15 +56,15 @@ public class Mix_mediaSchedule extends TestBase {
 		} else {
 			log.info("Sold To Party is ignored for env: " + env);
 		}
-		MenuObjects.StartDate("01/01/2025");
-		MenuObjects.EndDate("31/03/2025");
+		MenuObjects.StartDate(startDate);
+		MenuObjects.EndDate(endDate);
 		DropDownHelper.selectUsingValue(MenuObjects.Product(), product);
 		if (env.equals("devbr") || env.equals("pdt")) {
 			DropDownHelper.selectUsingValue(MenuObjects.Contract(), contract);
 		} else {
 			log.info("Contract is ignored for env: " + env);
 		}
-		MenuObjects.CampaignName("Mix Media");
+		MenuObjects.CampaignName("Regression for mix Media - 14-july-2025");
 		MixMediaSchedule.selectMultipleMediaTypes();
 		MenuObjects.Save();
 		MenuObjects.campaignCode();
@@ -104,4 +108,6 @@ public class Mix_mediaSchedule extends TestBase {
 		assertNotNull(ScheduleObjects.verifyScheduleNo(), "Schedule number should not be null!");
 	}
 
+
+	
 }

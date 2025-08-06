@@ -3,16 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.pin.automation.OldJob_testCase">
+      <class name="com.pin.automation.ClientPOAndBillingRequest">
         <methods>
           <include name="afterClass"/>
+          <include name="billingRequest"/>
           <include name="BeforeClass"/>
-          <include name="old_job"/>
+          <include name="clientPO"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
           <include name="beforeSuite"/>
         </methods>
-      </class> <!-- com.pin.automation.OldJob_testCase -->
+      </class> <!-- com.pin.automation.ClientPOAndBillingRequest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

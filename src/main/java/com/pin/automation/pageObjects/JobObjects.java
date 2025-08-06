@@ -259,40 +259,46 @@ public class JobObjects {
 		WebElement old_clientDDL = driver.findElement(JobPageObjects.oldJob.oldJobclientDDL);
 		return old_clientDDL;
 	}
-	
+
 	public void setSubject(String subject) {
 		log.info("Passing subject");
 		driver.findElement(JobPageObjects.oldJob.oldJobSubject).sendKeys(subject);
 	}
-	
+
 	public void setProducttxt(String product) {
 		log.info("Passing Product in text box");
 		driver.findElement(JobPageObjects.oldJob.productTxt).sendKeys(product);
 	}
-	
+
 	public void setEstSales(String value) {
 		log.info("passing est sales ");
 		WebElement setEstSales = driver.findElement(JobPageObjects.oldJob.estSales);
 		setEstSales.sendKeys(value);
 	}
-	
+
 	public void setEstCost(String value) {
 		log.info("passing est cost ");
 		WebElement setEstCost = driver.findElement(JobPageObjects.oldJob.estCost);
 		setEstCost.sendKeys(value);
 	}
-	
+
 	public void setDate(String date) {
 		log.info("Passing Delivery Date");
-		WebElement deliveryDate=  driver.findElement(JobPageObjects.oldJob.deliveryDate);
+		WebElement deliveryDate = driver.findElement(JobPageObjects.oldJob.deliveryDate);
 		deliveryDate.sendKeys(date);
 	}
-	
+
 	public void saveAddAttachment() {
 		clickElement(JobPageObjects.oldJob.saveAddAttachment, "Clicked on Save and Add attachment");
-		
+		if (driver.switchTo().alert() != null) {
+			driver.switchTo().alert().accept();
+		} else {
+			log.info("No alert");
+			clickElement(JobPageObjects.oldJob.saveAddAttachment, "Clicked on Save and Add attachment");
+		}
+
 	}
-	
+
 	public void getOldJobCode() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		FrameHelper FrameHelper = new FrameHelper(driver);
@@ -309,7 +315,120 @@ public class JobObjects {
 		}
 
 	}
-	
-	
 
+	public void setStatus() {
+		log.info("Clicked on Draft status hyperlink");
+		clickElement(JobPageObjects.oldJob.SetJOBStatusLink, "Changing job status from Draft to New");
+	}
+
+	public void setStatusAsNew() {
+		log.info("Setting status as new");
+		clickElement(JobPageObjects.oldJob.setStatusNew, "New Status has been selected");
+	}
+
+	public void updateStatus() {
+		log.info("Clicking on Update status");
+		clickElement(JobPageObjects.oldJob.updateStatus, "Clicked on Update status button");
+	}
+
+	public boolean selectTaskIsDisplayed() {
+
+		FrameHelper FrameHelper = new FrameHelper(driver);
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
+
+		WebElement selectTask = driver.findElement(JobPageObjects.selectTask);
+		boolean isDisplayed = selectTask.isDisplayed();
+		return isDisplayed;
+	}
+
+	public WebElement switchToJobStatusPopFrame() {
+
+		WebElement newFrame = driver.findElement(JobPageObjects.oldJob.newFrame);
+		return newFrame;
+
+	}
+
+	public void setOldJoBTemplate() {
+		log.info("Select CE templated");
+		clickElement(JobPageObjects.selectTemplate.selectOldFormatTemplate, "Selecting CE template");
+	}
+
+	public void createWIPInvoice() {
+		clickElement(JobPageObjects.productionInvoice.generateWIPInv, "Creating WIP Invoice");
+	}
+
+	public void editEstimate() {
+		log.info("Clicking on Edit Estimate ");
+		clickElement(JobPageObjects.JobSummaryPage.estimateEdit, "Clicked on Estimate edit icon");
+	}
+
+	public void createPObtn() {
+		log.info("Clicked on client PO button");
+		clickElement(JobPageObjects.costEstimatePage.createPObtn, "Clicked on PO button");
+	}
+
+	public void selectEstPOCheckboxesAndCreatePO() {
+		log.info("Selecting checkboxes with Est. PO and clicking Create PO button");
+
+		List<WebElement> rows = driver
+				.findElements(By.xpath("//tr[contains(@id,'ctl00_cph_rptIn_ctl') and contains(@id,'_trItem')]"));
+
+		for (WebElement row : rows) {
+			try {
+				WebElement estPOElement = row.findElement(By.xpath(".//td[@class='sidebar']/a[contains(@id,'lnkEstPO')]"));
+				String estPOValue = estPOElement.getText().trim();
+
+				if (!estPOValue.isEmpty()) {
+					WebElement checkbox = row.findElement(By.xpath(".//input[contains(@id,'chkItem')]"));
+					if (!checkbox.isSelected()) {
+						checkbox.click();
+						log.info("Selected checkbox for row with Est. PO value: " + estPOValue);
+					}
+				}
+			} catch (NoSuchElementException e) {
+				log.warn("Skipping a row without Est. PO or checkbox.");
+			}
+		}
+
+		// Click the Create PO button after selecting relevant checkboxes
+		createPObtn(); // Reuse your existing method
+	}
+	
+	public void getOfficeAddress() {
+		log.info("Clicked on Office address hyperlink");
+		clickElement(JobPageObjects.costEstimatePage.OfficeAddress, "Clicked on Office Address");
+	}
+	
+	public void getClientAddress() {
+		log.info("Clicked on Client address hyperlink");
+		clickElement(JobPageObjects.costEstimatePage.clientAddress, "Clicked on Client Address");
+	}
+	
+	public void saveAsDraft() throws InterruptedException {
+		log.info("Clicked on Draft button");
+		Thread.sleep(10000);
+		clickElement(JobPageObjects.costEstimatePage.saveAsDraft, "Clicked on Save as Draft on PO page");
+		
+	}
+	
+	public void clickEmailForApproval() {
+		log.info("Clicked on E-mail for Approval");
+		clickElement(JobPageObjects.clientPO.emailForApproval, "E-mail for Approval");
+		if (driver.switchTo().alert() != null) {
+			driver.switchTo().alert().accept();
+		} else {
+			log.info("No alert");
+			//clickElement(JobPageObjects.clientPO.emailForApproval, "E-mail for Approval");
+		}
+	}
+	
+	public void redirectToJobFromClientPO() {
+		log.info("Clicked on job no hyperlink");
+		clickElement(JobPageObjects.clientPO.redirectToJOB, "Backed to view Estimate page");
+	}
+	
+	
+	
+	
 }

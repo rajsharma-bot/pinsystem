@@ -79,7 +79,8 @@ public class TestBase {
 
 	@Parameters("env")
 	@BeforeClass(alwaysRun = true)
-	public void BeforeClass(@Optional("devbr") String env) throws IOException {
+	// if need to run manually then set env in optional
+	public void BeforeClass(@Optional("pi2") String env) throws IOException {
 		System.setProperty("env", env);
 		ExtentManager.getInstance();
 
