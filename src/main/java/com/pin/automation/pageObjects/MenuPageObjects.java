@@ -174,10 +174,8 @@ public class MenuPageObjects {
 			.xpath("//div[@id='popClientPO_btnSavePO_CD']//span[@class='dx-vam'][normalize-space()='Save']");
 	public static final By clientPONumber = By.xpath("//a[@id='gvCampaignPO_cell0_1_hyperDocNo']");
 	public static final By uploadScheduleDoc = By.xpath("//span[normalize-space()='Upload Schedule Docs']");
-	public static final By fileScheduleDoc = By
-			.xpath("//input[@type='file' and contains(@id,'upSignedSchedule_TextBox0_Input')]");
-	public static final By saveUploadScheduleDoc = By.xpath(
-			"//div[@id='popSignedSchedule_btnSaveSignedSchedule_CD']//span[@class='dx-vam'][normalize-space()='Save']");
+	public static final By fileScheduleDoc = By.xpath("//input[@type='file' and contains(@id,'upSignedSchedule_TextBox0_Input')]");
+	public static final By saveUploadScheduleDoc = By.xpath("//div[@id='popSignedSchedule_btnSaveSignedSchedule_CD']//span[@class='dx-vam'][normalize-space()='Save']");
 	public static final By firstCheckBox = By.xpath("//span[@id='rptDetail_DXSelBtn0_D']");
 	public static final By attachmentIcon = By.xpath("//img[@id='rptDetail_cell0_17_btnScheduleImg']");
 
@@ -189,7 +187,8 @@ public class MenuPageObjects {
 		public static final By clickFind= By.xpath("//input[@id='btnFind']");
 		public static final By startDate= By.xpath("//input[@id='txtStartDate']");
 		public static final By endDate = By.xpath("//input[@id='txtEndDate']");
-		
+		public static final By getCampaignNo= By.xpath("//*[@id='gvBillingRequest_DXDataRow1']/td[5]");
+		public static final By selectCheckBox = By.xpath("//span[@id='gvBillingRequest_DXSelBtn1_D']");
 		
 
 	}

@@ -6,7 +6,7 @@ public class EnvConfig {
 	public static void setEnvironment(String env) {
 		if (env != null && !env.trim().isEmpty()) {
 			environment = env;
-			System.out.println("I'm calling and env in report " + environment);
+			//System.out.println("I'm calling and env in report " + environment);
 		}
 	}
 

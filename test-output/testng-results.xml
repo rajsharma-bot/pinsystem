@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-29T16:21:16 IST" name="Default suite" finished-at="2025-07-29T16:23:20 IST" duration-ms="123591">
+  <suite started-at="2025-08-28T11:38:52 IST" name="Suite" finished-at="2025-08-28T11:51:47 IST" duration-ms="775000">
     <groups>
     </groups>
-    <test started-at="2025-07-29T16:21:16 IST" name="Default test" finished-at="2025-07-29T16:23:20 IST" duration-ms="123591">
-      <class name="com.pin.automation.ClientPOAndBillingRequest">
-        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:com.pin.automation.ClientPOAndBillingRequest@5aa360ea]" started-at="2025-07-29T16:21:16 IST" name="beforeSuite" finished-at="2025-07-29T16:21:16 IST" duration-ms="577" status="PASS">
+    <test started-at="2025-08-28T11:38:52 IST" name="Test" finished-at="2025-08-28T11:51:47 IST" duration-ms="775000">
+      <class name="com.pin.automation.MixmediaScheduleTestCase">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:com.pin.automation.MixmediaScheduleTestCase@214894fc]" started-at="2025-08-28T11:38:52 IST" name="beforeSuite" finished-at="2025-08-28T11:38:52 IST" duration-ms="535" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.pin.automation.ClientPOAndBillingRequest@5aa360ea]" started-at="2025-07-29T16:21:16 IST" name="BeforeClass" finished-at="2025-07-29T16:21:29 IST" duration-ms="13117" status="PASS">
+        <test-method is-config="true" signature="BeforeClass(java.lang.String)[pri:0, instance:com.pin.automation.MixmediaScheduleTestCase@214894fc]" started-at="2025-08-28T11:38:52 IST" name="BeforeClass" finished-at="2025-08-28T11:39:03 IST" duration-ms="10434" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,136 +29,63 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pin.automation.ClientPOAndBillingRequest@5aa360ea]" started-at="2025-07-29T16:21:29 IST" name="beforeMethod" finished-at="2025-07-29T16:21:29 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pin.automation.MixmediaScheduleTestCase@214894fc]" started-at="2025-08-28T11:39:03 IST" name="beforeMethod" finished-at="2025-08-28T11:39:03 IST" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.pin.automation.ClientPOAndBillingRequest.clientPO() throws java.lang.InterruptedException]]>
+                <![CDATA[public void com.pin.automation.MixmediaScheduleTestCase.new_Campaign() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="clientPO()[pri:0, instance:com.pin.automation.ClientPOAndBillingRequest@5aa360ea]" started-at="2025-07-29T16:21:29 IST" name="clientPO" finished-at="2025-07-29T16:23:15 IST" duration-ms="105720" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span class=" dxICheckBox_DevEx dxichSys dx-not-acc dxWeb_edtCheckBoxChecked_DevEx" id="rptDetail_DXSelBtn0_D">...</span> is not clickable at point (27, 411). Other element would receive the click: <div id="popClientPO_DXPWMB-1" class="dxpcModalBackLite_DevEx" style="z-index: 11999; inset: 0px; visibility: visible;">...</div>
-  (Session info: chrome=138.0.7204.169)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [104a1b2bf97e93cf1bc3ac94e98a9f8e, clickElement {id=f.EC4AFC613C185DC9789AF50D5084E7D4.d.3A12600C2B00970583600887B4EE37F8.e.283}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65194}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65194/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (104a1b2bf97e93cf1bc3ac94e98a9f8e)] -> xpath: //span[@id='rptDetail_DXSelBtn0_D']]
-Session ID: 104a1b2bf97e93cf1bc3ac94e98a9f8e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class=" dxICheckBox_DevEx dxichSys dx-not-acc dxWeb_edtCheckBoxChecked_DevEx" id="rptDetail_DXSelBtn0_D">...</span> is not clickable at point (27, 411). Other element would receive the click: <div id="popClientPO_DXPWMB-1" class="dxpcModalBackLite_DevEx" style="z-index: 11999; inset: 0px; visibility: visible;">...</div>
-  (Session info: chrome=138.0.7204.169)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [104a1b2bf97e93cf1bc3ac94e98a9f8e, clickElement {id=f.EC4AFC613C185DC9789AF50D5084E7D4.d.3A12600C2B00970583600887B4EE37F8.e.283}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\rasharma\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65194}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65194/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (104a1b2bf97e93cf1bc3ac94e98a9f8e)] -> xpath: //span[@id='rptDetail_DXSelBtn0_D']]
-Session ID: 104a1b2bf97e93cf1bc3ac94e98a9f8e
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at com.pin.automation.pageObjects.MenuObjects.tickCheckBox(MenuObjects.java:968)
-at com.pin.automation.ClientPOAndBillingRequest.clientPO(ClientPOAndBillingRequest.java:59)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="new_Campaign()[pri:0, instance:com.pin.automation.MixmediaScheduleTestCase@214894fc]" started-at="2025-08-28T11:39:03 IST" name="new_Campaign" description="PINSYS-1808-New Campaign" finished-at="2025-08-28T11:41:22 IST" duration-ms="139279" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clientPO -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pin.automation.ClientPOAndBillingRequest@5aa360ea]" started-at="2025-07-29T16:23:15 IST" name="afterMethod" finished-at="2025-07-29T16:23:17 IST" duration-ms="1823" status="PASS">
+        </test-method> <!-- new_Campaign -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pin.automation.MixmediaScheduleTestCase@214894fc]" started-at="2025-08-28T11:41:22 IST" name="afterMethod" finished-at="2025-08-28T11:41:24 IST" duration-ms="2254" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clientPO status=FAILURE method=ClientPOAndBillingRequest.clientPO()[pri:0, instance:com.pin.automation.ClientPOAndBillingRequest@5aa360ea] output={null}]]]>
+                <![CDATA[[TestResult name=new_Campaign status=SUCCESS method=MixmediaScheduleTestCase.new_Campaign()[pri:0, instance:com.pin.automation.MixmediaScheduleTestCase@214894fc] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="billingRequest()[pri:0, instance:com.pin.automation.ClientPOAndBillingRequest@5aa360ea]" started-at="2025-07-29T16:23:17 IST" name="billingRequest" description="Billing Request Send for Bill" finished-at="2025-07-29T16:23:17 IST" depends-on-methods="com.pin.automation.ClientPOAndBillingRequest.clientPO" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.pin.automation.ClientPOAndBillingRequest.billingRequest() on instance com.pin.automation.ClientPOAndBillingRequest@5aa360ea depends on not successfully finished methods 
-[com.pin.automation.ClientPOAndBillingRequest.clientPO() on instance com.pin.automation.ClientPOAndBillingRequest@5aa360ea]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.pin.automation.ClientPOAndBillingRequest.billingRequest() on instance com.pin.automation.ClientPOAndBillingRequest@5aa360ea depends on not successfully finished methods 
-[com.pin.automation.ClientPOAndBillingRequest.clientPO() on instance com.pin.automation.ClientPOAndBillingRequest@5aa360ea]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.pin.automation.MixmediaScheduleTestCase@214894fc]" started-at="2025-08-28T11:41:24 IST" name="beforeMethod" finished-at="2025-08-28T11:41:24 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.pin.automation.MixmediaScheduleTestCase.new_Schedule() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- billingRequest -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pin.automation.ClientPOAndBillingRequest@5aa360ea]" started-at="2025-07-29T16:23:17 IST" name="afterClass" finished-at="2025-07-29T16:23:20 IST" duration-ms="2814" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="new_Schedule()[pri:0, instance:com.pin.automation.MixmediaScheduleTestCase@214894fc]" started-at="2025-08-28T11:41:24 IST" name="new_Schedule" description="PINSYS-1813:: New Schedule(New layout)" finished-at="2025-08-28T11:51:41 IST" depends-on-methods="com.pin.automation.MixmediaScheduleTestCase.new_Campaign" duration-ms="616750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- new_Schedule -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pin.automation.MixmediaScheduleTestCase@214894fc]" started-at="2025-08-28T11:51:41 IST" name="afterMethod" finished-at="2025-08-28T11:51:45 IST" duration-ms="4213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=new_Schedule status=SUCCESS method=MixmediaScheduleTestCase.new_Schedule()[pri:0, instance:com.pin.automation.MixmediaScheduleTestCase@214894fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.pin.automation.MixmediaScheduleTestCase@214894fc]" started-at="2025-08-28T11:51:45 IST" name="afterClass" finished-at="2025-08-28T11:51:47 IST" duration-ms="1972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.pin.automation.ClientPOAndBillingRequest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.pin.automation.MixmediaScheduleTestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

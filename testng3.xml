@@ -11,7 +11,8 @@
 		
 			<!--<class name="com.pin.automation.LoginTestCase" />  -->
 			<class name="com.pin.automation.Digital_Campaign_scheduleTestCase" />
-			<class name ="com.pin.automation.ClientPOAndBillingRequest"/>
+			<class name="com.pin.automation.MixmediaScheduleTestCase" />
+<!--			<class name ="com.pin.automation.ClientPOAndBillingRequest"/>-->
 <!--			<class name="com.pin.automation.Mix_mediaSchedule" />
 			<class name="com.pin.automation.Create_invoiceAndCreditNote_testCase" />
 			<class name="com.pin.automation.SearchRecords" />

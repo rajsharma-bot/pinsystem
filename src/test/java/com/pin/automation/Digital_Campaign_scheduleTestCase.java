@@ -1,4 +1,3 @@
-package com.pin.automation;
 
 import static org.testng.Assert.assertNotNull;
 
@@ -13,6 +12,8 @@ import org.testng.annotations.Test;
 import com.pin.automation.utils.FileUtil;
 import com.pin.automation.utils.ObjectReader;
 import com.pin.automation.utils.ResourceHelper;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Digital_Campaign_scheduleTestCase extends TestBase {
 
@@ -22,6 +23,7 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 	public void digital_campaign() throws InterruptedException {
 
 		WaitHelper.setImplicitWait(ObjectReader.reader.getExplicitWait());
+		String today = LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MMMM-yyyy"));
 
 		String env = System.getProperty("env", "devbr"); // Default env
 		System.out.println("Selecteted environment is "+ env);
@@ -82,7 +84,7 @@ public class Digital_Campaign_scheduleTestCase extends TestBase {
 			log.info("Contract is ignored for env: " + env);
 		}
 
-		MenuObjects.CampaignName("Regression for Digital Media - 14-july-2025");
+		MenuObjects.CampaignName("Regression for Digital Media - " + today);
 
 		// Save and generate campaign code
 		MixMediaSchedule.digital_media();

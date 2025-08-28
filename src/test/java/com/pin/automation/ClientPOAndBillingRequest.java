@@ -43,24 +43,24 @@ public class ClientPOAndBillingRequest extends TestBase {
 		}
 		log.info("value :"+value);
 		
-		MenuObjects.Campaign_searchbutton();
-		MenuObjects.clickOnCampaignNo();
-		MenuObjects.campaignCode();
-		MenuObjects.getScheduleSummary();
-		MenuObjects.selectCheckBox();
-		MenuObjects.uploadClientPO();
-		MenuObjects.setClientPONumber("PO-18/CE/CO9294");
-		MenuObjects.setFileInput();
-		MenuObjects.setAmount();
-		MenuObjects.inclFeeCheckbox();
-		MenuObjects.inclTaxCheckbox();
-		MenuObjects.saveclientPO();
-		MenuObjects.getClientPONumber();
-		MenuObjects.tickCheckBox();
-		MenuObjects.uploadScheduleDoc();
-		MenuObjects.setFileScheduleDoc();
-		MenuObjects.saveUploadScheduleDoc();
-		MenuObjects.getAttachedIcon();	
+//		MenuObjects.Campaign_searchbutton();
+//		MenuObjects.clickOnCampaignNo();
+//		MenuObjects.campaignCode();
+//		MenuObjects.getScheduleSummary();
+//		MenuObjects.selectCheckBox();
+//		MenuObjects.uploadClientPO();
+//		MenuObjects.setClientPONumber("PO-18/CE/CO9297");
+//		MenuObjects.setFileInput();
+//		MenuObjects.setAmount();
+//		MenuObjects.inclFeeCheckbox();
+//		MenuObjects.inclTaxCheckbox();
+//		MenuObjects.saveclientPO();
+//		MenuObjects.getClientPONumber();
+//		MenuObjects.tickCheckBox();
+//		MenuObjects.uploadScheduleDoc();
+//		MenuObjects.setFileScheduleDoc2();
+//		MenuObjects.saveUploadScheduleDoc();
+//		MenuObjects.getAttachedIcon();	
 	}
 	
 	@Test(dependsOnMethods = { "clientPO" }, description = "Billing Request Send for Bill")
@@ -79,6 +79,10 @@ public class ClientPOAndBillingRequest extends TestBase {
 		DropDownHelper.selectUsingVisibleText(MenuObjects.setSearchBY(), "Campaign");
 		MenuObjects.searchByText(value);
 		MenuObjects.clickOnFind();
+		MenuObjects.validatedCampaignNo(value);
+		MenuObjects.setCheckBox();
+		
+		
 		
 
 		

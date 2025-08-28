@@ -1,14 +1,14 @@
 package com.pin.automation.pageObjects;
 
-import java.awt.Menu;
 import java.io.File;
 import java.time.Duration;
-import java.util.List;
 import java.util.Collections;
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -925,18 +925,22 @@ public class MenuObjects {
 	}
 
 	public void inclFeeCheckbox() {
+		log.info("Selecting incl Fee checkBox");
 		driver.findElement(MenuPageObjects.inclFee).click();
 	}
 
 	public void inclTaxCheckbox() {
+		log.info("Selecting Incl Tax checkbox");
 		driver.findElement(MenuPageObjects.inclTax).click();
 	}
 
 	public void saveclientPO() {
+		log.info("Clicked on Save PO button");
 		driver.findElement(MenuPageObjects.saveClientPO).click();
 	}
 
 	public void getClientPONumber() {
+		log.info("Checking if PO is created ");
 		Boolean getClientPONumber = driver.findElement(MenuPageObjects.clientPONumber).isDisplayed();
 		if (getClientPONumber == true) {
 			log.info("Client PO Number is created sucessfully");
@@ -947,20 +951,59 @@ public class MenuObjects {
 	}
 
 	public void uploadScheduleDoc() {
-		driver.findElement(MenuPageObjects.uploadScheduleDoc).click();
+		log.info("Clicked on Upload Schedule Doc button");
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebElement UploadSchedule = wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.uploadScheduleDoc));
+		//driver.findElement(MenuPageObjects.uploadScheduleDoc).click();
+		UploadSchedule.click();
 	}
 
-	public void setFileScheduleDoc() {
+	public void setFileScheduleDoc2() throws InterruptedException {
 
+		log.info("Passing image file path");
 		File file = new File("src/main/resources/PO1.JPG");
 		String absolutePath = file.getAbsolutePath();
+		Thread.sleep(10000);
+		
 		WebElement fileInput = driver.findElement(MenuPageObjects.fileScheduleDoc);
 		fileInput.sendKeys(absolutePath);
+
 	}
+	
+	
+	public void setFileScheduleDoc() {
+	    log.info("Passing image file path");
+	    File file = new File("src/main/resources/PO1.JPG");
+	    String absolutePath = file.getAbsolutePath();
+
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	    // First, ensure the browse link has rendered (triggers input attach)
+	    WebElement browseLink = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Select file...']")));
+	    browseLink.click();  // May trigger the file input to get injected or initialized
+
+	    // Then wait until the input exists AND is enabled (ready for sendKeys)
+	    WebElement fileInput = wait.until(driver -> {
+	        WebElement input = driver.findElement(MenuPageObjects.fileScheduleDoc);
+	        return (input.isDisplayed() && input.isEnabled()) ? input : null;
+	    });
+
+	    // Some browsers block sendKeys on hidden elements. Unhide using JS.
+	    ((JavascriptExecutor) driver).executeScript("arguments[0].style.opacity='1'; arguments[0].style.top='0';", fileInput);
+
+	    log.info("Uploading file: " + absolutePath);
+	    fileInput.sendKeys(absolutePath);
+	}
+
 
 	public void saveUploadScheduleDoc() {
 		log.info("Clicking on Save button");
-		driver.findElement(MenuPageObjects.saveUploadScheduleDoc).click();
+		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebElement docUpload = wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.saveUploadScheduleDoc));
+		log.info("******************************************************");
+		//driver.findElement(MenuPageObjects.saveUploadScheduleDoc).click();
+		docUpload.click();
 	}
 
 	public void tickCheckBox() {
@@ -968,9 +1011,15 @@ public class MenuObjects {
 		driver.findElement(MenuPageObjects.firstCheckBox).click();
 	}
 
-	public void getAttachedIcon() {
+	public void getAttachedIcon() throws InterruptedException {
 		log.info("Checking if doc is uploaded for schedule docs");
-		Boolean isdisplayed = driver.findElement(MenuPageObjects.attachmentIcon).isDisplayed();
+		Thread.sleep(10000);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebElement attachmentIcon = wait.until(ExpectedConditions.visibilityOfElementLocated(MenuPageObjects.attachmentIcon));
+		
+		
+		//Boolean isdisplayed = driver.findElement(MenuPageObjects.attachmentIcon).isDisplayed();
+		Boolean isdisplayed = attachmentIcon.isDisplayed();
 		if (isdisplayed == true) {
 			log.info("Document uploaded successfully");
 		} else {
@@ -982,7 +1031,10 @@ public class MenuObjects {
 		FrameHelper FrameHelper = new FrameHelper(driver);
 		FrameHelper.switchTodefault();
 		FrameHelper.switchToFrame(ObjectReader.reader.leftframe());
+		log.info("Click on Billing Request page");
 		driver.findElement(MenuPageObjects.billingRequest.billingRequest).click();
+		FrameHelper.switchTodefault();
+		FrameHelper.switchToFrame(ObjectReader.reader.rightframe());
 	}
 
 	public WebElement setSearchBY() {
@@ -994,36 +1046,74 @@ public class MenuObjects {
 	}
 
 	public void searchByText(String value) {
+		log.info("Passing value in search box");
 		WebElement textSearch = driver.findElement(MenuPageObjects.billingRequest.searchTextBox);
 		textSearch.sendKeys(value);
 	}
 
 	public void clientPOEndDate(String EndDate) throws InterruptedException {
-		driver.findElement(MenuPageObjects.billingRequest.endDate).clear();
-		if(driver.switchTo().alert() != null) {
-			driver.switchTo().alert().accept();	
-		}
-		Thread.sleep(1000);
-		// driver.findElement(MenuPageObjects.EndDate).sendKeys(EndDate);
-		sendText(MenuPageObjects.billingRequest.endDate, EndDate, "Passing End Date");
+		log.info("Passing end date");
+		Thread.sleep(3000);
+		WebElement dateInput = driver.findElement(MenuPageObjects.billingRequest.endDate);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].value='" + EndDate + "';", dateInput);
+		
+		
+//		driver.findElement(MenuPageObjects.billingRequest.endDate).clear();
+//		sendText(MenuPageObjects.billingRequest.endDate, EndDate, "Passing End Date");
+//		if(driver.switchTo().alert() != null) {
+//			driver.switchTo().alert().accept();	
+//			sendText(MenuPageObjects.billingRequest.endDate, EndDate, "Passing End Date");
+//		}else {
+//			sendText(MenuPageObjects.billingRequest.endDate, EndDate, "Passing End Date");
+//		}
+//		
 
 	}
 	
 	public void clientPOStartDate(String startdate) throws InterruptedException {
 
-		driver.findElement(MenuPageObjects.billingRequest.startDate).clear();
-		if(driver.switchTo().alert() != null) {
-			driver.switchTo().alert().accept();	
-		}
-
-		// driver.findElement(MenuPageObjects.StartDate).sendKeys(startdate);
-		sendText(MenuPageObjects.billingRequest.startDate, startdate, "Passing Start Date");
+		log.info("passing start date");
+		Thread.sleep(3000);
+//		driver.findElement(MenuPageObjects.billingRequest.startDate).clear();
+//		sendText(MenuPageObjects.billingRequest.startDate, startdate, "Passing Start Date");
+//		if(driver.switchTo().alert() != null) {
+//			driver.switchTo().alert().accept();	
+//			sendText(MenuPageObjects.billingRequest.startDate, startdate, "Passing Start Date");
+//		}else {
+//			sendText(MenuPageObjects.billingRequest.startDate, startdate, "Passing Start Date");
+//		}
+		
+		WebElement dateInput = driver.findElement(MenuPageObjects.billingRequest.startDate);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].value='" + startdate + "';", dateInput);
 	}
 	
 	public void clickOnFind() {
 		log.info("Clicked on Find button");
 		WebElement click= driver.findElement(MenuPageObjects.billingRequest.clickFind);
 		click.click();
+	}
+	
+	public void validatedCampaignNo(String value) {
+		log.info("Checking if correct details are loaded on Billing Request page");
+		
+		String campaignnumber= driver.findElement(MenuPageObjects.billingRequest.getCampaignNo).getText();
+		
+		if(campaignnumber.contentEquals(value)) {
+			System.out.println("Correct details are loaded");
+			
+		}else {
+			System.out.println("Correct details are not loaded");
+		}
+		
+	}
+	
+	public void setCheckBox() {
+		log.info("Click on 1st check box");
+		WebElement tickCheckBox= driver.findElement(MenuPageObjects.billingRequest.selectCheckBox);
+		tickCheckBox.click();
+		
 	}
 	
 }

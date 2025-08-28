@@ -34,6 +34,7 @@ public class DropDownHelper {
 	}
 
 	public void selectUsingVisibleText(WebElement element, String visibleText) {
+		log.info("Selecting values based on visible text");
 		Select select = new Select(element);
 		log.info("selectUsingVisibleText and visibleText is: " + visibleText);
 		select.selectByVisibleText(visibleText);

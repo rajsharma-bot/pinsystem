@@ -4,7 +4,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
-import com.pin.automation.TestBase;
 import com.pin.automation.utils.ObjectReader;
 
 public class SearchRecords extends TestBase {

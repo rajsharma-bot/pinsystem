@@ -2,20 +2,24 @@ package com.pin.automation;
 
 import static org.testng.Assert.assertNotNull;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 
 import com.pin.automation.utils.ObjectReader;
 
-public class Mix_mediaSchedule extends TestBase {
+public class MixmediaScheduleTestCase extends TestBase {
 
-	private static Logger log = LogManager.getLogger(Mix_mediaSchedule.class);
+	private static Logger log = LogManager.getLogger(MixmediaScheduleTestCase.class);
 
 	@Test(description = "PINSYS-1808-New Campaign")
 	public void new_Campaign() throws InterruptedException {
 
 		WaitHelper.setImplicitWait(ObjectReader.reader.getExplicitWait());
+		String today = LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MMMM-yyyy"));
 		String env = System.getProperty("env", "devbr"); // Default env
 		System.out.println(env);
 
@@ -64,7 +68,8 @@ public class Mix_mediaSchedule extends TestBase {
 		} else {
 			log.info("Contract is ignored for env: " + env);
 		}
-		MenuObjects.CampaignName("Regression for mix Media - 14-july-2025");
+		MenuObjects.CampaignName("Regression for mix Media - "+ today);
+		
 		MixMediaSchedule.selectMultipleMediaTypes();
 		MenuObjects.Save();
 		MenuObjects.campaignCode();

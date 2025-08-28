@@ -5,16 +5,17 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="isEditMO" value="true"/>
     <classes>
-      <class name="com.pin.automation.ClientPOAndBillingRequest">
+      <class name="com.pin.automation.MixmediaScheduleTestCase">
         <methods>
           <include name="afterClass"/>
+          <include name="new_Campaign"/>
           <include name="BeforeClass"/>
-          <include name="clientPO"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
           <include name="beforeSuite"/>
+          <include name="new_Schedule"/>
         </methods>
-      </class> <!-- com.pin.automation.ClientPOAndBillingRequest -->
+      </class> <!-- com.pin.automation.MixmediaScheduleTestCase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

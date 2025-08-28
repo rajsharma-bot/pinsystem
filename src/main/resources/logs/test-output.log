@@ -1,34 +1,294 @@
-[INFO ] 2025-07-29 16:30:03.254 [main] WebDriverManager - Using chromedriver 138.0.7204.168 (resolved driver for Chrome 138)
-[INFO ] 2025-07-29 16:30:03.533 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\138.0.7204.168\chromedriver.exe
-[INFO ] 2025-07-29 16:30:08.734 [main] TestBase - Initialize Web driver: 277149580
-[INFO ] 2025-07-29 16:30:08.743 [main] WaitHelper - Implicit Wait has been set to: 60
-[INFO ] 2025-07-29 16:30:08.776 [main] WaitHelper - waiting for page to load for : 120
-[INFO ] 2025-07-29 16:30:08.793 [main] WaitHelper - page is loaded
-[INFO ] 2025-07-29 16:30:08.797 [main] TestBase - >>> Launching URL: https://pit2-pinsystem.devbrny.mediaocean.com
-[INFO ] 2025-07-29 16:30:12.302 [main] DropDownHelper - DropDownHelper object created..
-[INFO ] 2025-07-29 16:30:12.383 [main] TestBase - ************** clientPO Started ***************
-[INFO ] 2025-07-29 16:30:12.412 [main] WaitHelper - Implicit Wait has been set to: 60
-[INFO ] 2025-07-29 16:30:12.429 [main] ClientPOAndBillingRequest - Login runner has been invoked for env: pi2
-[INFO ] 2025-07-29 16:30:12.430 [main] LoginClass - Starting login with user: adminuser@pinignindtesting.com on environment: pi2
-[INFO ] 2025-07-29 16:30:12.436 [main] LoginObjects - Environment set to: pi2
-[INFO ] 2025-07-29 16:30:12.437 [main] LoginObjects - Using IntegrationLogin username locator for env: pi2
-[INFO ] 2025-07-29 16:30:13.037 [main] LoginObjects - Entered username: adminuser@pinignindtesting.com
-[INFO ] 2025-07-29 16:30:13.039 [main] LoginObjects - Using IntegrationLogin password locator for env: pi2
-[INFO ] 2025-07-29 16:30:13.417 [main] LoginObjects - Entered password
-[INFO ] 2025-07-29 16:30:13.418 [main] LoginObjects - Login attempted with username and password.
-[INFO ] 2025-07-29 16:30:13.419 [main] LoginObjects - Using IntegrationLogin login button locator for env: pi2
-[INFO ] 2025-07-29 16:30:18.374 [main] LoginObjects - Clicked submit/login button
-[INFO ] 2025-07-29 16:30:18.375 [main] LoginClass - Login process completed.
-[INFO ] 2025-07-29 16:31:18.438 [main] FrameHelper - Frame has been switched to topframe
-[INFO ] 2025-07-29 16:31:18.648 [main] HomeNavigationObjects - Clicked on Media 
-[INFO ] 2025-07-29 16:31:18.649 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2025-07-29 16:31:18.704 [main] FrameHelper - Frame has been switched to left
-[INFO ] 2025-07-29 16:31:18.970 [main] MenuObjects - List Campaign clicked successfully.
-[INFO ] 2025-07-29 16:31:18.970 [main] FrameHelper - Frame has been switched default or parent frame
-[INFO ] 2025-07-29 16:31:20.267 [main] FrameHelper - Frame has been switched to right
-[INFO ] 2025-07-29 16:31:20.317 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Campaign No.
-[INFO ] 2025-07-29 16:31:20.429 [main] ClientPOAndBillingRequest - Data read from file:
-VFDK/MC/2500147
-[INFO ] 2025-07-29 16:31:20.650 [main] MenuObjects - Text 'VFDK/MC/2500147' entered in Campaign Name
-[INFO ] 2025-07-29 16:31:20.651 [main] MenuObjects - VFDK/MC/2500147Has been passed
-[INFO ] 2025-07-29 16:31:20.651 [main] ClientPOAndBillingRequest - value :VFDK/MC/2500147
+[INFO ] 2025-08-28 11:38:54.088 [main] WebDriverManager - Using chromedriver 139.0.7258.154 (resolved driver for Chrome 139)
+[INFO ] 2025-08-28 11:38:54.302 [main] WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\rasharma\.cache\selenium\chromedriver\win64\139.0.7258.154\chromedriver.exe
+[INFO ] 2025-08-28 11:38:59.547 [main] TestBase - Initialize Web driver: 879706537
+[INFO ] 2025-08-28 11:38:59.554 [main] WaitHelper - Implicit Wait has been set to: 60
+[INFO ] 2025-08-28 11:38:59.579 [main] WaitHelper - waiting for page to load for : 120
+[INFO ] 2025-08-28 11:38:59.595 [main] WaitHelper - page is loaded
+[INFO ] 2025-08-28 11:38:59.601 [main] TestBase - >>> Launching URL: https://pit2-pinsystem.devbrny.mediaocean.com
+[INFO ] 2025-08-28 11:39:03.371 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2025-08-28 11:39:03.413 [main] TestBase - ************** new_Campaign Started ***************
+[INFO ] 2025-08-28 11:39:03.430 [main] WaitHelper - Implicit Wait has been set to: 60
+[INFO ] 2025-08-28 11:39:03.454 [main] MixmediaScheduleTestCase - Using environment: pi2
+[INFO ] 2025-08-28 11:39:03.455 [main] MixmediaScheduleTestCase - Client Name: IN-ACER | INAC001 INR
+[INFO ] 2025-08-28 11:39:03.456 [main] MixmediaScheduleTestCase - Sold To Party: null
+[INFO ] 2025-08-28 11:39:03.456 [main] MixmediaScheduleTestCase - Product: 11638
+[INFO ] 2025-08-28 11:39:03.458 [main] MixmediaScheduleTestCase - Contract: null
+[INFO ] 2025-08-28 11:39:03.459 [main] MixmediaScheduleTestCase - ServiceBy: null
+[INFO ] 2025-08-28 11:39:03.460 [main] MixmediaScheduleTestCase - StartDate:01/01/2025
+[INFO ] 2025-08-28 11:39:03.461 [main] MixmediaScheduleTestCase - EndDate :30/04/2025
+[INFO ] 2025-08-28 11:39:03.464 [main] MixmediaScheduleTestCase - Login runner has been invoked for env: pi2
+[INFO ] 2025-08-28 11:39:03.464 [main] LoginClass - Starting login with user: adminuser@pinignindtesting.com on environment: pi2
+[INFO ] 2025-08-28 11:39:03.467 [main] LoginObjects - Environment set to: pi2
+[INFO ] 2025-08-28 11:39:03.468 [main] LoginObjects - Using IntegrationLogin username locator for env: pi2
+[INFO ] 2025-08-28 11:39:03.781 [main] LoginObjects - Entered username: adminuser@pinignindtesting.com
+[INFO ] 2025-08-28 11:39:03.781 [main] LoginObjects - Using IntegrationLogin password locator for env: pi2
+[INFO ] 2025-08-28 11:39:03.970 [main] LoginObjects - Entered password
+[INFO ] 2025-08-28 11:39:03.971 [main] LoginObjects - Login attempted with username and password.
+[INFO ] 2025-08-28 11:39:03.971 [main] LoginObjects - Using IntegrationLogin login button locator for env: pi2
+[INFO ] 2025-08-28 11:39:08.495 [main] LoginObjects - Clicked submit/login button
+[INFO ] 2025-08-28 11:39:08.496 [main] LoginClass - Login process completed.
+[INFO ] 2025-08-28 11:40:08.602 [main] FrameHelper - Frame has been switched to topframe
+[INFO ] 2025-08-28 11:40:08.834 [main] HomeNavigationObjects - Clicked on Media 
+[INFO ] 2025-08-28 11:40:08.834 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:40:08.892 [main] FrameHelper - Frame has been switched to left
+[INFO ] 2025-08-28 11:40:08.892 [main] MenuObjects - New Campaign has been clicked
+[INFO ] 2025-08-28 11:40:09.190 [main] MenuObjects - Click on New Schedule button clicked successfully.
+[INFO ] 2025-08-28 11:40:09.191 [main] MixmediaScheduleTestCase - Service By has been ignored
+[INFO ] 2025-08-28 11:40:09.192 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:40:11.168 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:40:13.211 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:40:13.236 [main] DropDownHelper - selectUsingVisibleText and visibleText is: IN-ACER | INAC001 INR
+[INFO ] 2025-08-28 11:40:13.348 [main] MixmediaScheduleTestCase - Sold To Party is ignored for env: pi2
+[INFO ] 2025-08-28 11:40:15.949 [main] MenuObjects - Text '01/01/2025' entered in Passing Start Date
+[INFO ] 2025-08-28 11:40:18.754 [main] MenuObjects - Text '30/04/2025' entered in Passing End Date
+[INFO ] 2025-08-28 11:40:19.836 [main] DropDownHelper - selectUsingValue and value is: 11638
+[INFO ] 2025-08-28 11:40:19.938 [main] MixmediaScheduleTestCase - Contract is ignored for env: pi2
+[INFO ] 2025-08-28 11:40:19.939 [main] MenuObjects - Passing Campaign Name
+[INFO ] 2025-08-28 11:40:20.315 [main] MenuObjects - Text 'Regression for mix Media - 28-August-2025' entered in Passing Campaign name has been passed
+[INFO ] 2025-08-28 11:40:20.319 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2025-08-28 11:40:22.349 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:40:22.371 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Outdoor
+[INFO ] 2025-08-28 11:40:22.968 [main] MenuObjects - Text 'BILLBOARD' entered in Searching media title
+[INFO ] 2025-08-28 11:40:28.286 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2025-08-28 11:40:30.326 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:40:30.340 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Cinema
+[INFO ] 2025-08-28 11:40:30.590 [main] MenuObjects - Text 'Disney' entered in Searching media title
+[INFO ] 2025-08-28 11:40:35.822 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2025-08-28 11:40:37.857 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:40:37.881 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Newspaper
+[INFO ] 2025-08-28 11:40:38.398 [main] MenuObjects - Text 'Dainik Jagran' entered in Searching media title
+[INFO ] 2025-08-28 11:40:44.019 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2025-08-28 11:40:46.078 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:40:46.102 [main] DropDownHelper - selectUsingVisibleText and visibleText is: TV
+[INFO ] 2025-08-28 11:40:46.582 [main] MenuObjects - Text 'Star Sport' entered in Searching media title
+[INFO ] 2025-08-28 11:40:51.805 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2025-08-28 11:40:53.847 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:40:53.862 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Radio
+[INFO ] 2025-08-28 11:40:54.183 [main] MenuObjects - Text 'Red FM 93.5' entered in Searching media title
+[INFO ] 2025-08-28 11:40:59.473 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2025-08-28 11:41:01.512 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:41:01.525 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Others
+[INFO ] 2025-08-28 11:41:01.786 [main] MenuObjects - Text 'Cobrapost' entered in Searching media title
+[INFO ] 2025-08-28 11:41:07.056 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2025-08-28 11:41:09.089 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:41:09.104 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Magazine
+[INFO ] 2025-08-28 11:41:09.405 [main] MenuObjects - Text 'Business India' entered in Searching media title
+[INFO ] 2025-08-28 11:41:14.629 [main] MenuObjects - Select Checkbox clicked successfully.
+[INFO ] 2025-08-28 11:41:14.646 [main] MenuObjects - Clicking on Save button
+[INFO ] 2025-08-28 11:41:14.881 [main] MenuObjects - Click on Save Only And View Campaign  clicked successfully.
+[INFO ] 2025-08-28 11:41:14.899 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:41:22.562 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:41:22.607 [main] MenuObjects - Campaign has been created
+[INFO ] 2025-08-28 11:41:22.653 [main] MenuObjects - VFDK/MC/2500163
+[INFO ] 2025-08-28 11:41:24.943 [main] ScreenshotUtility - Full-page screenshot saved: C:\Users\rasharma\Automation\pin-automation/src/main/resources/screenShots/new_Campaign_success_20250828_114122.png
+[INFO ] 2025-08-28 11:41:24.951 [main] TestBase - ************** new_Campaign Finished ***************
+[INFO ] 2025-08-28 11:41:24.965 [main] TestBase - ************** new_Schedule Started ***************
+[INFO ] 2025-08-28 11:41:24.971 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:41:25.049 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:41:28.554 [main] MenuObjects - New schedule clicked successfully.
+[INFO ] 2025-08-28 11:41:28.554 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2025-08-28 11:41:28.555 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:41:28.616 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:41:30.768 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:41:30.783 [main] DropDownHelper - selectUsingVisibleText and visibleText is: INR
+[INFO ] 2025-08-28 11:41:30.851 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2025-08-28 11:41:43.012 [main] MenuObjects - vendor has been passed
+[INFO ] 2025-08-28 11:41:43.012 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:41:43.028 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Australian Tax Office
+[INFO ] 2025-08-28 11:41:43.110 [main] MenuObjects - Vendor 1 selected: Australian Tax Office
+[INFO ] 2025-08-28 11:41:44.340 [main] MenuObjects - vendor has been passed
+[INFO ] 2025-08-28 11:41:44.341 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:41:44.358 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Australian Tax Office
+[INFO ] 2025-08-28 11:41:44.437 [main] MenuObjects - Vendor 2 selected: Australian Tax Office
+[INFO ] 2025-08-28 11:41:45.661 [main] MenuObjects - vendor has been passed
+[INFO ] 2025-08-28 11:41:45.661 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:41:45.678 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Australian Tax Office
+[INFO ] 2025-08-28 11:41:45.751 [main] MenuObjects - Vendor 3 selected: Australian Tax Office
+[INFO ] 2025-08-28 11:41:46.978 [main] MenuObjects - vendor has been passed
+[INFO ] 2025-08-28 11:41:46.978 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:41:46.995 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Australian Tax Office
+[INFO ] 2025-08-28 11:41:47.070 [main] MenuObjects - Vendor 4 selected: Australian Tax Office
+[INFO ] 2025-08-28 11:41:48.282 [main] MenuObjects - vendor has been passed
+[INFO ] 2025-08-28 11:41:48.283 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:41:48.298 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Australian Tax Office
+[INFO ] 2025-08-28 11:41:48.382 [main] MenuObjects - Vendor 5 selected: Australian Tax Office
+[INFO ] 2025-08-28 11:41:49.669 [main] MenuObjects - vendor has been passed
+[INFO ] 2025-08-28 11:41:49.670 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:41:49.691 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Australian Tax Office
+[INFO ] 2025-08-28 11:41:49.787 [main] MenuObjects - Vendor 6 selected: Australian Tax Office
+[INFO ] 2025-08-28 11:41:51.038 [main] MenuObjects - vendor has been passed
+[INFO ] 2025-08-28 11:41:51.038 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:41:51.057 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Australian Tax Office
+[INFO ] 2025-08-28 11:41:51.147 [main] MenuObjects - Vendor 7 selected: Australian Tax Office
+[INFO ] 2025-08-28 11:42:21.833 [main] MenuObjects - Main pop-up closed
+[INFO ] 2025-08-28 11:42:22.249 [main] MenuObjects - Nested pop-up closed
+[INFO ] 2025-08-28 11:42:22.250 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:42:22.327 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:42:22.329 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2025-08-28 11:42:22.329 [main] MenuObjects - Adding Cinema Placement.........
+[INFO ] 2025-08-28 11:42:37.518 [main] MenuObjects - Add Media line button is visible
+[INFO ] 2025-08-28 11:42:47.555 [main] MenuObjects - Clicked on media line
+[INFO ] 2025-08-28 11:42:59.952 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2025-08-28 11:43:01.980 [main] MenuObjects - Selecting Media title
+[INFO ] 2025-08-28 11:43:01.991 [main] DropDownHelper - selectUsingValue and value is: 8776|C
+[INFO ] 2025-08-28 11:43:07.103 [main] MenuObjects - Selecting vendor
+[INFO ] 2025-08-28 11:43:07.104 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:43:07.120 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Australian Tax Office
+[INFO ] 2025-08-28 11:43:07.193 [main] WaitHelper - 0 second(s) passed waiting for visibility of element => By.xpath: //input[@id='btnProceed']
+[INFO ] 2025-08-28 11:43:07.493 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:43:07.539 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:43:09.762 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2025-08-28 11:43:10.509 [main] MenuObjects - Other (cinema, Other & outdoor) ad type has been selected
+[INFO ] 2025-08-28 11:43:10.570 [main] DropDownHelper - selectUsingValue and value is: 2286
+[INFO ] 2025-08-28 11:43:10.853 [main] MenuObjects - Adding duration
+[INFO ] 2025-08-28 11:43:11.990 [main] MenuObjects - Remark has been passed for Other media type placement line
+[INFO ] 2025-08-28 11:43:27.254 [main] MenuObjects - Ending of Cinema Placement line insertion.........
+[INFO ] 2025-08-28 11:43:27.255 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:43:27.284 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2025-08-28 11:43:27.286 [main] MenuObjects - Adding Magazine Placement.........
+[INFO ] 2025-08-28 11:43:37.565 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:43:37.605 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:43:42.637 [main] MenuObjects - Add Media line button is visible
+[INFO ] 2025-08-28 11:44:02.669 [main] MenuObjects - Clicked on media line
+[INFO ] 2025-08-28 11:44:15.188 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2025-08-28 11:44:17.238 [main] MenuObjects - Selecting Media title
+[INFO ] 2025-08-28 11:44:17.257 [main] DropDownHelper - selectUsingValue and value is: 8778|M
+[INFO ] 2025-08-28 11:44:22.396 [main] MenuObjects - Selecting vendor
+[INFO ] 2025-08-28 11:44:22.396 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:44:22.410 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Australian Tax Office
+[INFO ] 2025-08-28 11:44:22.484 [main] WaitHelper - 0 second(s) passed waiting for visibility of element => By.xpath: //input[@id='btnProceed']
+[INFO ] 2025-08-28 11:44:22.744 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:44:22.788 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:44:24.972 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2025-08-28 11:44:25.354 [main] MenuObjects - Newspaper ad type has been selected
+[INFO ] 2025-08-28 11:44:25.374 [main] DropDownHelper - selectUsingValue and value is: 2290
+[INFO ] 2025-08-28 11:44:25.708 [main] MenuObjects - Remark has been passed for magazine placement line
+[INFO ] 2025-08-28 11:44:34.472 [main] MenuObjects - Ending of Magazine Placement line insertion.........
+[INFO ] 2025-08-28 11:44:34.473 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:44:34.482 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2025-08-28 11:44:34.483 [main] MenuObjects - Adding Newspaper Placement.........
+[INFO ] 2025-08-28 11:44:44.581 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:44:44.617 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:44:49.644 [main] MenuObjects - Add Media line button is visible
+[INFO ] 2025-08-28 11:45:09.683 [main] MenuObjects - Clicked on media line
+[INFO ] 2025-08-28 11:45:22.088 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2025-08-28 11:45:24.135 [main] MenuObjects - Selecting Media title
+[INFO ] 2025-08-28 11:45:24.150 [main] DropDownHelper - selectUsingValue and value is: 8779|N
+[INFO ] 2025-08-28 11:45:29.303 [main] MenuObjects - Selecting vendor
+[INFO ] 2025-08-28 11:45:29.303 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:45:29.316 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Australian Tax Office
+[INFO ] 2025-08-28 11:45:29.382 [main] WaitHelper - 0 second(s) passed waiting for visibility of element => By.xpath: //input[@id='btnProceed']
+[INFO ] 2025-08-28 11:45:29.622 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:45:29.660 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:45:31.841 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2025-08-28 11:45:32.177 [main] MenuObjects - Newspaper ad type has been selected
+[INFO ] 2025-08-28 11:45:32.202 [main] DropDownHelper - selectUsingValue and value is: 2291
+[INFO ] 2025-08-28 11:45:32.825 [main] MenuObjects - Remark has been passed for newspaper placement line
+[INFO ] 2025-08-28 11:45:42.863 [main] MenuObjects - Ending of Newspaper Placement line insertion.........
+[INFO ] 2025-08-28 11:45:42.863 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:45:42.872 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2025-08-28 11:45:42.873 [main] MenuObjects - Adding Outdoor Placement.........
+[INFO ] 2025-08-28 11:45:52.953 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:45:52.990 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:45:58.016 [main] MenuObjects - Add Media line button is visible
+[INFO ] 2025-08-28 11:46:18.041 [main] MenuObjects - Clicked on media line
+[INFO ] 2025-08-28 11:46:30.412 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2025-08-28 11:46:32.455 [main] MenuObjects - Selecting Media title
+[INFO ] 2025-08-28 11:46:32.469 [main] DropDownHelper - selectUsingValue and value is: 8781|O
+[INFO ] 2025-08-28 11:46:37.605 [main] MenuObjects - Selecting vendor
+[INFO ] 2025-08-28 11:46:37.606 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:46:37.619 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Australian Tax Office
+[INFO ] 2025-08-28 11:46:37.688 [main] WaitHelper - 0 second(s) passed waiting for visibility of element => By.xpath: //input[@id='btnProceed']
+[INFO ] 2025-08-28 11:46:37.964 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:46:38.011 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:46:40.215 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2025-08-28 11:46:40.705 [main] MenuObjects - Other (cinema, Other & outdoor) ad type has been selected
+[INFO ] 2025-08-28 11:46:40.738 [main] DropDownHelper - selectUsingValue and value is: 2293
+[INFO ] 2025-08-28 11:46:40.883 [main] MenuObjects - Adding duration
+[INFO ] 2025-08-28 11:46:41.401 [main] MenuObjects - Remark has been passed for Other media type placement line
+[INFO ] 2025-08-28 11:46:51.098 [main] MenuObjects - Ending of Outdoor Placement line insertion.........
+[INFO ] 2025-08-28 11:46:51.099 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:46:51.107 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2025-08-28 11:46:51.108 [main] MenuObjects - Adding Other Placement.........
+[INFO ] 2025-08-28 11:46:53.189 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:46:53.226 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:46:58.250 [main] MenuObjects - Add Media line button is visible
+[INFO ] 2025-08-28 11:47:18.281 [main] MenuObjects - Clicked on media line
+[INFO ] 2025-08-28 11:47:28.638 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2025-08-28 11:47:30.680 [main] MenuObjects - Selecting Media title
+[INFO ] 2025-08-28 11:47:30.693 [main] DropDownHelper - selectUsingValue and value is: 8780|OT
+[INFO ] 2025-08-28 11:47:35.758 [main] MenuObjects - Selecting vendor
+[INFO ] 2025-08-28 11:47:35.758 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:47:35.772 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Australian Tax Office
+[INFO ] 2025-08-28 11:47:35.864 [main] WaitHelper - 0 second(s) passed waiting for visibility of element => By.xpath: //input[@id='btnProceed']
+[INFO ] 2025-08-28 11:47:36.159 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:47:36.199 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:47:38.395 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2025-08-28 11:47:38.759 [main] MenuObjects - Other (cinema, Other & outdoor) ad type has been selected
+[INFO ] 2025-08-28 11:47:38.784 [main] DropDownHelper - selectUsingValue and value is: 2292
+[INFO ] 2025-08-28 11:47:38.903 [main] MenuObjects - Adding duration
+[INFO ] 2025-08-28 11:47:39.251 [main] MenuObjects - Remark has been passed for Other media type placement line
+[INFO ] 2025-08-28 11:47:47.222 [main] MenuObjects - Ending of Others Placement line insertion.........
+[INFO ] 2025-08-28 11:47:47.222 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:47:47.231 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2025-08-28 11:47:47.231 [main] MenuObjects - Adding Radio Placement.........
+[INFO ] 2025-08-28 11:47:49.300 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:47:49.362 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:47:54.495 [main] MenuObjects - Add Media line button is visible
+[INFO ] 2025-08-28 11:48:14.543 [main] MenuObjects - Clicked on media line
+[INFO ] 2025-08-28 11:48:24.937 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2025-08-28 11:48:26.967 [main] MenuObjects - Selecting Media title
+[INFO ] 2025-08-28 11:48:26.980 [main] DropDownHelper - selectUsingValue and value is: 8782|R
+[INFO ] 2025-08-28 11:48:32.087 [main] MenuObjects - Selecting vendor
+[INFO ] 2025-08-28 11:48:32.088 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:48:32.098 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Australian Tax Office
+[INFO ] 2025-08-28 11:48:32.163 [main] WaitHelper - 0 second(s) passed waiting for visibility of element => By.xpath: //input[@id='btnProceed']
+[INFO ] 2025-08-28 11:48:32.385 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:48:32.422 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:48:34.612 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2025-08-28 11:48:34.982 [main] MenuObjects - Newspaper ad type has been selected
+[INFO ] 2025-08-28 11:48:35.009 [main] DropDownHelper - selectUsingValue and value is: 2294
+[INFO ] 2025-08-28 11:48:35.345 [main] MenuObjects - Remark has been passed for Radio placement line
+[INFO ] 2025-08-28 11:48:44.448 [main] MenuObjects - Ending of Radio Placement line insertion.........
+[INFO ] 2025-08-28 11:48:44.448 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:48:44.458 [main] DropDownHelper - DropDownHelper object created..
+[INFO ] 2025-08-28 11:48:44.458 [main] MenuObjects - Adding TV Placement.........
+[INFO ] 2025-08-28 11:48:46.541 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:48:46.606 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:48:51.621 [main] MenuObjects - Add Media line button is visible
+[INFO ] 2025-08-28 11:49:11.656 [main] MenuObjects - Clicked on media line
+[INFO ] 2025-08-28 11:49:21.977 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2025-08-28 11:49:24.165 [main] MenuObjects - Selecting Media title
+[INFO ] 2025-08-28 11:49:24.182 [main] DropDownHelper - selectUsingValue and value is: 8783|TV
+[INFO ] 2025-08-28 11:49:29.571 [main] MenuObjects - Selecting vendor
+[INFO ] 2025-08-28 11:49:29.571 [main] DropDownHelper - Selecting values based on visible text
+[INFO ] 2025-08-28 11:49:29.596 [main] DropDownHelper - selectUsingVisibleText and visibleText is: Australian Tax Office
+[INFO ] 2025-08-28 11:49:29.716 [main] WaitHelper - 0 second(s) passed waiting for visibility of element => By.xpath: //input[@id='btnProceed']
+[INFO ] 2025-08-28 11:49:30.140 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:49:30.196 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:49:32.378 [main] FrameHelper - Frame has been switched to popEditMediaSchedule_CIF-1
+[INFO ] 2025-08-28 11:49:32.713 [main] MenuObjects - Newspaper ad type has been selected
+[INFO ] 2025-08-28 11:49:32.735 [main] DropDownHelper - selectUsingValue and value is: 2327
+[INFO ] 2025-08-28 11:49:33.020 [main] MenuObjects - Remark has been passed for TV placement line
+[INFO ] 2025-08-28 11:49:42.919 [main] MenuObjects - Ending of TV Placement line insertion.........
+[INFO ] 2025-08-28 11:49:42.919 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:49:42.924 [main] FrameHelper - Frame has been switched default or parent frame
+[INFO ] 2025-08-28 11:49:42.995 [main] FrameHelper - Frame has been switched to right
+[INFO ] 2025-08-28 11:50:03.433 [main] ScheduleObjects - Schedule confirm button has been clicked
+[INFO ] 2025-08-28 11:50:33.642 [main] ScheduleObjects - Main pop-up closed
+[INFO ] 2025-08-28 11:50:33.874 [main] ScheduleObjects - Nested pop-up closed
+[INFO ] 2025-08-28 11:50:34.113 [main] ScheduleObjects - Create Mo by vendor button has been clicked
+[INFO ] 2025-08-28 11:51:04.306 [main] ScheduleObjects - Main pop-up closed
+[INFO ] 2025-08-28 11:51:04.525 [main] ScheduleObjects - Nested pop-up closed
+[INFO ] 2025-08-28 11:51:04.545 [main] ScheduleObjects - MO number can be seen
+[INFO ] 2025-08-28 11:51:04.563 [main] ScheduleObjects - Clicked on Select All checkbox 
+[INFO ] 2025-08-28 11:51:11.049 [main] ScheduleObjects - MO has been confirmed
+[INFO ] 2025-08-28 11:51:11.105 [main] ScheduleObjects - Edit Media Order pop-up was not displayed
+[INFO ] 2025-08-28 11:51:41.317 [main] ScheduleObjects - Main pop-up closed
+[INFO ] 2025-08-28 11:51:41.537 [main] ScheduleObjects - Nested pop-up closed
+[INFO ] 2025-08-28 11:51:41.582 [main] ScheduleObjects - MO Status is : Confirm
+[INFO ] 2025-08-28 11:51:41.622 [main] ScheduleObjects - Schedule has been created
+[INFO ] 2025-08-28 11:51:41.651 [main] ScheduleObjects - IJP-MS/2500180
+[INFO ] 2025-08-28 11:51:45.932 [main] ScreenshotUtility - Full-page screenshot saved: C:\Users\rasharma\Automation\pin-automation/src/main/resources/screenShots/new_Schedule_success_20250828_115141.png
+[INFO ] 2025-08-28 11:51:45.933 [main] TestBase - ************** new_Schedule Finished ***************
+[INFO ] 2025-08-28 11:51:46.893 [main] TestBase - Driver quit successfully.
