@@ -1,4 +1,4 @@
-
+package com.pin.automation;
 import static org.testng.Assert.assertNotNull;
 
 import java.io.IOException;
